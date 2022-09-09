@@ -1,13 +1,12 @@
 {
-    "editor.fontSize": 16,
-    "window.zoomLevel": 1,
-    "explorer.confirmDelete": true,
-    "launch": {
-        "configurations": [],
-        "compounds": []
-    },
-
-    // --------------------------------------------------------------------------------------
+  "editor.fontSize": 16,
+  "window.zoomLevel": 0,
+  "explorer.confirmDelete": true,
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  // --------------------------------------------------------------------------------------
   // Code Runner
   // To run code:
   //   use shortcut "Ctrl Opt N" *
@@ -29,6 +28,7 @@
     //   $fullFileName: The full name of the code file being run
     //   $fileName: The base name of the code file being run, that is the file without the directory
     //   $fileNameWithoutExt: The base name of the code file being run without its extension
+    //   -O2 o2 Optimization
     /* ------ 编译、运行只有一个文件的cpp文件 ------ */
     // 注：路径中有空格不会出现问题
     "cpp": "g++ $fullFileName -o $dir\"$fileNameWithoutExt\"\".out\" -W -Wall -O2 -std=c++17 && $dir\"$fileNameWithoutExt\"\".out\"",
@@ -61,5 +61,12 @@
   "code-runner.preserveFocus": false,
   // Whether to ignore selection to always run entire file. (Default is false)
   "code-runner.ignoreSelection": true,
+  "files.associations": {
+    "ios": "cpp",
+    "iostream": "cpp"
+  },
+  "files.exclude": {
+    "**/*.out": true
+  },
   // ---------------------------------------------------------------------
 }
