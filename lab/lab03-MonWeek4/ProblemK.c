@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-09-26 09:05:10
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-09-26 09:16:33
+ * @LastEditTime: 2022-09-28 12:14:34
  * @FilePath: /Cpp/lab/lab03-MonWeek4/ProblemK.c
  * @Description: 问题 K: 零起点学算法31——求多项式
  * 
