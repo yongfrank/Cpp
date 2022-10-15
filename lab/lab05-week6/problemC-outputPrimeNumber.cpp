@@ -1,17 +1,17 @@
 /*
  * @Author: Frank Chu
- * @Date: 2022-10-02 09:49:43
+ * @Date: 2022-10-10 08:26:13
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-10-06 14:56:30
- * @FilePath: /Cpp/lab/lab04-week5/problamA-outputPrimeNumber.cpp
- * @Description: 问题 A: 输出200-299之间的所有素数
- * https://www.geeksforgeeks.org/sieve-of-eratosthenes/
+ * @LastEditTime: 2022-10-10 08:28:35
+ * @FilePath: /Cpp/lab/lab05-week6/problemC-outputPrimeNumber.cpp
+ * @Description: 
  * 
  * Copyright (c) 2022 by Frank Chu, All Rights Reserved. 
  */
 
 #include <iostream>
 #include <string.h>
+#include <iomanip>
 
 void SieveOfEratosthenes(int startNumber, int endNumber) {
 
@@ -44,12 +44,10 @@ void SieveOfEratosthenes(int startNumber, int endNumber) {
     for (int position = startNumber; position < endNumber; position++) {
         if (primeBoolArray[position]) {
             numberCount += 1;
-            std::cout << position;
-            if(numberCount == 8) {
+            std::cout << std::setw(5) << position;
+            if(numberCount == 5) {
                 std::cout << std::endl;
                 numberCount = 0;
-            } else {
-                std::cout << " ";
             }
         }
     }
@@ -57,7 +55,8 @@ void SieveOfEratosthenes(int startNumber, int endNumber) {
 
 // Driver Code
 int main() {
-    int start = 200;
-    int end = 300;
+    int start = 100;
+    int end = 200;
     SieveOfEratosthenes(start, end);
+    return 0;
 }

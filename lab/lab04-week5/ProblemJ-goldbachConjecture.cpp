@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-10-05 16:33:01
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-10-06 11:50:39
+ * @LastEditTime: 2022-10-07 10:54:54
  * @FilePath: /Cpp/lab/lab04-week5/ProblemJ-goldbachConjecture.cpp
  * @Description: Goldbach Conjecture
  * 
@@ -35,9 +35,9 @@ int main(){
         }
     }
     printf("\n");
-    for(int i = 0; i <= 100; i++) {
-        printf("%d = %d \n", i, *(primeNumberArray + i));
-    }
+    // for(int i = 0; i <= 100; i++) {
+    //     printf("%d = %d \n", i, *(primeNumberArray + i));
+    // }
 }
 
 bool* SieveOfEratosthenes(int endNumber) {
