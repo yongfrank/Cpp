@@ -2,7 +2,7 @@
  * @Author: Frank Linux
  * @Date: 2022-09-13 11:06:42
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-09-13 11:41:08
+ * @LastEditTime: 2022-10-15 14:52:36
  * @FilePath: /Cpp/README.md
  * @Description: 
  * 
@@ -20,6 +20,10 @@ ZSTU C Programming and Object-Oriented Programming With C++
 ## Contents
 
 * Class -> Class Code
+* cpp-primer-plus -> example code in book by Stephen Prata, Cpp Primer Plus Code Repository
+* hacking-with-swift -> Hacking with Swift, Rewrite Swift Code with C++
+* hw -> weekly homework
+* java-demo -> demo from cs61b
 * lab -> for Lab Sessions on Monday.
-* Hacking with Swift Rewrite -> Rewrite Swift Code with C++
-* cppPrimerPlus -> Cpp Primer Plus Code Repository
+* objc -> objective-c Code
+* onlineVideo -> C++ programming basics [from bilibili](https://space.bilibili.com/150227122/channel/collectiondetail?sid=13122)
