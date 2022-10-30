@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-10-21 19:56:01
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-10-21 22:26:41
+ * @LastEditTime: 2022-10-30 11:30:14
  * @FilePath: /Cpp/CFunctionLibrary.md
  * @Description: 
  * 
@@ -122,5 +122,42 @@ void SieveOfEratosthenes(int startNumber, int endNumber) {
             std::cout << position << " ";
         }
     }
+}
+```
+
+## Input of Array in C
+
+### `fgets`
+
+[How to remove trailing newline character from fgets input?](https://aticleworld.com/remove-trailing-newline-character-from-fgets/)
+
+```c
+#include <stdio.h>
+#include <string.h>
+#define  BUFFER_SIZE 24
+int main(void)
+{
+    char buf[BUFFER_SIZE];
+    printf("Enter the data = ");
+    if (fgets(buf, sizeof(buf), stdin) == NULL) {
+        printf("Fail to read the input stream");
+    } else {
+        buf[strlen(buf) - 1] = '\0';
+    }
+    printf("Entered Data = %s\n",buf);
+    return 0;
+}
+```
+
+### `gets`
+
+It's unsafe
+
+```c
+#define ARRAYSIZE 100
+char str[ARRAYSIZE];
+
+while(gets(str) != NULL) {
+
 }
 ```
