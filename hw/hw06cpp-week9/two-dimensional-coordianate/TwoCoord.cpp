@@ -2,9 +2,9 @@
  * @Author: Frank Chu
  * @Date: 2022-11-09 16:10:53
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-09 16:48:13
+ * @LastEditTime: 2022-11-16 21:31:57
  * @FilePath: /Cpp/hw/hw06cpp-week9/two-dimensional-coordianate/TwoCoord.cpp
- * @Description: 
+ * @Description: https://blog.csdn.net/u012651730/article/details/16369469
  * 6.7建立一个二维坐标系的类TwoCoord。
  * 用x,y表示坐标值。实现两坐标点的加、减运算。
  * 计算两坐标点之间的距离，并重载<<,>>运算符
