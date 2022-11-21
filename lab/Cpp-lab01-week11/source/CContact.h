@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-11-16 13:11:56
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-21 18:45:01
+ * @LastEditTime: 2022-11-22 00:50:06
  * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/CContact.h
  * @Description:
  *
@@ -17,6 +17,9 @@
 
 /**
  * @brief CContact 是联系人类
+ * @author Frank Chu
+ * @version v1.0.0
+ * @date 16-Nov-2022
  */
 class CContact
 {

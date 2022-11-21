@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-11-20 20:02:30
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-21 18:44:11
+ * @LastEditTime: 2022-11-21 23:40:30
  * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/MainFunction.cpp
  * @Description:
  *
@@ -14,17 +14,24 @@
 #include "AddressBook.cpp"
 
 /**
- * @brief Explanation of some functions used in main.cpp
+ * @brief 解释在 main.cpp 中调用到的函数 Explanation of some functions used in main.cpp
  */
 class MainFunction
 {
 private:
 public:
+    /**
+     * @brief MainFunction 的构造函数 Construct a new Main Function object
+     */
     MainFunction(){};
+
+    /**
+     * @brief MainFunction 的析构函数 Destroy the Main Function object
+     */
     ~MainFunction(){};
 
     /**
-     * @brief
+     * @brief  `system("pause")` 函数说明
      * @note
      * C语言中system("pause")是什么作用和意思 https://blog.csdn.net/haiross/article/details/45093351 \n
      * system 就是调用从程序中调用系统命令（和 shell 命令）。
@@ -42,7 +49,7 @@ public:
     static void SystemPauseFunction() { system("pause"); }
 
     /**
-     * @brief `AddressBook>help` command, print Help Manual
+     * @brief 打印帮助手册 `AddressBook>help` command, print Help Manual
      * @see
      * C++ Multiline String Literals https://linuxhint.com/c-multiline-string-literals/
      */
@@ -63,7 +70,7 @@ public:
     }
 
     /**
-     * @brief  `AddressBook>add` command, add new contact to Address Book in the Command Line Interface Memory
+     * @brief  添加联系人命令 add命令格式: `AddressBook>add [name] [number] [group]` command, add new contact to Address Book in the Command Line Interface Memory
      * @param  Book  Address Book in the CLI Memory
      */
     static void AddCommand(AddressBook &Book)
@@ -75,7 +82,7 @@ public:
     }
 
     /**
-     * @brief 
+     * @brief  查找命令 find [Name] [Number] [Group] 按名字寻找某一节点，支持通配符 * ? 查找
      * @param  Book             Address Book in the CLI Memory
      * @see
      * * CContact AddressBook::operator[](int indexOfContact)
@@ -111,18 +118,16 @@ public:
     }
 
     /**
-     * @brief 
+     * @brief  删除联系人命令，支持通配符 ? * delete [Name][Number][Group]，按姓名删除某一节点
      * @param  Book             Address Book in the CLI Memory
      * @test
-     *
-     * @test
-    ```input
+    ```
+    - input
     add frank 2 st
     add frank 3 st
     add frank 23 st
     delete fr 2 st
-    ```
-    ```output
+    - output
     2 contact was deleted. 
     ```
     */
@@ -133,7 +138,7 @@ public:
     }
 
     /**
-     * @brief `AddressBook>list` command, print all contacts in the AddressBook
+     * @brief  列出通讯录中所有联系人命令，`AddressBook>list` command, print all contacts in the AddressBook
      * @param  Book  Address Book in the CLI Memory
      */
     static void ListCommand(AddressBook& Book)
@@ -141,6 +146,10 @@ public:
         Book.List();
     }
 
+    /**
+     * @brief  按组别列出通讯录中特定组别联系人
+     * @param  Book  Address Book in the CLI Memory
+     */
     static void ListGroupCommand(AddressBook &Book) {
         std::string groupName;
         std::cin >> groupName;
@@ -148,7 +157,7 @@ public:
     }
 
     /**
-     * @brief  `AddressBook>sort` command, sort contact in the AddressBook using string in ascii ascending order
+     * @brief  根据姓氏拼音升序排列，`AddressBook>sort` command, sort contact in the AddressBook using string in ascii ascending order
      * @param  Book  Address Book in the CLI Memory
      */
     static void SortCommand(AddressBook &Book)
@@ -157,7 +166,7 @@ public:
     }
 
     /**
-     * @brief  `AddressBook>sortgroup` command, sort contact in the AddressBook using string in ascii ascending order
+     * @brief  按照组别拼音升序排序，`AddressBook>sortgroup` command, sort contact in the AddressBook using string in ascii ascending order
      * @param  Book  Address Book in the CLI Memory
      */
     static void SortGroupCommand(AddressBook &Book)
@@ -166,7 +175,7 @@ public:
     }
 
     /**
-     * @brief `AddressBook>exit` command, exit the program
+     * @brief 退出程序，`AddressBook>exit` command, exit the program
      */
     static void ExitCommand()
     {

@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ContactAddressBook: CContact.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="ZSTU_t_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">ContactAddressBook<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">This is the Address Book Tutorials.</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_c_contact_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CContact.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_contact_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @Author: Frank Chu</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @Date: 2022-11-16 16:25:59</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @LastEditors: Frank Chu</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @LastEditTime: 2022-11-21 22:10:57</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/CContact.cpp</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @Description:</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * Copyright (c) 2022 by Frank Chu, All Rights Reserved.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_c_contact_8h.html">CContact.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_c_contact.html#afdd13f12c6249225b8812443690b708c">   14</a></span><a class="code hl_function" href="class_c_contact.html#afdd13f12c6249225b8812443690b708c">CContact::CContact</a>() {}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_c_contact.html#a620bfd856ebb9e8cd2f508c689041cb7">   17</a></span><a class="code hl_function" href="class_c_contact.html#afdd13f12c6249225b8812443690b708c">CContact::CContact</a>(std::string&amp; Name, std::string&amp; Number, std::string&amp; Group) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    this-&gt;Name = <a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    this-&gt;Number = <a class="code hl_variable" href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">Number</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    this-&gt;Group = <a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_c_contact.html#a16d57e3cda6eed0016bb38b63e74b99f">   23</a></span><a class="code hl_function" href="class_c_contact.html#afdd13f12c6249225b8812443690b708c">CContact::CContact</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_c_contact.html">CContact</a>&amp; ContactInfo) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    this-&gt;<a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a> = ContactInfo.<a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    this-&gt;<a class="code hl_variable" href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">Number</a> = ContactInfo.<a class="code hl_variable" href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">Number</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    this-&gt;<a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a> = ContactInfo.<a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_c_contact.html#a497e5ec26879482deb732f36924da8af">   29</a></span><a class="code hl_function" href="class_c_contact.html#a497e5ec26879482deb732f36924da8af">CContact::~CContact</a>() { }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_c_contact.html#a2f0c2ff2f3045d49d043250fbd0b9e5e">   50</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_contact.html#a2f0c2ff2f3045d49d043250fbd0b9e5e">CContact::operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_c_contact.html">CContact</a>&amp; contactToBeCompared)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a> &lt; contactToBeCompared.<a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// return (this-&gt;Name &lt; contactToBeCompared.Name) ? true : false;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// if (Name &lt; contactToBeCompared.Name) {</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">//     return true;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// } else {</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">//     return false;</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// }</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_c_contact.html#a6fa656e4a38c4d14b5505d36e5c0f365">   61</a></span><a class="code hl_class" href="class_c_contact.html">CContact</a>&amp; <a class="code hl_function" href="class_c_contact.html#a6fa656e4a38c4d14b5505d36e5c0f365">CContact::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_c_contact.html">CContact</a>&amp; oldContact) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    this-&gt;<a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a> = oldContact.<a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    this-&gt;<a class="code hl_variable" href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">Number</a> = oldContact.<a class="code hl_variable" href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">Number</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    this-&gt;<a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a> = oldContact.<a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_c_contact.html#a56a86dea0bb828cd4990a61a508eb9ba">   70</a></span>std::ostream &amp;<a class="code hl_function" href="_c_contact_8cpp.html#af6aee18c92373d236d728946813284f6">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code hl_class" href="class_c_contact.html">CContact</a> contactInfo) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// Overloading the &gt;&gt; Operator for Your Own Classes</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    os &lt;&lt; contactInfo.<a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; contactInfo.<a class="code hl_variable" href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">Number</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; contactInfo.<a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_c_contact.html#a5f6eeb90164491c2ace958f8078b0d75">   77</a></span>std::istream &amp;<a class="code hl_function" href="_c_contact_8cpp.html#ad9a7b9b5f986cc4924230f57f1411882">operator&gt;&gt;</a>(std::istream&amp; is, <a class="code hl_class" href="class_c_contact.html">CContact</a>&amp; contactToBeRevised) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::string name, number, group;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    is &gt;&gt; name &gt;&gt; number &gt;&gt; group;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    contactToBeRevised.<a class="code hl_function" href="class_c_contact.html#a161ea4a13e9a0f4fea96693ef70904c3">setContact</a>(name, number, group);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// std::cout &lt;&lt; name &lt;&lt; number &lt;&lt; group;</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> is;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_c_contact.html#ad662e7abb61e8f86427e120a7f8eb11a">   98</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="_c_contact_8cpp.html#a808cea55ceaa2f5f4416ccd2e636330b">pr</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_c_contact.html">CContact</a>&amp; lhsContact, <span class="keyword">const</span> <a class="code hl_class" href="class_c_contact.html">CContact</a>&amp; rhsContact) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> lhsContact.<a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a> &lt; rhsContact.<a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_c_contact.html#aaa73f78c844126a49e81bf6e65d98990">  102</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_c_contact.html#aaa73f78c844126a49e81bf6e65d98990">CContact::getContact</a>(std::string&amp; Name, std::string&amp; Number, std::string&amp; Group) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a> = this-&gt;<a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    Number = this-&gt;<a class="code hl_variable" href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">Number</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    Group = this-&gt;<a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_c_contact.html#a161ea4a13e9a0f4fea96693ef70904c3">  108</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_c_contact.html#a161ea4a13e9a0f4fea96693ef70904c3">CContact::setContact</a>(std::string&amp; Name, std::string&amp; Number, std::string&amp; Group) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    this-&gt;Name = <a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    this-&gt;Number = <a class="code hl_variable" href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">Number</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    this-&gt;Group = <a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="class_c_contact.html#a3a911d776b532f44d332a8ab846230ba">  118</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_contact.html#a3a911d776b532f44d332a8ab846230ba">CContact::PatternMatch</a>(std::string&amp; NamePattern, std::string&amp; NumberPattern, std::string&amp; GroupPattern) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">return</span> (</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <a class="code hl_function" href="_c_contact_8h.html#a0a82ec9e83c845e0a97385f328e6237c">match</a>(NamePattern, this-&gt;<a class="code hl_variable" href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">Name</a>) &amp;&amp; <a class="code hl_function" href="_c_contact_8h.html#a0a82ec9e83c845e0a97385f328e6237c">match</a>(NumberPattern, this-&gt;<a class="code hl_variable" href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">Number</a>) &amp;&amp; <a class="code hl_function" href="_c_contact_8h.html#a0a82ec9e83c845e0a97385f328e6237c">match</a>(GroupPattern, this-&gt;<a class="code hl_variable" href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">Group</a>)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    ) ? true : <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>} </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="_c_contact_8cpp.html#a0a82ec9e83c845e0a97385f328e6237c">  163</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="_c_contact_8cpp.html#a0a82ec9e83c845e0a97385f328e6237c">match</a>(std::string &amp;pattern, std::string &amp;source) {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keyword">auto</span> positionOfQuestionMark = pattern.find(<span class="stringliteral">&quot;?&quot;</span>);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keyword">auto</span> positionOfAsteriskMark = pattern.find(<span class="stringliteral">&quot;*&quot;</span>);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">if</span>(positionOfQuestionMark != std::string::npos) {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        pattern.replace(positionOfQuestionMark, 1, <span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">if</span>(positionOfAsteriskMark != std::string::npos) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        pattern.replace(positionOfAsteriskMark, 1, <span class="stringliteral">&quot;.*&quot;</span>);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordflow">return</span> std::regex_match(source, std::regex(pattern));</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="comment">// return (source.find(pattern) != std::string::npos) ? true : false;</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">0xFFFF搬砖艺术</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">荼黑 23:19:25</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">doxygen 有什么推荐教程不，就是那个写注释的，想在 vs code 里面用</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">还有就是 vs code 自带的这个注释工具只支持一部分的语法吗，这个有文档不，查了一下没找到[表情]</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"></span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">@荼黑 你可以写个代码片段按doxygen规则写一个就行</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"></span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">@0x1234 https://devblogs.microsoft.com/cppblog/visual-studio-code-c-extension-july-2020-update-doxygen-comments-and-logpoints/</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">荼黑 00:37:25</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">我看了下，好像就提到的几个 doxygen 标签可以正常用，其他官方的 intelliSense 没支持好像。cpp 这个注释有点令人难受。隔壁 js 可以直接写 example code，复制粘贴</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment"></span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">@0x1234 我反正试了好久，查了好久，各种翻 github issue，目前看来是这样的。如果查到其他资料，请 at 我[表情]</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment"></span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">还有很多奇葩问题，换行只能识别成空格这些</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">https://github.com/microsoft/vscode-cpptools/issues/5741</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">the missing newline becomes a space</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"></span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">设置不简化注释，但也有问题</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">https://github.com/microsoft/vscode-cpptools/issues/8525</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">If true, tooltips of hover and auto-complete will only display certain labels of structured comments. Otherwise, all</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">comments are displayed.</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment"></span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">https://devblogs.microsoft.com/cppblog/visual-studio-code-c-extension-july-2020-update-doxygen-comments-and-logpoints/</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">Visual Studio Code C++ Extension July 2020 Update: Doxygen comments and Log points</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment"></span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">C/C++ doc comments preview doesn&#39;t react to newlines #3464</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">https://github.com/microsoft/vscode-cpptools/issues/3464</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">*/</span></div>
+<div class="ttc" id="a_c_contact_8cpp_html_a0a82ec9e83c845e0a97385f328e6237c"><div class="ttname"><a href="_c_contact_8cpp.html#a0a82ec9e83c845e0a97385f328e6237c">match</a></div><div class="ttdeci">bool match(std::string &amp;pattern, std::string &amp;source)</div><div class="ttdoc">字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00163">CContact.cpp:163</a></div></div>
+<div class="ttc" id="a_c_contact_8cpp_html_a808cea55ceaa2f5f4416ccd2e636330b"><div class="ttname"><a href="_c_contact_8cpp.html#a808cea55ceaa2f5f4416ccd2e636330b">pr</a></div><div class="ttdeci">bool pr(const CContact &amp;lhsContact, const CContact &amp;rhsContact)</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00098">CContact.cpp:98</a></div></div>
+<div class="ttc" id="a_c_contact_8cpp_html_ad9a7b9b5f986cc4924230f57f1411882"><div class="ttname"><a href="_c_contact_8cpp.html#ad9a7b9b5f986cc4924230f57f1411882">operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;is, CContact &amp;contactToBeRevised)</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00077">CContact.cpp:77</a></div></div>
+<div class="ttc" id="a_c_contact_8cpp_html_af6aee18c92373d236d728946813284f6"><div class="ttname"><a href="_c_contact_8cpp.html#af6aee18c92373d236d728946813284f6">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, CContact contactInfo)</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00070">CContact.cpp:70</a></div></div>
+<div class="ttc" id="a_c_contact_8h_html"><div class="ttname"><a href="_c_contact_8h.html">CContact.h</a></div></div>
+<div class="ttc" id="a_c_contact_8h_html_a0a82ec9e83c845e0a97385f328e6237c"><div class="ttname"><a href="_c_contact_8h.html#a0a82ec9e83c845e0a97385f328e6237c">match</a></div><div class="ttdeci">bool match(std::string &amp;pattern, std::string &amp;source)</div><div class="ttdoc">字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00163">CContact.cpp:163</a></div></div>
+<div class="ttc" id="aclass_c_contact_html"><div class="ttname"><a href="class_c_contact.html">CContact</a></div><div class="ttdoc">CContact 是联系人类</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8h_source.html#l00024">CContact.h:25</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_a161ea4a13e9a0f4fea96693ef70904c3"><div class="ttname"><a href="class_c_contact.html#a161ea4a13e9a0f4fea96693ef70904c3">CContact::setContact</a></div><div class="ttdeci">void setContact(std::string &amp;, std::string &amp;, std::string &amp;)</div><div class="ttdoc">设定对象的三个成员</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00108">CContact.cpp:108</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_a2f0c2ff2f3045d49d043250fbd0b9e5e"><div class="ttname"><a href="class_c_contact.html#a2f0c2ff2f3045d49d043250fbd0b9e5e">CContact::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const CContact &amp;) const</div><div class="ttdoc">重载 &lt; 运算符，供算法 Sort 使用,按姓名排序</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00050">CContact.cpp:50</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_a3a911d776b532f44d332a8ab846230ba"><div class="ttname"><a href="class_c_contact.html#a3a911d776b532f44d332a8ab846230ba">CContact::PatternMatch</a></div><div class="ttdeci">bool PatternMatch(std::string &amp;name, std::string &amp;number, std::string &amp;group)</div><div class="ttdoc">判定本对象是否匹配搜索条件</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00118">CContact.cpp:118</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_a3ae1c156ddeee44c27195ea29a255f94"><div class="ttname"><a href="class_c_contact.html#a3ae1c156ddeee44c27195ea29a255f94">CContact::Group</a></div><div class="ttdeci">std::string Group</div><div class="ttdoc">群组</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8h_source.html#l00029">CContact.h:29</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_a497e5ec26879482deb732f36924da8af"><div class="ttname"><a href="class_c_contact.html#a497e5ec26879482deb732f36924da8af">CContact::~CContact</a></div><div class="ttdeci">virtual ~CContact()</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00029">CContact.cpp:29</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_a6fa656e4a38c4d14b5505d36e5c0f365"><div class="ttname"><a href="class_c_contact.html#a6fa656e4a38c4d14b5505d36e5c0f365">CContact::operator=</a></div><div class="ttdeci">CContact &amp; operator=(const CContact &amp;)</div><div class="ttdoc">重载赋值 = 运算符，重载赋值运算符</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00061">CContact.cpp:61</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_aaa73f78c844126a49e81bf6e65d98990"><div class="ttname"><a href="class_c_contact.html#aaa73f78c844126a49e81bf6e65d98990">CContact::getContact</a></div><div class="ttdeci">void getContact(std::string &amp;, std::string &amp;, std::string &amp;)</div><div class="ttdoc">获取对象的三个成员</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00102">CContact.cpp:102</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_ac1d81347d9adec45b3b238c6c8adaca5"><div class="ttname"><a href="class_c_contact.html#ac1d81347d9adec45b3b238c6c8adaca5">CContact::Name</a></div><div class="ttdeci">std::string Name</div><div class="ttdoc">姓名</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8h_source.html#l00027">CContact.h:27</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_ad1255662e4e8ebd8e20017a2e22e530c"><div class="ttname"><a href="class_c_contact.html#ad1255662e4e8ebd8e20017a2e22e530c">CContact::Number</a></div><div class="ttdeci">std::string Number</div><div class="ttdoc">电话号码</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8h_source.html#l00028">CContact.h:28</a></div></div>
+<div class="ttc" id="aclass_c_contact_html_afdd13f12c6249225b8812443690b708c"><div class="ttname"><a href="class_c_contact.html#afdd13f12c6249225b8812443690b708c">CContact::CContact</a></div><div class="ttdeci">CContact()</div><div class="ttdoc">Construct a new CContact object 默认构造函数，构造一个空联系人类</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00014">CContact.cpp:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_c_contact_8cpp.html">CContact.cpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

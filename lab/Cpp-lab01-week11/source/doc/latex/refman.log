@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.11.17)  17 NOV 2022 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.11.17)  22 NOV 2022 01:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1151,7 +1151,9 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 175.
- [1] [2]
+ [1] [2] [3] [4
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 178.
 
 Chapter 1.
@@ -1167,237 +1169,385 @@ LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 180.
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
 (Font)              scaled to size 22.39185pt on input line 180.
-
-LaTeX Font Warning: Font shape `C70/gbsn/bc/n' undefined
-(Font)              using `C70/gbsn/m/n' instead on input line 180.
-
-(annotated.tex
+(md__r_e_a_d_m_e.tex
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
-) [1
-
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.07722pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.07722pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.07722pt}.
-
-[2
-
-]
-Chapter 2.
-(files.tex) [3]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.07722pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.07722pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.07722pt}.
-
-[4
-
-]
-Chapter 3.
-(class_address_book.tex
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 12.
+(Font)              scaled to size 10.79993pt on input line 2.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-5.
+2.
 
 (/Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/tex/latex/p
 snfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 15.
- [5]
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <8> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 60.
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <7> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 72.
+(Font)              scaled to size 8.99994pt on input line 12.
+ [1
+
+]) [2]
+Chapter 2.
+
+LaTeX Font Warning: Font shape `C70/gbsn/bc/n' undefined
+(Font)              using `C70/gbsn/m/n' instead on input line 184.
+
+(test.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+
+ []
+
+) [3
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.0605pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0605pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.0605pt}.
+
+[4
+
+]
+Chapter 3.
+(todo.tex) [5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.07722pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.07722pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.07722pt}.
+
+[6
+
+]
+Chapter 4.
+(annotated.tex) [7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.07722pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.07722pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.07722pt}.
+
+[8
+
+]
+Chapter 5.
+(files.tex) [9]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.07722pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.07722pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.07722pt}.
+
+[10
+
+]
+Chapter 6.
+(class_address_book.tex
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 100.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 100.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 100.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 100.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 100.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 100.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 100.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 100.
- [6]) (class_c_contact.tex
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 18.
+(Font)              scaled to size 8.09995pt on input line 16.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 18.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 18.
+(Font)              scaled to size 8.09995pt on input line 16.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 16.
 
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
-(Font)              using `C70/gbsn/m/n' instead on input line 18.
+(Font)              using `C70/gbsn/m/n' instead on input line 16.
 
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 18.
-LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 18.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 51.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.02469pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.02469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
-
-[7]
-Underfull \hbox (badness 10000) detected at line 73
-[][][]
- []
-
-
-Overfull \hbox (245.2695pt too wide) in paragraph at lines 74--75
-\OT1/pcr/m/n/10 ://devblogs.[]microsoft.[]com/cppblog/visual-studio-code-c-exte
-nsion-july-2020-update-doxygen-comments-and-logpoints/[][] 
- []
-
-
-Overfull \vbox (2.09845pt too high) has occurred while \output is active []
-
-
-[8]
-Underfull \hbox (badness 10000) detected at line 139
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 142
-[][][]
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.02469pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.02469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
-
-[9]
-Underfull \hbox (badness 10000) detected at line 160
-[][][]
- []
-
-
-Overfull \hbox (78.14859pt too wide) in paragraph at lines 161--162
-[]\OT1/phv/m/n/10 C++ \C70/gbsn/m/n/10/8d K \C70/gbsn/m/n/10/50 < \C70/gbsn/bc/
-n/10/8f – \C70/gbsn/m/n/10/7b ó & \OT1/phv/m/n/10 = \C70/gbsn/m/n/10/91 Õ \C70/
-gbsn/bc/n/10/8f } [][] \OT1/pcr/m/n/10 https[]://www.[]runoob.[]com/cplusplus/a
-ssignment-operators-overloading.[]
- []
-
-[10]
-Underfull \hbox (badness 10000) detected at line 208
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 211
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 214
-[][][]
- []
-
-
-Overfull \hbox (504.93767pt too wide) in paragraph at lines 215--216
-[]\OT1/phv/m/n/10 Overloading the $\OML/cmm/m/it/10 <$$<$ \OT1/phv/m/n/10 Opera
-tor for Your Own Classes [][] \OT1/pcr/m/n/10 https[]://learn.[]microsoft.[]com
-/en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classe
-s?view=msvc-170[][] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.02469pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.02469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
-
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <9> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 30.
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <7> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 30.
 [11]
-Underfull \hbox (badness 10000) detected at line 234
+LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 49.
+
+Underfull \hbox (badness 10000) detected at line 49
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 237
+Underfull \hbox (badness 10000) detected at line 52
 [][][]
  []
 
 
-Overfull \hbox (498.93767pt too wide) in paragraph at lines 238--239
-[]\OT1/phv/m/n/10 Overloading the $\OML/cmm/m/it/10 >$$>$ \OT1/phv/m/n/10 Opera
-tor for Your Own Classes [][] \OT1/pcr/m/n/10 https[]://learn.[]microsoft.[]com
-/en-us/cpp/standard-library/overloading-the-input-operator-for-your-own-classes
-?view=msvc-170[][] 
+Underfull \hbox (badness 10000) detected at line 55
+[][][]
  []
 
-) [12]
-Chapter 4.
-(_address_book_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <8> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 100.
+[12]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.02469pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.02469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
+
+[13]
+Underfull \hbox (badness 10000) detected at line 167
+[][][]
  []
 
-) (_address_book_8h_source.tex
+
+Underfull \hbox (badness 10000) detected at line 170
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 200
+[][][]
+ []
+
+[14]
+Underfull \hbox (badness 10000) detected at line 224
+[][][]
+ []
+
 LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 2
-1.
+49.
 
 (/Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/tex/latex/p
 snfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
-) (_c_contact_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 249.
 
- []
-
-[13
-
-]
-Underfull \hbox (badness 10000) detected at line 31
+Underfull \hbox (badness 10000) detected at line 260
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 34
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.02469pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.02469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
+
+[15]
+Underfull \hbox (badness 10000) detected at line 291
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 37
+Overfull \hbox (148.32649pt too wide) in paragraph at lines 295--296
+[]\C70/gbsn/b/n/10/52  \C70/gbsn/m/n/10/5e ˙ \C70/gbsn/m/n/10/7a z\OT1/phv/m/n
+/10 std[]::string\C70/gbsn/m/n/10/76 Ñ \C70/gbsn/bc/n/10/67   \C70/gbsn/bc/n/10
+/4f s \C70/gbsn/bc/n/10/65 π \C70/gbsn/m/n/10/5f  [][] \OT1/pcr/m/n/10 http[]:
+//zplutor.[]github.[]io/2016/02/18/best-way-to-create-empty-std-string/[][] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 317
 [][][]
  []
 
 
-Overfull \hbox (504.93767pt too wide) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) detected at line 335
+[][][]
+ []
+
+
+Overfull \hbox (105.89645pt too wide) in paragraph at lines 338--339
+[]\OT1/phv/m/n/10 C++ \C70/gbsn/b/n/10/4e  \C70/gbsn/m/n/10/68  \C70/gbsn/bc/
+n/10/8f – \C70/gbsn/m/n/10/7b ó & [][] \C70/gbsn/m/n/10/91 Õ \C70/gbsn/bc/n/10/
+8f } [][] \OT1/pcr/m/n/10 https[]://www.[]runoob.[]com/cplusplus/subscripting-o
+perator-overloading.[]
+ []
+
+[16]
+Underfull \hbox (badness 10000) detected at line 369
+[][][]
+ []
+
+
+Overfull \hbox (78.33273pt too wide) in paragraph at lines 372--373
+[]\OT1/phv/m/n/10 C++\C70/gbsn/b/n/10/4e -\OT1/phv/m/n/10 ,\C70/gbsn/m/n/10/7e 
+” \C70/gbsn/bc/n/10/67 Ñ \C70/gbsn/bc/n/10/4f S\OT1/phv/m/n/10 vector\C70/gbsn/
+bc/n/10/4f  \C70/gbsn/m/n/10/75 (\OT1/phv/m/n/10 sort\C70/gbsn/m/n/10/63 í \C7
+0/gbsn/m/n/10/5e è [][] \OT1/pcr/m/n/10 https[]://blog.[]csdn.[]net/zhouxun623/
+article/details/49887555[][] 
+ []
+
+) (class_c_contact.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.02469pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.02469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
+
+[17]
+Underfull \hbox (badness 10000) detected at line 56
+[][][]
+ []
+
+[18]
+Underfull \hbox (badness 10000) detected at line 59
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 75.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.02469pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.02469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
+
+[19]
+Underfull \hbox (badness 10000) detected at line 105
+[][][]
+ []
+
+
+Overfull \hbox (245.2695pt too wide) in paragraph at lines 106--107
+\OT1/pcr/m/n/10 ://devblogs.[]microsoft.[]com/cppblog/visual-studio-code-c-exte
+nsion-july-2020-update-doxygen-comments-and-logpoints/[][] 
+ []
+
+
+Overfull \vbox (34.7796pt too high) has occurred while \output is active []
+
+
+[20]
+Underfull \hbox (badness 10000) detected at line 187
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 207
+[][][]
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 210--211
+[]\OT1/phv/m/n/10 C++ \C70/gbsn/b/n/10/4e - \C70/gbsn/m/n/10/76 Ñ \C70/gbsn/bc/
+n/10/8f – \C70/gbsn/m/n/10/7b ó & \C70/gbsn/m/n/10/91 Õ \C70/gbsn/bc/n/10/8f } 
+\OT1/pcr/m/n/10 Box operator+(const Box&); [][] https[]://www.[]runoob.[]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.02469pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.02469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
+
+[21]
+Underfull \hbox (badness 10000) detected at line 233
+[][][]
+ []
+
+
+Overfull \hbox (78.14859pt too wide) in paragraph at lines 234--235
+[]\OT1/phv/m/n/10 C++ \C70/gbsn/m/n/10/8d K \C70/gbsn/m/n/10/50 < \C70/gbsn/bc/
+n/10/8f – \C70/gbsn/m/n/10/7b ó & \OT1/phv/m/n/10 = \C70/gbsn/m/n/10/91 Õ \C70/
+gbsn/bc/n/10/8f } [][] \OT1/pcr/m/n/10 https[]://www.[]runoob.[]com/cplusplus/a
+ssignment-operators-overloading.[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 259
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 264
+[][][]
+ []
+
+
+Overfull \hbox (29.07672pt too wide) in paragraph at lines 265--266
+[]\OT1/phv/m/n/10 C++ \C70/gbsn/m/n/10/51 ˝ \C70/gbsn/bc/n/10/65 p \C70/gbsn/m/
+n/10/9e ÿ \C70/gbsn/b/n/10/8b § \C70/gbsn/b/n/10/53 ¬ \C70/gbsn/bc/n/10/65 p []
+[] \OT1/pcr/m/n/10 https[]://www.[]w3cschool.[]cn/cpp/cpp-function-default-para
+meters.[]
+ []
+
+[22]
+Underfull \hbox (badness 10000) detected at line 316
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 320
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 323
+[][][]
+ []
+
+
+Overfull \hbox (504.93767pt too wide) in paragraph at lines 324--325
 []\OT1/phv/m/n/10 Overloading the $\OML/cmm/m/it/10 <$$<$ \OT1/phv/m/n/10 Opera
 tor for Your Own Classes [][] \OT1/pcr/m/n/10 https[]://learn.[]microsoft.[]com
 /en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classe
@@ -1406,36 +1556,157 @@ s?view=msvc-170[][]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.06458pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.06458pt}.
+(fancyhdr)                Make it at least 12.02469pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.02469pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
+(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
 
-[14]
-Underfull \hbox (badness 10000) detected at line 57
+[23]
+Underfull \hbox (badness 10000) detected at line 347
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 60
+Underfull \hbox (badness 10000) detected at line 350
 [][][]
  []
 
 
-Overfull \hbox (498.93767pt too wide) in paragraph at lines 61--62
+Overfull \hbox (498.93767pt too wide) in paragraph at lines 351--352
 []\OT1/phv/m/n/10 Overloading the $\OML/cmm/m/it/10 >$$>$ \OT1/phv/m/n/10 Opera
 tor for Your Own Classes [][] \OT1/pcr/m/n/10 https[]://learn.[]microsoft.[]com
 /en-us/cpp/standard-library/overloading-the-input-operator-for-your-own-classes
 ?view=msvc-170[][] 
  []
 
-) (_c_contact_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+Underfull \hbox (badness 10000) detected at line 374
+[][][]
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 411.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 411.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 411.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 411.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 411.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 411.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 411.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 411.
+[24]) (class_main_function.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.02469pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.02469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
+
+[25]
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 87.
+ [26]
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 142.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 142.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 142.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 142.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 142.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 142.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.02469pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.02469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
+
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 142.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 142.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 142.
+[27]
+Underfull \hbox (badness 10000) detected at line 165
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 188
+[][][]
+ []
+
+[28]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.02469pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.02469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.02469pt}.
+
+[29]
+Underfull \hbox (badness 10000) detected at line 295
+[][][]
+ []
+
+
+Overfull \hbox (80.68134pt too wide) in paragraph at lines 296--300
+[]\OT1/phv/m/n/10 C\C70/gbsn/b/n/10/8b Ì \C70/gbsn/m/n/10/8a   \C70/gbsn/b/n/10
+/4e -\OT1/phv/m/n/10 system("pause")\C70/gbsn/b/n/10/66 / \C70/gbsn/b/n/10/4e ¿
+ H \C70/gbsn/bc/n/10/4f \ \C70/gbsn/m/n/10/75 ( \C70/gbsn/b/n/10/54 å \C70/gbsn
+/m/n/10/61  \C70/gbsn/m/n/10/60  [][] \OT1/pcr/m/n/10 https[]://blog.[]csdn.[
+]net/haiross/article/details/45093351[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--300
 
  []
 
-) (_c_contact_8h_source.tex
+
+Overfull \hbox (106.15742pt too wide) in paragraph at lines 296--300
+\OT1/phv/m/n/10 linux\C70/gbsn/b/n/10/4e  \C70/gbsn/bc/n/10/8f – \C70/gbsn/m/n
+/10/88 L \C70/gbsn/m/n/10/7a  \C70/gbsn/m/n/10/5e è \C70/gbsn/m/n/10/51 ˙ \C70
+/gbsn/m/n/10/73 ∞\OT1/phv/m/n/10 \sh[]: 1[]: pause[]: not found" [][] \OT1/pcr/
+m/n/10 https[]://www.[]cnblogs.[]com/feifanrensheng/articles/8696007.[]
+ []
+
+) [30]
+Chapter 7.
+(_address_book_8cpp.tex) (_address_book_8cpp_source.tex [31
+
+])
+(_address_book_8h.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.06458pt, for example:
@@ -1444,12 +1715,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
 
-[15]) (main_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
-)
+[32]) (_address_book_8h_source.tex) (_c_contact_8cpp.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.06458pt, for example:
@@ -1458,115 +1724,334 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
 
-[16] (refman.ind [17
+[33]
+Underfull \hbox (badness 10000) detected at line 54
+[][][]
+ []
 
 
+Overfull \hbox (258.08061pt too wide) in paragraph at lines 57--58
+[]\OT1/phv/m/n/10 Check if a string contains a string in C++ [][] \OT1/pcr/m/n/
+10 https[]://stackoverflow.[]com/questions/2340281/check-if-a-string-contains-a
+-string-in-c[][] 
+ []
+
+
+Overfull \hbox (98.17749pt too wide) in paragraph at lines 61--62
+[]\C70/gbsn/m/n/10/90  \C70/gbsn/m/n/10/91 M \C70/gbsn/m/n/10/7b & \C70/gbsn/m
+/n/10/ff   $\OMS/cmsy/m/n/10 $\C70/gbsn/m/n/10/ff 	 \C70/gbsn/b/n/10/4e  \
+C70/gbsn/m/n/10/6b c \C70/gbsn/b/n/10/52  \C70/gbsn/m/n/10/88 h \C70/gbsn/bc/n
+/10/8f æ \C70/gbsn/m/n/10/5f  [][] \OT1/pcr/m/n/10 https[]://blog.[]csdn.[]net
+/yh13572438258/article/details/121545229[][] 
+ []
+
+
+Overfull \hbox (43.06403pt too wide) in paragraph at lines 62--63
+[]\OT1/phv/m/n/10 str[]::string\C70/gbsn/b/n/10/54 å\OT1/phv/m/n/10 wchar[][][]
+t$\OMS/cmsy/m/n/10 $\C70/gbsn/m/n/10/76 ¯ \C70/gbsn/b/n/10/4e í \C70/gbsn/bc/n
+/10/8f l \C70/gbsn/b/n/10/53  [][] \OT1/pcr/m/n/10 https[]://blog.[]csdn.[]net
+/zddblog/article/details/38670349[][] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 76.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 76.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 76.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 76.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 76.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.06458pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.06458pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
+
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 76.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 76.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 76.
+[34]
+Underfull \hbox (badness 10000) detected at line 86
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 89
+[][][]
+ []
+
+
+Overfull \hbox (504.93767pt too wide) in paragraph at lines 90--91
+[]\OT1/phv/m/n/10 Overloading the $\OML/cmm/m/it/10 <$$<$ \OT1/phv/m/n/10 Opera
+tor for Your Own Classes [][] \OT1/pcr/m/n/10 https[]://learn.[]microsoft.[]com
+/en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classe
+s?view=msvc-170[][] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 102
+[][][]
+ []
+
+
+Overfull \hbox (498.93767pt too wide) in paragraph at lines 103--104
+[]\OT1/phv/m/n/10 Overloading the $\OML/cmm/m/it/10 >$$>$ \OT1/phv/m/n/10 Opera
+tor for Your Own Classes [][] \OT1/pcr/m/n/10 https[]://learn.[]microsoft.[]com
+/en-us/cpp/standard-library/overloading-the-input-operator-for-your-own-classes
+?view=msvc-170[][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.06458pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.06458pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
+
+[35]) (_c_contact_8cpp_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.06458pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.06458pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
+
+[36]
+Overfull \hbox (65.55551pt too wide) in paragraph at lines 110--110
+\OT1/pcr/m/n/7 https://devblogs.microsoft.com/cppblog/visual-studio-code-c-exte
+nsion-july-2020-update-doxygen-comments-and-logpoints/[]  
+ []
+
+
+Overfull \hbox (65.55551pt too wide) in paragraph at lines 125--125
+[]\OT1/pcr/m/n/7 https://devblogs.microsoft.com/cppblog/visual-studio-code-c-ex
+tension-july-2020-update-doxygen-comments-and-logpoints/[]  
+ []
+
+) (_c_contact_8h.tex [37]
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.06458pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.06458pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
+
+[38]
+Underfull \hbox (badness 10000) detected at line 67
+[][][]
+ []
+
+
+Overfull \hbox (258.08061pt too wide) in paragraph at lines 70--71
+[]\OT1/phv/m/n/10 Check if a string contains a string in C++ [][] \OT1/pcr/m/n/
+10 https[]://stackoverflow.[]com/questions/2340281/check-if-a-string-contains-a
+-string-in-c[][] 
+ []
+
+
+Overfull \hbox (98.17749pt too wide) in paragraph at lines 74--75
+[]\C70/gbsn/m/n/10/90  \C70/gbsn/m/n/10/91 M \C70/gbsn/m/n/10/7b & \C70/gbsn/m
+/n/10/ff   $\OMS/cmsy/m/n/10 $\C70/gbsn/m/n/10/ff 	 \C70/gbsn/b/n/10/4e  \
+C70/gbsn/m/n/10/6b c \C70/gbsn/b/n/10/52  \C70/gbsn/m/n/10/88 h \C70/gbsn/bc/n
+/10/8f æ \C70/gbsn/m/n/10/5f  [][] \OT1/pcr/m/n/10 https[]://blog.[]csdn.[]net
+/yh13572438258/article/details/121545229[][] 
+ []
+
+
+Overfull \hbox (43.06403pt too wide) in paragraph at lines 75--76
+[]\OT1/phv/m/n/10 str[]::string\C70/gbsn/b/n/10/54 å\OT1/phv/m/n/10 wchar[][][]
+t$\OMS/cmsy/m/n/10 $\C70/gbsn/m/n/10/76 ¯ \C70/gbsn/b/n/10/4e í \C70/gbsn/bc/n
+/10/8f l \C70/gbsn/b/n/10/53  [][] \OT1/pcr/m/n/10 https[]://blog.[]csdn.[]net
+/zddblog/article/details/38670349[][] 
+ []
+
+) (_c_contact_8h_source.tex [39]) (main_8cpp.tex
+Underfull \hbox (badness 10000) detected at line 22
+[][][]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.06458pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.06458pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
+
+[40]) (main_8cpp_source.tex
+Missing character: There is no ¸ in font gbsnu30!
+[41]) (_main_function_8cpp.tex) (_main_function_8cpp_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.06458pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.06458pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
+
+[42]) (_r_e_a_d_m_e_8md.tex) [43]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.06458pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.06458pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.06458pt}.
+
+[44] (refman.ind [45
+
+
+
+] [46
 
 ]) (refman.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 81939074759171DA9FCE6E289C2C6FC5;7377.
+(rerunfilecheck)             Checksum: 74A8903AD1E4502CD843B8D5278E1BE7;15292.
  ) 
 Here is how much of TeX's memory you used:
- 20148 strings out of 477241
- 330475 string characters out of 2825301
- 673819 words of memory out of 3000000
- 40595 multiletter control sequences out of 15000+600000
- 547932 words of font info for 257 fonts, out of 8000000 for 9000
+ 21921 strings out of 477241
+ 368821 string characters out of 2825301
+ 692212 words of memory out of 3000000
+ 41511 multiletter control sequences out of 15000+600000
+ 574012 words of font info for 350 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 99i,16n,117p,450b,1538s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.e
-nc}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb></Library/Application Support/MiKTeX/texmfs/ins
-tall/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Library/Application Support/MiK
-TeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Library/Applicati
-on Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Li
-brary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb></Users/yongfrank/Library/Application Support/MiKTeX/te
-xmfs/install/fonts/type1/arphic/gbsnu/gbsnu30.pfb></Users/yongfrank/Library/App
-lication Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></U
-sers/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/ar
-phic/gbsnu/gbsnu4f.pfb></Users/yongfrank/Library/Application Support/MiKTeX/tex
-mfs/install/fonts/type1/arphic/gbsnu/gbsnu50.pfb></Users/yongfrank/Library/Appl
-ication Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu51.pfb></Us
-ers/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arp
-hic/gbsnu/gbsnu52.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texm
-fs/install/fonts/type1/arphic/gbsnu/gbsnu53.pfb></Users/yongfrank/Library/Appli
-cation Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu54.pfb></Use
-rs/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arph
-ic/gbsnu/gbsnu56.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmf
-s/install/fonts/type1/arphic/gbsnu/gbsnu57.pfb></Users/yongfrank/Library/Applic
-ation Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu58.pfb></User
-s/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphi
-c/gbsnu/gbsnu59.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs
-/install/fonts/type1/arphic/gbsnu/gbsnu5b.pfb></Users/yongfrank/Library/Applica
-tion Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></Users
-/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic
-/gbsnu/gbsnu5f.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/
-install/fonts/type1/arphic/gbsnu/gbsnu61.pfb></Users/yongfrank/Library/Applicat
-ion Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu62.pfb></Users/
-yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/
-gbsnu/gbsnu63.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/i
-nstall/fonts/type1/arphic/gbsnu/gbsnu64.pfb></Users/yongfrank/Library/Applicati
-on Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu65.pfb></Users/y
-ongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/g
-bsnu/gbsnu66.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/in
-stall/fonts/type1/arphic/gbsnu/gbsnu67.pfb></Users/yongfrank/Library/Applicatio
-n Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu68.pfb></Users/yo
-ngfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gb
-snu/gbsnu6a.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/ins
-tall/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></Users/yongfrank/Library/Application
- Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></Users/yon
-gfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbs
-nu/gbsnu6e.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/inst
-all/fonts/type1/arphic/gbsnu/gbsnu72.pfb></Users/yongfrank/Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu73.pfb></Users/yong
-frank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsn
-u/gbsnu75.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/insta
-ll/fonts/type1/arphic/gbsnu/gbsnu76.pfb></Users/yongfrank/Library/Application S
-upport/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu78.pfb></Users/yongf
-rank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu
-/gbsnu7a.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/instal
-l/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></Users/yongfrank/Library/Application Su
-pport/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></Users/yongfr
-ank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/
-gbsnu7d.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install
-/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></Users/yongfrank/Library/Application Sup
-port/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></Users/yongfra
-nk/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/g
-bsnu80.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/
-fonts/type1/arphic/gbsnu/gbsnu83.pfb></Users/yongfrank/Library/Application Supp
-ort/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu88.pfb></Users/yongfran
-k/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gb
-snu89.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/f
-onts/type1/arphic/gbsnu/gbsnu8b.pfb></Users/yongfrank/Library/Application Suppo
-rt/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></Users/yongfrank
+ 99i,16n,117p,830b,1639s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+pdfTeX warning (dest): name{_main_function_8cpp_source_l00171} has been referen
+ced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{_main_function_8cpp_source_l00125} has been referen
+ced but does not exist, replaced by a fixed one
+
+{/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc
+}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb></Library/Application Support/MiKTeX/texmfs/insta
+ll/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Library/Application Support/MiKTe
+X/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Library/Application
+ Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Libr
+ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmsy9.pfb></Users/yongfrank/Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu30.pfb></Users/yongfrank
 /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbs
-nu8d.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fo
-nts/type1/arphic/gbsnu/gbsnu8f.pfb></Users/yongfrank/Library/Application Suppor
-t/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu90.pfb></Users/yongfrank/
+nu4e.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fo
+nts/type1/arphic/gbsnu/gbsnu4f.pfb></Users/yongfrank/Library/Application Suppor
+t/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu50.pfb></Users/yongfrank/
 Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsn
-u91.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fon
-ts/type1/arphic/gbsnu/gbsnu96.pfb></Users/yongfrank/Library/Application Support
-/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu98.pfb></Users/yongfrank/L
+u51.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fon
+ts/type1/arphic/gbsnu/gbsnu52.pfb></Users/yongfrank/Library/Application Support
+/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu53.pfb></Users/yongfrank/L
 ibrary/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu
-9e.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/font
-s/type1/arphic/gbsnu/gbsnuff.pfb></Library/Application Support/MiKTeX/texmfs/in
-stall/fonts/type1/urw/courier/ucrb8a.pfb></Library/Application Support/MiKTeX/t
-exmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></Library/Application Support/
-MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrro8a.pfb></Library/Application
- Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></Library/Ap
-plication Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8ac.pfb></
-Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvr
-8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helv
-etic/uhvro8a.pfb>
-Output written on refman.pdf (21 pages, 519684 bytes).
+54.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/font
+s/type1/arphic/gbsnu/gbsnu56.pfb></Users/yongfrank/Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu57.pfb></Users/yongfrank/Li
+brary/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu5
+8.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts
+/type1/arphic/gbsnu/gbsnu59.pfb></Users/yongfrank/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu5b.pfb></Users/yongfrank/Lib
+rary/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu5c
+.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/
+type1/arphic/gbsnu/gbsnu5d.pfb></Users/yongfrank/Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></Users/yongfrank/Libr
+ary/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu5f.
+pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/t
+ype1/arphic/gbsnu/gbsnu60.pfb></Users/yongfrank/Library/Application Support/MiK
+TeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu61.pfb></Users/yongfrank/Libra
+ry/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu62.p
+fb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/ty
+pe1/arphic/gbsnu/gbsnu63.pfb></Users/yongfrank/Library/Application Support/MiKT
+eX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu64.pfb></Users/yongfrank/Librar
+y/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu65.pf
+b></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
+e1/arphic/gbsnu/gbsnu66.pfb></Users/yongfrank/Library/Application Support/MiKTe
+X/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu67.pfb></Users/yongfrank/Library
+/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu68.pfb
+></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type
+1/arphic/gbsnu/gbsnu6a.pfb></Users/yongfrank/Library/Application Support/MiKTeX
+/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu6b.pfb></Users/yongfrank/Library/
+Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu6c.pfb>
+</Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1
+/arphic/gbsnu/gbsnu6d.pfb></Users/yongfrank/Library/Application Support/MiKTeX/
+texmfs/install/fonts/type1/arphic/gbsnu/gbsnu6e.pfb></Users/yongfrank/Library/A
+pplication Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu70.pfb><
+/Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/
+arphic/gbsnu/gbsnu71.pfb></Users/yongfrank/Library/Application Support/MiKTeX/t
+exmfs/install/fonts/type1/arphic/gbsnu/gbsnu72.pfb></Users/yongfrank/Library/Ap
+plication Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu73.pfb></
+Users/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/a
+rphic/gbsnu/gbsnu75.pfb></Users/yongfrank/Library/Application Support/MiKTeX/te
+xmfs/install/fonts/type1/arphic/gbsnu/gbsnu76.pfb></Users/yongfrank/Library/App
+lication Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu77.pfb></U
+sers/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/ar
+phic/gbsnu/gbsnu78.pfb></Users/yongfrank/Library/Application Support/MiKTeX/tex
+mfs/install/fonts/type1/arphic/gbsnu/gbsnu79.pfb></Users/yongfrank/Library/Appl
+ication Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu7a.pfb></Us
+ers/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arp
+hic/gbsnu/gbsnu7b.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texm
+fs/install/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></Users/yongfrank/Library/Appli
+cation Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu7d.pfb></Use
+rs/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arph
+ic/gbsnu/gbsnu7e.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmf
+s/install/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></Users/yongfrank/Library/Applic
+ation Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu80.pfb></User
+s/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphi
+c/gbsnu/gbsnu81.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs
+/install/fonts/type1/arphic/gbsnu/gbsnu82.pfb></Users/yongfrank/Library/Applica
+tion Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu83.pfb></Users
+/yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic
+/gbsnu/gbsnu84.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/
+install/fonts/type1/arphic/gbsnu/gbsnu88.pfb></Users/yongfrank/Library/Applicat
+ion Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu89.pfb></Users/
+yongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/
+gbsnu/gbsnu8a.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/i
+nstall/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></Users/yongfrank/Library/Applicati
+on Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></Users/y
+ongfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/g
+bsnu/gbsnu8d.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/in
+stall/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></Users/yongfrank/Library/Applicatio
+n Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu90.pfb></Users/yo
+ngfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gb
+snu/gbsnu91.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/ins
+tall/fonts/type1/arphic/gbsnu/gbsnu95.pfb></Users/yongfrank/Library/Application
+ Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu96.pfb></Users/yon
+gfrank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbs
+nu/gbsnu97.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/inst
+all/fonts/type1/arphic/gbsnu/gbsnu98.pfb></Users/yongfrank/Library/Application 
+Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></Users/yong
+frank/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/arphic/gbsn
+u/gbsnu9e.pfb></Users/yongfrank/Library/Application Support/MiKTeX/texmfs/insta
+ll/fonts/type1/arphic/gbsnu/gbsnuff.pfb></Library/Application Support/MiKTeX/te
+xmfs/install/fonts/type1/urw/courier/ucrb8a.pfb></Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></Library/Application S
+upport/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrro8a.pfb></Library/Appl
+ication Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></Lib
+rary/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8ac
+.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvet
+ic/uhvr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/u
+rw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (52 pages, 1031457 bytes).
 PDF statistics:
- 962 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
- 593 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2753 PDF objects out of 2984 (max. 8388607)
+ 802 named destinations out of 1000 (max. 500000)
+ 1021 words of extra memory for PDF output out of 10000 (max. 10000000)
 

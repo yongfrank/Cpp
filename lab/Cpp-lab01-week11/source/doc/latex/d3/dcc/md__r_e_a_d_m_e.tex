@@ -1,0 +1,77 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md0}{}\doxysection{实验一 Visual C++ 基于命令提示符的程序设计}\label{md__r_e_a_d_m_e_autotoc_md0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{一、 实验目的}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyEnumerate}
+\item 掌握基于命令提示符的人机交互界面设计；
+\item 掌握类的定义和使用；
+\item 掌握 vector 对象的使用方法；
+\item 掌握泛型程序设计的基本方法。
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{二、 类的详细说明（属性、方法）}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item 5 类说明
+\item 5.\+1 {\ttfamily \mbox{\hyperlink{class_address_book}{Address\+Book}}} 类
+\begin{DoxyItemize}
+\item Public 成员函数
+\item Private 属性
+\item 5.\+1.\+1 详细描述
+\item 5.\+1.\+2 构造及析构函数说明
+\item 5.\+1.\+3 成员函数说明
+\item 5.\+1.\+4 类成员变量说明
+\end{DoxyItemize}
+\item 5.\+2 {\ttfamily \mbox{\hyperlink{class_c_contact}{CContact}}} 类
+\begin{DoxyItemize}
+\item Public 成员函数
+\item Private 属性
+\item 友元
+\item 5.\+2.\+1 详细描述
+\item 5.\+2.\+2 构造及析构函数说明
+\item 5.\+2.\+3 成员函数说明
+\item 5.\+2.\+4 友元及相关函数文档
+\item 5.\+2.\+5 类成员变量说明
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{三、各命令的详细说明（命令字串、参数、功能描述）}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item 5.\+3 \mbox{\hyperlink{class_main_function}{Main\+Function}} 类，{\ttfamily \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}}} 函数中所用的调用对象方法的函数。
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_a8a2c9fe12211c131bd03e0c706770c1f}{Main\+Function\+::\+Help\+Command()}}}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{四、命令与对象方法的调用关系}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item See \mbox{\hyperlink{_main_function_8cpp}{Main\+Function.\+cpp}}
+\item 5.\+3 Main\+Function类 参考
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_a2d7e4b42d94d2dac614a134389d9db90}{Main\+Function\+::\+Exit\+Command()}}}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_ac5aef4c9fa1802e69348661a59b711cd}{Main\+Function\+::\+List\+Command()}}}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_a61df29059315691d8c5b084b31e87c68}{Main\+Function\+::\+List\+Group\+Command()}}}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_a276b843a8c3045968412eb3ffcfdf815}{Main\+Function\+::\+Sort\+Command()}}}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_a8678107aa7db0e655a3994c52af53004}{Main\+Function\+::\+Sort\+Group\+Command()}}}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_ae8dfaaa9a948bd87c68b4ff19b0a17e4}{Main\+Function\+::\+System\+Pause\+Function()}}}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{五、关键代码段（添加、查找、删除联系人方法的实现）}\label{md__r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Add
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_adf24f32da9c03a5373f36e4aae46302a}{Main\+Function\+::\+Add\+Command()}}}
+\item {\ttfamily \mbox{\hyperlink{class_address_book_ab2ab4565bc7ec1563fd4fb6f5db4ac6d}{Address\+Book\+::\+Add\+Contact()}}}
+\end{DoxyItemize}
+\item Find
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_a201a540381aacc37ea317de99b34abe9}{Main\+Function\+::\+Find\+Command()}}}
+\item {\ttfamily \mbox{\hyperlink{class_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc}{Address\+Book\+::\+Find()}}}
+\item {\ttfamily \mbox{\hyperlink{class_c_contact_a3a911d776b532f44d332a8ab846230ba}{CContact\+::\+Pattern\+Match()}}}
+\item {\ttfamily \mbox{\hyperlink{_c_contact_8cpp_a0a82ec9e83c845e0a97385f328e6237c}{match()}}}
+\end{DoxyItemize}
+\item Delete
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{class_main_function_ac2f70628a5f3db82a14c72906fc64d64}{Main\+Function\+::\+Delete\+Command()}}}
+\item {\ttfamily \mbox{\hyperlink{class_address_book_af5cafb076360577186d987d501989273}{Address\+Book\+::\+Delete()}}}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{六、程序测试过程}\label{md__r_e_a_d_m_e_autotoc_md6}
+
+\begin{DoxyItemize}
+\item 测试列表 
+\end{DoxyItemize}

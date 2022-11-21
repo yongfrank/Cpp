@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-11-16 16:04:46
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-21 22:45:07
+ * @LastEditTime: 2022-11-22 00:50:52
  * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/AddressBook.h
  * @Description:
  *
@@ -20,8 +20,9 @@
 #define ADDRESSBOOK_H
 /**
  * @brief 地址簿类
- *
- * Detailed Describer
+ * @author Frank Chu
+ * @version v1.0.0
+ * @date 16-Nov-2022
  */
 class AddressBook
 {

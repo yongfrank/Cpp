@@ -1,0 +1,243 @@
+.TH "MainFunction" 3 "2022年 十一月 22日 星期二" "Version 1.0.0" "ContactAddressBook" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MainFunction \- 解释在 \fBmain\&.cpp\fP 中调用到的函数 Explanation of some functions used in \fBmain\&.cpp\fP  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBMainFunction\fP ()"
+.br
+.RI "\fBMainFunction\fP 的构造函数 Construct a new Main Function object "
+.ti -1c
+.RI "\fB~MainFunction\fP ()"
+.br
+.RI "\fBMainFunction\fP 的析构函数 Destroy the Main Function object "
+.in -1c
+.SS "静态 Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "static void \fBSystemPauseFunction\fP ()"
+.br
+.RI "\fCsystem('pause')\fP 函数说明 "
+.ti -1c
+.RI "static void \fBHelpCommand\fP ()"
+.br
+.RI "打印帮助手册 \fC\fBAddressBook\fP>help\fP command, print Help Manual "
+.ti -1c
+.RI "static void \fBAddCommand\fP (\fBAddressBook\fP &Book)"
+.br
+.RI "添加联系人命令 add命令格式: \fC\fBAddressBook\fP>add [name] [number] [group]\fP command, add new contact to Address Book in the Command Line Interface Memory "
+.ti -1c
+.RI "static void \fBFindCommand\fP (\fBAddressBook\fP &Book)"
+.br
+.RI "查找命令 find [Name] [Number] [Group] 按名字寻找某一节点，支持通配符 * ? 查找 "
+.ti -1c
+.RI "static void \fBDeleteCommand\fP (\fBAddressBook\fP &Book)"
+.br
+.RI "删除联系人命令，支持通配符 ? * delete [Name][Number][Group]，按姓名删除某一节点 "
+.ti -1c
+.RI "static void \fBListCommand\fP (\fBAddressBook\fP &Book)"
+.br
+.RI "列出通讯录中所有联系人命令，\fC\fBAddressBook\fP>list\fP command, print all contacts in the \fBAddressBook\fP "
+.ti -1c
+.RI "static void \fBListGroupCommand\fP (\fBAddressBook\fP &Book)"
+.br
+.RI "按组别列出通讯录中特定组别联系人 "
+.ti -1c
+.RI "static void \fBSortCommand\fP (\fBAddressBook\fP &Book)"
+.br
+.RI "根据姓氏拼音升序排列，\fC\fBAddressBook\fP>sort\fP command, sort contact in the \fBAddressBook\fP using string in ascii ascending order "
+.ti -1c
+.RI "static void \fBSortGroupCommand\fP (\fBAddressBook\fP &Book)"
+.br
+.RI "按照组别拼音升序排序，\fC\fBAddressBook\fP>sortgroup\fP command, sort contact in the \fBAddressBook\fP using string in ascii ascending order "
+.ti -1c
+.RI "static void \fBExitCommand\fP ()"
+.br
+.RI "退出程序，\fC\fBAddressBook\fP>exit\fP command, exit the program "
+.in -1c
+.SH "详细描述"
+.PP 
+解释在 \fBmain\&.cpp\fP 中调用到的函数 Explanation of some functions used in \fBmain\&.cpp\fP 
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB19\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "MainFunction::MainFunction ()\fC [inline]\fP"
+
+.PP
+\fBMainFunction\fP 的构造函数 Construct a new Main Function object 
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB26\fP 行定义\&.
+.SS "MainFunction::~MainFunction ()\fC [inline]\fP"
+
+.PP
+\fBMainFunction\fP 的析构函数 Destroy the Main Function object 
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB31\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "static void MainFunction::AddCommand (\fBAddressBook\fP & Book)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+添加联系人命令 add命令格式: \fC\fBAddressBook\fP>add [name] [number] [group]\fP command, add new contact to Address Book in the Command Line Interface Memory 
+.PP
+\fB参数\fP
+.RS 4
+\fIBook\fP Address Book in the CLI Memory 
+.RE
+.PP
+
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB67\fP 行定义\&.
+.SS "static void MainFunction::DeleteCommand (\fBAddressBook\fP & Book)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+删除联系人命令，支持通配符 ? * delete [Name][Number][Group]，按姓名删除某一节点 
+.PP
+\fB参数\fP
+.RS 4
+\fIBook\fP Address Book in the CLI Memory 
+.RE
+.PP
+\fB测试\fP
+.RS 4
+.RE
+.PP
+.PP
+.nf
+- input
+add frank 2 st
+add frank 3 st
+add frank 23 st
+delete fr 2 st
+- output
+2 contact was deleted\&. 
+.fi
+.PP
+ 
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB125\fP 行定义\&.
+.SS "static void MainFunction::ExitCommand ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+退出程序，\fC\fBAddressBook\fP>exit\fP command, exit the program 
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB171\fP 行定义\&.
+.SS "static void MainFunction::FindCommand (\fBAddressBook\fP & Book)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+查找命令 find [Name] [Number] [Group] 按名字寻找某一节点，支持通配符 * ? 查找 
+.PP
+\fB参数\fP
+.RS 4
+\fIBook\fP Address Book in the CLI Memory 
+.RE
+.PP
+\fB参见\fP
+.RS 4
+.IP "\(bu" 2
+\fBCContact\fP \fBAddressBook::operator[](int indexOfContact)\fP
+.IP "\(bu" 2
+Count the size of the vector in C++ https://linuxhint.com/count-vector-size-c/ 
+.PP
+.RE
+.PP
+
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB82\fP 行定义\&.
+.SS "static void MainFunction::HelpCommand ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+打印帮助手册 \fC\fBAddressBook\fP>help\fP command, print Help Manual 
+.PP
+\fB参见\fP
+.RS 4
+C++ Multiline String Literals https://linuxhint.com/c-multiline-string-literals/ 
+.RE
+.PP
+
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB56\fP 行定义\&.
+.SS "static void MainFunction::ListCommand (\fBAddressBook\fP & Book)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+列出通讯录中所有联系人命令，\fC\fBAddressBook\fP>list\fP command, print all contacts in the \fBAddressBook\fP 
+.PP
+\fB参数\fP
+.RS 4
+\fIBook\fP Address Book in the CLI Memory 
+.RE
+.PP
+
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB135\fP 行定义\&.
+.SS "static void MainFunction::ListGroupCommand (\fBAddressBook\fP & Book)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+按组别列出通讯录中特定组别联系人 
+.PP
+\fB参数\fP
+.RS 4
+\fIBook\fP Address Book in the CLI Memory 
+.RE
+.PP
+
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB144\fP 行定义\&.
+.SS "static void MainFunction::SortCommand (\fBAddressBook\fP & Book)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+根据姓氏拼音升序排列，\fC\fBAddressBook\fP>sort\fP command, sort contact in the \fBAddressBook\fP using string in ascii ascending order 
+.PP
+\fB参数\fP
+.RS 4
+\fIBook\fP Address Book in the CLI Memory 
+.RE
+.PP
+
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB154\fP 行定义\&.
+.SS "static void MainFunction::SortGroupCommand (\fBAddressBook\fP & Book)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+按照组别拼音升序排序，\fC\fBAddressBook\fP>sortgroup\fP command, sort contact in the \fBAddressBook\fP using string in ascii ascending order 
+.PP
+\fB参数\fP
+.RS 4
+\fIBook\fP Address Book in the CLI Memory 
+.RE
+.PP
+
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB163\fP 行定义\&.
+.SS "static void MainFunction::SystemPauseFunction ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+\fCsystem('pause')\fP 函数说明 
+.PP
+\fB注解\fP
+.RS 4
+C语言中system('pause')是什么作用和意思 https://blog.csdn.net/haiross/article/details/45093351 
+.br
+system 就是调用从程序中调用系统命令（和 shell 命令）。 system('pause')就是从程序里调用“pause”命令; 而“pause”这个系统命令的功能很简单， 就是在命令行上输出一行类似于“Press any key to exit”的字，等待用户按一个键，然后返回。 
+.br
+linux下运行程序出现“sh: 1: pause: not found” https://www.cnblogs.com/feifanrensheng/articles/8696007.html 
+.br
+一般在windows平台写代码为了在终端看到运行结果，所以加入了 \fCsystem('pause');\fP 语句。 但是在linux下shell里pause不再是一条命令，因此会出现sh: 1: pause: not found的提示。 打开源文件删除system('pause');语句即可。 另外在用windows上VS编写的代码，在linux下运行必须先转码才行，否则会出现类似在ubuntu/linux系统下system是包含在stdlib\&.h头文件中的 要实现类似功能的方法，要么编程system('read'); 要么不用system命令，直接getchar()；不过跟system('pause')的区别是，后者是按任意键继续，但是前面两种方法都是按回车键继续的。 
+.RE
+.PP
+
+.PP
+在文件 \fBMainFunction\&.cpp\fP 第 \fB49\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 ContactAddressBook 的 源代码自动生成\&.

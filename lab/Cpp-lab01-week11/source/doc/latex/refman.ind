@@ -1,100 +1,184 @@
 \begin{theindex}
 
   \item {$\sim$AddressBook}
-    \subitem {AddressBook}, \hyperpage{5}
+    \subitem {AddressBook}, \hyperpage{12}
   \item {$\sim$CContact}
-    \subitem {CContact}, \hyperpage{9}
+    \subitem {CContact}, \hyperpage{20}
+  \item {$\sim$MainFunction}
+    \subitem {MainFunction}, \hyperpage{26}
 
   \indexspace
 
+  \item {Add}
+    \subitem {AddressBook}, \hyperpage{12}
+  \item {AddCommand}
+    \subitem {MainFunction}, \hyperpage{27}
   \item {AddContact}
-    \subitem {AddressBook}, \hyperpage{6}
-  \item {AddressBook}, \hyperpage{5}
-    \subitem {$\sim$AddressBook}, \hyperpage{5}
-    \subitem {AddContact}, \hyperpage{6}
-    \subitem {AddressBook}, \hyperpage{5}
-    \subitem {Delete}, \hyperpage{6}
-    \subitem {Find}, \hyperpage{6}
-    \subitem {List}, \hyperpage{6}
-    \subitem {ListGroup}, \hyperpage{6}
-    \subitem {operator[]}, \hyperpage{6}
-    \subitem {Sort}, \hyperpage{7}
-  \item {AddressBook.h}, \hyperpage{13}
+    \subitem {AddressBook}, \hyperpage{13}
+  \item {AddressBook}, \hyperpage{11}
+    \subitem {$\sim$AddressBook}, \hyperpage{12}
+    \subitem {Add}, \hyperpage{12}
+    \subitem {AddContact}, \hyperpage{13}
+    \subitem {AddressBook}, \hyperpage{12}
+    \subitem {Book}, \hyperpage{17}
+    \subitem {Delete}, \hyperpage{13}
+    \subitem {Find}, \hyperpage{14}
+    \subitem {indexSafe}, \hyperpage{14}
+    \subitem {List}, \hyperpage{15}
+    \subitem {ListGroup}, \hyperpage{15}
+    \subitem {operator[]}, \hyperpage{16}
+    \subitem {Sort}, \hyperpage{16}
+    \subitem {SortGroup}, \hyperpage{17}
+  \item {AddressBook.cpp}, \hyperpage{31}
+  \item {AddressBook.h}, \hyperpage{33}
 
   \indexspace
 
-  \item {CContact}, \hyperpage{7}
-    \subitem {$\sim$CContact}, \hyperpage{9}
-    \subitem {CContact}, \hyperpage{8}
-    \subitem {getContact}, \hyperpage{9}
-    \subitem {operator$<$}, \hyperpage{9}
-    \subitem {operator$<$$<$}, \hyperpage{11}
-    \subitem {operator$>$$>$}, \hyperpage{11}
-    \subitem {operator=}, \hyperpage{10}
-    \subitem {PatternMatch}, \hyperpage{10}
-    \subitem {pr}, \hyperpage{12}
-    \subitem {setContact}, \hyperpage{10}
-  \item {CContact.cpp}, \hyperpage{14}
-    \subitem {operator$<$$<$}, \hyperpage{14}
-    \subitem {operator$>$$>$}, \hyperpage{14}
-  \item {CContact.h}, \hyperpage{15}
+  \item {Book}
+    \subitem {AddressBook}, \hyperpage{17}
+
+  \indexspace
+
+  \item {CContact}, \hyperpage{18}
+    \subitem {$\sim$CContact}, \hyperpage{20}
+    \subitem {CContact}, \hyperpage{19, 20}
+    \subitem {getContact}, \hyperpage{20}
+    \subitem {Group}, \hyperpage{24}
+    \subitem {Name}, \hyperpage{25}
+    \subitem {Number}, \hyperpage{25}
+    \subitem {operator$<$}, \hyperpage{21}
+    \subitem {operator$<$$<$}, \hyperpage{23}
+    \subitem {operator$>$$>$}, \hyperpage{23}
+    \subitem {operator=}, \hyperpage{21}
+    \subitem {PatternMatch}, \hyperpage{22}
+    \subitem {pr}, \hyperpage{24}
+    \subitem {setContact}, \hyperpage{22}
+  \item {CContact.cpp}, \hyperpage{34}
+    \subitem {match}, \hyperpage{34}
+    \subitem {operator$<$$<$}, \hyperpage{35}
+    \subitem {operator$>$$>$}, \hyperpage{35}
+    \subitem {pr}, \hyperpage{35}
+  \item {CContact.h}, \hyperpage{38}
+    \subitem {match}, \hyperpage{38}
 
   \indexspace
 
   \item {Delete}
-    \subitem {AddressBook}, \hyperpage{6}
+    \subitem {AddressBook}, \hyperpage{13}
+  \item {DeleteCommand}
+    \subitem {MainFunction}, \hyperpage{27}
+
+  \indexspace
+
+  \item {ExitCommand}
+    \subitem {MainFunction}, \hyperpage{27}
 
   \indexspace
 
   \item {Find}
-    \subitem {AddressBook}, \hyperpage{6}
+    \subitem {AddressBook}, \hyperpage{14}
+  \item {FindCommand}
+    \subitem {MainFunction}, \hyperpage{28}
 
   \indexspace
 
   \item {getContact}
-    \subitem {CContact}, \hyperpage{9}
+    \subitem {CContact}, \hyperpage{20}
+  \item {Group}
+    \subitem {CContact}, \hyperpage{24}
+
+  \indexspace
+
+  \item {HelpCommand}
+    \subitem {MainFunction}, \hyperpage{28}
+
+  \indexspace
+
+  \item {indexSafe}
+    \subitem {AddressBook}, \hyperpage{14}
 
   \indexspace
 
   \item {List}
-    \subitem {AddressBook}, \hyperpage{6}
+    \subitem {AddressBook}, \hyperpage{15}
+  \item {ListCommand}
+    \subitem {MainFunction}, \hyperpage{28}
   \item {ListGroup}
-    \subitem {AddressBook}, \hyperpage{6}
+    \subitem {AddressBook}, \hyperpage{15}
+  \item {ListGroupCommand}
+    \subitem {MainFunction}, \hyperpage{29}
 
   \indexspace
 
   \item {main}
-    \subitem {main.cpp}, \hyperpage{16}
-  \item {main.cpp}, \hyperpage{16}
-    \subitem {main}, \hyperpage{16}
+    \subitem {main.cpp}, \hyperpage{40}
+  \item {main.cpp}, \hyperpage{40}
+    \subitem {main}, \hyperpage{40}
+  \item {MainFunction}, \hyperpage{25}
+    \subitem {$\sim$MainFunction}, \hyperpage{26}
+    \subitem {AddCommand}, \hyperpage{27}
+    \subitem {DeleteCommand}, \hyperpage{27}
+    \subitem {ExitCommand}, \hyperpage{27}
+    \subitem {FindCommand}, \hyperpage{28}
+    \subitem {HelpCommand}, \hyperpage{28}
+    \subitem {ListCommand}, \hyperpage{28}
+    \subitem {ListGroupCommand}, \hyperpage{29}
+    \subitem {MainFunction}, \hyperpage{26}
+    \subitem {SortCommand}, \hyperpage{29}
+    \subitem {SortGroupCommand}, \hyperpage{29}
+    \subitem {SystemPauseFunction}, \hyperpage{30}
+  \item {MainFunction.cpp}, \hyperpage{42}
+  \item {match}
+    \subitem {CContact.cpp}, \hyperpage{34}
+    \subitem {CContact.h}, \hyperpage{38}
+
+  \indexspace
+
+  \item {Name}
+    \subitem {CContact}, \hyperpage{25}
+  \item {Number}
+    \subitem {CContact}, \hyperpage{25}
 
   \indexspace
 
   \item {operator$<$}
-    \subitem {CContact}, \hyperpage{9}
+    \subitem {CContact}, \hyperpage{21}
   \item {operator$<$$<$}
-    \subitem {CContact}, \hyperpage{11}
-    \subitem {CContact.cpp}, \hyperpage{14}
+    \subitem {CContact}, \hyperpage{23}
+    \subitem {CContact.cpp}, \hyperpage{35}
   \item {operator$>$$>$}
-    \subitem {CContact}, \hyperpage{11}
-    \subitem {CContact.cpp}, \hyperpage{14}
+    \subitem {CContact}, \hyperpage{23}
+    \subitem {CContact.cpp}, \hyperpage{35}
   \item {operator=}
-    \subitem {CContact}, \hyperpage{10}
+    \subitem {CContact}, \hyperpage{21}
   \item {operator[]}
-    \subitem {AddressBook}, \hyperpage{6}
+    \subitem {AddressBook}, \hyperpage{16}
 
   \indexspace
 
   \item {PatternMatch}
-    \subitem {CContact}, \hyperpage{10}
+    \subitem {CContact}, \hyperpage{22}
   \item {pr}
-    \subitem {CContact}, \hyperpage{12}
+    \subitem {CContact}, \hyperpage{24}
+    \subitem {CContact.cpp}, \hyperpage{35}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{44}
 
   \indexspace
 
   \item {setContact}
-    \subitem {CContact}, \hyperpage{10}
+    \subitem {CContact}, \hyperpage{22}
   \item {Sort}
-    \subitem {AddressBook}, \hyperpage{7}
+    \subitem {AddressBook}, \hyperpage{16}
+  \item {SortCommand}
+    \subitem {MainFunction}, \hyperpage{29}
+  \item {SortGroup}
+    \subitem {AddressBook}, \hyperpage{17}
+  \item {SortGroupCommand}
+    \subitem {MainFunction}, \hyperpage{29}
+  \item {SystemPauseFunction}
+    \subitem {MainFunction}, \hyperpage{30}
 
 \end{theindex}

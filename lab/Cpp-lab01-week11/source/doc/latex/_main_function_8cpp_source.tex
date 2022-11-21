@@ -1,0 +1,114 @@
+\hypertarget{_main_function_8cpp_source}{}\doxysection{Main\+Function.\+cpp}
+\mbox{\hyperlink{_main_function_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00002}00002 \textcolor{comment}{ * @Author: Frank Chu}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00003}00003 \textcolor{comment}{ * @Date: 2022-\/11-\/20 20:02:30}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00004}00004 \textcolor{comment}{ * @LastEditors: Frank Chu}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00005}00005 \textcolor{comment}{ * @LastEditTime: 2022-\/11-\/21 23:40:30}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00006}00006 \textcolor{comment}{ * @FilePath: /Cpp/lab/Cpp-\/lab01-\/week11/source/MainFunction.cpp}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00007}00007 \textcolor{comment}{ * @Description:}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00008}00008 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00009}00009 \textcolor{comment}{ * Copyright (c) 2022 by Frank Chu, All Rights Reserved.}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00010}00010 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_contact_8h}{CContact.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00012}00012 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_contact_8cpp}{CContact.cpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00013}00013 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_address_book_8h}{AddressBook.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00014}00014 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_address_book_8cpp}{AddressBook.cpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00019}\mbox{\hyperlink{class_main_function}{00019}} \textcolor{keyword}{class }\mbox{\hyperlink{class_main_function}{MainFunction}}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00020}00020 \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00021}00021 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00022}00022 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00026}\mbox{\hyperlink{class_main_function_ab8ebd2c939e116e4765a626207c59c91}{00026}}     \mbox{\hyperlink{class_main_function_ab8ebd2c939e116e4765a626207c59c91}{MainFunction}}()\{\};}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00031}\mbox{\hyperlink{class_main_function_a721d48a0587bfebbcc24fb642847c62b}{00031}}     \mbox{\hyperlink{class_main_function_a721d48a0587bfebbcc24fb642847c62b}{\string~MainFunction}}()\{\};}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00049}\mbox{\hyperlink{class_main_function_ae8dfaaa9a948bd87c68b4ff19b0a17e4}{00049}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_ae8dfaaa9a948bd87c68b4ff19b0a17e4}{SystemPauseFunction}}() \{ system(\textcolor{stringliteral}{"{}pause"{}}); \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00056}\mbox{\hyperlink{class_main_function_a8a2c9fe12211c131bd03e0c706770c1f}{00056}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_a8a2c9fe12211c131bd03e0c706770c1f}{HelpCommand}}()}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00057}00057     \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00058}00058         \textcolor{keyword}{const} std::string longString =}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00059}00059             R\textcolor{stringliteral}{"{}(Example usage:}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00060}00060 \textcolor{stringliteral}{    add NAME PHONENUMBER GROUP}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00061}00061 \textcolor{stringliteral}{    delete NAMEPATTERN PHONENUMBER GROUPPATTERN}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00062}00062 \textcolor{stringliteral}{    find NAMEPATTERN PHONENUMBERPATTERN GROUPPATTERN}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00063}00063 \textcolor{stringliteral}{    list}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00064}00064 \textcolor{stringliteral}{    listgroup GROUP}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00065}00065 \textcolor{stringliteral}{    sort}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00066}00066 \textcolor{stringliteral}{    sortgroup}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00067}\mbox{\hyperlink{class_main_function_adf24f32da9c03a5373f36e4aae46302a}{00067}} \textcolor{stringliteral}{    exit}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00068}00068 \textcolor{stringliteral}{)"{};}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00069}00069 \textcolor{stringliteral}{        std::cout << longString << }\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00076}00076     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_adf24f32da9c03a5373f36e4aae46302a}{AddCommand}}(\mbox{\hyperlink{class_address_book}{AddressBook}} \&Book)}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00077}00077     \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00078}00078         std::string name, phoneNumber, group;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00079}00079         std::cin >> name >> phoneNumber >> group;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00080}00080         \mbox{\hyperlink{class_c_contact}{CContact}} contact(name, phoneNumber, group);}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00081}00081         Book.\mbox{\hyperlink{class_address_book_a0b20a62e6f9a2ea1196b47591a739dab}{Add}}(contact);}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00082}\mbox{\hyperlink{class_main_function_a201a540381aacc37ea317de99b34abe9}{00082}}     \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00091}00091     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_a201a540381aacc37ea317de99b34abe9}{FindCommand}}(\mbox{\hyperlink{class_address_book}{AddressBook}} \&Book)}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00092}00092     \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00093}00093         std::string name, number, group;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00094}00094         std::cin >> name >> number >> group;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00095}00095         \textcolor{keywordtype}{int} startIndex = 0;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00096}00096         \textcolor{keywordtype}{int} indexOfContact = Book.\mbox{\hyperlink{class_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc}{Find}}(startIndex, name, number, group);}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00098}00098         std::vector<int> contactIndex;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00099}00099         contactIndex.push\_back(indexOfContact);}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00100}00100         }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00101}00101         \textcolor{keywordflow}{if} (indexOfContact == -\/1)}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00102}00102         \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00103}00103             std::cout << \textcolor{stringliteral}{"{}Cannot find specific contact in the address book.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00104}00104         \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00105}00105         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00106}00106         \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00107}00107             std::cout << Book[indexOfContact];}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00108}00108             \textcolor{keywordflow}{while} (indexOfContact != -\/1)}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00109}00109             \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00110}00110                 indexOfContact = Book.\mbox{\hyperlink{class_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc}{Find}}(indexOfContact + 1, name, number, group);}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00111}00111                 contactIndex.push\_back(indexOfContact);}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00112}00112                 \textcolor{keywordflow}{if}(indexOfContact != -\/1) \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00113}00113                     std::cout << Book[indexOfContact];}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00114}00114                 \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00115}00115             \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00116}00116             std::cout << contactIndex.size() -\/ 1 << \textcolor{stringliteral}{"{} contact founded"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00117}00117         \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00118}00118     \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00134}00134     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_ac2f70628a5f3db82a14c72906fc64d64}{DeleteCommand}}(\mbox{\hyperlink{class_address_book}{AddressBook}}\& Book) \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00135}\mbox{\hyperlink{class_main_function_ac5aef4c9fa1802e69348661a59b711cd}{00135}}         std::string name, number, group;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00136}00136         std::cin >> name >> number >> group;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00137}00137         std::cout << Book.\mbox{\hyperlink{class_address_book_af5cafb076360577186d987d501989273}{Delete}}(name, number, group) << \textcolor{stringliteral}{"{} contact was deleted. \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00138}00138     \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00144}\mbox{\hyperlink{class_main_function_a61df29059315691d8c5b084b31e87c68}{00144}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_ac5aef4c9fa1802e69348661a59b711cd}{ListCommand}}(\mbox{\hyperlink{class_address_book}{AddressBook}}\& Book)}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00145}00145     \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00146}00146         Book.\mbox{\hyperlink{class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe}{List}}();}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00147}00147     \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00153}00153     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_a61df29059315691d8c5b084b31e87c68}{ListGroupCommand}}(\mbox{\hyperlink{class_address_book}{AddressBook}} \&Book) \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00154}\mbox{\hyperlink{class_main_function_a276b843a8c3045968412eb3ffcfdf815}{00154}}         std::string groupName;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00155}00155         std::cin >> groupName;}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00156}00156         Book.\mbox{\hyperlink{class_address_book_a5fdfae2a3b7bb0f909ca977ae18d0363}{ListGroup}}(groupName);}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00157}00157     \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00163}\mbox{\hyperlink{class_main_function_a8678107aa7db0e655a3994c52af53004}{00163}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_a276b843a8c3045968412eb3ffcfdf815}{SortCommand}}(\mbox{\hyperlink{class_address_book}{AddressBook}} \&Book)}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00164}00164     \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00165}00165         Book.\mbox{\hyperlink{class_address_book_acef18d40a6792d9ae74e544a23448c38}{Sort}}();}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00166}00166     \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00172}00172     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_a8678107aa7db0e655a3994c52af53004}{SortGroupCommand}}(\mbox{\hyperlink{class_address_book}{AddressBook}} \&Book)}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00173}00173     \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00174}00174         Book.\mbox{\hyperlink{class_address_book_aeb032c4fefe4c56388e203199dd5e6f6}{SortGroup}}();}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00175}00175     \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00176}00176 }
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00180}00180     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_function_a2d7e4b42d94d2dac614a134389d9db90}{ExitCommand}}()}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00181}00181     \{}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00182}00182     \}}
+\DoxyCodeLine{\Hypertarget{_main_function_8cpp_source_l00183}00183 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,83 @@
+.TH "main.cpp" 3 "2022年 十一月 22日 星期二" "Version 1.0.0" "ContactAddressBook" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'MainFunction\&.cpp'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.in -1c
+.SH "函数说明"
+.PP 
+.SS "int main ()"
+
+.PP
+\fB返回\fP
+.RS 4
+int 
+.RE
+.PP
+\fB测试\fP
+.RS 4
+.RE
+.PP
+.PP
+.nf
+add frank 110 stu
+add panda 120 tea
+add amy 110 tea
+.fi
+.PP
+ 
+.PP
+.nf
+// test main()
+int main() {
+    AddressBook book1;
+    std::string name = "Frank Chu", number = "15968126783", group = "Student";
+    book1\&.AddContact(name, number, group);
+    std::string rhsName = "APanda", rhsNumber = "22", rhsGroup = "Teacher";
+    book1\&.AddContact(rhsName, rhsNumber, rhsGroup);
+    book1\&.List();
+    std::cout << book1[0];
+    std::cout << book1[2];
+    // book1\&.List();
+    // book1\&.Sort();
+    // book1\&.List();
+
+    CContact frank = CContact(name, number, group);
+    name = "Panda", number = "22", group = "Teacher";
+    CContact panda = CContact(name, number, group);
+    name = "Panda", number = "22", group = "Student";
+    CContact amy = CContact(name, number, group);
+    book1\&.Add(amy);
+}
+
+.fi
+.PP
+ 
+.PP
+\fB待办事项\fP
+.RS 4
+convert commandOfInput into ENUM
+.RE
+.PP
+
+.PP
+在文件 \fBmain\&.cpp\fP 第 \fB51\fP 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 ContactAddressBook 的 源代码自动生成\&.

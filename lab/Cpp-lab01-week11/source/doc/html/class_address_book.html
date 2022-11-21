@@ -36,9 +36,9 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="doxygenLogo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ZSTU_t_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ContactAddressBook<span id="projectnumber">&#160;beta 0.0.1</span>
+   <div id="projectname">ContactAddressBook<span id="projectnumber">&#160;1.0.0</span>
    </div>
    <div id="projectbrief">This is the Address Book Tutorials.</div>
   </td>
@@ -164,7 +164,11 @@ Private 属性</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p >地址簿类 </p>
-<p >Detailed Describer </p>
+<dl class="section author"><dt>作者</dt><dd>Frank Chu </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>16-Nov-2022 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8h_source.html">AddressBook.h</a> 第 <a class="el" href="_address_book_8h_source.html#l00027">27</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="ad2d2cebd2a3aa00130f769684bc8ddea" name="ad2d2cebd2a3aa00130f769684bc8ddea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2d2cebd2a3aa00130f769684bc8ddea">&#9670;&#160;</a></span>AddressBook()</h2>
@@ -182,9 +186,9 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct a new Address Book:: Address Book object 建立空地址簿 </p>
-<p >very good</p>
-<p >@Author: Frank Chu @Date: 2022-11-17 23:42:03 @LastEditors: Frank Chu @LastEditTime: 2022-11-21 17:04:08 @FilePath: /Cpp/lab/Cpp-lab01-week11/source/AddressBook.cpp @Description:</p>
-<p >Copyright (c) 2022 by Frank Chu, All Rights Reserved. </p>
+<p >very good </p>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00015">15</a> 行定义.</p>
 
 </div>
 </div>
@@ -204,6 +208,8 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>地址簿析构函数，其中必须清空联系人向量 Book Destroy the Address Book:: Address Book object </p>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00017">17</a> 行定义.</p>
 
 </div>
 </div>
@@ -236,10 +242,12 @@ Private 属性</h2></td></tr>
 <div class="line">std::string name = <span class="stringliteral">&quot;Frank Chu&quot;</span>, number = <span class="stringliteral">&quot;15968126783&quot;</span>, group = <span class="stringliteral">&quot;Student&quot;</span>;</div>
 <div class="line"><a class="code hl_class" href="class_c_contact.html">CContact</a> amy = <a class="code hl_class" href="class_c_contact.html">CContact</a>(name, number, group);</div>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#a0b20a62e6f9a2ea1196b47591a739dab">Add</a>(amy);</div>
-<div class="ttc" id="aclass_address_book_html"><div class="ttname"><a href="class_address_book.html">AddressBook</a></div><div class="ttdoc">地址簿类</div><div class="ttdef"><b>Definition:</b> AddressBook.h:27</div></div>
-<div class="ttc" id="aclass_address_book_html_a0b20a62e6f9a2ea1196b47591a739dab"><div class="ttname"><a href="class_address_book.html#a0b20a62e6f9a2ea1196b47591a739dab">AddressBook::Add</a></div><div class="ttdeci">void Add(CContact &amp;contact)</div><div class="ttdoc">在向量中增加一个类型为 CContact 联系人</div><div class="ttdef"><b>Definition:</b> AddressBook.cpp:36</div></div>
-<div class="ttc" id="aclass_c_contact_html"><div class="ttname"><a href="class_c_contact.html">CContact</a></div><div class="ttdoc">CContact 是联系人类</div><div class="ttdef"><b>Definition:</b> CContact.h:22</div></div>
+<div class="ttc" id="aclass_address_book_html"><div class="ttname"><a href="class_address_book.html">AddressBook</a></div><div class="ttdoc">地址簿类</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8h_source.html#l00027">AddressBook.h:28</a></div></div>
+<div class="ttc" id="aclass_address_book_html_a0b20a62e6f9a2ea1196b47591a739dab"><div class="ttname"><a href="class_address_book.html#a0b20a62e6f9a2ea1196b47591a739dab">AddressBook::Add</a></div><div class="ttdeci">void Add(CContact &amp;contact)</div><div class="ttdoc">在向量中增加一个类型为 CContact 联系人</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00036">AddressBook.cpp:36</a></div></div>
+<div class="ttc" id="aclass_c_contact_html"><div class="ttname"><a href="class_c_contact.html">CContact</a></div><div class="ttdoc">CContact 是联系人类</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8h_source.html#l00024">CContact.h:25</a></div></div>
 </div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00036">36</a> 行定义.</p>
+
 </div>
 </div>
 <a id="ab2ab4565bc7ec1563fd4fb6f5db4ac6d" name="ab2ab4565bc7ec1563fd4fb6f5db4ac6d"></a>
@@ -283,6 +291,8 @@ Private 属性</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00022">22</a> 行定义.</p>
 
 </div>
 </div>
@@ -329,6 +339,13 @@ Private 属性</h2></td></tr>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>int delete contact number</dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_address_book.html#aca2dfbdc3fb8f286c1cb850aca1a30bc" title="If Found, return Matched Index, else return -1. 从下标startIndex开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-1">AddressBook::Find()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00089">89</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_address_book_af5cafb076360577186d987d501989273_cgraph.png" border="0" usemap="#aclass_address_book_af5cafb076360577186d987d501989273_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -382,6 +399,13 @@ Private 属性</h2></td></tr>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>int Matched Contact Index </dd></dl>
 
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00041">41</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc_icgraph.png" border="0" usemap="#aclass_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc_icgraph" alt=""/></div>
+</div>
+
 </div>
 </div>
 <a id="a1ed9678af6ed28ae641c1cb87106984b" name="a1ed9678af6ed28ae641c1cb87106984b"></a>
@@ -410,6 +434,8 @@ Private 属性</h2></td></tr>
 <dl class="section return"><dt>返回</dt><dd>true </dd>
 <dd>
 false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00121">121</a> 行定义.</p>
 
 </div>
 </div>
@@ -442,7 +468,7 @@ false </dd></dl>
 <div class="line">    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> main.cpp:51</div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00051">main.cpp:51</a></div></div>
 </div><!-- fragment -->  <dl class="section see"><dt>参见</dt><dd>public member function <br  />
  std::vector::end <br  />
  <a href="https://cplusplus.com/reference/vector/vector/end/">https://cplusplus.com/reference/vector/vector/end/</a> </dd></dl>
@@ -452,6 +478,13 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00199">199</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe_icgraph.png" border="0" usemap="#aclass_address_book_a03109edb7d7e0a3ddacb44375bbac8fe_icgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -483,6 +516,8 @@ false </dd></dl>
 <li>创建空std::string的最佳方式 <a href="http://zplutor.github.io/2016/02/18/best-way-to-create-empty-std-string/">http://zplutor.github.io/2016/02/18/best-way-to-create-empty-std-string/</a> </li>
 </ul>
 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00216">216</a> 行定义.</p>
 
 </div>
 </div>
@@ -520,12 +555,14 @@ false </dd></dl>
 <div class="line">std::cout &lt;&lt; book1[0];</div>
 <div class="line">std::cout &lt;&lt; book1[1];</div>
 <div class="line">std::cout &lt;&lt; book1[2];</div>
-<div class="ttc" id="aclass_address_book_html_a03109edb7d7e0a3ddacb44375bbac8fe"><div class="ttname"><a href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">AddressBook::List</a></div><div class="ttdeci">void List()</div><div class="ttdoc">std::cout 输出Book中所有联系人。</div><div class="ttdef"><b>Definition:</b> AddressBook.cpp:199</div></div>
-<div class="ttc" id="aclass_address_book_html_ab2ab4565bc7ec1563fd4fb6f5db4ac6d"><div class="ttname"><a href="class_address_book.html#ab2ab4565bc7ec1563fd4fb6f5db4ac6d">AddressBook::AddContact</a></div><div class="ttdeci">void AddContact(std::string &amp;, std::string &amp;, std::string &amp;)</div><div class="ttdoc">Add a contact in the vector&lt;CContact&gt; Book</div><div class="ttdef"><b>Definition:</b> AddressBook.cpp:22</div></div>
+<div class="ttc" id="aclass_address_book_html_a03109edb7d7e0a3ddacb44375bbac8fe"><div class="ttname"><a href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">AddressBook::List</a></div><div class="ttdeci">void List()</div><div class="ttdoc">std::cout 输出Book中所有联系人。</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00199">AddressBook.cpp:199</a></div></div>
+<div class="ttc" id="aclass_address_book_html_ab2ab4565bc7ec1563fd4fb6f5db4ac6d"><div class="ttname"><a href="class_address_book.html#ab2ab4565bc7ec1563fd4fb6f5db4ac6d">AddressBook::AddContact</a></div><div class="ttdeci">void AddContact(std::string &amp;, std::string &amp;, std::string &amp;)</div><div class="ttdoc">Add a contact in the vector&lt;CContact&gt; Book</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00022">AddressBook.cpp:22</a></div></div>
 </div><!-- fragment --> <dl class="section note"><dt>注解</dt><dd><ul>
 <li>C++ 下标运算符 [] 重载 <a href="https://www.runoob.com/cplusplus/subscripting-operator-overloading.html">https://www.runoob.com/cplusplus/subscripting-operator-overloading.html</a> </li>
 </ul>
 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00073">73</a> 行定义.</p>
 
 </div>
 </div>
@@ -554,11 +591,18 @@ false </dd></dl>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">List</a>();</div>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">Sort</a>();</div>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">List</a>();</div>
-<div class="ttc" id="aclass_address_book_html_acef18d40a6792d9ae74e544a23448c38"><div class="ttname"><a href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">AddressBook::Sort</a></div><div class="ttdeci">void Sort()</div><div class="ttdoc">按姓名排序 AddressBook</div><div class="ttdef"><b>Definition:</b> AddressBook.cpp:141</div></div>
+<div class="ttc" id="aclass_address_book_html_acef18d40a6792d9ae74e544a23448c38"><div class="ttname"><a href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">AddressBook::Sort</a></div><div class="ttdeci">void Sort()</div><div class="ttdoc">按姓名排序 AddressBook</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00141">AddressBook.cpp:141</a></div></div>
 </div><!-- fragment --> <dl class="section see"><dt>参见</dt><dd><ul>
 <li>C++中,结构体vector使用sort排序 <a href="https://blog.csdn.net/zhouxun623/article/details/49887555">https://blog.csdn.net/zhouxun623/article/details/49887555</a> </li>
 </ul>
 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00141">141</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_address_book_acef18d40a6792d9ae74e544a23448c38_icgraph.png" border="0" usemap="#aclass_address_book_acef18d40a6792d9ae74e544a23448c38_icgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -599,8 +643,15 @@ false </dd></dl>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">List</a>();</div>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">SortGroup</a>();</div>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">List</a>();</div>
-<div class="ttc" id="aclass_address_book_html_aeb032c4fefe4c56388e203199dd5e6f6"><div class="ttname"><a href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">AddressBook::SortGroup</a></div><div class="ttdeci">void SortGroup()</div><div class="ttdoc">按群组排序Book，群组名字拼音升序排序</div><div class="ttdef"><b>Definition:</b> AddressBook.cpp:172</div></div>
+<div class="ttc" id="aclass_address_book_html_aeb032c4fefe4c56388e203199dd5e6f6"><div class="ttname"><a href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">AddressBook::SortGroup</a></div><div class="ttdeci">void SortGroup()</div><div class="ttdoc">按群组排序Book，群组名字拼音升序排序</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00172">AddressBook.cpp:172</a></div></div>
 </div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00172">172</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_address_book_aeb032c4fefe4c56388e203199dd5e6f6_cgraph.png" border="0" usemap="#aclass_address_book_aeb032c4fefe4c56388e203199dd5e6f6_cgraph" alt=""/></div>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">类成员变量说明</h2>
@@ -626,11 +677,13 @@ false </dd></dl>
 
 <p>以CContact类实例化类模板vector形成CContact向量作为存储结构。Book是CContact向量类的一个实例 </p>
 
+<p class="definition">在文件 <a class="el" href="_address_book_8h_source.html">AddressBook.h</a> 第 <a class="el" href="_address_book_8h_source.html#l00033">33</a> 行定义.</p>
+
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="_address_book_8h_source.html">AddressBook.h</a></li>
-<li><a class="el" href="_address_book_8cpp.html">AddressBook.cpp</a></li>
+<li><a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

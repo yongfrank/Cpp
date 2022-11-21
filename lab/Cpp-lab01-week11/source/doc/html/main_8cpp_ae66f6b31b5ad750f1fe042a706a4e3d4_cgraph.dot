@@ -1,0 +1,31 @@
+digraph "main"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="MainFunction::AddCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_function.html#adf24f32da9c03a5373f36e4aae46302a",tooltip="添加联系人命令 add命令格式: AddressBook>add [name] [number] [group] command, add new contact to Address Book in ..."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="MainFunction::DeleteCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_function.html#ac2f70628a5f3db82a14c72906fc64d64",tooltip="删除联系人命令，支持通配符 ? * delete [Name][Number][Group]，按姓名删除某一节点"];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="MainFunction::ExitCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_function.html#a2d7e4b42d94d2dac614a134389d9db90",tooltip="退出程序，AddressBook>exit command, exit the program"];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="MainFunction::FindCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_function.html#a201a540381aacc37ea317de99b34abe9",tooltip="查找命令 find [Name] [Number] [Group] 按名字寻找某一节点，支持通配符 * ? 查找"];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="MainFunction::HelpCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_function.html#a8a2c9fe12211c131bd03e0c706770c1f",tooltip="打印帮助手册 AddressBook>help command, print Help Manual"];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="MainFunction::ListCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_function.html#ac5aef4c9fa1802e69348661a59b711cd",tooltip="列出通讯录中所有联系人命令，AddressBook>list command, print all contacts in the AddressBook"];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="MainFunction::ListGroupCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_function.html#a61df29059315691d8c5b084b31e87c68",tooltip="按组别列出通讯录中特定组别联系人"];
+  Node8 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="AddressBook::List",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe",tooltip="std::cout 输出Book中所有联系人。"];
+  Node1 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="MainFunction::SortCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_function.html#a276b843a8c3045968412eb3ffcfdf815",tooltip="根据姓氏拼音升序排列，AddressBook>sort command, sort contact in the AddressBook using string in ascii ascending ..."];
+  Node1 -> Node11 [color="steelblue1",style="solid"];
+  Node11 [label="MainFunction::SortGroupCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_function.html#a8678107aa7db0e655a3994c52af53004",tooltip="按照组别拼音升序排序，AddressBook>sortgroup command, sort contact in the AddressBook using string in ascii ascen..."];
+  Node11 -> Node12 [color="steelblue1",style="solid"];
+  Node12 [label="AddressBook::Sort",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_address_book.html#acef18d40a6792d9ae74e544a23448c38",tooltip="按姓名排序 AddressBook"];
+}

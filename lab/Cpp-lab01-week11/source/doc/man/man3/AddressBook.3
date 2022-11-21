@@ -1,0 +1,418 @@
+.TH "AddressBook" 3 "2022年 十一月 22日 星期二" "Version 1.0.0" "ContactAddressBook" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AddressBook \- 地址簿类  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AddressBook\&.h>\fP
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBAddressBook\fP ()"
+.br
+.RI "Construct a new Address Book:: Address Book object 建立空地址簿 "
+.ti -1c
+.RI "\fB~AddressBook\fP ()"
+.br
+.RI "地址簿析构函数，其中必须清空联系人向量 Book Destroy the Address Book:: Address Book object "
+.ti -1c
+.RI "void \fBAddContact\fP (std::string &, std::string &, std::string &)"
+.br
+.RI "Add a contact in the vector<CContact> Book "
+.ti -1c
+.RI "void \fBAdd\fP (\fBCContact\fP &contact)"
+.br
+.RI "在向量中增加一个类型为 \fBCContact\fP 联系人 "
+.ti -1c
+.RI "\fBCContact\fP \fBoperator[]\fP (int indexOfContact)"
+.br
+.RI "重载下标运算符 "
+.ti -1c
+.RI "void \fBSort\fP ()"
+.br
+.RI "按姓名排序 \fBAddressBook\fP "
+.ti -1c
+.RI "void \fBSortGroup\fP ()"
+.br
+.RI "按群组排序Book，群组名字拼音升序排序 "
+.ti -1c
+.RI "void \fBList\fP ()"
+.br
+.RI "\fCstd::cout\fP 输出Book中所有联系人。 "
+.ti -1c
+.RI "void \fBListGroup\fP (std::string &group)"
+.br
+.RI "Output all contact in "
+.ti -1c
+.RI "int \fBDelete\fP (std::string &Name, std::string &Number, std::string &Group)"
+.br
+.RI "Delete contact with Name, Number and Group, can use placeholder\&. 按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0 "
+.ti -1c
+.RI "int \fBFind\fP (int startIndex, std::string &name, std::string &number, std::string &group)"
+.br
+.RI "If Found, return Matched Index, else return -1\&. 从下标startIndex开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-1 "
+.ti -1c
+.RI "bool \fBindexSafe\fP (int index)"
+.br
+.RI "Judge index in the range of Vector "
+.in -1c
+.SS "Private 属性"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBCContact\fP > \fBBook\fP"
+.br
+.RI "以CContact类实例化类模板vector形成CContact向量作为存储结构。Book是CContact向量类的一个实例 "
+.in -1c
+.SH "详细描述"
+.PP 
+地址簿类 
+
+
+.PP
+\fB作者\fP
+.RS 4
+Frank Chu 
+.RE
+.PP
+\fB版本\fP
+.RS 4
+v1\&.0\&.0 
+.RE
+.PP
+\fB日期\fP
+.RS 4
+16-Nov-2022 
+.RE
+.PP
+
+.PP
+在文件 \fBAddressBook\&.h\fP 第 \fB27\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "AddressBook::AddressBook ()"
+
+.PP
+Construct a new Address Book:: Address Book object 建立空地址簿 very good 
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB15\fP 行定义\&.
+.SS "AddressBook::~AddressBook ()"
+
+.PP
+地址簿析构函数，其中必须清空联系人向量 Book Destroy the Address Book:: Address Book object 
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB17\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "void AddressBook::Add (\fBCContact\fP & contact)"
+
+.PP
+在向量中增加一个类型为 \fBCContact\fP 联系人 
+.PP
+\fB参数\fP
+.RS 4
+\fIcontact\fP 输入已经建立好的 \fBCContact\fP 类型
+.RE
+.PP
+\fB测试\fP
+.RS 4
+.RE
+.PP
+.PP
+.nf
+AddressBook book1;
+std::string name = "Frank Chu", number = "15968126783", group = "Student";
+CContact amy = CContact(name, number, group);
+book1\&.Add(amy);
+.fi
+.PP
+ 
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB36\fP 行定义\&.
+.SS "void AddressBook::AddContact (std::string & Name, std::string & Number, std::string & Group)"
+
+.PP
+Add a contact in the vector<CContact> Book 
+.PP
+\fB参数\fP
+.RS 4
+\fIName\fP Name of Contact 
+.br
+\fINumber\fP Number of Contact 
+.br
+\fIGroup\fP Group of Contact 
+.RE
+.PP
+
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB22\fP 行定义\&.
+.SS "int AddressBook::Delete (std::string & name, std::string & number, std::string & group)"
+
+.PP
+Delete contact with Name, Number and Group, can use placeholder\&. 按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0 
+.PP
+\fB参数\fP
+.RS 4
+\fIName\fP Name Pattern 
+.br
+\fINumber\fP Number Pattern 
+.br
+\fIGroup\fP Group Pattern 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+int delete contact number
+.RE
+.PP
+\fB参见\fP
+.RS 4
+\fBAddressBook::Find()\fP 
+.RE
+.PP
+
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB89\fP 行定义\&.
+.SS "int AddressBook::Find (int startIndex, std::string & name, std::string & number, std::string & group)"
+
+.PP
+If Found, return Matched Index, else return -1\&. 从下标startIndex开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-1 
+.PP
+\fB参数\fP
+.RS 4
+\fIstartIndex\fP Start Search From index 
+.br
+\fIname\fP name pattern 
+.br
+\fInumber\fP number pattern 
+.br
+\fIgroup\fP group pattern 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+int Matched Contact Index 
+.RE
+.PP
+
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB41\fP 行定义\&.
+.SS "bool AddressBook::indexSafe (int index)"
+
+.PP
+Judge index in the range of Vector 
+.PP
+\fB参数\fP
+.RS 4
+\fIindex\fP My Param doc 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB121\fP 行定义\&.
+.SS "void AddressBook::List ()"
+
+.PP
+\fCstd::cout\fP 输出Book中所有联系人。 
+.PP
+.nf
+// vector::begin/end
+#include <iostream>
+#include <vector>
+int main ()
+{
+    std::vector<int> myvector;
+    for (int i=1; i<=5; i++) myvector\&.push_back(i);
+    std::cout << "myvector contains:";
+    for (std::vector<int>::iterator it = myvector\&.begin() ; it != myvector\&.end(); ++it)
+        std::cout << ' ' << *it;
+    std::cout << '\n';
+    return 0;
+}
+
+.fi
+.PP
+  
+.PP
+\fB参见\fP
+.RS 4
+public member function 
+.br
+ std::vector::end 
+.br
+ https://cplusplus.com/reference/vector/vector/end/ 
+.RE
+.PP
+Iterator Address Book 
+.PP
+\fB参数\fP
+.RS 4
+\fIit\fP iterator abbreviation, \fC*it\fP is de-pointer of iterator(address pointer type)
+.RE
+.PP
+
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB199\fP 行定义\&.
+.SS "void AddressBook::ListGroup (std::string & group)"
+
+.PP
+Output all contact in 
+.PP
+\fB参数\fP
+.RS 4
+\fIgroup\fP group name
+.RE
+.PP
+\fB参见\fP
+.RS 4
+.IP "\(bu" 2
+\fBCContact::PatternMatch()\fP
+.IP "\(bu" 2
+创建空std::string的最佳方式 http://zplutor.github.io/2016/02/18/best-way-to-create-empty-std-string/ 
+.PP
+.RE
+.PP
+
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB216\fP 行定义\&.
+.SS "\fBCContact\fP AddressBook::operator[] (int indexOfContact)"
+
+.PP
+重载下标运算符 
+.PP
+\fB参数\fP
+.RS 4
+\fIindexOfContact\fP index of contact 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+\fBCContact\fP at specific index
+.RE
+.PP
+\fB测试\fP
+.RS 4
+.RE
+.PP
+.PP
+.nf
+AddressBook book1;
+std::string name = "Frank Chu", number = "15968126783", group = "Student";
+book1\&.AddContact(name, number, group);
+std::string rhsName = "APanda", rhsNumber = "22", rhsGroup = "Teacher";
+book1\&.AddContact(rhsName, rhsNumber, rhsGroup);
+book1\&.List();
+std::cout << book1[0];
+std::cout << book1[1];
+std::cout << book1[2];
+.fi
+.PP
+ 
+.PP
+\fB注解\fP
+.RS 4
+
+.IP "\(bu" 2
+C++ 下标运算符 [] 重载 https://www.runoob.com/cplusplus/subscripting-operator-overloading.html 
+.PP
+.RE
+.PP
+
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB73\fP 行定义\&.
+.SS "void AddressBook::Sort ()"
+
+.PP
+按姓名排序 \fBAddressBook\fP 
+.PP
+\fB测试\fP
+.RS 4
+
+.RE
+.PP
+.PP
+.nf
+AddressBook book1;
+std::string name = "Frank Chu", number = "15968", group = "Student";
+std::string rhsName = "APanda", rhsNumber = "22", rhsGroup = "Teacher";
+book1\&.AddContact(name, number, group);
+book1\&.AddContact(rhsName, rhsNumber, rhsGroup);
+book1\&.List();
+book1\&.Sort();
+book1\&.List();
+.fi
+.PP
+ 
+.PP
+\fB参见\fP
+.RS 4
+
+.IP "\(bu" 2
+C++中,结构体vector使用sort排序 https://blog.csdn.net/zhouxun623/article/details/49887555 
+.PP
+.RE
+.PP
+
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB141\fP 行定义\&.
+.SS "void AddressBook::SortGroup ()"
+
+.PP
+按群组排序Book，群组名字拼音升序排序 
+.PP
+\fB测试\fP
+.RS 4
+
+.RE
+.PP
+.PP
+.nf
+AddressBook book1;
+std::string name = "Frank Chu", number = "15968126783", group = "Student";
+std::string rhsName = "APanda", rhsNumber = "22", rhsGroup = "Teacher";
+book1\&.AddContact(name, number, group);
+book1\&.AddContact(rhsName, rhsNumber, rhsGroup);
+// book1\&.List();
+// book1\&.Sort();
+// book1\&.List();
+
+CContact frank = CContact(name, number, group);
+name = "Panda", number = "22", group = "Teacher";
+CContact panda = CContact(name, number, group);
+name = "Panda", number = "22", group = "Student";
+CContact amy = CContact(name, number, group);
+book1\&.AddContact(name, number, group);
+book1\&.List();
+book1\&.Sort();
+book1\&.List();
+book1\&.SortGroup();
+book1\&.List();
+.fi
+.PP
+ 
+.PP
+在文件 \fBAddressBook\&.cpp\fP 第 \fB172\fP 行定义\&.
+.SH "类成员变量说明"
+.PP 
+.SS "std::vector<\fBCContact\fP> AddressBook::Book\fC [private]\fP"
+
+.PP
+以CContact类实例化类模板vector形成CContact向量作为存储结构。Book是CContact向量类的一个实例 
+.PP
+在文件 \fBAddressBook\&.h\fP 第 \fB33\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 ContactAddressBook 的 源代码自动生成\&.

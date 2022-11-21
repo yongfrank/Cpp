@@ -1,0 +1,122 @@
+.TH "md__r_e_a_d_m_e" 3 "2022年 十一月 22日 星期二" "Version 1.0.0" "ContactAddressBook" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__r_e_a_d_m_e \- README 
+.PP
+
+.SH "实验一 Visual C++ 基于命令提示符的程序设计"
+.PP
+.SS "一、 实验目的"
+.IP "1." 4
+掌握基于命令提示符的人机交互界面设计；
+.IP "2." 4
+掌握类的定义和使用；
+.IP "3." 4
+掌握 vector 对象的使用方法；
+.IP "4." 4
+掌握泛型程序设计的基本方法。
+.PP
+.SS "二、 类的详细说明（属性、方法）"
+.IP "\(bu" 2
+5 类说明
+.IP "\(bu" 2
+5\&.1 \fC\fBAddressBook\fP\fP 类
+.IP "  \(bu" 4
+Public 成员函数
+.IP "  \(bu" 4
+Private 属性
+.IP "  \(bu" 4
+5\&.1\&.1 详细描述
+.IP "  \(bu" 4
+5\&.1\&.2 构造及析构函数说明
+.IP "  \(bu" 4
+5\&.1\&.3 成员函数说明
+.IP "  \(bu" 4
+5\&.1\&.4 类成员变量说明
+.PP
+
+.IP "\(bu" 2
+5\&.2 \fC\fBCContact\fP\fP 类
+.IP "  \(bu" 4
+Public 成员函数
+.IP "  \(bu" 4
+Private 属性
+.IP "  \(bu" 4
+友元
+.IP "  \(bu" 4
+5\&.2\&.1 详细描述
+.IP "  \(bu" 4
+5\&.2\&.2 构造及析构函数说明
+.IP "  \(bu" 4
+5\&.2\&.3 成员函数说明
+.IP "  \(bu" 4
+5\&.2\&.4 友元及相关函数文档
+.IP "  \(bu" 4
+5\&.2\&.5 类成员变量说明
+.PP
+
+.PP
+.SS "三、各命令的详细说明（命令字串、参数、功能描述）"
+.IP "\(bu" 2
+5\&.3 \fBMainFunction\fP 类，\fC\fBmain()\fP\fP 函数中所用的调用对象方法的函数。
+.IP "  \(bu" 4
+\fC\fBMainFunction::HelpCommand()\fP\fP
+.PP
+
+.PP
+.SS "四、命令与对象方法的调用关系"
+.IP "\(bu" 2
+See \fBMainFunction\&.cpp\fP
+.IP "\(bu" 2
+5\&.3 MainFunction类 参考
+.IP "  \(bu" 4
+\fC\fBMainFunction::ExitCommand()\fP\fP
+.IP "  \(bu" 4
+\fC\fBMainFunction::ListCommand()\fP\fP
+.IP "  \(bu" 4
+\fC\fBMainFunction::ListGroupCommand()\fP\fP
+.IP "  \(bu" 4
+\fC\fBMainFunction::SortCommand()\fP\fP
+.IP "  \(bu" 4
+\fC\fBMainFunction::SortGroupCommand()\fP\fP
+.IP "  \(bu" 4
+\fC\fBMainFunction::SystemPauseFunction()\fP\fP
+.PP
+
+.PP
+.SS "五、关键代码段（添加、查找、删除联系人方法的实现）"
+.IP "\(bu" 2
+Add
+.IP "  \(bu" 4
+\fC\fBMainFunction::AddCommand()\fP\fP
+.IP "  \(bu" 4
+\fC\fBAddressBook::AddContact()\fP\fP
+.PP
+
+.IP "\(bu" 2
+Find
+.IP "  \(bu" 4
+\fC\fBMainFunction::FindCommand()\fP\fP
+.IP "  \(bu" 4
+\fC\fBAddressBook::Find()\fP\fP
+.IP "  \(bu" 4
+\fC\fBCContact::PatternMatch()\fP\fP
+.IP "  \(bu" 4
+\fC\fBmatch()\fP\fP
+.PP
+
+.IP "\(bu" 2
+Delete
+.IP "  \(bu" 4
+\fC\fBMainFunction::DeleteCommand()\fP\fP
+.IP "  \(bu" 4
+\fC\fBAddressBook::Delete()\fP\fP
+.PP
+
+.PP
+.SS "六、程序测试过程"
+.IP "\(bu" 2
+测试列表 
+.PP
+

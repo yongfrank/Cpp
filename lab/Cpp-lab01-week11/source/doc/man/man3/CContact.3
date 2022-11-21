@@ -1,0 +1,410 @@
+.TH "CContact" 3 "2022年 十一月 22日 星期二" "Version 1.0.0" "ContactAddressBook" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CContact \- \fBCContact\fP 是联系人类  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CContact\&.h>\fP
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBCContact\fP ()"
+.br
+.RI "Construct a new \fBCContact\fP object 默认构造函数，构造一个空联系人类 "
+.ti -1c
+.RI "\fBCContact\fP (std::string &, std::string &, std::string &)"
+.br
+.RI "使用Name,Number,Group创建联系人对象 "
+.ti -1c
+.RI "\fBCContact\fP (const \fBCContact\fP &)"
+.br
+.RI "拷贝构造函数 "
+.ti -1c
+.RI "virtual \fB~CContact\fP ()"
+.br
+.RI "析构函数 "
+.ti -1c
+.RI "void \fBgetContact\fP (std::string &, std::string &, std::string &)"
+.br
+.RI "获取对象的三个成员 "
+.ti -1c
+.RI "void \fBsetContact\fP (std::string &, std::string &, std::string &)"
+.br
+.RI "设定对象的三个成员 "
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBCContact\fP &) const"
+.br
+.RI "重载 < 运算符，供算法 Sort 使用,按姓名排序 "
+.ti -1c
+.RI "\fBCContact\fP & \fBoperator=\fP (const \fBCContact\fP &)"
+.br
+.RI "重载赋值 = 运算符，重载赋值运算符 "
+.ti -1c
+.RI "bool \fBPatternMatch\fP (std::string &name, std::string &number, std::string &group)"
+.br
+.RI "判定本对象是否匹配搜索条件 "
+.in -1c
+.SS "Private 属性"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBName\fP"
+.br
+.RI "姓名 "
+.ti -1c
+.RI "std::string \fBNumber\fP"
+.br
+.RI "电话号码 "
+.ti -1c
+.RI "std::string \fBGroup\fP"
+.br
+.RI "群组 "
+.in -1c
+.SS "友元"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &, \fBCContact\fP)"
+.br
+.RI "利用友元函数重载运算符 << "
+.ti -1c
+.RI "std::istream & \fBoperator>>\fP (std::istream &, \fBCContact\fP &)"
+.br
+.RI "利用友元函数重载运算符 >> "
+.ti -1c
+.RI "bool \fBpr\fP (const \fBCContact\fP &, const \fBCContact\fP &)"
+.br
+.RI "定义组排序函数，供算法sort使用, "
+.in -1c
+.SH "详细描述"
+.PP 
+\fBCContact\fP 是联系人类 
+
+
+.PP
+\fB作者\fP
+.RS 4
+Frank Chu 
+.RE
+.PP
+\fB版本\fP
+.RS 4
+v1\&.0\&.0 
+.RE
+.PP
+\fB日期\fP
+.RS 4
+16-Nov-2022 
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.h\fP 第 \fB24\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "CContact::CContact ()"
+
+.PP
+Construct a new \fBCContact\fP object 默认构造函数，构造一个空联系人类 
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB14\fP 行定义\&.
+.SS "CContact::CContact (std::string & Name, std::string & Number, std::string & Group)"
+
+.PP
+使用Name,Number,Group创建联系人对象 
+.PP
+\fB参数\fP
+.RS 4
+\fIName\fP Contact Name 
+.br
+\fINumber\fP Phone Number 
+.br
+\fIGroup\fP Contact Group
+.RE
+.PP
+\fB注解\fP
+.RS 4
+Visual Studio Code C++ Extension July 2020 Update: Doxygen comments and Log points https://devblogs.microsoft.com/cppblog/visual-studio-code-c-extension-july-2020-update-doxygen-comments-and-logpoints/ 
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB17\fP 行定义\&.
+.SS "CContact::CContact (const \fBCContact\fP & ContactInfo)"
+
+.PP
+拷贝构造函数 
+.PP
+\fB参数\fP
+.RS 4
+\fIContactInfo\fP Initialized Contact 
+.br
+ 
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB23\fP 行定义\&.
+.SS "CContact::~CContact ()\fC [virtual]\fP"
+
+.PP
+析构函数 
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB29\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "void CContact::getContact (std::string & Name, std::string & Number, std::string & Group)"
+
+.PP
+获取对象的三个成员 
+.PP
+\fB参数\fP
+.RS 4
+\fIName\fP return Name as reference 
+.br
+\fINumber\fP return Number as reference 
+.br
+\fIGroup\fP return Group as reference 
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB102\fP 行定义\&.
+.SS "bool CContact::operator< (const \fBCContact\fP & contactToBeCompared) const"
+
+.PP
+重载 < 运算符，供算法 Sort 使用,按姓名排序 
+.PP
+\fB参数\fP
+.RS 4
+\fIcontactToBeCompared\fP contact info to be compared\&. 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+true thisCContact < contactToBeCompared 
+.PP
+false thisCContact > contactToBeCompared
+.RE
+.PP
+\fB测试\fP
+.RS 4
+name = 'Frank', number = '1596', Group = 'Student' 
+.RE
+.PP
+.PP
+.nf
+std::string name = "Frank Chu", number = "1596", group = "Student";
+CContact frank = CContact(name, number, group);
+name = "Panda", number = "22", group = "32";
+CContact panda = CContact(name, number, group);
+if(frank < panda) {
+    std::cout << "<" << "\n";
+} else {
+    std::cout << ">" << "\n";
+}
+.fi
+.PP
+ 
+.PP
+\fB注解\fP
+.RS 4
+C++ 重载运算符和重载函数
+.IP "\(bu" 2
+C++ 中的运算符重载 \fCBox operator+(const Box&);\fP https://www.runoob.com/cplusplus/cpp-overloading.html
+.IP "\(bu" 2
+C++使用greater报错‘this‘ argument has type ‘const xxx‘, but method is not marked const的解决方案 https://blog.csdn.net/HermitSun/article/details/107101944 
+.PP
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB50\fP 行定义\&.
+.SS "\fBCContact\fP & CContact::operator= (const \fBCContact\fP & oldContact)"
+
+.PP
+重载赋值 = 运算符，重载赋值运算符 
+.PP
+\fB参数\fP
+.RS 4
+\fIoldContact\fP local variable, newContact = oldContact, set new is equal to old\&.
+.RE
+.PP
+\fB注解\fP
+.RS 4
+C++ 赋值运算符 = 重载 https://www.runoob.com/cplusplus/assignment-operators-overloading.html 
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB61\fP 行定义\&.
+.SS "bool CContact::PatternMatch (std::string & NamePattern, std::string & NumberPattern, std::string & GroupPattern)"
+
+.PP
+判定本对象是否匹配搜索条件 
+.PP
+\fB参数\fP
+.RS 4
+\fIname\fP name pattern 
+.br
+\fInumber\fP number pattern 
+.br
+\fIgroup\fP group pattern 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+true 符合 
+.PP
+false 不符合
+.RE
+.PP
+\fB参见\fP
+.RS 4
+C++ 函数默认参数 https://www.w3cschool.cn/cpp/cpp-function-default-parameters.html 
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB118\fP 行定义\&.
+.SS "void CContact::setContact (std::string & Name, std::string & Number, std::string & Group)"
+
+.PP
+设定对象的三个成员 
+.PP
+\fB参数\fP
+.RS 4
+\fIName\fP Contact Name 
+.br
+\fINumber\fP Phone Number 
+.br
+\fIGroup\fP Contact Group 
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB108\fP 行定义\&.
+.SH "友元及相关函数文档"
+.PP 
+.SS "std::ostream & operator<< (std::ostream & os, \fBCContact\fP contactInfo)\fC [friend]\fP"
+
+.PP
+利用友元函数重载运算符 << 
+.PP
+\fB参数\fP
+.RS 4
+\fIstd::ostream\fP file stream 
+.br
+\fI\fBCContact\fP\fP output contact class 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+ostream 
+.br
+.RE
+.PP
+\fB参见\fP
+.RS 4
+【懒猫老师-最简版C++-(18)类的友元】 https://www.bilibili.com/video/BV127411Q7eu/ 
+.RE
+.PP
+\fB注解\fP
+.RS 4
+Overloading the << Operator for Your Own Classes https://learn.microsoft.com/en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classes?view=msvc-170 
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB70\fP 行定义\&.
+.SS "std::istream & operator>> (std::istream & is, \fBCContact\fP & contactToBeRevised)\fC [friend]\fP"
+
+.PP
+利用友元函数重载运算符 >> 
+.PP
+\fB参数\fP
+.RS 4
+\fIstd::istream&\fP is 
+.br
+\fI\fBCContact\fP\fP 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+istream
+.RE
+.PP
+\fB注解\fP
+.RS 4
+Overloading the >> Operator for Your Own Classes https://learn.microsoft.com/en-us/cpp/standard-library/overloading-the-input-operator-for-your-own-classes?view=msvc-170 
+.RE
+.PP
+
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB77\fP 行定义\&.
+.SS "bool pr (const \fBCContact\fP & lhsContact, const \fBCContact\fP & rhsContact)\fC [friend]\fP"
+
+.PP
+定义组排序函数，供算法sort使用, 
+.PP
+\fB参数\fP
+.RS 4
+\fIlhsContact\fP left hand side of Contact to be compared 
+.br
+\fIrhsContact\fP right hand side of Contact to be compared 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+true lhsContact\&.Group < rhsContact\&.Group; 
+.PP
+false lhsContact\&.Group > rhsContact\&.Group;
+.RE
+.PP
+\fB测试\fP
+.RS 4
+.RE
+.PP
+.PP
+.nf
+std::string name = "Frank Chu", number = "1596", group = "Student";
+std::string rhsName = "Panda", rhsNumber = "22", rhsGroup = "Teacher";
+if(pr(CContact(name, number, group), CContact(rhsName, rhsNumber, rhsGroup))) {
+    std::cout << "< change postion" << "\n";
+} else {
+    std::cout << "> do not change" << "\n";
+}
+.fi
+.PP
+ 
+.PP
+在文件 \fBCContact\&.cpp\fP 第 \fB98\fP 行定义\&.
+.SH "类成员变量说明"
+.PP 
+.SS "std::string CContact::Group\fC [private]\fP"
+
+.PP
+群组 
+.PP
+在文件 \fBCContact\&.h\fP 第 \fB29\fP 行定义\&.
+.SS "std::string CContact::Name\fC [private]\fP"
+
+.PP
+姓名 
+.PP
+在文件 \fBCContact\&.h\fP 第 \fB27\fP 行定义\&.
+.SS "std::string CContact::Number\fC [private]\fP"
+
+.PP
+电话号码 
+.PP
+在文件 \fBCContact\&.h\fP 第 \fB28\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 ContactAddressBook 的 源代码自动生成\&.

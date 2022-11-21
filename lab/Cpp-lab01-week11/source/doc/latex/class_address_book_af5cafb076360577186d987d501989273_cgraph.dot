@@ -1,0 +1,11 @@
+digraph "AddressBook::Delete"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="AddressBook::Delete",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Delete contact with Name, Number and Group, can use placeholder. 按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="AddressBook::Find",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_address_book.html#aca2dfbdc3fb8f286c1cb850aca1a30bc",tooltip="If Found, return Matched Index, else return -1. 从下标startIndex开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-1"];
+}
