@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-11-21 08:58:23
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-21 10:19:44
+ * @LastEditTime: 2022-11-21 13:58:24
  * @FilePath: /Cpp/lab/lab11-week12/problemC.c
  * @Description: 定义一个学生结构体，含学号（字符型）、姓名、成绩(整型)。从键盘输入数字n(n<20)，并输入n个学生的信息，输出最高分和最低分同学的信息。
  * @test

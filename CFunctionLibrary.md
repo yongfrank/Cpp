@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-10-21 19:56:01
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-10-30 11:30:14
+ * @LastEditTime: 2022-11-21 11:43:10
  * @FilePath: /Cpp/CFunctionLibrary.md
  * @Description: 
  * 
@@ -129,7 +129,10 @@ void SieveOfEratosthenes(int startNumber, int endNumber) {
 
 ### `fgets`
 
-[How to remove trailing newline character from fgets input?](https://aticleworld.com/remove-trailing-newline-character-from-fgets/)
+* [How to remove trailing newline character from fgets input?](https://aticleworld.com/remove-trailing-newline-character-from-fgets/)
+* [从fgets()输入中删除尾部换行符的方法](https://juejin.cn/post/7109794485525020703)
+* [Get span until character in string](https://cplusplus.com/reference/cstring/strcspn/)
+* [C 库函数 - fgets()](https://www.runoob.com/cprogramming/c-function-fgets.html)
 
 ```c
 #include <stdio.h>
