@@ -1,0 +1,56 @@
+\hypertarget{_c_contact_8h_source}{}\doxysection{CContact.\+h}
+\mbox{\hyperlink{_c_contact_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * @Author: Frank Chu}}
+\DoxyCodeLine{3 \textcolor{comment}{ * @Date: 2022-\/11-\/16 13:11:56}}
+\DoxyCodeLine{4 \textcolor{comment}{ * @LastEditors: Frank Chu}}
+\DoxyCodeLine{5 \textcolor{comment}{ * @LastEditTime: 2022-\/11-\/20 19:19:39}}
+\DoxyCodeLine{6 \textcolor{comment}{ * @FilePath: /Cpp/lab/Cpp-\/lab01-\/week11/source/CContact.h}}
+\DoxyCodeLine{7 \textcolor{comment}{ * @Description:}}
+\DoxyCodeLine{8 \textcolor{comment}{ *}}
+\DoxyCodeLine{9 \textcolor{comment}{ * Copyright (c) 2022 by Frank Chu, All Rights Reserved.}}
+\DoxyCodeLine{10 \textcolor{comment}{ */}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef CCONTACT\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define CCONTACT\_H}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keywordtype}{bool} \mbox{\hyperlink{_c_contact_8h_a0a82ec9e83c845e0a97385f328e6237c}{match}}(std::string \&pattern, std::string \&source); \textcolor{comment}{// 字符串匹配}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_contact}{CContact}}}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25     std::string \mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}};   }
+\DoxyCodeLine{26     std::string \mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}}; }
+\DoxyCodeLine{27     std::string \mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};  }
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}();                                                           }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{38     \mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}(std::string \&, std::string \&, std::string \&);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{42     \mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}} \&);}
+\DoxyCodeLine{43     }
+\DoxyCodeLine{45     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_contact_a497e5ec26879482deb732f36924da8af}{\string~CContact}}();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_contact_aaa73f78c844126a49e81bf6e65d98990}{getContact}}(std::string \&, std::string \&, std::string \&);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}{setContact}}(std::string \&, std::string \&, std::string \&);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_contact_a76e1d4dc8f579512f599cf18880ab5be}{PatternMatch}}(std::string \&, std::string \&, std::string \&);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_contact_a2f0c2ff2f3045d49d043250fbd0b9e5e}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}} \&) \textcolor{keyword}{const};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{76     \mbox{\hyperlink{class_c_contact}{CContact}}\& \mbox{\hyperlink{class_c_contact_a6fa656e4a38c4d14b5505d36e5c0f365}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}} \&);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{82     \textcolor{keyword}{friend} std::ostream \&\mbox{\hyperlink{class_c_contact_a56a86dea0bb828cd4990a61a508eb9ba}{operator<<}}(std::ostream \&, \mbox{\hyperlink{class_c_contact}{CContact}});}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{88     \textcolor{keyword}{friend} std::istream \&\mbox{\hyperlink{class_c_contact_a5f6eeb90164491c2ace958f8078b0d75}{operator>>}}(std::istream \&, \mbox{\hyperlink{class_c_contact}{CContact}} \&);}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{97     \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_contact_ad662e7abb61e8f86427e120a7f8eb11a}{pr}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}} \&, \textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}} \&);}
+\DoxyCodeLine{98 \};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

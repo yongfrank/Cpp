@@ -2,8 +2,8 @@
  * @Author: Frank Chu
  * @Date: 2022-11-16 16:25:59
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-17 08:43:53
- * @FilePath: /Cpp/lab/Cpp-lab01-week11/CContact.cpp
+ * @LastEditTime: 2022-11-20 19:25:37
+ * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/CContact.cpp
  * @Description:
  *
  * Copyright (c) 2022 by Frank Chu, All Rights Reserved.
@@ -13,10 +13,6 @@
 
 CContact::CContact() {}
 
-/// @brief 使用Name,Number,Group创建联系人对象
-/// @param Name Contact Name
-/// @param Number Phone Number 
-/// @param Group Contact Group
 /// @note Visual Studio Code C++ Extension July 2020 Update: Doxygen comments and Log points https://devblogs.microsoft.com/cppblog/visual-studio-code-c-extension-july-2020-update-doxygen-comments-and-logpoints/
 CContact::CContact(std::string& Name, std::string& Number, std::string& Group) {
     this->Name = Name;
@@ -24,43 +20,51 @@ CContact::CContact(std::string& Name, std::string& Number, std::string& Group) {
     this->Group = Group;
 }
 
-/// @brief 拷贝构造函数
-/// @param ContactInfo Initialized Contact 
 CContact::CContact(const CContact& ContactInfo) {
     this->Name = ContactInfo.Name;
     this->Number = ContactInfo.Number;
     this->Group = ContactInfo.Group;
 }
 
-/// @brief 析构函数
 CContact::~CContact() { }
 
 
-/// @brief 重载 < 运算符，供算法sort使用,按姓名排序
-/// @param contactToBeCompared contact info to be compared.
-/// @return if thisCContact < contactToBeCompared, return true;
-/// @note https://www.runoob.com/cplusplus/cpp-overloading.html
-bool CContact::operator<(CContact& contactToBeCompared) {
-    if (this->Name < contactToBeCompared.Name) {
-        return true;
-    } else {
-        return false;
-    }
+/**
+ * @test
+    name = "Frank", number = "1596", Group = "Student"
+    ```cpp
+        std::string name = "Frank Chu", number = "1596", group = "Student";
+        CContact frank = CContact(name, number, group);
+        name = "Panda", number = "22", group = "32";
+        CContact panda = CContact(name, number, group);
+        if(frank < panda) {
+            std::cout << "<" << "\n";
+        } else {
+            std::cout << ">" << "\n";
+        }
+    ```
+ * @note C++ 重载运算符和重载函数 
+ * * C++ 中的运算符重载 `Box operator+(const Box&);` https://www.runoob.com/cplusplus/cpp-overloading.html
+ * * C++使用greater报错‘this‘ argument has type ‘const xxx‘, but method is not marked const的解决方案 https://blog.csdn.net/HermitSun/article/details/107101944
+ */
+bool CContact::operator<(const CContact& contactToBeCompared) const {
+    return this->Name < contactToBeCompared.Name;
+    // return (this->Name < contactToBeCompared.Name) ? true : false;
+    // if (Name < contactToBeCompared.Name) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
 }
 
-/// @brief 重载赋值 = 运算符
-/// @param oldContact local variable, newContact = oldContact, set new is equal to old.
 /// @note C++ 赋值运算符 = 重载 https://www.runoob.com/cplusplus/assignment-operators-overloading.html
-void CContact::operator=(const CContact& oldContact) {
+CContact& CContact::operator=(const CContact& oldContact) {
     this->Name = oldContact.Name;
     this->Number = oldContact.Number;
     this->Group = oldContact.Group;
+    return *this;
 }
 
-/// @brief 利用友元函数重载运算符 << 
-/// @param std::ostream file stream
-/// @param CContact output contact class
-/// @return ostream 
 /// @see 【懒猫老师-最简版C++-(18)类的友元】 https://www.bilibili.com/video/BV127411Q7eu/ 
 /// @note Overloading the << Operator for Your Own Classes https://learn.microsoft.com/en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classes?view=msvc-170
 std::ostream &operator<<(std::ostream& os, CContact contactInfo) {
@@ -69,10 +73,6 @@ std::ostream &operator<<(std::ostream& os, CContact contactInfo) {
     return os;
 }
 
-/// @brief 利用友元函数重载运算符 >>
-/// @param std::istream& is
-/// @param CContact
-/// @return istream
 /// @note Overloading the >> Operator for Your Own Classes https://learn.microsoft.com/en-us/cpp/standard-library/overloading-the-input-operator-for-your-own-classes?view=msvc-170
 std::istream &operator>>(std::istream& is, CContact& contactToBeRevised) {
     std::string name, number, group;
@@ -83,33 +83,67 @@ std::istream &operator>>(std::istream& is, CContact& contactToBeRevised) {
 }
 
 
-//定义组排序函数，供算法sort使用
-// bool pr(const CContact &, const CContact &) {
+/**
+ * @test
+```cpp
+    std::string name = "Frank Chu", number = "1596", group = "Student";
+    std::string rhsName = "Panda", rhsNumber = "22", rhsGroup = "Teacher";
+    if(pr(CContact(name, number, group), CContact(rhsName, rhsNumber, rhsGroup))) {
+        std::cout << "< change postion" << "\n";
+    } else {
+        std::cout << "> do not change" << "\n";
+    }
+```
+ */
+bool pr(const CContact& lhsContact, const CContact& rhsContact) {
+    return lhsContact.Group < rhsContact.Group;
+}
 
-// }
-
-/// @brief 获取对象的三个成员
-/// @param Name return Name as reference
-/// @param Number return Number as reference
-/// @param Group return Group as reference
 void CContact::getContact(std::string& Name, std::string& Number, std::string& Group) {
     Name = this->Name;
     Number = this->Number;
     Group = this->Group;
 }
 
-/// @brief 设定对象的三个成员
-/// @param Name Contact Name
-/// @param Number Phone Number 
-/// @param Group Contact Group
 void CContact::setContact(std::string& Name, std::string& Number, std::string& Group) {
     this->Name = Name;
     this->Number = Number;
     this->Group = Group;
 }
 
-// bool PatternMatch(std::string &, std::string &, std::string &) {} // 判定本对象是否匹配搜索条件
+bool CContact::PatternMatch(std::string& NamePattern, std::string& NumberPattern, std::string& GroupPattern) {
+    return (
+        match(NamePattern, this->Name) && match(NumberPattern, this->Number) && match(GroupPattern, this->Group)
+    ) ? true : false;
+} 
 
+/**
+ * @brief  字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员
+ * @param  pattern          My Param doc
+ * @param  source           My Param doc
+ * @return true 
+ * @return false 
+ * @code {.cpp}
+    if (s1.find(s2) != std::string::npos) {
+        std::cout << "found!" << '\n';
+    }
+ * @endcode
+ * @test
+    ```cpp
+    std::string matchTestCase1Pattern = "Franek", matchTestCase1Source = "Frank Chu";
+    if(match(matchTestCase1Pattern, matchTestCase1Source)) {
+        std::cout << "Yes" << "\n";
+    } else {
+        std::cout << "No" << "\n";
+    }
+    ```
+ * @see
+ * * Check if a string contains a string in C++ https://stackoverflow.com/questions/2340281/check-if-a-string-contains-a-string-in-c
+ * * C++ 中 `string::find()` 函数和 `string::npos` 函数的使用 https://www.cnblogs.com/lixuejian/p/10844905.html
+ */
+bool match(std::string &pattern, std::string &source) {
+    return (source.find(pattern) != std::string::npos) ? true : false;
+}
 
 /*
 0xFFFF搬砖艺术
