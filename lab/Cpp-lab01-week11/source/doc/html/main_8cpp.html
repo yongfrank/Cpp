@@ -138,6 +138,32 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 <div class="fragment"><div class="line">add frank 110 stu</div>
 <div class="line">add panda 120 tea</div>
 <div class="line">add amy 110 tea</div>
+</div><!-- fragment --> <div class="fragment"><div class="line"><span class="comment">// test main()</span></div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line">    <a class="code hl_class" href="class_address_book.html">AddressBook</a> book1;</div>
+<div class="line">    std::string name = <span class="stringliteral">&quot;Frank Chu&quot;</span>, number = <span class="stringliteral">&quot;15968126783&quot;</span>, group = <span class="stringliteral">&quot;Student&quot;</span>;</div>
+<div class="line">    book1.<a class="code hl_function" href="class_address_book.html#ab2ab4565bc7ec1563fd4fb6f5db4ac6d">AddContact</a>(name, number, group);</div>
+<div class="line">    std::string rhsName = <span class="stringliteral">&quot;APanda&quot;</span>, rhsNumber = <span class="stringliteral">&quot;22&quot;</span>, rhsGroup = <span class="stringliteral">&quot;Teacher&quot;</span>;</div>
+<div class="line">    book1.<a class="code hl_function" href="class_address_book.html#ab2ab4565bc7ec1563fd4fb6f5db4ac6d">AddContact</a>(rhsName, rhsNumber, rhsGroup);</div>
+<div class="line">    book1.<a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">List</a>();</div>
+<div class="line">    std::cout &lt;&lt; book1[0];</div>
+<div class="line">    std::cout &lt;&lt; book1[2];</div>
+<div class="line">    <span class="comment">// book1.List();</span></div>
+<div class="line">    <span class="comment">// book1.Sort();</span></div>
+<div class="line">    <span class="comment">// book1.List();</span></div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_class" href="class_c_contact.html">CContact</a> frank = <a class="code hl_class" href="class_c_contact.html">CContact</a>(name, number, group);</div>
+<div class="line">    name = <span class="stringliteral">&quot;Panda&quot;</span>, number = <span class="stringliteral">&quot;22&quot;</span>, group = <span class="stringliteral">&quot;Teacher&quot;</span>;</div>
+<div class="line">    <a class="code hl_class" href="class_c_contact.html">CContact</a> panda = <a class="code hl_class" href="class_c_contact.html">CContact</a>(name, number, group);</div>
+<div class="line">    name = <span class="stringliteral">&quot;Panda&quot;</span>, number = <span class="stringliteral">&quot;22&quot;</span>, group = <span class="stringliteral">&quot;Student&quot;</span>;</div>
+<div class="line">    <a class="code hl_class" href="class_c_contact.html">CContact</a> amy = <a class="code hl_class" href="class_c_contact.html">CContact</a>(name, number, group);</div>
+<div class="line">    book1.Add(amy);</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_address_book_html"><div class="ttname"><a href="class_address_book.html">AddressBook</a></div><div class="ttdoc">地址簿类</div><div class="ttdef"><b>Definition:</b> AddressBook.h:27</div></div>
+<div class="ttc" id="aclass_address_book_html_a03109edb7d7e0a3ddacb44375bbac8fe"><div class="ttname"><a href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">AddressBook::List</a></div><div class="ttdeci">void List()</div><div class="ttdoc">std::cout 输出Book中所有联系人。</div><div class="ttdef"><b>Definition:</b> AddressBook.cpp:199</div></div>
+<div class="ttc" id="aclass_address_book_html_ab2ab4565bc7ec1563fd4fb6f5db4ac6d"><div class="ttname"><a href="class_address_book.html#ab2ab4565bc7ec1563fd4fb6f5db4ac6d">AddressBook::AddContact</a></div><div class="ttdeci">void AddContact(std::string &amp;, std::string &amp;, std::string &amp;)</div><div class="ttdoc">Add a contact in the vector&lt;CContact&gt; Book</div><div class="ttdef"><b>Definition:</b> AddressBook.cpp:22</div></div>
+<div class="ttc" id="aclass_c_contact_html"><div class="ttname"><a href="class_c_contact.html">CContact</a></div><div class="ttdoc">CContact 是联系人类</div><div class="ttdef"><b>Definition:</b> CContact.h:22</div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> main.cpp:51</div></div>
 </div><!-- fragment --> <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">待办事项:</a></b></dt><dd>convert commandOfInput into ENUM</dd></dl>
 
 </div>

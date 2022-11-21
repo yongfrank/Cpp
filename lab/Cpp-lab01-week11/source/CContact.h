@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-11-16 13:11:56
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-20 19:19:39
+ * @LastEditTime: 2022-11-21 18:45:01
  * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/CContact.h
  * @Description:
  *
@@ -13,8 +13,7 @@
 #define CCONTACT_H
 #include <iostream>
 #include <string>
-
-bool match(std::string &pattern, std::string &source); // 字符串匹配
+#include <regex>
 
 /**
  * @brief CContact 是联系人类
@@ -57,13 +56,6 @@ public:
     void setContact(std::string &, std::string &, std::string &);
 
     /**
-     * @brief 判定本对象是否匹配搜索条件
-     * @return true 符合
-     * @return false 不符合
-     */
-    bool PatternMatch(std::string &, std::string &, std::string &);
-
-    /**
      * @brief 重载 < 运算符，供算法 Sort 使用,按姓名排序
      * @param contactToBeCompared contact info to be compared.
      * @return true thisCContact < contactToBeCompared
@@ -95,6 +87,27 @@ public:
      * @return false lhsContact.Group > rhsContact.Group;
      */
     friend bool pr(const CContact &, const CContact &);
+
+    /**
+     * @brief 判定本对象是否匹配搜索条件
+     * @param  name             name pattern
+     * @param  number           number pattern
+     * @param  group            group pattern
+     * @return true 符合
+     * @return false 不符合
+     */
+    bool PatternMatch(std::string& name, std::string& number, std::string& group);
+
 };
+
+/**
+ * @brief  字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员
+ * @param  pattern          Pattern string including '*'
+ * @param  source           Source string
+ * @return true             can find pattern in the source
+ * @return false            cannot find pattern in the source
+ * 
+ */
+bool match(std::string &pattern, std::string &source);
 
 #endif

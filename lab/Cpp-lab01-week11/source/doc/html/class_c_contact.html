@@ -138,15 +138,15 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a161ea4a13e9a0f4fea96693ef70904c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_contact.html#a161ea4a13e9a0f4fea96693ef70904c3">setContact</a> (std::string &amp;, std::string &amp;, std::string &amp;)</td></tr>
 <tr class="memdesc:a161ea4a13e9a0f4fea96693ef70904c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定对象的三个成员  <a href="class_c_contact.html#a161ea4a13e9a0f4fea96693ef70904c3">更多...</a><br /></td></tr>
 <tr class="separator:a161ea4a13e9a0f4fea96693ef70904c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e1d4dc8f579512f599cf18880ab5be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_contact.html#a76e1d4dc8f579512f599cf18880ab5be">PatternMatch</a> (std::string &amp;, std::string &amp;, std::string &amp;)</td></tr>
-<tr class="memdesc:a76e1d4dc8f579512f599cf18880ab5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定本对象是否匹配搜索条件  <a href="class_c_contact.html#a76e1d4dc8f579512f599cf18880ab5be">更多...</a><br /></td></tr>
-<tr class="separator:a76e1d4dc8f579512f599cf18880ab5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f0c2ff2f3045d49d043250fbd0b9e5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_contact.html#a2f0c2ff2f3045d49d043250fbd0b9e5e">operator&lt;</a> (const <a class="el" href="class_c_contact.html">CContact</a> &amp;) const</td></tr>
 <tr class="memdesc:a2f0c2ff2f3045d49d043250fbd0b9e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">重载 &lt; 运算符，供算法 Sort 使用,按姓名排序  <a href="class_c_contact.html#a2f0c2ff2f3045d49d043250fbd0b9e5e">更多...</a><br /></td></tr>
 <tr class="separator:a2f0c2ff2f3045d49d043250fbd0b9e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa656e4a38c4d14b5505d36e5c0f365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_contact.html">CContact</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_contact.html#a6fa656e4a38c4d14b5505d36e5c0f365">operator=</a> (const <a class="el" href="class_c_contact.html">CContact</a> &amp;)</td></tr>
 <tr class="memdesc:a6fa656e4a38c4d14b5505d36e5c0f365"><td class="mdescLeft">&#160;</td><td class="mdescRight">重载赋值 = 运算符，重载赋值运算符  <a href="class_c_contact.html#a6fa656e4a38c4d14b5505d36e5c0f365">更多...</a><br /></td></tr>
 <tr class="separator:a6fa656e4a38c4d14b5505d36e5c0f365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a911d776b532f44d332a8ab846230ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_contact.html#a3a911d776b532f44d332a8ab846230ba">PatternMatch</a> (std::string &amp;name, std::string &amp;number, std::string &amp;group)</td></tr>
+<tr class="memdesc:a3a911d776b532f44d332a8ab846230ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定本对象是否匹配搜索条件  <a href="class_c_contact.html#a3a911d776b532f44d332a8ab846230ba">更多...</a><br /></td></tr>
+<tr class="separator:a3a911d776b532f44d332a8ab846230ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
@@ -191,8 +191,6 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="class_c_contact.html" title="CContact 是联系人类">CContact</a> object 默认构造函数，构造一个空联系人类 </p>
-<p >@Author: Frank Chu @Date: 2022-11-16 16:25:59 @LastEditors: Frank Chu @LastEditTime: 2022-11-20 19:25:37 @FilePath: /Cpp/lab/Cpp-lab01-week11/source/CContact.cpp @Description:</p>
-<p >Copyright (c) 2022 by Frank Chu, All Rights Reserved. </p>
 
 </div>
 </div>
@@ -376,7 +374,7 @@ false thisCContact &gt; contactToBeCompared</dd></dl>
 <div class="line">} <span class="keywordflow">else</span> {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;&gt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_c_contact_html"><div class="ttname"><a href="class_c_contact.html">CContact</a></div><div class="ttdoc">CContact 是联系人类</div><div class="ttdef"><b>Definition:</b> CContact.h:23</div></div>
+<div class="ttc" id="aclass_c_contact_html"><div class="ttname"><a href="class_c_contact.html">CContact</a></div><div class="ttdoc">CContact 是联系人类</div><div class="ttdef"><b>Definition:</b> CContact.h:22</div></div>
 <div class="ttc" id="aclass_c_contact_html_afdd13f12c6249225b8812443690b708c"><div class="ttname"><a href="class_c_contact.html#afdd13f12c6249225b8812443690b708c">CContact::CContact</a></div><div class="ttdeci">CContact()</div><div class="ttdoc">Construct a new CContact object 默认构造函数，构造一个空联系人类</div><div class="ttdef"><b>Definition:</b> CContact.cpp:14</div></div>
 </div><!-- fragment --> <dl class="section note"><dt>注解</dt><dd>C++ 重载运算符和重载函数<ul>
 <li>C++ 中的运算符重载 <code>Box operator+(const Box&amp;);</code> <a href="https://www.runoob.com/cplusplus/cpp-overloading.html">https://www.runoob.com/cplusplus/cpp-overloading.html</a></li>
@@ -413,8 +411,8 @@ false thisCContact &gt; contactToBeCompared</dd></dl>
 
 </div>
 </div>
-<a id="a76e1d4dc8f579512f599cf18880ab5be" name="a76e1d4dc8f579512f599cf18880ab5be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76e1d4dc8f579512f599cf18880ab5be">&#9670;&#160;</a></span>PatternMatch()</h2>
+<a id="a3a911d776b532f44d332a8ab846230ba" name="a3a911d776b532f44d332a8ab846230ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a911d776b532f44d332a8ab846230ba">&#9670;&#160;</a></span>PatternMatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -446,9 +444,18 @@ false thisCContact &gt; contactToBeCompared</dd></dl>
 </div><div class="memdoc">
 
 <p>判定本对象是否匹配搜索条件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name pattern </td></tr>
+    <tr><td class="paramname">number</td><td>number pattern </td></tr>
+    <tr><td class="paramname">group</td><td>group pattern </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>返回</dt><dd>true 符合 </dd>
 <dd>
-false 不符合 </dd></dl>
+false 不符合</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>C++ 函数默认参数 <a href="https://www.w3cschool.cn/cpp/cpp-function-default-parameters.html">https://www.w3cschool.cn/cpp/cpp-function-default-parameters.html</a> </dd></dl>
 
 </div>
 </div>

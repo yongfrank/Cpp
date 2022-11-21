@@ -1,35 +1,26 @@
-/*
+/**
  * @Author: Frank Chu
  * @Date: 2022-11-17 23:42:03
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-21 09:09:47
+ * @LastEditTime: 2022-11-21 17:04:08
  * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/AddressBook.cpp
- * @Description: 
- * 
- * Copyright (c) 2022 by Frank Chu, All Rights Reserved. 
+ * @Description:
+ *
+ * Copyright (c) 2022 by Frank Chu, All Rights Reserved.
  */
 
 #include "AddressBook.h"
 
-/**
- * @brief Construct a new Address Book:: Address Book object 建立空地址簿
- */
+/// @brief very good
 AddressBook::AddressBook() {}
 
-/**
- * @brief 地址簿析构函数，其中必须清空联系人向量 Book Destroy the Address Book:: Address Book object 
- */
-AddressBook::~AddressBook() {
+AddressBook::~AddressBook()
+{
     this->Book.clear();
 }
 
-/**
- * @brief 在向量中增加一个联系人
- * @param  Name             Name of Contact
- * @param  Number           Number of Contact
- * @param  Group            Group of Contact
- */
-void AddressBook::AddContact(std::string& Name, std::string& Number, std::string& Group) {
+void AddressBook::AddContact(std::string &Name, std::string &Number, std::string &Group)
+{
     this->Book.push_back(CContact(Name, Number, Group));
 }
 
@@ -42,23 +33,26 @@ void AddressBook::AddContact(std::string& Name, std::string& Number, std::string
     book1.Add(amy);
 ```
  */
-void AddressBook::Add(CContact& contact) {
+void AddressBook::Add(CContact &contact)
+{
     this->Book.push_back(contact);
 }
 
-// /**
-//  * @brief 从下标startIndex开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-1
-//  * @param  startIndex       My Param doc
-//  * @param  Name             My Param doc
-//  * @param  Number           My Param doc
-//  * @param  Group            My Param doc
-//  * @return int 
-//  */
-// int Find(int startIndex, std::string& Name, std::string& Number, std::string& Group) {
-//     int indexOfContact = -1;
-    
-//     return -1;
-// }
+int AddressBook::Find(int startIndex, std::string &NamePattern, std::string &NumberPattern, std::string &GroupPattern)
+{
+    int indexOfContact = -1;
+
+    for (std::vector<CContact>::iterator iteratorOfContact = this->Book.begin() + startIndex; iteratorOfContact != this->Book.end(); iteratorOfContact++)
+    {
+        if ((*iteratorOfContact).PatternMatch(NamePattern, NumberPattern, GroupPattern))
+        {
+            indexOfContact = iteratorOfContact - Book.begin();
+            return indexOfContact;
+        }
+        indexOfContact = -1;
+    }
+    return indexOfContact;
+}
 
 /**
  * @test
@@ -76,18 +70,58 @@ void AddressBook::Add(CContact& contact) {
  * @note
  * * C++ 下标运算符 [] 重载 https://www.runoob.com/cplusplus/subscripting-operator-overloading.html
  */
-CContact AddressBook::operator[](int indexOfContact) {
+CContact AddressBook::operator[](int indexOfContact)
+{
     auto sizeOfBook = this->Book.size() - 1;
-    if (indexOfContact > static_cast<int>(sizeOfBook)) {
-        std::cout << "ERROR: Larger than max index, return the first item" << "\n";
+    if (indexOfContact > static_cast<int>(sizeOfBook))
+    {
+        std::cout << "ERROR: Larger than max index, return the first item"
+                  << "\n";
         return this->Book[0];
     }
     return this->Book[indexOfContact];
 }
 
-// int AddressBook::Delete(std::string& name, std::string& number, std::string& group) {
-    
-// } //按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0
+/**
+ * @see
+ * AddressBook::Find()
+ */
+int AddressBook::Delete(std::string &name, std::string &number, std::string &group)
+{
+    std::vector<int> indexOfDeletion;
+    int deleteIndex = 0;
+    deleteIndex = this->Find(0, name, number, group);
+    indexOfDeletion.push_back(deleteIndex);
+    std::cout << "Deleting " << this->Book[deleteIndex];
+
+    if (deleteIndex != -1)
+    {
+        this->Book.erase(this->Book.begin() + deleteIndex);
+        while (deleteIndex != -1)
+        {
+            // if(this->indexSafe(deleteIndex)) {
+            deleteIndex = this->Find(0, name, number, group);
+            if (deleteIndex != -1)
+            {
+                std::cout << "Deleting " << this->Book[deleteIndex];
+                this->Book.erase(this->Book.begin() + deleteIndex);
+            }
+            // } else {
+            //     deleteIndex = -1;
+            // }
+            indexOfDeletion.push_back(deleteIndex);
+        }
+    }
+    // for(std::vector<CContact>::iterator itOfContacts = this->Book.begin(); itOfContacts != this->Book.end(); itOfContacts++) {
+
+    // }
+    return indexOfDeletion.size() - 1;
+}
+
+bool AddressBook::indexSafe(int index)
+{
+    return (index <= (int)this->Book.size()) ? true : false;
+}
 
 /**
  * @test
@@ -104,7 +138,8 @@ CContact AddressBook::operator[](int indexOfContact) {
  * @see
  * * C++中,结构体vector使用sort排序 https://blog.csdn.net/zhouxun623/article/details/49887555
  */
-void AddressBook::Sort() {
+void AddressBook::Sort()
+{
     // std::sort(this->Book.begin(), this->Book.end(), [](const CContact& lhs, const CContact& rhs) { return lhs < rhs;});
     std::sort(this->Book.begin(), this->Book.end());
 }
@@ -134,47 +169,58 @@ void AddressBook::Sort() {
     book1.List();
 ```
  */
-void AddressBook::SortGroup() {
+void AddressBook::SortGroup()
+{
     std::sort(this->Book.begin(), this->Book.end(), pr);
 }
 
 /**
- * @code {.cpp}
- * // vector::begin/end
- * #include <iostream>
- * #include <vector>
- * int main ()
- * {
- *      std::vector<int> myvector;
- *      for (int i=1; i<=5; i++) myvector.push_back(i);
- *      std::cout << "myvector contains:";
- *      for (std::vector<int>::iterator it = myvector.begin() ; it != myvector.end(); ++it)
- *          std::cout << ' ' << *it;
- *      std::cout << '\n';
- *      return 0;
- * }
+```cpp
+// vector::begin/end
+#include <iostream>
+#include <vector>
+int main ()
+{
+    std::vector<int> myvector;
+    for (int i=1; i<=5; i++) myvector.push_back(i);
+    std::cout << "myvector contains:";
+    for (std::vector<int>::iterator it = myvector.begin() ; it != myvector.end(); ++it)
+        std::cout << ' ' << *it;
+    std::cout << '\n';
+    return 0;
+}
+```
  * @endcode
- * @see 
- * public member function 
+ * @see
+ * public member function
  * @n std::vector::end
  * @n https://cplusplus.com/reference/vector/vector/end/
  */
-void AddressBook::List() {
+void AddressBook::List()
+{
     /**
      * @brief Iterator Address Book
      * @param  it  iterator abbreviation, `*it` is de-pointer of iterator(address pointer type)
      */
-    for(std::vector<CContact>::iterator it = this->Book.begin(); it != this->Book.end(); ++it) { // can also be it++
+    for (std::vector<CContact>::iterator it = this->Book.begin(); it != this->Book.end(); ++it)
+    { // can also be it++
         std::cout << *it;
     }
 }
 
-// /**
-//  * @brief 输出某组别中的所有联系人
-//  * @param  group group name
-//  * @see
-//  * * CContact::PatternMatch()
-//  */
-// void AddressBook::ListGroup(std::string& group) {
-
-// }
+/**
+ * @see
+ * * CContact::PatternMatch()
+ * * 创建空std::string的最佳方式 http://zplutor.github.io/2016/02/18/best-way-to-create-empty-std-string/
+ */
+void AddressBook::ListGroup(std::string &group)
+{
+    for (std::vector<CContact>::iterator iteratorOfContact = this->Book.begin(); iteratorOfContact != this->Book.end(); iteratorOfContact++)
+    {
+        std::string name = "", phoneNumber = "";
+        if ((*iteratorOfContact).PatternMatch(name, phoneNumber, group))
+        {
+            std::cout << *iteratorOfContact;
+        }
+    }
+}

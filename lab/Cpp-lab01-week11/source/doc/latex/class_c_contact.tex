@@ -24,12 +24,12 @@ void \mbox{\hyperlink{class_c_contact_aaa73f78c844126a49e81bf6e65d98990}{get\+Co
 \begin{DoxyCompactList}\small\item\em 获取对象的三个成员 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}{set\+Contact}} (std\+::string \&, std\+::string \&, std\+::string \&)
 \begin{DoxyCompactList}\small\item\em 设定对象的三个成员 \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_c_contact_a76e1d4dc8f579512f599cf18880ab5be}{Pattern\+Match}} (std\+::string \&, std\+::string \&, std\+::string \&)
-\begin{DoxyCompactList}\small\item\em 判定本对象是否匹配搜索条件 \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_c_contact_a2f0c2ff2f3045d49d043250fbd0b9e5e}{operator$<$}} (const \mbox{\hyperlink{class_c_contact}{CContact}} \&) const
 \begin{DoxyCompactList}\small\item\em 重载 \texorpdfstring{$<$}{<} 运算符，供算法 Sort 使用,按姓名排序 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_c_contact}{CContact}} \& \mbox{\hyperlink{class_c_contact_a6fa656e4a38c4d14b5505d36e5c0f365}{operator=}} (const \mbox{\hyperlink{class_c_contact}{CContact}} \&)
-\begin{DoxyCompactList}\small\item\em 重载赋值 = 运算符，重载赋值运算符 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 重载赋值 = 运算符，重载赋值运算符 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_contact_a3a911d776b532f44d332a8ab846230ba}{Pattern\+Match}} (std\+::string \&name, std\+::string \&number, std\+::string \&group)
+\begin{DoxyCompactList}\small\item\em 判定本对象是否匹配搜索条件 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private 属性}
 \begin{DoxyCompactItemize}
 \item 
@@ -64,9 +64,7 @@ bool \mbox{\hyperlink{class_c_contact_ad662e7abb61e8f86427e120a7f8eb11a}{pr}} (c
 
 Construct a new \mbox{\hyperlink{class_c_contact}{CContact}} object 默认构造函数，构造一个空联系人类 
 
-@\+Author\+: Frank Chu @\+Date\+: 2022-\/11-\/16 16\+:25\+:59 @\+Last\+Editors\+: Frank Chu @\+Last\+Edit\+Time\+: 2022-\/11-\/20 19\+:25\+:37 @\+File\+Path\+: /\+Cpp/lab/\+Cpp-\/lab01-\/week11/source/\+CContact.cpp @\+Description\+:
-
-Copyright (c) 2022 by Frank Chu, All Rights Reserved. \mbox{\Hypertarget{class_c_contact_a620bfd856ebb9e8cd2f508c689041cb7}\label{class_c_contact_a620bfd856ebb9e8cd2f508c689041cb7}} 
+\mbox{\Hypertarget{class_c_contact_a620bfd856ebb9e8cd2f508c689041cb7}\label{class_c_contact_a620bfd856ebb9e8cd2f508c689041cb7}} 
 \index{CContact@{CContact}!CContact@{CContact}}
 \index{CContact@{CContact}!CContact@{CContact}}
 \doxysubsubsection{\texorpdfstring{CContact()}{CContact()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
@@ -196,7 +194,7 @@ C++ 重载运算符和重载函数
 \begin{DoxyNote}{注解}
 C++ 赋值运算符 = 重载 \href{https://www.runoob.com/cplusplus/assignment-operators-overloading.html}{\texttt{ https\+://www.\+runoob.\+com/cplusplus/assignment-\/operators-\/overloading.\+html}} 
 \end{DoxyNote}
-\mbox{\Hypertarget{class_c_contact_a76e1d4dc8f579512f599cf18880ab5be}\label{class_c_contact_a76e1d4dc8f579512f599cf18880ab5be}} 
+\mbox{\Hypertarget{class_c_contact_a3a911d776b532f44d332a8ab846230ba}\label{class_c_contact_a3a911d776b532f44d332a8ab846230ba}} 
 \index{CContact@{CContact}!PatternMatch@{PatternMatch}}
 \index{PatternMatch@{PatternMatch}!CContact@{CContact}}
 \doxysubsubsection{\texorpdfstring{PatternMatch()}{PatternMatch()}}
@@ -206,11 +204,23 @@ C++ 赋值运算符 = 重载 \href{https://www.runoob.com/cplusplus/assignment-o
 
 判定本对象是否匹配搜索条件 
 
+
+\begin{DoxyParams}{参数}
+{\em name} & name pattern \\
+\hline
+{\em number} & number pattern \\
+\hline
+{\em group} & group pattern \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{返回}
 true 符合 
 
-false 不符合 
+false 不符合
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+C++ 函数默认参数 \href{https://www.w3cschool.cn/cpp/cpp-function-default-parameters.html}{\texttt{ https\+://www.\+w3cschool.\+cn/cpp/cpp-\/function-\/default-\/parameters.\+html}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}\label{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}} 
 \index{CContact@{CContact}!setContact@{setContact}}
 \index{setContact@{setContact}!CContact@{CContact}}

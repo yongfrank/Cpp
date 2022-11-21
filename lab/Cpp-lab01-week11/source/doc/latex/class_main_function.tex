@@ -21,8 +21,14 @@ static void \mbox{\hyperlink{class_main_function_a8a2c9fe12211c131bd03e0c706770c
 \begin{DoxyCompactList}\small\item\em {\ttfamily \mbox{\hyperlink{class_address_book}{Address\+Book}}\texorpdfstring{$>$}{>}help} command, print Help Manual \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_main_function_adf24f32da9c03a5373f36e4aae46302a}{Add\+Command}} (\mbox{\hyperlink{class_address_book}{Address\+Book}} \&Book)
 \begin{DoxyCompactList}\small\item\em {\ttfamily \mbox{\hyperlink{class_address_book}{Address\+Book}}\texorpdfstring{$>$}{>}add} command, add new contact to Address Book in the Command Line Interface Memory \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_main_function_a201a540381aacc37ea317de99b34abe9}{Find\+Command}} (\mbox{\hyperlink{class_address_book}{Address\+Book}} \&Book)
+\item 
+static void \mbox{\hyperlink{class_main_function_ac2f70628a5f3db82a14c72906fc64d64}{Delete\+Command}} (\mbox{\hyperlink{class_address_book}{Address\+Book}} \&Book)
+\item 
 static void \mbox{\hyperlink{class_main_function_ac5aef4c9fa1802e69348661a59b711cd}{List\+Command}} (\mbox{\hyperlink{class_address_book}{Address\+Book}} \&Book)
 \begin{DoxyCompactList}\small\item\em {\ttfamily \mbox{\hyperlink{class_address_book}{Address\+Book}}\texorpdfstring{$>$}{>}list} command, print all contacts in the \mbox{\hyperlink{class_address_book}{Address\+Book}} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_main_function_a61df29059315691d8c5b084b31e87c68}{List\+Group\+Command}} (\mbox{\hyperlink{class_address_book}{Address\+Book}} \&Book)
+\item 
 static void \mbox{\hyperlink{class_main_function_a276b843a8c3045968412eb3ffcfdf815}{Sort\+Command}} (\mbox{\hyperlink{class_address_book}{Address\+Book}} \&Book)
 \begin{DoxyCompactList}\small\item\em {\ttfamily \mbox{\hyperlink{class_address_book}{Address\+Book}}\texorpdfstring{$>$}{>}sort} command, sort contact in the \mbox{\hyperlink{class_address_book}{Address\+Book}} using string in ascii ascending order \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_main_function_a8678107aa7db0e655a3994c52af53004}{Sort\+Group\+Command}} (\mbox{\hyperlink{class_address_book}{Address\+Book}} \&Book)
@@ -65,7 +71,37 @@ Explanation of some functions used in \mbox{\hyperlink{main_8cpp}{main.\+cpp}}
 {\em Book} & Address Book in the CLI Memory \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_main_function_a2d7e4b42d94d2dac614a134389d9db90}\label{class_main_function_a2d7e4b42d94d2dac614a134389d9db90}} 
+\mbox{\Hypertarget{class_main_function_ac2f70628a5f3db82a14c72906fc64d64}\label{class_main_function_ac2f70628a5f3db82a14c72906fc64d64}} 
+\index{MainFunction@{MainFunction}!DeleteCommand@{DeleteCommand}}
+\index{DeleteCommand@{DeleteCommand}!MainFunction@{MainFunction}}
+\doxysubsubsection{\texorpdfstring{DeleteCommand()}{DeleteCommand()}}
+{\footnotesize\ttfamily static void Main\+Function\+::\+Delete\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_address_book}{Address\+Book}} \&}]{Book }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{参数}
+{\em Book} & Address Book in the CLI Memory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{测试}
+\item[\mbox{\hyperlink{test__test000009}{测试}}]\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{测试}
+\item[\mbox{\hyperlink{test__test000010}{测试}}]\end{DoxyRefDesc}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{add frank 2 st}
+\DoxyCodeLine{add frank 3 st}
+\DoxyCodeLine{add frank 23 st}
+\DoxyCodeLine{delete fr 2 st}
+
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2 contact was deleted. }
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_main_function_a2d7e4b42d94d2dac614a134389d9db90}\label{class_main_function_a2d7e4b42d94d2dac614a134389d9db90}} 
 \index{MainFunction@{MainFunction}!ExitCommand@{ExitCommand}}
 \index{ExitCommand@{ExitCommand}!MainFunction@{MainFunction}}
 \doxysubsubsection{\texorpdfstring{ExitCommand()}{ExitCommand()}}
@@ -75,6 +111,24 @@ Explanation of some functions used in \mbox{\hyperlink{main_8cpp}{main.\+cpp}}
 
 {\ttfamily \mbox{\hyperlink{class_address_book}{Address\+Book}}\texorpdfstring{$>$}{>}exit} command, exit the program 
 
+\mbox{\Hypertarget{class_main_function_a201a540381aacc37ea317de99b34abe9}\label{class_main_function_a201a540381aacc37ea317de99b34abe9}} 
+\index{MainFunction@{MainFunction}!FindCommand@{FindCommand}}
+\index{FindCommand@{FindCommand}!MainFunction@{MainFunction}}
+\doxysubsubsection{\texorpdfstring{FindCommand()}{FindCommand()}}
+{\footnotesize\ttfamily static void Main\+Function\+::\+Find\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_address_book}{Address\+Book}} \&}]{Book }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{参数}
+{\em Book} & Address Book in the CLI Memory \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_c_contact}{CContact}} \mbox{\hyperlink{class_address_book_adf9310eaa9d2d98dffdf43fc6c744219}{Address\+Book\+::operator\mbox{[}$\,$\mbox{]}(int index\+Of\+Contact)}}
+\item Count the size of the vector in C++ \href{https://linuxhint.com/count-vector-size-c/}{\texttt{ https\+://linuxhint.\+com/count-\/vector-\/size-\/c/}} 
+\end{DoxyItemize}
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{class_main_function_a8a2c9fe12211c131bd03e0c706770c1f}\label{class_main_function_a8a2c9fe12211c131bd03e0c706770c1f}} 
 \index{MainFunction@{MainFunction}!HelpCommand@{HelpCommand}}
 \index{HelpCommand@{HelpCommand}!MainFunction@{MainFunction}}
@@ -103,6 +157,12 @@ C++ Multiline String Literals \href{https://linuxhint.com/c-multiline-string-lit
 {\em Book} & Address Book in the CLI Memory \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_main_function_a61df29059315691d8c5b084b31e87c68}\label{class_main_function_a61df29059315691d8c5b084b31e87c68}} 
+\index{MainFunction@{MainFunction}!ListGroupCommand@{ListGroupCommand}}
+\index{ListGroupCommand@{ListGroupCommand}!MainFunction@{MainFunction}}
+\doxysubsubsection{\texorpdfstring{ListGroupCommand()}{ListGroupCommand()}}
+{\footnotesize\ttfamily static void Main\+Function\+::\+List\+Group\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_address_book}{Address\+Book}} \&}]{Book }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
 \mbox{\Hypertarget{class_main_function_a276b843a8c3045968412eb3ffcfdf815}\label{class_main_function_a276b843a8c3045968412eb3ffcfdf815}} 
 \index{MainFunction@{MainFunction}!SortCommand@{SortCommand}}
 \index{SortCommand@{SortCommand}!MainFunction@{MainFunction}}

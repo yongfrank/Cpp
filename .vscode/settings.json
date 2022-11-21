@@ -160,7 +160,9 @@
     "vector": "cpp",
     "algorithm": "cpp",
     "functional": "cpp",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "regex": "cpp",
+    "deque": "cpp"
   },
   "files.exclude": {
     "**/*.out": true,

@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-11-16 16:25:59
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-21 09:12:15
+ * @LastEditTime: 2022-11-21 22:10:57
  * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/CContact.cpp
  * @Description:
  *
@@ -111,6 +111,10 @@ void CContact::setContact(std::string& Name, std::string& Number, std::string& G
     this->Group = Group;
 }
 
+/**
+ * @see
+ * C++ 函数默认参数 https://www.w3cschool.cn/cpp/cpp-function-default-parameters.html
+ */
 bool CContact::PatternMatch(std::string& NamePattern, std::string& NumberPattern, std::string& GroupPattern) {
     return (
         match(NamePattern, this->Name) && match(NumberPattern, this->Number) && match(GroupPattern, this->Group)
@@ -118,31 +122,56 @@ bool CContact::PatternMatch(std::string& NamePattern, std::string& NumberPattern
 } 
 
 /**
- * @brief  字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员
- * @param  pattern          My Param doc
- * @param  source           My Param doc
- * @return true 
- * @return false 
+ * @details  
+ * `string::npos` 静态成员常量
+ * 
+ * 是对类型为 `size_t` 的元素具有最大可能的值。
+ * 当这个值在字符串成员函数中的长度或者子长度被使用时，该值表示“直到字符串结尾”。
+ * 作为返回值他通常被用作表明没有匹配。
  * @code {.cpp}
     if (s1.find(s2) != std::string::npos) {
         std::cout << "found!" << '\n';
     }
  * @endcode
  * @test
-    ```cpp
-    std::string matchTestCase1Pattern = "Franek", matchTestCase1Source = "Frank Chu";
-    if(match(matchTestCase1Pattern, matchTestCase1Source)) {
-        std::cout << "Yes" << "\n";
-    } else {
-        std::cout << "No" << "\n";
-    }
-    ```
+```cpp
+std::string matchTestCase1Pattern = "Franek", matchTestCase1Source = "Frank Chu";
+if(match(matchTestCase1Pattern, matchTestCase1Source)) {
+    std::cout << "Yes" << "\n";
+} else {
+    std::cout << "No" << "\n";
+}
+```
  * @see
  * * Check if a string contains a string in C++ https://stackoverflow.com/questions/2340281/check-if-a-string-contains-a-string-in-c
  * * C++ 中 `string::find()` 函数和 `string::npos` 函数的使用 https://www.cnblogs.com/lixuejian/p/10844905.html
+ * * std::string::find 空字符串 返回结果不是 string::npos https://blog.csdn.net/yasi_xi/article/details/7305443
+ * * 查找字符串，支持通配符查找，通配符包含 .和? https://blog.csdn.net/wang_anna/article/details/117019969
+ * * 通配符（？，*）与正则表达式 https://blog.csdn.net/yh13572438258/article/details/121545229
+ * * str::string和wchar_t*相互转化 https://blog.csdn.net/zddblog/article/details/38670349
+ * * C++：wchar_t* & string相互转换 https://codeantenna.com/a/uDA7bfXIkF
+ * * C++11之正则表达式（regex_match、regex_search、regex_replace） https://blog.csdn.net/qq_45254369/article/details/125491031
+ * @details
+不区分大小写，需包含头文件
+From: 查找字符串，支持通配符查找，通配符包含 .和? https://blog.csdn.net/wang_anna/article/details/117019969
+```cpp
+#include<regex>
+using namespace regex_constants;
+ECMAScript | icase // Case insensitive
+```
  */
 bool match(std::string &pattern, std::string &source) {
-    return (source.find(pattern) != std::string::npos) ? true : false;
+    auto positionOfQuestionMark = pattern.find("?");
+    auto positionOfAsteriskMark = pattern.find("*");
+    if(positionOfQuestionMark != std::string::npos) {
+        pattern.replace(positionOfQuestionMark, 1, ".");
+    }
+    if(positionOfAsteriskMark != std::string::npos) {
+        pattern.replace(positionOfAsteriskMark, 1, ".*");
+    }
+
+    return std::regex_match(source, std::regex(pattern));
+    // return (source.find(pattern) != std::string::npos) ? true : false;
 }
 
 /*

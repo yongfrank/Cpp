@@ -17,7 +17,7 @@
 \mbox{\hyperlink{class_address_book_a5638d9e7361248f33d52894f65597d47}{$\sim$\+Address\+Book}} ()
 \begin{DoxyCompactList}\small\item\em 地址簿析构函数，其中必须清空联系人向量 Book Destroy the Address Book\+:\+: Address Book object \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_address_book_ab2ab4565bc7ec1563fd4fb6f5db4ac6d}{Add\+Contact}} (std\+::string \&, std\+::string \&, std\+::string \&)
-\begin{DoxyCompactList}\small\item\em 在向量中增加一个联系人 \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Add a contact in the vector$<$\+CContact$>$ Book \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_address_book_a0b20a62e6f9a2ea1196b47591a739dab}{Add}} (\mbox{\hyperlink{class_c_contact}{CContact}} \&contact)
 \begin{DoxyCompactList}\small\item\em 在向量中增加一个类型为 \mbox{\hyperlink{class_c_contact}{CContact}} 联系人 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_c_contact}{CContact}} \mbox{\hyperlink{class_address_book_adf9310eaa9d2d98dffdf43fc6c744219}{operator\mbox{[}$\,$\mbox{]}}} (int index\+Of\+Contact)
@@ -29,11 +29,13 @@ void \mbox{\hyperlink{class_address_book_aeb032c4fefe4c56388e203199dd5e6f6}{Sort
 void \mbox{\hyperlink{class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe}{List}} ()
 \begin{DoxyCompactList}\small\item\em {\ttfamily std\+::cout} 输出\+Book中所有联系人。 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_address_book_a5fdfae2a3b7bb0f909ca977ae18d0363}{List\+Group}} (std\+::string \&group)
-\item 
-int \mbox{\hyperlink{class_address_book_a18123381a19861d3e6cc5ecc1488162d}{Delete}} (std\+::string \&, std\+::string \&, std\+::string \&)
-\item 
-int \mbox{\hyperlink{class_address_book_a6bde084822074edd70fdfc919f2c8aa8}{Find}} (int start\+Index, std\+::string \&, std\+::string \&, std\+::string \&)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Output all contact in \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_address_book_af5cafb076360577186d987d501989273}{Delete}} (std\+::string \&Name, std\+::string \&Number, std\+::string \&Group)
+\begin{DoxyCompactList}\small\item\em Delete contact with Name, Number and Group, can use placeholder. 按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc}{Find}} (int start\+Index, std\+::string \&name, std\+::string \&number, std\+::string \&group)
+\begin{DoxyCompactList}\small\item\em If Found, return Matched Index, else return -\/1. 从下标start\+Index开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-\/1 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_address_book_a1ed9678af6ed28ae641c1cb87106984b}{index\+Safe}} (int index)
+\begin{DoxyCompactList}\small\item\em Judge index in the range of Vector \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private 属性}
 \begin{DoxyCompactItemize}
 \item 
@@ -57,7 +59,11 @@ Detailed Describer
 
 Construct a new Address Book\+:\+: Address Book object 建立空地址簿 
 
-\mbox{\Hypertarget{class_address_book_a5638d9e7361248f33d52894f65597d47}\label{class_address_book_a5638d9e7361248f33d52894f65597d47}} 
+very good
+
+@\+Author\+: Frank Chu @\+Date\+: 2022-\/11-\/17 23\+:42\+:03 @\+Last\+Editors\+: Frank Chu @\+Last\+Edit\+Time\+: 2022-\/11-\/21 17\+:04\+:08 @\+File\+Path\+: /\+Cpp/lab/\+Cpp-\/lab01-\/week11/source/\+Address\+Book.cpp @\+Description\+:
+
+Copyright (c) 2022 by Frank Chu, All Rights Reserved. \mbox{\Hypertarget{class_address_book_a5638d9e7361248f33d52894f65597d47}\label{class_address_book_a5638d9e7361248f33d52894f65597d47}} 
 \index{AddressBook@{AddressBook}!````~AddressBook@{$\sim$AddressBook}}
 \index{````~AddressBook@{$\sim$AddressBook}!AddressBook@{AddressBook}}
 \doxysubsubsection{\texorpdfstring{$\sim$AddressBook()}{~AddressBook()}}
@@ -103,7 +109,7 @@ Construct a new Address Book\+:\+: Address Book object 建立空地址簿
 
 
 
-在向量中增加一个联系人 
+Add a contact in the vector$<$\+CContact$>$ Book 
 
 
 \begin{DoxyParams}{参数}
@@ -114,18 +120,75 @@ Construct a new Address Book\+:\+: Address Book object 建立空地址簿
 {\em Group} & Group of Contact \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_address_book_a18123381a19861d3e6cc5ecc1488162d}\label{class_address_book_a18123381a19861d3e6cc5ecc1488162d}} 
+\mbox{\Hypertarget{class_address_book_af5cafb076360577186d987d501989273}\label{class_address_book_af5cafb076360577186d987d501989273}} 
 \index{AddressBook@{AddressBook}!Delete@{Delete}}
 \index{Delete@{Delete}!AddressBook@{AddressBook}}
 \doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
-{\footnotesize\ttfamily int Address\+Book\+::\+Delete (\begin{DoxyParamCaption}\item[{std\+::string \&}]{,  }\item[{std\+::string \&}]{,  }\item[{std\+::string \&}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Address\+Book\+::\+Delete (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{std\+::string \&}]{number,  }\item[{std\+::string \&}]{group }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_address_book_a6bde084822074edd70fdfc919f2c8aa8}\label{class_address_book_a6bde084822074edd70fdfc919f2c8aa8}} 
+
+
+Delete contact with Name, Number and Group, can use placeholder. 按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0 
+
+
+\begin{DoxyParams}{参数}
+{\em Name} & Name Pattern \\
+\hline
+{\em Number} & Number Pattern \\
+\hline
+{\em Group} & Group Pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+int delete contact number
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+\mbox{\hyperlink{class_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc}{Address\+Book\+::\+Find()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc}\label{class_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc}} 
 \index{AddressBook@{AddressBook}!Find@{Find}}
 \index{Find@{Find}!AddressBook@{AddressBook}}
 \doxysubsubsection{\texorpdfstring{Find()}{Find()}}
-{\footnotesize\ttfamily int Address\+Book\+::\+Find (\begin{DoxyParamCaption}\item[{int}]{start\+Index,  }\item[{std\+::string \&}]{,  }\item[{std\+::string \&}]{,  }\item[{std\+::string \&}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Address\+Book\+::\+Find (\begin{DoxyParamCaption}\item[{int}]{start\+Index,  }\item[{std\+::string \&}]{name,  }\item[{std\+::string \&}]{number,  }\item[{std\+::string \&}]{group }\end{DoxyParamCaption})}
 
+
+
+If Found, return Matched Index, else return -\/1. 从下标start\+Index开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-\/1 
+
+
+\begin{DoxyParams}{参数}
+{\em start\+Index} & Start Search From index \\
+\hline
+{\em name} & name pattern \\
+\hline
+{\em number} & number pattern \\
+\hline
+{\em group} & group pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+int Matched Contact Index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_address_book_a1ed9678af6ed28ae641c1cb87106984b}\label{class_address_book_a1ed9678af6ed28ae641c1cb87106984b}} 
+\index{AddressBook@{AddressBook}!indexSafe@{indexSafe}}
+\index{indexSafe@{indexSafe}!AddressBook@{AddressBook}}
+\doxysubsubsection{\texorpdfstring{indexSafe()}{indexSafe()}}
+{\footnotesize\ttfamily bool Address\+Book\+::index\+Safe (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Judge index in the range of Vector 
+
+
+\begin{DoxyParams}{参数}
+{\em index} & My Param doc \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true 
+
+false 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe}\label{class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe}} 
 \index{AddressBook@{AddressBook}!List@{List}}
 \index{List@{List}!AddressBook@{AddressBook}}
@@ -143,17 +206,17 @@ Construct a new Address Book\+:\+: Address Book object 建立空地址簿
 \DoxyCodeLine{\textcolor{preprocessor}{\#include <vector>}}
 \DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()}
 \DoxyCodeLine{\{}
-\DoxyCodeLine{     std::vector<int> myvector;}
-\DoxyCodeLine{     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=1; i<=5; i++) myvector.push\_back(i);}
-\DoxyCodeLine{     std::cout << \textcolor{stringliteral}{"{}myvector contains:"{}};}
-\DoxyCodeLine{     \textcolor{keywordflow}{for} (std::vector<int>::iterator it = myvector.begin() ; it != myvector.end(); ++it)}
-\DoxyCodeLine{         std::cout << \textcolor{charliteral}{' '} << *it;}
-\DoxyCodeLine{     std::cout << \textcolor{charliteral}{'\(\backslash\)n'};}
-\DoxyCodeLine{     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{    std::vector<int> myvector;}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=1; i<=5; i++) myvector.push\_back(i);}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}myvector contains:"{}};}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (std::vector<int>::iterator it = myvector.begin() ; it != myvector.end(); ++it)}
+\DoxyCodeLine{        std::cout << \textcolor{charliteral}{' '} << *it;}
+\DoxyCodeLine{    std::cout << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} 0;}
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
- \begin{DoxySeeAlso}{参见}
+  \begin{DoxySeeAlso}{参见}
 public member function ~\newline
  std\+::vector\+::end ~\newline
  \href{https://cplusplus.com/reference/vector/vector/end/}{\texttt{ https\+://cplusplus.\+com/reference/vector/vector/end/}} 
@@ -169,6 +232,22 @@ Iterator Address Book
 \doxysubsubsection{\texorpdfstring{ListGroup()}{ListGroup()}}
 {\footnotesize\ttfamily void Address\+Book\+::\+List\+Group (\begin{DoxyParamCaption}\item[{std\+::string \&}]{group }\end{DoxyParamCaption})}
 
+
+
+Output all contact in 
+
+
+\begin{DoxyParams}{参数}
+{\em group} & group name\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_c_contact_a3a911d776b532f44d332a8ab846230ba}{CContact\+::\+Pattern\+Match()}}
+\item 创建空std\+::string的最佳方式 \href{http://zplutor.github.io/2016/02/18/best-way-to-create-empty-std-string/}{\texttt{ http\+://zplutor.\+github.\+io/2016/02/18/best-\/way-\/to-\/create-\/empty-\/std-\/string/}} 
+\end{DoxyItemize}
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{class_address_book_adf9310eaa9d2d98dffdf43fc6c744219}\label{class_address_book_adf9310eaa9d2d98dffdf43fc6c744219}} 
 \index{AddressBook@{AddressBook}!operator\mbox{[}\mbox{]}@{operator[]}}
 \index{operator\mbox{[}\mbox{]}@{operator[]}!AddressBook@{AddressBook}}

@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghlmnops~待测",
+  0: "abcdefghilmnops~待测",
   1: "acm",
   2: "acm",
-  3: "acdefghlmops~",
+  3: "acdefghilmops~",
   4: "bgn",
   5: "op",
   6: "待测"

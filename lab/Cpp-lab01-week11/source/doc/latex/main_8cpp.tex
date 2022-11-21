@@ -29,5 +29,30 @@ int
 \DoxyCodeLine{add amy 110 tea}
 
 \end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// test main()}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_address_book}{AddressBook}} book1;}
+\DoxyCodeLine{    std::string name = \textcolor{stringliteral}{"{}Frank Chu"{}}, number = \textcolor{stringliteral}{"{}15968126783"{}}, group = \textcolor{stringliteral}{"{}Student"{}};}
+\DoxyCodeLine{    book1.\mbox{\hyperlink{class_address_book_ab2ab4565bc7ec1563fd4fb6f5db4ac6d}{AddContact}}(name, number, group);}
+\DoxyCodeLine{    std::string rhsName = \textcolor{stringliteral}{"{}APanda"{}}, rhsNumber = \textcolor{stringliteral}{"{}22"{}}, rhsGroup = \textcolor{stringliteral}{"{}Teacher"{}};}
+\DoxyCodeLine{    book1.\mbox{\hyperlink{class_address_book_ab2ab4565bc7ec1563fd4fb6f5db4ac6d}{AddContact}}(rhsName, rhsNumber, rhsGroup);}
+\DoxyCodeLine{    book1.\mbox{\hyperlink{class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe}{List}}();}
+\DoxyCodeLine{    std::cout << book1[0];}
+\DoxyCodeLine{    std::cout << book1[2];}
+\DoxyCodeLine{    \textcolor{comment}{// book1.List();}}
+\DoxyCodeLine{    \textcolor{comment}{// book1.Sort();}}
+\DoxyCodeLine{    \textcolor{comment}{// book1.List();}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_c_contact}{CContact}} frank = \mbox{\hyperlink{class_c_contact}{CContact}}(name, number, group);}
+\DoxyCodeLine{    name = \textcolor{stringliteral}{"{}Panda"{}}, number = \textcolor{stringliteral}{"{}22"{}}, group = \textcolor{stringliteral}{"{}Teacher"{}};}
+\DoxyCodeLine{    \mbox{\hyperlink{class_c_contact}{CContact}} panda = \mbox{\hyperlink{class_c_contact}{CContact}}(name, number, group);}
+\DoxyCodeLine{    name = \textcolor{stringliteral}{"{}Panda"{}}, number = \textcolor{stringliteral}{"{}22"{}}, group = \textcolor{stringliteral}{"{}Student"{}};}
+\DoxyCodeLine{    \mbox{\hyperlink{class_c_contact}{CContact}} amy = \mbox{\hyperlink{class_c_contact}{CContact}}(name, number, group);}
+\DoxyCodeLine{    book1.Add(amy);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
  \begin{DoxyRefDesc}{待办事项}
 \item[\mbox{\hyperlink{todo__todo000001}{待办事项}}]convert command\+Of\+Input into ENUM\end{DoxyRefDesc}

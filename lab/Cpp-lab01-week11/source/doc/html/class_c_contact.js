@@ -7,7 +7,7 @@ var class_c_contact =
     [ "getContact", "class_c_contact.html#aaa73f78c844126a49e81bf6e65d98990", null ],
     [ "operator<", "class_c_contact.html#a2f0c2ff2f3045d49d043250fbd0b9e5e", null ],
     [ "operator=", "class_c_contact.html#a6fa656e4a38c4d14b5505d36e5c0f365", null ],
-    [ "PatternMatch", "class_c_contact.html#a76e1d4dc8f579512f599cf18880ab5be", null ],
+    [ "PatternMatch", "class_c_contact.html#a3a911d776b532f44d332a8ab846230ba", null ],
     [ "setContact", "class_c_contact.html#a161ea4a13e9a0f4fea96693ef70904c3", null ],
     [ "operator<<", "class_c_contact.html#a56a86dea0bb828cd4990a61a508eb9ba", null ],
     [ "operator>>", "class_c_contact.html#a5f6eeb90164491c2ace958f8078b0d75", null ],

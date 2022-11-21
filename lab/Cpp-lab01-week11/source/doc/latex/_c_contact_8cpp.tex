@@ -25,26 +25,17 @@ bool \mbox{\hyperlink{_c_contact_8cpp_a0a82ec9e83c845e0a97385f328e6237c}{match}}
 
 字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员 
 
+~\newline
+ {\ttfamily string\+::npos} 静态成员常量
 
-\begin{DoxyParams}{参数}
-{\em pattern} & My Param doc \\
-\hline
-{\em source} & My Param doc \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{返回}
-true 
-
-false 
+是对类型为 {\ttfamily size\+\_\+t} 的元素具有最大可能的值。 当这个值在字符串成员函数中的长度或者子长度被使用时，该值表示“直到字符串结尾”。 作为返回值他通常被用作表明没有匹配。 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{keywordflow}{if} (s1.find(s2) != std::string::npos) \{}
 \DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}found!"{}} << \textcolor{charliteral}{'\(\backslash\)n'};}
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
- 
-\end{DoxyReturn}
-\begin{DoxyRefDesc}{测试}
+ \begin{DoxyRefDesc}{测试}
 \item[\mbox{\hyperlink{test__test000007}{测试}}]\end{DoxyRefDesc}
 
 \begin{DoxyCode}{0}
@@ -60,10 +51,23 @@ false
 
 \begin{DoxyItemize}
 \item Check if a string contains a string in C++ \href{https://stackoverflow.com/questions/2340281/check-if-a-string-contains-a-string-in-c}{\texttt{ https\+://stackoverflow.\+com/questions/2340281/check-\/if-\/a-\/string-\/contains-\/a-\/string-\/in-\/c}}
-\item C++ 中 {\ttfamily string\+::find()} 函数和 {\ttfamily string\+::npos} 函数的使用 \href{https://www.cnblogs.com/lixuejian/p/10844905.html}{\texttt{ https\+://www.\+cnblogs.\+com/lixuejian/p/10844905.\+html}} 
+\item C++ 中 {\ttfamily string\+::find()} 函数和 {\ttfamily string\+::npos} 函数的使用 \href{https://www.cnblogs.com/lixuejian/p/10844905.html}{\texttt{ https\+://www.\+cnblogs.\+com/lixuejian/p/10844905.\+html}}
+\item std\+::string\+::find 空字符串 返回结果不是 string\+::npos \href{https://blog.csdn.net/yasi_xi/article/details/7305443}{\texttt{ https\+://blog.\+csdn.\+net/yasi\+\_\+xi/article/details/7305443}}
+\item 查找字符串，支持通配符查找，通配符包含 .和? \href{https://blog.csdn.net/wang_anna/article/details/117019969}{\texttt{ https\+://blog.\+csdn.\+net/wang\+\_\+anna/article/details/117019969}}
+\item 通配符（？，$\ast$）与正则表达式 \href{https://blog.csdn.net/yh13572438258/article/details/121545229}{\texttt{ https\+://blog.\+csdn.\+net/yh13572438258/article/details/121545229}}
+\item str\+::string和wchar\+\_\+t$\ast$相互转化 \href{https://blog.csdn.net/zddblog/article/details/38670349}{\texttt{ https\+://blog.\+csdn.\+net/zddblog/article/details/38670349}}
+\item C++：wchar\+\_\+t$\ast$ \& string相互转换 \href{https://codeantenna.com/a/uDA7bfXIkF}{\texttt{ https\+://codeantenna.\+com/a/u\+DA7bf\+XIkF}}
+\item C++11之正则表达式（regex\+\_\+match、regex\+\_\+search、regex\+\_\+replace） \href{https://blog.csdn.net/qq_45254369/article/details/125491031}{\texttt{ https\+://blog.\+csdn.\+net/qq\+\_\+45254369/article/details/125491031}}
 \end{DoxyItemize}
 \end{DoxySeeAlso}
-\mbox{\Hypertarget{_c_contact_8cpp_af6aee18c92373d236d728946813284f6}\label{_c_contact_8cpp_af6aee18c92373d236d728946813284f6}} 
+不区分大小写，需包含头文件 From\+: 查找字符串，支持通配符查找，通配符包含 .和? \href{https://blog.csdn.net/wang_anna/article/details/117019969}{\texttt{ https\+://blog.\+csdn.\+net/wang\+\_\+anna/article/details/117019969}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include<regex>}}
+\DoxyCodeLine{\textcolor{keyword}{using namespace }regex\_constants;}
+\DoxyCodeLine{ECMAScript | icase \textcolor{comment}{// Case insensitive}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_c_contact_8cpp_af6aee18c92373d236d728946813284f6}\label{_c_contact_8cpp_af6aee18c92373d236d728946813284f6}} 
 \index{CContact.cpp@{CContact.cpp}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!CContact.cpp@{CContact.cpp}}
 \doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}

@@ -5,7 +5,7 @@
 \DoxyCodeLine{2 \textcolor{comment}{ * @Author: Frank Chu}}
 \DoxyCodeLine{3 \textcolor{comment}{ * @Date: 2022-\/11-\/16 16:04:46}}
 \DoxyCodeLine{4 \textcolor{comment}{ * @LastEditors: Frank Chu}}
-\DoxyCodeLine{5 \textcolor{comment}{ * @LastEditTime: 2022-\/11-\/20 19:43:21}}
+\DoxyCodeLine{5 \textcolor{comment}{ * @LastEditTime: 2022-\/11-\/21 22:45:07}}
 \DoxyCodeLine{6 \textcolor{comment}{ * @FilePath: /Cpp/lab/Cpp-\/lab01-\/week11/source/AddressBook.h}}
 \DoxyCodeLine{7 \textcolor{comment}{ * @Description:}}
 \DoxyCodeLine{8 \textcolor{comment}{ *}}
@@ -21,32 +21,37 @@
 \DoxyCodeLine{18 }
 \DoxyCodeLine{19 \textcolor{preprocessor}{\#ifndef ADDRESSBOOK\_H}}
 \DoxyCodeLine{20 \textcolor{preprocessor}{\#define ADDRESSBOOK\_H}}
-\DoxyCodeLine{27 \textcolor{keyword}{class }\mbox{\hyperlink{class_address_book}{AddressBook}}}
-\DoxyCodeLine{28 \{}
-\DoxyCodeLine{29 \textcolor{keyword}{private}:}
-\DoxyCodeLine{33     std::vector<CContact> \mbox{\hyperlink{class_address_book_ac1028530fa4cb726389dbe9c9d6bded4}{Book}};}
-\DoxyCodeLine{34 }
-\DoxyCodeLine{35 \textcolor{keyword}{public}:}
-\DoxyCodeLine{36     \mbox{\hyperlink{class_address_book_ad2d2cebd2a3aa00130f769684bc8ddea}{AddressBook}}();  \textcolor{comment}{//建立空地址簿}}
-\DoxyCodeLine{37     \mbox{\hyperlink{class_address_book_a5638d9e7361248f33d52894f65597d47}{\string~AddressBook}}(); \textcolor{comment}{//地址簿析构函数，其中必须清空联系人向量Book}}
-\DoxyCodeLine{38 }
-\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_ab2ab4565bc7ec1563fd4fb6f5db4ac6d}{AddContact}}(std::string \&, std::string \&, std::string \&);          \textcolor{comment}{//在向量中增加一个联系人}}
+\DoxyCodeLine{26 \textcolor{keyword}{class }\mbox{\hyperlink{class_address_book}{AddressBook}}}
+\DoxyCodeLine{27 \{}
+\DoxyCodeLine{28 \textcolor{keyword}{private}:}
+\DoxyCodeLine{32     std::vector<CContact> \mbox{\hyperlink{class_address_book_ac1028530fa4cb726389dbe9c9d6bded4}{Book}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{public}:}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{39     \mbox{\hyperlink{class_address_book_ad2d2cebd2a3aa00130f769684bc8ddea}{AddressBook}}();}
 \DoxyCodeLine{40 }
-\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_a0b20a62e6f9a2ea1196b47591a739dab}{Add}}(\mbox{\hyperlink{class_c_contact}{CContact}}\& contact);}
-\DoxyCodeLine{46 }
-\DoxyCodeLine{52     \mbox{\hyperlink{class_c_contact}{CContact}} \mbox{\hyperlink{class_address_book_adf9310eaa9d2d98dffdf43fc6c744219}{operator[]}}(\textcolor{keywordtype}{int} indexOfContact);}
+\DoxyCodeLine{44     \mbox{\hyperlink{class_address_book_a5638d9e7361248f33d52894f65597d47}{\string~AddressBook}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_ab2ab4565bc7ec1563fd4fb6f5db4ac6d}{AddContact}}(std::string \&, std::string \&, std::string \&);}
 \DoxyCodeLine{53 }
-\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_acef18d40a6792d9ae74e544a23448c38}{Sort}}();}
-\DoxyCodeLine{58 }
-\DoxyCodeLine{62     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_aeb032c4fefe4c56388e203199dd5e6f6}{SortGroup}}();}
-\DoxyCodeLine{63 }
-\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe}{List}}();}
-\DoxyCodeLine{68 }
-\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_a5fdfae2a3b7bb0f909ca977ae18d0363}{ListGroup}}(std::string\& group);                      \textcolor{comment}{//输出某组别中的所有联系人}}
-\DoxyCodeLine{70 }
-\DoxyCodeLine{71     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_address_book_a18123381a19861d3e6cc5ecc1488162d}{Delete}}(std::string \&, std::string \&, std::string \&); \textcolor{comment}{//按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0}}
-\DoxyCodeLine{72     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_address_book_a6bde084822074edd70fdfc919f2c8aa8}{Find}}(\textcolor{keywordtype}{int} startIndex, std::string \&, std::string \&, std::string \&); \textcolor{comment}{//从下标startIndex开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-\/1}}
-\DoxyCodeLine{73 \};}
-\DoxyCodeLine{74 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_a0b20a62e6f9a2ea1196b47591a739dab}{Add}}(\mbox{\hyperlink{class_c_contact}{CContact}}\& contact);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{65     \mbox{\hyperlink{class_c_contact}{CContact}} \mbox{\hyperlink{class_address_book_adf9310eaa9d2d98dffdf43fc6c744219}{operator[]}}(\textcolor{keywordtype}{int} indexOfContact);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_acef18d40a6792d9ae74e544a23448c38}{Sort}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_aeb032c4fefe4c56388e203199dd5e6f6}{SortGroup}}();}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe}{List}}();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{86     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_address_book_a5fdfae2a3b7bb0f909ca977ae18d0363}{ListGroup}}(std::string\& group);}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{95     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_address_book_af5cafb076360577186d987d501989273}{Delete}}(std::string\& Name, std::string\& Number, std::string\& Group); \textcolor{comment}{//按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0}}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{105     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_address_book_aca2dfbdc3fb8f286c1cb850aca1a30bc}{Find}}(\textcolor{keywordtype}{int} startIndex, std::string\& name, std::string\& number, std::string\& group);}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{113     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_address_book_a1ed9678af6ed28ae641c1cb87106984b}{indexSafe}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{114 \};}
+\DoxyCodeLine{115 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

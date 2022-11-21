@@ -151,33 +151,34 @@ $(document).ready(function(){initNavTree('_c_contact_8cpp.html',''); initResizab
 </div><div class="memdoc">
 
 <p>字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pattern</td><td>My Param doc </td></tr>
-    <tr><td class="paramname">source</td><td>My Param doc </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>true </dd>
-<dd>
-false <div class="fragment"><div class="line"><span class="keywordflow">if</span> (s1.find(s2) != std::string::npos) {</div>
+<p ><br  />
+ <code>string::npos</code> 静态成员常量</p>
+<p >是对类型为 <code>size_t</code> 的元素具有最大可能的值。 当这个值在字符串成员函数中的长度或者子长度被使用时，该值表示“直到字符串结尾”。 作为返回值他通常被用作表明没有匹配。 </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (s1.find(s2) != std::string::npos) {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;found!&quot;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
-</div><!-- fragment --> </dd></dl>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000007">测试:</a></b></dt><dd></dd></dl>
+</div><!-- fragment --> <dl class="test"><dt><b><a class="el" href="test.html#_test000007">测试:</a></b></dt><dd></dd></dl>
 <div class="fragment"><div class="line">std::string matchTestCase1Pattern = <span class="stringliteral">&quot;Franek&quot;</span>, matchTestCase1Source = <span class="stringliteral">&quot;Frank Chu&quot;</span>;</div>
 <div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="_c_contact_8cpp.html#a0a82ec9e83c845e0a97385f328e6237c">match</a>(matchTestCase1Pattern, matchTestCase1Source)) {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Yes&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">} <span class="keywordflow">else</span> {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;No&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="a_c_contact_8cpp_html_a0a82ec9e83c845e0a97385f328e6237c"><div class="ttname"><a href="_c_contact_8cpp.html#a0a82ec9e83c845e0a97385f328e6237c">match</a></div><div class="ttdeci">bool match(std::string &amp;pattern, std::string &amp;source)</div><div class="ttdoc">字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员</div><div class="ttdef"><b>Definition:</b> CContact.cpp:144</div></div>
+<div class="ttc" id="a_c_contact_8cpp_html_a0a82ec9e83c845e0a97385f328e6237c"><div class="ttname"><a href="_c_contact_8cpp.html#a0a82ec9e83c845e0a97385f328e6237c">match</a></div><div class="ttdeci">bool match(std::string &amp;pattern, std::string &amp;source)</div><div class="ttdoc">字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员</div><div class="ttdef"><b>Definition:</b> CContact.cpp:163</div></div>
 </div><!-- fragment --> <dl class="section see"><dt>参见</dt><dd><ul>
 <li>Check if a string contains a string in C++ <a href="https://stackoverflow.com/questions/2340281/check-if-a-string-contains-a-string-in-c">https://stackoverflow.com/questions/2340281/check-if-a-string-contains-a-string-in-c</a></li>
-<li>C++ 中 <code>string::find()</code> 函数和 <code>string::npos</code> 函数的使用 <a href="https://www.cnblogs.com/lixuejian/p/10844905.html">https://www.cnblogs.com/lixuejian/p/10844905.html</a> </li>
+<li>C++ 中 <code>string::find()</code> 函数和 <code>string::npos</code> 函数的使用 <a href="https://www.cnblogs.com/lixuejian/p/10844905.html">https://www.cnblogs.com/lixuejian/p/10844905.html</a></li>
+<li>std::string::find 空字符串 返回结果不是 string::npos <a href="https://blog.csdn.net/yasi_xi/article/details/7305443">https://blog.csdn.net/yasi_xi/article/details/7305443</a></li>
+<li>查找字符串，支持通配符查找，通配符包含 .和? <a href="https://blog.csdn.net/wang_anna/article/details/117019969">https://blog.csdn.net/wang_anna/article/details/117019969</a></li>
+<li>通配符（？，*）与正则表达式 <a href="https://blog.csdn.net/yh13572438258/article/details/121545229">https://blog.csdn.net/yh13572438258/article/details/121545229</a></li>
+<li>str::string和wchar_t*相互转化 <a href="https://blog.csdn.net/zddblog/article/details/38670349">https://blog.csdn.net/zddblog/article/details/38670349</a></li>
+<li>C++：wchar_t* &amp; string相互转换 <a href="https://codeantenna.com/a/uDA7bfXIkF">https://codeantenna.com/a/uDA7bfXIkF</a></li>
+<li>C++11之正则表达式（regex_match、regex_search、regex_replace） <a href="https://blog.csdn.net/qq_45254369/article/details/125491031">https://blog.csdn.net/qq_45254369/article/details/125491031</a></li>
 </ul>
 </dd></dl>
-
+<p>不区分大小写，需包含头文件 From: 查找字符串，支持通配符查找，通配符包含 .和? <a href="https://blog.csdn.net/wang_anna/article/details/117019969">https://blog.csdn.net/wang_anna/article/details/117019969</a> </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;regex&gt;</span></div>
+<div class="line"><span class="keyword">using namespace </span>regex_constants;</div>
+<div class="line">ECMAScript | icase <span class="comment">// Case insensitive</span></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="af6aee18c92373d236d728946813284f6" name="af6aee18c92373d236d728946813284f6"></a>
@@ -273,7 +274,7 @@ false <div class="fragment"><div class="line"><span class="keywordflow">if</span
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;&gt; do not change&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">}</div>
 <div class="ttc" id="a_c_contact_8cpp_html_a808cea55ceaa2f5f4416ccd2e636330b"><div class="ttname"><a href="_c_contact_8cpp.html#a808cea55ceaa2f5f4416ccd2e636330b">pr</a></div><div class="ttdeci">bool pr(const CContact &amp;lhsContact, const CContact &amp;rhsContact)</div><div class="ttdef"><b>Definition:</b> CContact.cpp:98</div></div>
-<div class="ttc" id="aclass_c_contact_html"><div class="ttname"><a href="class_c_contact.html">CContact</a></div><div class="ttdoc">CContact 是联系人类</div><div class="ttdef"><b>Definition:</b> CContact.h:23</div></div>
+<div class="ttc" id="aclass_c_contact_html"><div class="ttname"><a href="class_c_contact.html">CContact</a></div><div class="ttdoc">CContact 是联系人类</div><div class="ttdef"><b>Definition:</b> CContact.h:22</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
