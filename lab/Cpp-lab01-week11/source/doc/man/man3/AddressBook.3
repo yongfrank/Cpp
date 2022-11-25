@@ -1,4 +1,4 @@
-.TH "AddressBook" 3 "2022年 十一月 22日 星期二" "Version 1.0.0" "ContactAddressBook" \" -*- nroff -*-
+.TH "AddressBook" 3 "2022年 十一月 24日 星期四" "Version 1.0.0" "ContactAddressBook" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -177,7 +177,7 @@ int delete contact number
 .PP
 
 .PP
-在文件 \fBAddressBook\&.cpp\fP 第 \fB89\fP 行定义\&.
+在文件 \fBAddressBook\&.cpp\fP 第 \fB102\fP 行定义\&.
 .SS "int AddressBook::Find (int startIndex, std::string & name, std::string & number, std::string & group)"
 
 .PP
@@ -221,7 +221,7 @@ false
 .PP
 
 .PP
-在文件 \fBAddressBook\&.cpp\fP 第 \fB121\fP 行定义\&.
+在文件 \fBAddressBook\&.cpp\fP 第 \fB134\fP 行定义\&.
 .SS "void AddressBook::List ()"
 
 .PP
@@ -264,7 +264,7 @@ Iterator Address Book
 .PP
 
 .PP
-在文件 \fBAddressBook\&.cpp\fP 第 \fB199\fP 行定义\&.
+在文件 \fBAddressBook\&.cpp\fP 第 \fB212\fP 行定义\&.
 .SS "void AddressBook::ListGroup (std::string & group)"
 
 .PP
@@ -286,7 +286,7 @@ Output all contact in
 .PP
 
 .PP
-在文件 \fBAddressBook\&.cpp\fP 第 \fB216\fP 行定义\&.
+在文件 \fBAddressBook\&.cpp\fP 第 \fB229\fP 行定义\&.
 .SS "\fBCContact\fP AddressBook::operator[] (int indexOfContact)"
 
 .PP
@@ -325,13 +325,31 @@ std::cout << book1[2];
 .RS 4
 
 .IP "\(bu" 2
-C++ 下标运算符 [] 重载 https://www.runoob.com/cplusplus/subscripting-operator-overloading.html 
+C++ 下标运算符 [] 重载 https://www.runoob.com/cplusplus/subscripting-operator-overloading.html
+.IP "\(bu" 2
+老师，为什么还要重载这个下标运算符啊，vector模板里不是已经实现了吗 
+.PP
+.nf
+int& operator[](int i)
+{
+    if( i >= SIZE )
+    {
+        cout << "索引超过最大值" <<endl; 
+        // 返回第一个元素
+        return arr[0];
+    }
+    return arr[i];
+}
+
+.fi
+.PP
+ 
 .PP
 .RE
 .PP
 
 .PP
-在文件 \fBAddressBook\&.cpp\fP 第 \fB73\fP 行定义\&.
+在文件 \fBAddressBook\&.cpp\fP 第 \fB86\fP 行定义\&.
 .SS "void AddressBook::Sort ()"
 
 .PP
@@ -366,7 +384,7 @@ C++中,结构体vector使用sort排序 https://blog.csdn.net/zhouxun623/article/
 .PP
 
 .PP
-在文件 \fBAddressBook\&.cpp\fP 第 \fB141\fP 行定义\&.
+在文件 \fBAddressBook\&.cpp\fP 第 \fB154\fP 行定义\&.
 .SS "void AddressBook::SortGroup ()"
 
 .PP
@@ -403,7 +421,7 @@ book1\&.List();
 .PP
  
 .PP
-在文件 \fBAddressBook\&.cpp\fP 第 \fB172\fP 行定义\&.
+在文件 \fBAddressBook\&.cpp\fP 第 \fB185\fP 行定义\&.
 .SH "类成员变量说明"
 .PP 
 .SS "std::vector<\fBCContact\fP> AddressBook::Book\fC [private]\fP"

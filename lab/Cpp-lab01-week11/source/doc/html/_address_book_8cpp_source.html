@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('_address_book_8cpp_source.html',''); i
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @Author: Frank Chu</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @Date: 2022-11-17 23:42:03</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @LastEditors: Frank Chu</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @LastEditTime: 2022-11-21 23:23:36</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @LastEditTime: 2022-11-22 14:05:23</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/AddressBook.cpp</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @Description:</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
@@ -153,100 +153,100 @@ $(document).ready(function(){initNavTree('_address_book_8cpp_source.html',''); i
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> indexOfContact;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_address_book.html#adf9310eaa9d2d98dffdf43fc6c744219">   73</a></span><a class="code hl_class" href="class_c_contact.html">CContact</a> <a class="code hl_function" href="class_address_book.html#adf9310eaa9d2d98dffdf43fc6c744219">AddressBook::operator[]</a>(<span class="keywordtype">int</span> indexOfContact)</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">auto</span> sizeOfBook = this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.size() - 1;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">if</span> (indexOfContact &gt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(sizeOfBook))</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;ERROR: Larger than max index, return the first item&quot;</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>[0];</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>[indexOfContact];</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_address_book.html#af5cafb076360577186d987d501989273">   89</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_address_book.html#af5cafb076360577186d987d501989273">AddressBook::Delete</a>(std::string &amp;name, std::string &amp;number, std::string &amp;group)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    std::vector&lt;int&gt; indexOfDeletion;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">int</span> deleteIndex = 0;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    deleteIndex = this-&gt;<a class="code hl_function" href="class_address_book.html#aca2dfbdc3fb8f286c1cb850aca1a30bc">Find</a>(0, name, number, group);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    indexOfDeletion.push_back(deleteIndex);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Deleting &quot;</span> &lt;&lt; this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>[deleteIndex];</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">if</span> (deleteIndex != -1)</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        this-&gt;Book.erase(this-&gt;Book.begin() + deleteIndex);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">while</span> (deleteIndex != -1)</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="comment">// if(this-&gt;indexSafe(deleteIndex)) {</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            deleteIndex = this-&gt;<a class="code hl_function" href="class_address_book.html#aca2dfbdc3fb8f286c1cb850aca1a30bc">Find</a>(0, name, number, group);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">if</span> (deleteIndex != -1)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;Deleting &quot;</span> &lt;&lt; this-&gt;Book[deleteIndex];</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                this-&gt;Book.erase(this-&gt;Book.begin() + deleteIndex);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="comment">// } else {</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="comment">//     deleteIndex = -1;</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="comment">// }</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            indexOfDeletion.push_back(deleteIndex);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// for(std::vector&lt;CContact&gt;::iterator itOfContacts = this-&gt;Book.begin(); itOfContacts != this-&gt;Book.end(); itOfContacts++) {</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">// }</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">return</span> indexOfDeletion.size() - 1;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_address_book.html#a1ed9678af6ed28ae641c1cb87106984b">  121</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_address_book.html#a1ed9678af6ed28ae641c1cb87106984b">AddressBook::indexSafe</a>(<span class="keywordtype">int</span> index)</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>{</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">return</span> (index &lt;= (<span class="keywordtype">int</span>)this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.size()) ? true : <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">  141</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">AddressBook::Sort</a>()</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>{</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="comment">// std::sort(this-&gt;Book.begin(), this-&gt;Book.end(), [](const CContact&amp; lhs, const CContact&amp; rhs) { return lhs &lt; rhs;});</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    std::sort(this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.begin(), this-&gt;Book.end());</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">  172</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">AddressBook::SortGroup</a>()</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>{</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    std::sort(this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.begin(), this-&gt;Book.end(), <a class="code hl_function" href="_c_contact_8cpp.html#a808cea55ceaa2f5f4416ccd2e636330b">pr</a>);</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">  199</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">AddressBook::List</a>()</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>{</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">for</span> (std::vector&lt;CContact&gt;::iterator it = this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.begin(); it != this-&gt;Book.end(); ++it)</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    { <span class="comment">// can also be it++</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        std::cout &lt;&lt; *it;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="class_address_book.html#a5fdfae2a3b7bb0f909ca977ae18d0363">  216</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_address_book.html#a5fdfae2a3b7bb0f909ca977ae18d0363">AddressBook::ListGroup</a>(std::string &amp;group)</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>{</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">for</span> (std::vector&lt;CContact&gt;::iterator iteratorOfContact = this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.begin(); iteratorOfContact != this-&gt;Book.end(); iteratorOfContact++)</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    {</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        std::string name = <span class="stringliteral">&quot;&quot;</span>, phoneNumber = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="keywordflow">if</span> ((*iteratorOfContact).PatternMatch(name, phoneNumber, group))</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        {</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            std::cout &lt;&lt; *iteratorOfContact;</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        }</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    }</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>}</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_address_book.html#adf9310eaa9d2d98dffdf43fc6c744219">   86</a></span><a class="code hl_class" href="class_c_contact.html">CContact</a> <a class="code hl_function" href="class_address_book.html#adf9310eaa9d2d98dffdf43fc6c744219">AddressBook::operator[]</a>(<span class="keywordtype">int</span> indexOfContact)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">auto</span> sizeOfBook = this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.size() - 1;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (indexOfContact &gt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(sizeOfBook))</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;ERROR: Larger than max index, return the first item&quot;</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>[0];</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>[indexOfContact];</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_address_book.html#af5cafb076360577186d987d501989273">  102</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_address_book.html#af5cafb076360577186d987d501989273">AddressBook::Delete</a>(std::string &amp;name, std::string &amp;number, std::string &amp;group)</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    std::vector&lt;int&gt; indexOfDeletion;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">int</span> deleteIndex = 0;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    deleteIndex = this-&gt;<a class="code hl_function" href="class_address_book.html#aca2dfbdc3fb8f286c1cb850aca1a30bc">Find</a>(0, name, number, group);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    indexOfDeletion.push_back(deleteIndex);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Deleting &quot;</span> &lt;&lt; this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>[deleteIndex];</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">if</span> (deleteIndex != -1)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        this-&gt;Book.erase(this-&gt;Book.begin() + deleteIndex);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">while</span> (deleteIndex != -1)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="comment">// if(this-&gt;indexSafe(deleteIndex)) {</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            deleteIndex = this-&gt;<a class="code hl_function" href="class_address_book.html#aca2dfbdc3fb8f286c1cb850aca1a30bc">Find</a>(0, name, number, group);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">if</span> (deleteIndex != -1)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;Deleting &quot;</span> &lt;&lt; this-&gt;Book[deleteIndex];</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                this-&gt;Book.erase(this-&gt;Book.begin() + deleteIndex);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="comment">// } else {</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="comment">//     deleteIndex = -1;</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="comment">// }</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            indexOfDeletion.push_back(deleteIndex);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="comment">// for(std::vector&lt;CContact&gt;::iterator itOfContacts = this-&gt;Book.begin(); itOfContacts != this-&gt;Book.end(); itOfContacts++) {</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="comment">// }</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">return</span> indexOfDeletion.size() - 1;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_address_book.html#a1ed9678af6ed28ae641c1cb87106984b">  134</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_address_book.html#a1ed9678af6ed28ae641c1cb87106984b">AddressBook::indexSafe</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>{</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">return</span> (index &lt;= (<span class="keywordtype">int</span>)this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.size()) ? true : <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">  154</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">AddressBook::Sort</a>()</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="comment">// std::sort(this-&gt;Book.begin(), this-&gt;Book.end(), [](const CContact&amp; lhs, const CContact&amp; rhs) { return lhs &lt; rhs;});</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    std::sort(this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.begin(), this-&gt;Book.end());</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">  185</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">AddressBook::SortGroup</a>()</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    std::sort(this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.begin(), this-&gt;Book.end(), <a class="code hl_function" href="_c_contact_8cpp.html#a808cea55ceaa2f5f4416ccd2e636330b">pr</a>);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">  212</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">AddressBook::List</a>()</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>{</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">for</span> (std::vector&lt;CContact&gt;::iterator it = this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.begin(); it != this-&gt;Book.end(); ++it)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    { <span class="comment">// can also be it++</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        std::cout &lt;&lt; *it;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>}</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="class_address_book.html#a5fdfae2a3b7bb0f909ca977ae18d0363">  229</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_address_book.html#a5fdfae2a3b7bb0f909ca977ae18d0363">AddressBook::ListGroup</a>(std::string &amp;group)</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>{</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">for</span> (std::vector&lt;CContact&gt;::iterator iteratorOfContact = this-&gt;<a class="code hl_variable" href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">Book</a>.begin(); iteratorOfContact != this-&gt;Book.end(); iteratorOfContact++)</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        std::string name = <span class="stringliteral">&quot;&quot;</span>, phoneNumber = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <span class="keywordflow">if</span> ((*iteratorOfContact).PatternMatch(name, phoneNumber, group))</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            std::cout &lt;&lt; *iteratorOfContact;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>}</div>
 <div class="ttc" id="a_address_book_8h_html"><div class="ttname"><a href="_address_book_8h.html">AddressBook.h</a></div></div>
 <div class="ttc" id="a_c_contact_8cpp_html_a808cea55ceaa2f5f4416ccd2e636330b"><div class="ttname"><a href="_c_contact_8cpp.html#a808cea55ceaa2f5f4416ccd2e636330b">pr</a></div><div class="ttdeci">bool pr(const CContact &amp;lhsContact, const CContact &amp;rhsContact)</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8cpp_source.html#l00098">CContact.cpp:98</a></div></div>
-<div class="ttc" id="aclass_address_book_html_a03109edb7d7e0a3ddacb44375bbac8fe"><div class="ttname"><a href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">AddressBook::List</a></div><div class="ttdeci">void List()</div><div class="ttdoc">std::cout 输出Book中所有联系人。</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00199">AddressBook.cpp:199</a></div></div>
+<div class="ttc" id="aclass_address_book_html_a03109edb7d7e0a3ddacb44375bbac8fe"><div class="ttname"><a href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">AddressBook::List</a></div><div class="ttdeci">void List()</div><div class="ttdoc">std::cout 输出Book中所有联系人。</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00212">AddressBook.cpp:212</a></div></div>
 <div class="ttc" id="aclass_address_book_html_a0b20a62e6f9a2ea1196b47591a739dab"><div class="ttname"><a href="class_address_book.html#a0b20a62e6f9a2ea1196b47591a739dab">AddressBook::Add</a></div><div class="ttdeci">void Add(CContact &amp;contact)</div><div class="ttdoc">在向量中增加一个类型为 CContact 联系人</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00036">AddressBook.cpp:36</a></div></div>
-<div class="ttc" id="aclass_address_book_html_a1ed9678af6ed28ae641c1cb87106984b"><div class="ttname"><a href="class_address_book.html#a1ed9678af6ed28ae641c1cb87106984b">AddressBook::indexSafe</a></div><div class="ttdeci">bool indexSafe(int index)</div><div class="ttdoc">Judge index in the range of Vector</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00121">AddressBook.cpp:121</a></div></div>
+<div class="ttc" id="aclass_address_book_html_a1ed9678af6ed28ae641c1cb87106984b"><div class="ttname"><a href="class_address_book.html#a1ed9678af6ed28ae641c1cb87106984b">AddressBook::indexSafe</a></div><div class="ttdeci">bool indexSafe(int index)</div><div class="ttdoc">Judge index in the range of Vector</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00134">AddressBook.cpp:134</a></div></div>
 <div class="ttc" id="aclass_address_book_html_a5638d9e7361248f33d52894f65597d47"><div class="ttname"><a href="class_address_book.html#a5638d9e7361248f33d52894f65597d47">AddressBook::~AddressBook</a></div><div class="ttdeci">~AddressBook()</div><div class="ttdoc">地址簿析构函数，其中必须清空联系人向量 Book Destroy the Address Book:: Address Book object</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00017">AddressBook.cpp:17</a></div></div>
-<div class="ttc" id="aclass_address_book_html_a5fdfae2a3b7bb0f909ca977ae18d0363"><div class="ttname"><a href="class_address_book.html#a5fdfae2a3b7bb0f909ca977ae18d0363">AddressBook::ListGroup</a></div><div class="ttdeci">void ListGroup(std::string &amp;group)</div><div class="ttdoc">Output all contact in</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00216">AddressBook.cpp:216</a></div></div>
+<div class="ttc" id="aclass_address_book_html_a5fdfae2a3b7bb0f909ca977ae18d0363"><div class="ttname"><a href="class_address_book.html#a5fdfae2a3b7bb0f909ca977ae18d0363">AddressBook::ListGroup</a></div><div class="ttdeci">void ListGroup(std::string &amp;group)</div><div class="ttdoc">Output all contact in</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00229">AddressBook.cpp:229</a></div></div>
 <div class="ttc" id="aclass_address_book_html_ab2ab4565bc7ec1563fd4fb6f5db4ac6d"><div class="ttname"><a href="class_address_book.html#ab2ab4565bc7ec1563fd4fb6f5db4ac6d">AddressBook::AddContact</a></div><div class="ttdeci">void AddContact(std::string &amp;, std::string &amp;, std::string &amp;)</div><div class="ttdoc">Add a contact in the vector&lt;CContact&gt; Book</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00022">AddressBook.cpp:22</a></div></div>
 <div class="ttc" id="aclass_address_book_html_ac1028530fa4cb726389dbe9c9d6bded4"><div class="ttname"><a href="class_address_book.html#ac1028530fa4cb726389dbe9c9d6bded4">AddressBook::Book</a></div><div class="ttdeci">std::vector&lt; CContact &gt; Book</div><div class="ttdoc">以CContact类实例化类模板vector形成CContact向量作为存储结构。Book是CContact向量类的一个实例</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8h_source.html#l00033">AddressBook.h:33</a></div></div>
 <div class="ttc" id="aclass_address_book_html_aca2dfbdc3fb8f286c1cb850aca1a30bc"><div class="ttname"><a href="class_address_book.html#aca2dfbdc3fb8f286c1cb850aca1a30bc">AddressBook::Find</a></div><div class="ttdeci">int Find(int startIndex, std::string &amp;name, std::string &amp;number, std::string &amp;group)</div><div class="ttdoc">If Found, return Matched Index, else return -1. 从下标startIndex开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-1</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00041">AddressBook.cpp:41</a></div></div>
-<div class="ttc" id="aclass_address_book_html_acef18d40a6792d9ae74e544a23448c38"><div class="ttname"><a href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">AddressBook::Sort</a></div><div class="ttdeci">void Sort()</div><div class="ttdoc">按姓名排序 AddressBook</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00141">AddressBook.cpp:141</a></div></div>
+<div class="ttc" id="aclass_address_book_html_acef18d40a6792d9ae74e544a23448c38"><div class="ttname"><a href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">AddressBook::Sort</a></div><div class="ttdeci">void Sort()</div><div class="ttdoc">按姓名排序 AddressBook</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00154">AddressBook.cpp:154</a></div></div>
 <div class="ttc" id="aclass_address_book_html_ad2d2cebd2a3aa00130f769684bc8ddea"><div class="ttname"><a href="class_address_book.html#ad2d2cebd2a3aa00130f769684bc8ddea">AddressBook::AddressBook</a></div><div class="ttdeci">AddressBook()</div><div class="ttdoc">Construct a new Address Book:: Address Book object 建立空地址簿</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00015">AddressBook.cpp:15</a></div></div>
-<div class="ttc" id="aclass_address_book_html_adf9310eaa9d2d98dffdf43fc6c744219"><div class="ttname"><a href="class_address_book.html#adf9310eaa9d2d98dffdf43fc6c744219">AddressBook::operator[]</a></div><div class="ttdeci">CContact operator[](int indexOfContact)</div><div class="ttdoc">重载下标运算符</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00073">AddressBook.cpp:73</a></div></div>
-<div class="ttc" id="aclass_address_book_html_aeb032c4fefe4c56388e203199dd5e6f6"><div class="ttname"><a href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">AddressBook::SortGroup</a></div><div class="ttdeci">void SortGroup()</div><div class="ttdoc">按群组排序Book，群组名字拼音升序排序</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00172">AddressBook.cpp:172</a></div></div>
-<div class="ttc" id="aclass_address_book_html_af5cafb076360577186d987d501989273"><div class="ttname"><a href="class_address_book.html#af5cafb076360577186d987d501989273">AddressBook::Delete</a></div><div class="ttdeci">int Delete(std::string &amp;Name, std::string &amp;Number, std::string &amp;Group)</div><div class="ttdoc">Delete contact with Name, Number and Group, can use placeholder. 按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00089">AddressBook.cpp:89</a></div></div>
+<div class="ttc" id="aclass_address_book_html_adf9310eaa9d2d98dffdf43fc6c744219"><div class="ttname"><a href="class_address_book.html#adf9310eaa9d2d98dffdf43fc6c744219">AddressBook::operator[]</a></div><div class="ttdeci">CContact operator[](int indexOfContact)</div><div class="ttdoc">重载下标运算符</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00086">AddressBook.cpp:86</a></div></div>
+<div class="ttc" id="aclass_address_book_html_aeb032c4fefe4c56388e203199dd5e6f6"><div class="ttname"><a href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">AddressBook::SortGroup</a></div><div class="ttdeci">void SortGroup()</div><div class="ttdoc">按群组排序Book，群组名字拼音升序排序</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00185">AddressBook.cpp:185</a></div></div>
+<div class="ttc" id="aclass_address_book_html_af5cafb076360577186d987d501989273"><div class="ttname"><a href="class_address_book.html#af5cafb076360577186d987d501989273">AddressBook::Delete</a></div><div class="ttdeci">int Delete(std::string &amp;Name, std::string &amp;Number, std::string &amp;Group)</div><div class="ttdoc">Delete contact with Name, Number and Group, can use placeholder. 按条件删除联系人，返回删除的人数。如果没有删除任何人，返回0</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00102">AddressBook.cpp:102</a></div></div>
 <div class="ttc" id="aclass_c_contact_html"><div class="ttname"><a href="class_c_contact.html">CContact</a></div><div class="ttdoc">CContact 是联系人类</div><div class="ttdef"><b>Definition:</b> <a href="_c_contact_8h_source.html#l00024">CContact.h:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

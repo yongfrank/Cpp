@@ -172,7 +172,7 @@ int delete contact number
 \end{DoxySeeAlso}
 
 
-在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00089}{89}} 行定义.
+在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00102}{102}} 行定义.
 
 函数调用图\+:
 % FIG 0
@@ -228,7 +228,7 @@ false
 \end{DoxyReturn}
 
 
-在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00121}{121}} 行定义.
+在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00134}{134}} 行定义.
 
 \mbox{\Hypertarget{class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe}\label{class_address_book_a03109edb7d7e0a3ddacb44375bbac8fe}} 
 \index{AddressBook@{AddressBook}!List@{List}}
@@ -269,7 +269,7 @@ Iterator Address Book
 \end{DoxyParams}
 
 
-在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00199}{199}} 行定义.
+在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00212}{212}} 行定义.
 
 这是这个函数的调用关系图\+:
 % FIG 2
@@ -297,7 +297,7 @@ Output all contact in
 \end{DoxySeeAlso}
 
 
-在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00216}{216}} 行定义.
+在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00229}{229}} 行定义.
 
 \mbox{\Hypertarget{class_address_book_adf9310eaa9d2d98dffdf43fc6c744219}\label{class_address_book_adf9310eaa9d2d98dffdf43fc6c744219}} 
 \index{AddressBook@{AddressBook}!operator\mbox{[}\mbox{]}@{operator[]}}
@@ -335,12 +335,27 @@ Output all contact in
  \begin{DoxyNote}{注解}
 
 \begin{DoxyItemize}
-\item C++ 下标运算符 \mbox{[}\mbox{]} 重载 \href{https://www.runoob.com/cplusplus/subscripting-operator-overloading.html}{\texttt{ https\+://www.\+runoob.\+com/cplusplus/subscripting-\/operator-\/overloading.\+html}} 
+\item C++ 下标运算符 \mbox{[}\mbox{]} 重载 \href{https://www.runoob.com/cplusplus/subscripting-operator-overloading.html}{\texttt{ https\+://www.\+runoob.\+com/cplusplus/subscripting-\/operator-\/overloading.\+html}}
+\item 老师，为什么还要重载这个下标运算符啊，vector模板里不是已经实现了吗 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\& \mbox{\hyperlink{class_address_book_adf9310eaa9d2d98dffdf43fc6c744219}{operator[]}}(\textcolor{keywordtype}{int} i)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}( i >= SIZE )}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        cout << \textcolor{stringliteral}{"{}索引超过最大值"{}} <<endl; }
+\DoxyCodeLine{        \textcolor{comment}{// 返回第一个元素}}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} arr[0];}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} arr[i];}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
 \end{DoxyItemize}
 \end{DoxyNote}
 
 
-在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00073}{73}} 行定义.
+在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00086}{86}} 行定义.
 
 \mbox{\Hypertarget{class_address_book_acef18d40a6792d9ae74e544a23448c38}\label{class_address_book_acef18d40a6792d9ae74e544a23448c38}} 
 \index{AddressBook@{AddressBook}!Sort@{Sort}}
@@ -374,7 +389,7 @@ Output all contact in
 \end{DoxySeeAlso}
 
 
-在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00141}{141}} 行定义.
+在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00154}{154}} 行定义.
 
 这是这个函数的调用关系图\+:
 % FIG 3
@@ -416,7 +431,7 @@ Output all contact in
 \end{DoxyCode}
  
 
-在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00172}{172}} 行定义.
+在文件 \mbox{\hyperlink{_address_book_8cpp_source}{Address\+Book.\+cpp}} 第 \mbox{\hyperlink{_address_book_8cpp_source_l00185}{185}} 行定义.
 
 函数调用图\+:
 % FIG 4

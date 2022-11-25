@@ -28,11 +28,15 @@ var NAVTREE =
     [ "README", "md__r_e_a_d_m_e.html", [
       [ "实验一 Visual C++ 基于命令提示符的程序设计", "md__r_e_a_d_m_e.html#autotoc_md0", [
         [ "一、 实验目的", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
-        [ "二、 类的详细说明（属性、方法）", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-        [ "三、各命令的详细说明（命令字串、参数、功能描述）", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
-        [ "四、命令与对象方法的调用关系", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
-        [ "五、关键代码段（添加、查找、删除联系人方法的实现）", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
-        [ "六、程序测试过程", "md__r_e_a_d_m_e.html#autotoc_md6", null ]
+        [ "二、实验内容", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+        [ "三、主要程序说明", "md__r_e_a_d_m_e.html#autotoc_md3", [
+          [ "类的详细说明（如属性、方法）", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
+          [ "各方法的详细说明（方法名、参数、功能描述）", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
+          [ "命令与对象方法的调用关系", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
+          [ "关键方法的实现（如添加、查找、删除联系人、排序等）", "md__r_e_a_d_m_e.html#autotoc_md7", null ]
+        ] ],
+        [ "四、程序测试过程", "md__r_e_a_d_m_e.html#autotoc_md8", null ],
+        [ "五、讨论及心得", "md__r_e_a_d_m_e.html#autotoc_md9", null ]
       ] ]
     ] ],
     [ "测试列表", "test.html", null ],

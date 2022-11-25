@@ -340,7 +340,7 @@ Private 属性</h2></td></tr>
 <dl class="section return"><dt>返回</dt><dd>int delete contact number</dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_address_book.html#aca2dfbdc3fb8f286c1cb850aca1a30bc" title="If Found, return Matched Index, else return -1. 从下标startIndex开始寻找符合匹配条件的联系人，如果找到，则返回下标，否则返回-1">AddressBook::Find()</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00089">89</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00102">102</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -435,7 +435,7 @@ Private 属性</h2></td></tr>
 <dd>
 false </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00121">121</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00134">134</a> 行定义.</p>
 
 </div>
 </div>
@@ -479,7 +479,7 @@ false </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00199">199</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00212">212</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -517,7 +517,7 @@ false </dd></dl>
 </ul>
 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00216">216</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00229">229</a> 行定义.</p>
 
 </div>
 </div>
@@ -555,14 +555,26 @@ false </dd></dl>
 <div class="line">std::cout &lt;&lt; book1[0];</div>
 <div class="line">std::cout &lt;&lt; book1[1];</div>
 <div class="line">std::cout &lt;&lt; book1[2];</div>
-<div class="ttc" id="aclass_address_book_html_a03109edb7d7e0a3ddacb44375bbac8fe"><div class="ttname"><a href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">AddressBook::List</a></div><div class="ttdeci">void List()</div><div class="ttdoc">std::cout 输出Book中所有联系人。</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00199">AddressBook.cpp:199</a></div></div>
+<div class="ttc" id="aclass_address_book_html_a03109edb7d7e0a3ddacb44375bbac8fe"><div class="ttname"><a href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">AddressBook::List</a></div><div class="ttdeci">void List()</div><div class="ttdoc">std::cout 输出Book中所有联系人。</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00212">AddressBook.cpp:212</a></div></div>
 <div class="ttc" id="aclass_address_book_html_ab2ab4565bc7ec1563fd4fb6f5db4ac6d"><div class="ttname"><a href="class_address_book.html#ab2ab4565bc7ec1563fd4fb6f5db4ac6d">AddressBook::AddContact</a></div><div class="ttdeci">void AddContact(std::string &amp;, std::string &amp;, std::string &amp;)</div><div class="ttdoc">Add a contact in the vector&lt;CContact&gt; Book</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00022">AddressBook.cpp:22</a></div></div>
 </div><!-- fragment --> <dl class="section note"><dt>注解</dt><dd><ul>
-<li>C++ 下标运算符 [] 重载 <a href="https://www.runoob.com/cplusplus/subscripting-operator-overloading.html">https://www.runoob.com/cplusplus/subscripting-operator-overloading.html</a> </li>
+<li>C++ 下标运算符 [] 重载 <a href="https://www.runoob.com/cplusplus/subscripting-operator-overloading.html">https://www.runoob.com/cplusplus/subscripting-operator-overloading.html</a></li>
+<li>老师，为什么还要重载这个下标运算符啊，vector模板里不是已经实现了吗 <div class="fragment"><div class="line"><span class="keywordtype">int</span>&amp; <a class="code hl_function" href="class_address_book.html#adf9310eaa9d2d98dffdf43fc6c744219">operator[]</a>(<span class="keywordtype">int</span> i)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span>( i &gt;= SIZE )</div>
+<div class="line">    {</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;索引超过最大值&quot;</span> &lt;&lt;endl; </div>
+<div class="line">        <span class="comment">// 返回第一个元素</span></div>
+<div class="line">        <span class="keywordflow">return</span> arr[0];</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> arr[i];</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_address_book_html_adf9310eaa9d2d98dffdf43fc6c744219"><div class="ttname"><a href="class_address_book.html#adf9310eaa9d2d98dffdf43fc6c744219">AddressBook::operator[]</a></div><div class="ttdeci">CContact operator[](int indexOfContact)</div><div class="ttdoc">重载下标运算符</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00086">AddressBook.cpp:86</a></div></div>
+</div><!-- fragment --> </li>
 </ul>
 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00073">73</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00086">86</a> 行定义.</p>
 
 </div>
 </div>
@@ -591,13 +603,13 @@ false </dd></dl>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">List</a>();</div>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">Sort</a>();</div>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">List</a>();</div>
-<div class="ttc" id="aclass_address_book_html_acef18d40a6792d9ae74e544a23448c38"><div class="ttname"><a href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">AddressBook::Sort</a></div><div class="ttdeci">void Sort()</div><div class="ttdoc">按姓名排序 AddressBook</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00141">AddressBook.cpp:141</a></div></div>
+<div class="ttc" id="aclass_address_book_html_acef18d40a6792d9ae74e544a23448c38"><div class="ttname"><a href="class_address_book.html#acef18d40a6792d9ae74e544a23448c38">AddressBook::Sort</a></div><div class="ttdeci">void Sort()</div><div class="ttdoc">按姓名排序 AddressBook</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00154">AddressBook.cpp:154</a></div></div>
 </div><!-- fragment --> <dl class="section see"><dt>参见</dt><dd><ul>
 <li>C++中,结构体vector使用sort排序 <a href="https://blog.csdn.net/zhouxun623/article/details/49887555">https://blog.csdn.net/zhouxun623/article/details/49887555</a> </li>
 </ul>
 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00141">141</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00154">154</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -643,9 +655,9 @@ false </dd></dl>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">List</a>();</div>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">SortGroup</a>();</div>
 <div class="line">book1.<a class="code hl_function" href="class_address_book.html#a03109edb7d7e0a3ddacb44375bbac8fe">List</a>();</div>
-<div class="ttc" id="aclass_address_book_html_aeb032c4fefe4c56388e203199dd5e6f6"><div class="ttname"><a href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">AddressBook::SortGroup</a></div><div class="ttdeci">void SortGroup()</div><div class="ttdoc">按群组排序Book，群组名字拼音升序排序</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00172">AddressBook.cpp:172</a></div></div>
+<div class="ttc" id="aclass_address_book_html_aeb032c4fefe4c56388e203199dd5e6f6"><div class="ttname"><a href="class_address_book.html#aeb032c4fefe4c56388e203199dd5e6f6">AddressBook::SortGroup</a></div><div class="ttdeci">void SortGroup()</div><div class="ttdoc">按群组排序Book，群组名字拼音升序排序</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00185">AddressBook.cpp:185</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00172">172</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_address_book_8cpp_source.html">AddressBook.cpp</a> 第 <a class="el" href="_address_book_8cpp_source.html#l00185">185</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">

@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-11-17 23:42:03
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-21 23:23:36
+ * @LastEditTime: 2022-11-22 14:05:23
  * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/AddressBook.cpp
  * @Description:
  *
@@ -69,6 +69,19 @@ int AddressBook::Find(int startIndex, std::string &NamePattern, std::string &Num
 ```
  * @note
  * * C++ 下标运算符 [] 重载 https://www.runoob.com/cplusplus/subscripting-operator-overloading.html
+ * * 老师，为什么还要重载这个下标运算符啊，vector模板里不是已经实现了吗 
+```cpp
+int& operator[](int i)
+{
+    if( i >= SIZE )
+    {
+        cout << "索引超过最大值" <<endl; 
+        // 返回第一个元素
+        return arr[0];
+    }
+    return arr[i];
+}
+```
  */
 CContact AddressBook::operator[](int indexOfContact)
 {
