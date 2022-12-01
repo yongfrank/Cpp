@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__easy_calculator_8h" xml:lang="zh">
+<title>EasyCalculator/EasyCalculator.h 文件参考</title>
+<indexterm><primary>EasyCalculator/EasyCalculator.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;QDialog&gt;<?linebreak?></programlisting><simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_easy_calculator">EasyCalculator</link></para>
+
+<para>The <link linkend="_class_easy_calculator">EasyCalculator</link> class 简单计算器类 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_ui">Ui</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

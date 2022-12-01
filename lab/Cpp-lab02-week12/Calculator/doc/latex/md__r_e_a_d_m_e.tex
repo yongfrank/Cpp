@@ -1,0 +1,149 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md0}{}\doxysection{实验二 基于 QT GUI 计算器程序设计}\label{md__r_e_a_d_m_e_autotoc_md0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{实验目的}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyEnumerate}
+\item 熟悉 Windows 应用程序开发的基本过程；
+\item 学习 Qt 对话框应用程序开发过程；
+\item 学习标准控件的使用
+\end{DoxyEnumerate}
+
+实验环境：\+Qt 6.\+0/\+Qt Creator8.\+0 或以上\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{实验主要原理说明}\label{md__r_e_a_d_m_e_autotoc_md2}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsubsection{Qt常用部件}\label{md__r_e_a_d_m_e_autotoc_md3}
+（提示：列出\+Qt Designer工具箱内的部件分类，及其中的常用的部件）
+
+
+\begin{DoxyItemize}
+\item Layouts
+\item Spacers
+\item Buttons
+\begin{DoxyItemize}
+\item Push Button
+\item Radio Button
+\end{DoxyItemize}
+\item Item Views (Model-\/\+Based)
+\item Item Widgets (Item-\/\+Based)
+\item Containers
+\begin{DoxyItemize}
+\item Group Box
+\end{DoxyItemize}
+\item Input Widgets
+\begin{DoxyItemize}
+\item Line Edit
+\end{DoxyItemize}
+\item Display Widgets
+\begin{DoxyItemize}
+\item Label
+\item Text Browser
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsubsection{对话框访问部件的方法}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyEnumerate}
+\item 双击 dialog.\+ui，进入对话框编辑器
+\item 直接按“运行”按钮，进行构建并运行，得到一空对话框
+\item 结束运行，回到设计视图，设定对话框标题，最小及最大高宽度，并在左边的 Widgets 工具箱中把 Label, push\+Button 两种 widgets 拖入对话框放好
+\item 点运行，将会得到一个大小固定的对话框
+\item 回到“设计”视图，点中 Push\+Button，并在属性页改变其按钮文本
+\item 右击按钮，选择“转到槽”菜单项，然后选择信号“clicked()”，点击“确定”
+\item 在该“槽”方法中，键入代码
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsubsection{基于事件驱动的消息机制简要说明}\label{md__r_e_a_d_m_e_autotoc_md5}
+\href{https://cloud.tencent.com/developer/article/1857333}{\texttt{ 基于消息的事件驱动机制 -\/ Tencent Cloud}}
+
+基于消息的事件驱动机制是一个通用模型，广泛应用于桌面软件开发、网络应用程序开发、前端开发等技术方向中。可以理解为外部操作事件，被转化为消息存放于队列中；而每种类型的消息都有对应的处理；通过消息循环，完成读消息、调用消息处理这个过程。这个过程，只要应用不退出，会一直进行下去。下图的模型从\+Windows应用程序而来，但是具有一定的通用性。\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsubsection{Qt信号与槽通信机制简要说明}\label{md__r_e_a_d_m_e_autotoc_md6}
+Qt 信号与槽机制详解 信号与槽（\+Signal \& Slot） 是 Qt 编程的基础，也是 Qt 的一大创新。 因为有了信号与槽的编程机制，在 Qt 中处理界面各个组件的交互操作时变得更加直观和简单。 信号（\+Signal） 就是在特定情况下被发射的事件，例如 Push\+Button 最常见的信号就是鼠标单击时发射的 clicked () 信号，一个 Combo\+Box 最常见的信号是选择的列表项变化时发射的 Current\+Index\+Changed() 信号。 GUI 程序设计的主要内容就是对界面上各组件的信号的响应，只需要知道什么情况下发射哪些信号，合理地去响应和处理这些信号就可以了。 槽（\+Slot）就是对信号响应的函数。\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{实验内容及实现}\label{md__r_e_a_d_m_e_autotoc_md7}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{简易计算器}\label{md__r_e_a_d_m_e_autotoc_md8}
+A、界面设计
+
+（给出界面即可）
+
+\begin{center}  \end{center} 
+
+B、主要程序说明
+
+（给出关键槽、成员变量等的处理代码，并加关键注释说明）
+
+
+\begin{DoxyEnumerate}
+\item 简易计算器类 \mbox{\hyperlink{class_easy_calculator}{Easy\+Calculator}}
+\item 计算按钮按下槽 \mbox{\hyperlink{class_easy_calculator_a1383184a41ee930ef0cfa1d144c39c92}{Easy\+Calculator\+::on\+\_\+calculate\+Button\+\_\+clicked()}}
+\item 清楚按钮按下槽 \mbox{\hyperlink{class_easy_calculator_a8cbcd1369d7c06d8249deacd560fe752}{Easy\+Calculator\+::on\+\_\+clear\+Button\+\_\+clicked()}}
+\item 私有的计算符号 \mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{Easy\+Calculator\+::op}}
+\item 枚举变量 \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487}{Easy\+Calculator\+::\+Operation}}
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsubsection{进阶计算器}\label{md__r_e_a_d_m_e_autotoc_md9}
+A、界面设计
+
+（给出界面，并简要说明实现方法）
+
+\begin{center}  \end{center} 
+
+
+\begin{DoxyItemize}
+\item Buttons -\/\texorpdfstring{$>$}{>} Push\+Button
+\item Input\+Widgets -\/\texorpdfstring{$>$}{>} Line\+Edit
+\item Grid Layout
+\item Style Sheet
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Style Sheet}}
+\DoxyCodeLine{* \{}
+\DoxyCodeLine{border:none;}
+\DoxyCodeLine{background-\/color: rgb(238, 236, 236);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{QPushButton \{}
+\DoxyCodeLine{background-\/color: rgb(243, 243, 243);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{QPushButton:hover \{}
+\DoxyCodeLine{border:1px solid rgb(193, 193, 193);}
+\DoxyCodeLine{background-\/color: rbg(221, 223, 221);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{QPushButton\#btn\_numSign:hover, \#btn\_numDot:hover, \#btn\_num0:hover, \#btn\_num1:hover, \#btn\_num2:hover, \#btn\_num3:hover, \#btn\_num4:hover, \#btn\_num5:hover, \#btn\_num6:hover, \#btn\_num7:hover, \#btn\_num8:hover, \#btn\_num9:hover \{}
+\DoxyCodeLine{background-\/color: rgb(221, 223, 221);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{QPushButton\#btn\_numSign, \#btn\_numDot, \#btn\_num0, \#btn\_num1, \#btn\_num2, \#btn\_num3, \#btn\_num4, \#btn\_num5, \#btn\_num6, \#btn\_num7, \#btn\_num8, \#btn\_num9 \{}
+\DoxyCodeLine{background-\/color: rgb(252, 252, 252);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+B、主要程序说明
+
+（给出关键槽、成员变量等的处理代码，并加关键注释说明）
+
+
+\begin{DoxyEnumerate}
+\item 按钮组按下方法 \mbox{\hyperlink{class_dialog_abc1b66b06bb3519e2c0ae6bdc329daea}{Dialog\+::on\+Button\+Group\+Clicked()}}
+\item UI 初始化时将数字按钮组成组，关联按钮组的点击信号 \mbox{\hyperlink{class_dialog_a35613503633a5bf59f5061f0e44ee31c}{Dialog\+::ini\+UI()}}
+\item 前一个按钮输入的符号 OR 数字 \mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{Dialog\+::prev\+Btn}}
+\item 储存左数右数和符号，进行运算 \mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{Dialog\+::vector\+Of\+Numbers\+And\+Signs}}
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{程序测试}\label{md__r_e_a_d_m_e_autotoc_md10}
+给出程序测试结果，并简要说明测试过程
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// 在简单计算器程序进行加减乘除}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// 在复杂计算器进行加减乘除}}
+
+\end{DoxyCode}
+
+
+\begin{center}  \end{center} 
+
+\begin{center}  \end{center} 
+
+\begin{center}  \end{center} \hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{讨论及心得}\label{md__r_e_a_d_m_e_autotoc_md11}
+比如可以给出如下内容：
+
+1、实验过程中遇到的问题与解决方法
+
+实验中对于 QT 的控件使用有部分问题，通过网络查询，能够了解到具体的使用方法。
+
+2、目前尚未解决的问题
+
+目前进阶计算器在数据结构上可以进一步优化。 

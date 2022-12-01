@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__calculator_2main_8cpp_source" xml:lang="zh">
+<title>main.cpp</title>
+<indexterm><primary>Calculator/main.cpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="__calculator_2main_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_dialog_8h">dialog.h</link>&quot;</emphasis>
+<anchor xml:id="__calculator_2main_8cpp_source_1l00002"/>00002 
+<anchor xml:id="__calculator_2main_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;QApplication&gt;</emphasis>
+<anchor xml:id="__calculator_2main_8cpp_source_1l00004"/>00004 
+<anchor xml:id="__calculator_2main_8cpp_source_1l00005"/><link linkend="__calculator_2main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97">00005</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__calculator_2main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97">main</link>(<emphasis role="keywordtype">int</emphasis>&#32;argc,&#32;<emphasis role="keywordtype">char</emphasis>&#32;*argv[])
+<anchor xml:id="__calculator_2main_8cpp_source_1l00006"/>00006 {
+<anchor xml:id="__calculator_2main_8cpp_source_1l00007"/>00007 &#32;&#32;&#32;&#32;QApplication&#32;a(argc,&#32;argv);
+<anchor xml:id="__calculator_2main_8cpp_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<link linkend="_class_dialog">Dialog</link>&#32;w;
+<anchor xml:id="__calculator_2main_8cpp_source_1l00009"/>00009 &#32;&#32;&#32;&#32;w.show();
+<anchor xml:id="__calculator_2main_8cpp_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;a.exec();
+<anchor xml:id="__calculator_2main_8cpp_source_1l00011"/>00011 }
+</programlisting></section>

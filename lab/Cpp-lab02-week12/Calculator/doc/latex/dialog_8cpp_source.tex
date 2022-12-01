@@ -1,0 +1,134 @@
+\hypertarget{dialog_8cpp_source}{}\doxysection{dialog.\+cpp}
+\label{dialog_8cpp_source}\index{Calculator/dialog.cpp@{Calculator/dialog.cpp}}
+\mbox{\hyperlink{dialog_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{dialog_8h}{dialog.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}ui\_dialog.h"{}}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <QButtonGroup>}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00004}\mbox{\hyperlink{class_dialog_ab30ac48588a82983f653f58d50a52ddc}{00004}} \mbox{\hyperlink{class_dialog_ab30ac48588a82983f653f58d50a52ddc}{Dialog::Dialog}}(QWidget *parent)}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00005}00005     : QDialog(parent)}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00006}00006     , ui(new \mbox{\hyperlink{namespace_ui}{Ui}}::\mbox{\hyperlink{class_dialog}{Dialog}})}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00008}00008     \mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>setupUi(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00009}00009     \mbox{\hyperlink{class_dialog_a35613503633a5bf59f5061f0e44ee31c}{iniUI}}();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00010}00010 \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00012}\mbox{\hyperlink{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}{00012}} \mbox{\hyperlink{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}{Dialog::\string~Dialog}}()}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00013}00013 \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00014}00014     \textcolor{keyword}{delete} \mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}};}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00017}\mbox{\hyperlink{class_dialog_a35613503633a5bf59f5061f0e44ee31c}{00017}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dialog_a35613503633a5bf59f5061f0e44ee31c}{Dialog::iniUI}}() \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00018}00018     \textcolor{comment}{// 1. Put Button into a group}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00019}00019     \textcolor{keyword}{auto} buttonGroup = \textcolor{keyword}{new} QButtonGroup(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00020}00020     \textcolor{keyword}{auto} btnList = findChildren<QPushButton*>();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00021}00021     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} btn: btnList) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00022}00022         buttonGroup-\/>addButton(btn);}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00023}00023     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00025}00025     \textcolor{comment}{// 2. 关联按钮组的点击信号}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00026}00026     connect(buttonGroup, \&QButtonGroup::buttonClicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{class_dialog_abc1b66b06bb3519e2c0ae6bdc329daea}{Dialog::onButtonGroupClicked}});}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00028}00028     this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.resize(5);}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00029}00029 \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00031}\mbox{\hyperlink{class_dialog_abc1b66b06bb3519e2c0ae6bdc329daea}{00031}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dialog_abc1b66b06bb3519e2c0ae6bdc329daea}{Dialog::onButtonGroupClicked}}(QAbstractButton* btn) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00032}00032     \textcolor{comment}{// Print in terminal}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00033}00033     qInfo() << btn-\/>text();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00035}00035     \textcolor{keywordtype}{float} val = this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>text().toFloat();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00037}00037     \textcolor{comment}{// if the number pressed, print}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00042}00042     QString name = btn-\/>text();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00044}00044     \textcolor{comment}{// 根据按钮的点击，处理不同的逻辑}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00045}00045     \textcolor{comment}{// 如果是数字，直接显示}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00046}00046     \textcolor{keywordflow}{if} ((name >= \textcolor{stringliteral}{"{}0"{}} \&\& name <= \textcolor{stringliteral}{"{}9"{}}) || name == \textcolor{stringliteral}{"{}."{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00047}00047         \textcolor{comment}{// 一开始显示零，输入一个数}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00048}00048         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>text() == \textcolor{stringliteral}{"{}0"{}} \&\& name != \textcolor{stringliteral}{"{}."{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00049}00049             \mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00050}00050         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00052}00052         \textcolor{comment}{// 如果点击数字键，输入框有数据，而且表达式框只有两个数据，重置输入的}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00053}00053         \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prevBtn}} == \textcolor{stringliteral}{"{}+"{}} || this-\/>\mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prevBtn}} == \textcolor{stringliteral}{"{}-\/"{}} || this-\/>\mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prevBtn}} == \textcolor{stringliteral}{"{}*"{}} || this-\/>\mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prevBtn}} == \textcolor{stringliteral}{"{}/"{}} || this-\/>\mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prevBtn}} == \textcolor{stringliteral}{"{}="{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00054}00054             this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00055}00055         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00056}00056         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>insert(name);}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00057}00057     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00058}00058     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}+"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00059}00059         \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2].isNull()) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00060}00060             \textcolor{comment}{// 把 lhs 数字和操作符存起来}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00061}00061             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[0] = val;}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00062}00062             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[1] = \textcolor{stringliteral}{"{}+"{}};}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00063}00063         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00065}00065     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}-\/"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00066}00066         \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2].isNull()) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00067}00067             \textcolor{comment}{// 把 lhs 数字和操作符存起来}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00068}00068             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[0] = val;}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00069}00069             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[1] = \textcolor{stringliteral}{"{}-\/"{}};}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00070}00070         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00071}00071     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00072}00072     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}*"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00073}00073         \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2].isNull()) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00074}00074             \textcolor{comment}{// 把 lhs 数字和操作符存起来}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00075}00075             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[0] = val;}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00076}00076             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[1] = \textcolor{stringliteral}{"{}*"{}};}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00077}00077         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00078}00078     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00079}00079     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}/"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00080}00080         \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2].isNull()) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00081}00081             \textcolor{comment}{// 把 lhs 数字和操作符存起来}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00082}00082             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[0] = val;}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00083}00083             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[1] = \textcolor{stringliteral}{"{}/"{}};}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00084}00084         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00085}00085     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00086}00086     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}="{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00087}00087         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2] = val;}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00088}00088         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[3] = \textcolor{stringliteral}{"{}="{}};}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00089}00089         \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[1] == \textcolor{stringliteral}{"{}+"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00090}00090            this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[4] = this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[0].toFloat() + this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2].toFloat();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00091}00091         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00092}00092         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[1] == \textcolor{stringliteral}{"{}-\/"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00093}00093             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[4] = this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[0].toFloat() -\/ this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2].toFloat();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00094}00094         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00095}00095         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[1] == \textcolor{stringliteral}{"{}*"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00096}00096             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[4] = this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[0].toFloat() * this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2].toFloat();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00097}00097         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00098}00098         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[1] == \textcolor{stringliteral}{"{}/"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00099}00099             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[4] = this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[0].toFloat() / this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2].toFloat();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00100}00100         \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00101}00101         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>setText(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[4].toString());}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00102}00102         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00103}00103     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00104}00104     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}C"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00105}00105         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00106}00106         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>expLineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00107}00107         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00108}00108     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00109}00109     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}CE"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00110}00110         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00111}00111         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.pop\_back();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00112}00112     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00113}00113     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}DEL"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00114}00114         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>setCursorPosition(\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>cursorPosition() -\/ 1);}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00115}00115         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>del();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00116}00116     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00118}00118     \textcolor{comment}{// Display Sign and Number}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00119}00119     \mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>expLineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00120}00120     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} var: this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00121}00121         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>expLineEdit-\/>insert(var.toString());}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00122}00122     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00124}00124     this-\/>\mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prevBtn}} = name;}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00125}00125 \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00128}00128 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00131}00131 }
+
+\end{DoxyCode}

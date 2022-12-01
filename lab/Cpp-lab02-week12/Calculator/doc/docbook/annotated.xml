@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="zh">
+<title>类列表</title>
+这里列出了所有类、结构、联合以及接口定义等，并附带简要说明:<link linkend="_class_dialog">Dialog</link>
+<para>UI 界面逻辑类 </para>
+<link linkend="_class_easy_calculator">EasyCalculator</link>
+<para>简单计算器类 </para>
+</section>

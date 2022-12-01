@@ -1,0 +1,84 @@
+\hypertarget{_easy_calculator_8cpp_source}{}\doxysection{Easy\+Calculator.\+cpp}
+\label{_easy_calculator_8cpp_source}\index{EasyCalculator/EasyCalculator.cpp@{EasyCalculator/EasyCalculator.cpp}}
+\mbox{\hyperlink{_easy_calculator_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_easy_calculator_8h}{EasyCalculator.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}ui\_EasyCalculator.h"{}}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00004}\mbox{\hyperlink{class_easy_calculator_adc6e113bfe2c7e5cf72bb76dc74f1d5f}{00004}} \mbox{\hyperlink{class_easy_calculator_adc6e113bfe2c7e5cf72bb76dc74f1d5f}{EasyCalculator::EasyCalculator}}(QWidget *parent)}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00005}00005     : QDialog(parent)}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00006}00006     , ui(new \mbox{\hyperlink{namespace_ui}{Ui}}::\mbox{\hyperlink{class_easy_calculator}{EasyCalculator}})}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00008}00008     \mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>setupUi(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00009}00009 \}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00011}\mbox{\hyperlink{class_easy_calculator_a47abbe681046f7b4338d4102b86f3810}{00011}} \mbox{\hyperlink{class_easy_calculator_a47abbe681046f7b4338d4102b86f3810}{EasyCalculator::\string~EasyCalculator}}()}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00012}00012 \{}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00013}00013     \textcolor{keyword}{delete} \mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00014}00014 \}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00017}\mbox{\hyperlink{class_easy_calculator_ae5828555ec64275649a8b7e82e41e375}{00017}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_easy_calculator_ae5828555ec64275649a8b7e82e41e375}{EasyCalculator::on\_btn\_plus\_clicked}}()}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00018}00018 \{}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00019}00019     this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}} = \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f}{Operation::Addition}};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00020}00020 \}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00022}\mbox{\hyperlink{class_easy_calculator_a1f0a1cc27cb9ea3e95cc0f051c8ece78}{00022}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_easy_calculator_a1f0a1cc27cb9ea3e95cc0f051c8ece78}{EasyCalculator::on\_btn\_minus\_clicked}}()}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00023}00023 \{}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00024}00024     this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}} = \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0}{Operation::Subtraction}};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00025}00025 \}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00028}\mbox{\hyperlink{class_easy_calculator_a546e312fe95578425359dca5284a5bb3}{00028}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_easy_calculator_a546e312fe95578425359dca5284a5bb3}{EasyCalculator::on\_btn\_multiply\_clicked}}()}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00029}00029 \{}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00030}00030     this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}} = \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd}{Operation::Multiplication}};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00034}\mbox{\hyperlink{class_easy_calculator_a527e0bd243dadc3b9ade2e3fb04b3b46}{00034}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_easy_calculator_a527e0bd243dadc3b9ade2e3fb04b3b46}{EasyCalculator::on\_btn\_divide\_clicked}}()}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00035}00035 \{}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00036}00036     this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}} = \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833}{Operation::Division}};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00037}00037 \}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00060}\mbox{\hyperlink{class_easy_calculator_a1383184a41ee930ef0cfa1d144c39c92}{00060}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_easy_calculator_a1383184a41ee930ef0cfa1d144c39c92}{EasyCalculator::on\_calculateButton\_clicked}}()}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00061}00061 \{}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00062}00062     \textcolor{keywordtype}{float} lhs, rhs, result;}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00063}00063     lhs = this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>lhsLineEdit-\/>text().toFloat();}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00064}00064     rhs = this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>rhsLineEdit-\/>text().toFloat();}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00065}00065 \textcolor{comment}{//    if(this-\/>op == Operation::Addition) \{}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00066}00066 \textcolor{comment}{//        result = lhs + rhs;}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00067}00067 \textcolor{comment}{//        this-\/>ui-\/>resultLineEdit-\/>setText(QString::asprintf("{}\%f"{}, result));}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00068}00068 \textcolor{comment}{//    \}}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00069}00069 \textcolor{comment}{//    else if(this-\/>op == Operation::Subtraction) \{}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00070}00070 \textcolor{comment}{//        result = lhs -\/ rhs;}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00071}00071 \textcolor{comment}{//    \}}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00073}00073     \textcolor{keywordflow}{switch} (this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}}) \{}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00074}00074     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f}{Operation::Addition}}:}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00075}00075         result = lhs + rhs;}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00076}00076         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00077}00077     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0}{Operation::Subtraction}}:}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00078}00078         result = lhs -\/ rhs;}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00079}00079         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00080}00080     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd}{Operation::Multiplication}}:}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00081}00081         result = lhs * rhs;}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00082}00082         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00083}00083     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833}{Operation::Division}}:}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00084}00084         result = lhs / rhs;}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00085}00085         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00086}00086     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00087}00087         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00088}00088     \}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00089}00089     this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>resultLineEdit-\/>setText(QString::asprintf(\textcolor{stringliteral}{"{}\%f"{}}, result));}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00090}00090 \}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00093}\mbox{\hyperlink{class_easy_calculator_a8cbcd1369d7c06d8249deacd560fe752}{00093}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_easy_calculator_a8cbcd1369d7c06d8249deacd560fe752}{EasyCalculator::on\_clearButton\_clicked}}()}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00094}00094 \{}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00095}00095     this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>lhsLineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00096}00096     this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>rhsLineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00097}00097     this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>resultLineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00098}00098 \}}
+\DoxyCodeLine{\Hypertarget{_easy_calculator_8cpp_source_l00099}00099 }
+
+\end{DoxyCode}

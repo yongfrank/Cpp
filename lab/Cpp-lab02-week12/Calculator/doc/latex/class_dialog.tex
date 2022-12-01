@@ -1,0 +1,164 @@
+\hypertarget{class_dialog}{}\doxysection{Dialog类 参考}
+\label{class_dialog}\index{Dialog@{Dialog}}
+
+
+The \mbox{\hyperlink{class_dialog}{Dialog}} class UI 界面逻辑类  
+
+
+
+
+{\ttfamily \#include $<$dialog.\+h$>$}
+
+\doxysubsection*{Public 槽}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dialog_abc1b66b06bb3519e2c0ae6bdc329daea}{on\+Button\+Group\+Clicked}} (QAbstract\+Button $\ast$btn)
+\begin{DoxyCompactList}\small\item\em on\+Button\+Group\+Clicked 当数字按钮组按下的的时候进行的反馈函数，在 \mbox{\hyperlink{class_dialog_a35613503633a5bf59f5061f0e44ee31c}{ini\+UI()}} 中使用 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dialog_ab30ac48588a82983f653f58d50a52ddc}{Dialog}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_dialog}{Dialog}} 构造函数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}{$\sim$\+Dialog}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_dialog}{Dialog}} 析构函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dialog_a35613503633a5bf59f5061f0e44ee31c}{ini\+UI}} ()
+\begin{DoxyCompactList}\small\item\em ini\+UI UI 初始化函数，1. 将数字按钮组成组 2. 关联按钮组的点击信号 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Dialog $\ast$ \mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}
+\begin{DoxyCompactList}\small\item\em ui ui 界面变量 \end{DoxyCompactList}\item 
+QVector$<$ QVariant $>$ \mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vector\+Of\+Numbers\+And\+Signs}}
+\begin{DoxyCompactList}\small\item\em vector\+Of\+Numbers\+And\+Signs 储存左数右数和符号，进行运算。 \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prev\+Btn}}
+\begin{DoxyCompactList}\small\item\em prev\+Btn 前一个按钮输入的符号 OR 数字 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+The \mbox{\hyperlink{class_dialog}{Dialog}} class UI 界面逻辑类 
+
+在文件 \mbox{\hyperlink{dialog_8h_source}{dialog.\+h}} 第 \mbox{\hyperlink{dialog_8h_source_l00026}{26}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_dialog_ab30ac48588a82983f653f58d50a52ddc}\label{class_dialog_ab30ac48588a82983f653f58d50a52ddc}} 
+\index{Dialog@{Dialog}!Dialog@{Dialog}}
+\index{Dialog@{Dialog}!Dialog@{Dialog}}
+\doxysubsubsection{\texorpdfstring{Dialog()}{Dialog()}}
+{\footnotesize\ttfamily Dialog\+::\+Dialog (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_dialog}{Dialog}} 构造函数 
+
+
+\begin{DoxyParams}{参数}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{dialog_8cpp_source}{dialog.\+cpp}} 第 \mbox{\hyperlink{dialog_8cpp_source_l00004}{4}} 行定义.
+
+\mbox{\Hypertarget{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}\label{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}} 
+\index{Dialog@{Dialog}!````~Dialog@{$\sim$Dialog}}
+\index{````~Dialog@{$\sim$Dialog}!Dialog@{Dialog}}
+\doxysubsubsection{\texorpdfstring{$\sim$Dialog()}{~Dialog()}}
+{\footnotesize\ttfamily Dialog\+::$\sim$\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_dialog}{Dialog}} 析构函数 
+
+
+
+在文件 \mbox{\hyperlink{dialog_8cpp_source}{dialog.\+cpp}} 第 \mbox{\hyperlink{dialog_8cpp_source_l00012}{12}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_dialog_a35613503633a5bf59f5061f0e44ee31c}\label{class_dialog_a35613503633a5bf59f5061f0e44ee31c}} 
+\index{Dialog@{Dialog}!iniUI@{iniUI}}
+\index{iniUI@{iniUI}!Dialog@{Dialog}}
+\doxysubsubsection{\texorpdfstring{iniUI()}{iniUI()}}
+{\footnotesize\ttfamily void Dialog\+::ini\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ini\+UI UI 初始化函数，1. 将数字按钮组成组 2. 关联按钮组的点击信号 
+
+
+
+在文件 \mbox{\hyperlink{dialog_8cpp_source}{dialog.\+cpp}} 第 \mbox{\hyperlink{dialog_8cpp_source_l00017}{17}} 行定义.
+
+\mbox{\Hypertarget{class_dialog_abc1b66b06bb3519e2c0ae6bdc329daea}\label{class_dialog_abc1b66b06bb3519e2c0ae6bdc329daea}} 
+\index{Dialog@{Dialog}!onButtonGroupClicked@{onButtonGroupClicked}}
+\index{onButtonGroupClicked@{onButtonGroupClicked}!Dialog@{Dialog}}
+\doxysubsubsection{\texorpdfstring{onButtonGroupClicked}{onButtonGroupClicked}}
+{\footnotesize\ttfamily void Dialog\+::on\+Button\+Group\+Clicked (\begin{DoxyParamCaption}\item[{QAbstract\+Button $\ast$}]{btn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+on\+Button\+Group\+Clicked 当数字按钮组按下的的时候进行的反馈函数，在 \mbox{\hyperlink{class_dialog_a35613503633a5bf59f5061f0e44ee31c}{ini\+UI()}} 中使用 
+
+
+\begin{DoxyParams}{参数}
+{\em btn} & 按下的按钮 \\
+\hline
+\end{DoxyParams}
+name 计算器输入的数据
+
+在文件 \mbox{\hyperlink{dialog_8cpp_source}{dialog.\+cpp}} 第 \mbox{\hyperlink{dialog_8cpp_source_l00031}{31}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_dialog_a94390966fe57492a959fc5227d7b9eb8}\label{class_dialog_a94390966fe57492a959fc5227d7b9eb8}} 
+\index{Dialog@{Dialog}!prevBtn@{prevBtn}}
+\index{prevBtn@{prevBtn}!Dialog@{Dialog}}
+\doxysubsubsection{\texorpdfstring{prevBtn}{prevBtn}}
+{\footnotesize\ttfamily QString Dialog\+::prev\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+prev\+Btn 前一个按钮输入的符号 OR 数字 
+
+
+
+在文件 \mbox{\hyperlink{dialog_8h_source}{dialog.\+h}} 第 \mbox{\hyperlink{dialog_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}\label{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}} 
+\index{Dialog@{Dialog}!ui@{ui}}
+\index{ui@{ui}!Dialog@{Dialog}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Dialog$\ast$ Dialog\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ui ui 界面变量 
+
+
+
+在文件 \mbox{\hyperlink{dialog_8h_source}{dialog.\+h}} 第 \mbox{\hyperlink{dialog_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{class_dialog_a9166511437be90265112180332a999f5}\label{class_dialog_a9166511437be90265112180332a999f5}} 
+\index{Dialog@{Dialog}!vectorOfNumbersAndSigns@{vectorOfNumbersAndSigns}}
+\index{vectorOfNumbersAndSigns@{vectorOfNumbersAndSigns}!Dialog@{Dialog}}
+\doxysubsubsection{\texorpdfstring{vectorOfNumbersAndSigns}{vectorOfNumbersAndSigns}}
+{\footnotesize\ttfamily QVector$<$QVariant$>$ Dialog\+::vector\+Of\+Numbers\+And\+Signs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+vector\+Of\+Numbers\+And\+Signs 储存左数右数和符号，进行运算。 
+
+
+
+在文件 \mbox{\hyperlink{dialog_8h_source}{dialog.\+h}} 第 \mbox{\hyperlink{dialog_8h_source_l00063}{63}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Calculator/\mbox{\hyperlink{dialog_8h}{dialog.\+h}}\item 
+Calculator/\mbox{\hyperlink{dialog_8cpp}{dialog.\+cpp}}\end{DoxyCompactItemize}

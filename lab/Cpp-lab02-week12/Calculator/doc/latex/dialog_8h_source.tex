@@ -1,0 +1,50 @@
+\hypertarget{dialog_8h_source}{}\doxysection{dialog.\+h}
+\label{dialog_8h_source}\index{Calculator/dialog.h@{Calculator/dialog.h}}
+\mbox{\hyperlink{dialog_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00002}00002 \textcolor{comment}{ * @Author: Frank Chu}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00003}00003 \textcolor{comment}{ * @Date: 2022-\/12-\/01 13:38:03}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00004}00004 \textcolor{comment}{ * @LastEditors: Frank Chu}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00005}00005 \textcolor{comment}{ * @LastEditTime: 2022-\/12-\/01 14:27:04}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00006}00006 \textcolor{comment}{ * @FilePath: /Cpp/lab/Cpp-\/lab02-\/week12/Calculator/dialog.h}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00007}00007 \textcolor{comment}{ * @Description: }}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00008}00008 \textcolor{comment}{ * }}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00009}00009 \textcolor{comment}{ * Copyright (c) 2022 by Frank Chu, All Rights Reserved. }}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00010}00010 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00011}00011 \textcolor{preprocessor}{\#ifndef DIALOG\_H}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00012}00012 \textcolor{preprocessor}{\#define DIALOG\_H}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00014}00014 \textcolor{preprocessor}{\#include "{}QtWidgets/qabstractbutton.h"{}}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00015}00015 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00016}00016 \textcolor{preprocessor}{\#include <QtWidgets/QWidget>}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00017}00017 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00019}00019 QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00020}\mbox{\hyperlink{namespace_ui}{00020}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{ \textcolor{keyword}{class }\mbox{\hyperlink{class_dialog}{Dialog}}; \}}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00021}00021 QT\_END\_NAMESPACE}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00026}\mbox{\hyperlink{class_dialog}{00026}} \textcolor{keyword}{class }\mbox{\hyperlink{class_dialog}{Dialog}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00027}00027 \{}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00028}00028     Q\_OBJECT}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00030}00030 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00035}00035     \mbox{\hyperlink{class_dialog}{Dialog}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00040}00040     \mbox{\hyperlink{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}{\string~Dialog}}();}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00045}00045     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dialog_a35613503633a5bf59f5061f0e44ee31c}{iniUI}}();}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00046}00046 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00052}00052     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dialog_abc1b66b06bb3519e2c0ae6bdc329daea}{onButtonGroupClicked}}(QAbstractButton *btn);}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00054}00054 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00058}\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{00058}}     Ui::Dialog *\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}};}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00063}\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{00063}}     QVector<QVariant> \mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}};}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00068}\mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{00068}}     QString \mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prevBtn}};}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00069}00069 \};}
+\DoxyCodeLine{\Hypertarget{dialog_8h_source_l00070}00070 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DIALOG\_H}}
+
+\end{DoxyCode}

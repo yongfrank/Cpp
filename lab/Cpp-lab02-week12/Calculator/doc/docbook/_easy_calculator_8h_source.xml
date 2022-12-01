@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__easy_calculator_8h_source" xml:lang="zh">
+<title>EasyCalculator.h</title>
+<indexterm><primary>EasyCalculator/EasyCalculator.h</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="__easy_calculator_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;EASYCALCULATOR_H</emphasis>
+<anchor xml:id="__easy_calculator_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;EASYCALCULATOR_H</emphasis>
+<anchor xml:id="__easy_calculator_8h_source_1l00003"/>00003 
+<anchor xml:id="__easy_calculator_8h_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;QDialog&gt;</emphasis>
+<anchor xml:id="__easy_calculator_8h_source_1l00005"/>00005 
+<anchor xml:id="__easy_calculator_8h_source_1l00006"/>00006 QT_BEGIN_NAMESPACE
+<anchor xml:id="__easy_calculator_8h_source_1l00007"/>00007 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_ui">Ui</link>&#32;{&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_easy_calculator">EasyCalculator</link>;&#32;}
+<anchor xml:id="__easy_calculator_8h_source_1l00008"/>00008 QT_END_NAMESPACE
+<anchor xml:id="__easy_calculator_8h_source_1l00009"/>00009 
+<anchor xml:id="__easy_calculator_8h_source_1l00013"/><link linkend="_class_easy_calculator">00013</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_easy_calculator">EasyCalculator</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;QDialog
+<anchor xml:id="__easy_calculator_8h_source_1l00014"/>00014 {
+<anchor xml:id="__easy_calculator_8h_source_1l00015"/>00015 &#32;&#32;&#32;&#32;Q_OBJECT
+<anchor xml:id="__easy_calculator_8h_source_1l00016"/>00016 
+<anchor xml:id="__easy_calculator_8h_source_1l00017"/>00017 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__easy_calculator_8h_source_1l00018"/>00018 
+<anchor xml:id="__easy_calculator_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<link linkend="_class_easy_calculator">EasyCalculator</link>(QWidget&#32;*parent&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>);
+<anchor xml:id="__easy_calculator_8h_source_1l00024"/>00024 
+<anchor xml:id="__easy_calculator_8h_source_1l00028"/>00028 &#32;&#32;&#32;&#32;<link linkend="_class_easy_calculator_1a47abbe681046f7b4338d4102b86f3810">~EasyCalculator</link>();
+<anchor xml:id="__easy_calculator_8h_source_1l00029"/>00029 
+<anchor xml:id="__easy_calculator_8h_source_1l00033"/><link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487">00033</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">enum&#32;class</emphasis>&#32;<link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487">Operation</link>&#32;{
+<anchor xml:id="__easy_calculator_8h_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f">Addition</link>,&#32;<link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0">Subtraction</link>,&#32;<link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd">Multiplication</link>,&#32;<link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833">Division</link>
+<anchor xml:id="__easy_calculator_8h_source_1l00035"/>00035 &#32;&#32;&#32;&#32;};
+<anchor xml:id="__easy_calculator_8h_source_1l00036"/>00036 
+<anchor xml:id="__easy_calculator_8h_source_1l00037"/>00037 <emphasis role="keyword">private</emphasis>&#32;slots:
+<anchor xml:id="__easy_calculator_8h_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_easy_calculator_1ae5828555ec64275649a8b7e82e41e375">on_btn_plus_clicked</link>();
+<anchor xml:id="__easy_calculator_8h_source_1l00042"/>00042 
+<anchor xml:id="__easy_calculator_8h_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_easy_calculator_1a1f0a1cc27cb9ea3e95cc0f051c8ece78">on_btn_minus_clicked</link>();
+<anchor xml:id="__easy_calculator_8h_source_1l00047"/>00047 
+<anchor xml:id="__easy_calculator_8h_source_1l00051"/>00051 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_easy_calculator_1a546e312fe95578425359dca5284a5bb3">on_btn_multiply_clicked</link>();
+<anchor xml:id="__easy_calculator_8h_source_1l00052"/>00052 
+<anchor xml:id="__easy_calculator_8h_source_1l00056"/>00056 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_easy_calculator_1a527e0bd243dadc3b9ade2e3fb04b3b46">on_btn_divide_clicked</link>();
+<anchor xml:id="__easy_calculator_8h_source_1l00057"/>00057 
+<anchor xml:id="__easy_calculator_8h_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_easy_calculator_1a1383184a41ee930ef0cfa1d144c39c92">on_calculateButton_clicked</link>();
+<anchor xml:id="__easy_calculator_8h_source_1l00062"/>00062 
+<anchor xml:id="__easy_calculator_8h_source_1l00066"/>00066 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_easy_calculator_1a8cbcd1369d7c06d8249deacd560fe752">on_clearButton_clicked</link>();
+<anchor xml:id="__easy_calculator_8h_source_1l00067"/>00067 
+<anchor xml:id="__easy_calculator_8h_source_1l00068"/>00068 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__easy_calculator_8h_source_1l00069"/><link linkend="_class_easy_calculator_1a8db71955342245a4802cbe9932cb0ab8">00069</link> &#32;&#32;&#32;&#32;Ui::EasyCalculator&#32;*<link linkend="_class_easy_calculator_1a8db71955342245a4802cbe9932cb0ab8">ui</link>;
+<anchor xml:id="__easy_calculator_8h_source_1l00070"/>00070 
+<anchor xml:id="__easy_calculator_8h_source_1l00074"/><link linkend="_class_easy_calculator_1a3cafbfe306369048abcfb273aa6f2faf">00074</link> &#32;&#32;&#32;&#32;<link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487">Operation</link>&#32;<link linkend="_class_easy_calculator_1a3cafbfe306369048abcfb273aa6f2faf">op</link>&#32;=&#32;<link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f">Operation::Addition</link>;
+<anchor xml:id="__easy_calculator_8h_source_1l00075"/>00075 };
+<anchor xml:id="__easy_calculator_8h_source_1l00076"/>00076 
+<anchor xml:id="__easy_calculator_8h_source_1l00077"/>00077 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;EASYCALCULATOR_H</emphasis>
+</programlisting></section>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__easy_calculator_2main_8cpp" xml:lang="zh">
+<title>EasyCalculator/main.cpp 文件参考</title>
+<indexterm><primary>EasyCalculator/main.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;EasyCalculator.h&quot;<?linebreak?>#include &lt;QApplication&gt;<?linebreak?></programlisting><simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="__easy_calculator_2main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (int argc, char *argv[])</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>函数说明</title>
+<anchor xml:id="__easy_calculator_2main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>main.cpp</secondary></indexterm>
+<indexterm><primary>main.cpp</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (int argc, char * argv[])</computeroutput></para><para>
+在文件 <link linkend="__easy_calculator_2main_8cpp_source">main.cpp</link> 第 <link linkend="__easy_calculator_2main_8cpp_source_1l00005">5</link> 行定义.</para>
+</section>
+</section>
+</section>

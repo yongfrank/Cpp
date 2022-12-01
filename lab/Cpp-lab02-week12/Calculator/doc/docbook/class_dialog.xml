@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_dialog" xml:lang="zh">
+<title>Dialog类 参考</title>
+<indexterm><primary>Dialog</primary></indexterm>
+<para>
+
+<para>The <link linkend="_class_dialog">Dialog</link> class UI 界面逻辑类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;dialog.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 槽    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_dialog_1abc1b66b06bb3519e2c0ae6bdc329daea">onButtonGroupClicked</link> (QAbstractButton *btn)</para>
+
+<para>onButtonGroupClicked 当数字按钮组按下的的时候进行的反馈函数，在 <link linkend="_class_dialog_1a35613503633a5bf59f5061f0e44ee31c">iniUI()</link> 中使用 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_dialog_1ab30ac48588a82983f653f58d50a52ddc">Dialog</link> (QWidget *parent=nullptr)</para>
+
+<para><link linkend="_class_dialog">Dialog</link> 构造函数 </para>
+</listitem>
+            <listitem><para><link linkend="_class_dialog_1a2a1fe6ef28513eed13bfcd3a4da83ccb">~Dialog</link> ()</para>
+
+<para><link linkend="_class_dialog">Dialog</link> 析构函数 </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dialog_1a35613503633a5bf59f5061f0e44ee31c">iniUI</link> ()</para>
+
+<para>iniUI UI 初始化函数，1. 将数字按钮组成组 2. 关联按钮组的点击信号 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>Ui::Dialog * <link linkend="_class_dialog_1aaa4b5bfb9a0f64900d524f14bc32e6df">ui</link></para>
+
+<para>ui ui 界面变量 </para>
+</listitem>
+            <listitem><para>QVector&lt; QVariant &gt; <link linkend="_class_dialog_1a9166511437be90265112180332a999f5">vectorOfNumbersAndSigns</link></para>
+
+<para>vectorOfNumbersAndSigns 储存左数右数和符号，进行运算。 </para>
+</listitem>
+            <listitem><para>QString <link linkend="_class_dialog_1a94390966fe57492a959fc5227d7b9eb8">prevBtn</link></para>
+
+<para>prevBtn 前一个按钮输入的符号 OR 数字 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>The <link linkend="_class_dialog">Dialog</link> class UI 界面逻辑类 </para>
+<para>
+在文件 <link linkend="_dialog_8h_source">dialog.h</link> 第 <link linkend="_dialog_8h_source_1l00026">26</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_class_dialog_1ab30ac48588a82983f653f58d50a52ddc"/><section>
+    <title>Dialog()</title>
+<indexterm><primary>Dialog</primary><secondary>Dialog</secondary></indexterm>
+<indexterm><primary>Dialog</primary><secondary>Dialog</secondary></indexterm>
+<para><computeroutput>Dialog::Dialog (QWidget * parent = <computeroutput>nullptr</computeroutput>
+)</computeroutput></para><para>
+
+<para><link linkend="_class_dialog">Dialog</link> 构造函数 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>parent</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_dialog_8cpp_source">dialog.cpp</link> 第 <link linkend="_dialog_8cpp_source_1l00004">4</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_dialog_1a2a1fe6ef28513eed13bfcd3a4da83ccb"/><section>
+    <title>~Dialog()</title>
+<indexterm><primary>~Dialog</primary><secondary>Dialog</secondary></indexterm>
+<indexterm><primary>Dialog</primary><secondary>~Dialog</secondary></indexterm>
+<para><computeroutput>Dialog::~Dialog ( )</computeroutput></para><para>
+
+<para><link linkend="_class_dialog">Dialog</link> 析构函数 </para>
+</para>
+<para>
+在文件 <link linkend="_dialog_8cpp_source">dialog.cpp</link> 第 <link linkend="_dialog_8cpp_source_1l00012">12</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_class_dialog_1a35613503633a5bf59f5061f0e44ee31c"/><section>
+    <title>iniUI()</title>
+<indexterm><primary>iniUI</primary><secondary>Dialog</secondary></indexterm>
+<indexterm><primary>Dialog</primary><secondary>iniUI</secondary></indexterm>
+<para><computeroutput>void Dialog::iniUI ( )</computeroutput></para><para>
+
+<para>iniUI UI 初始化函数，1. 将数字按钮组成组 2. 关联按钮组的点击信号 </para>
+</para>
+<para>
+在文件 <link linkend="_dialog_8cpp_source">dialog.cpp</link> 第 <link linkend="_dialog_8cpp_source_1l00017">17</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_dialog_1abc1b66b06bb3519e2c0ae6bdc329daea"/><section>
+    <title>onButtonGroupClicked</title>
+<indexterm><primary>onButtonGroupClicked</primary><secondary>Dialog</secondary></indexterm>
+<indexterm><primary>Dialog</primary><secondary>onButtonGroupClicked</secondary></indexterm>
+<para><computeroutput>void Dialog::onButtonGroupClicked (QAbstractButton * btn)<computeroutput>[slot]</computeroutput></computeroutput></para><para>
+
+<para>onButtonGroupClicked 当数字按钮组按下的的时候进行的反馈函数，在 <link linkend="_class_dialog_1a35613503633a5bf59f5061f0e44ee31c">iniUI()</link> 中使用 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>btn</entry><entry>
+<para>按下的按钮 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para>name 计算器输入的数据</para>
+<para>
+在文件 <link linkend="_dialog_8cpp_source">dialog.cpp</link> 第 <link linkend="_dialog_8cpp_source_1l00031">31</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_class_dialog_1a94390966fe57492a959fc5227d7b9eb8"/><section>
+    <title>prevBtn</title>
+<indexterm><primary>prevBtn</primary><secondary>Dialog</secondary></indexterm>
+<indexterm><primary>Dialog</primary><secondary>prevBtn</secondary></indexterm>
+<para><computeroutput>QString Dialog::prevBtn<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>prevBtn 前一个按钮输入的符号 OR 数字 </para>
+</para>
+<para>
+在文件 <link linkend="_dialog_8h_source">dialog.h</link> 第 <link linkend="_dialog_8h_source_1l00068">68</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_dialog_1aaa4b5bfb9a0f64900d524f14bc32e6df"/><section>
+    <title>ui</title>
+<indexterm><primary>ui</primary><secondary>Dialog</secondary></indexterm>
+<indexterm><primary>Dialog</primary><secondary>ui</secondary></indexterm>
+<para><computeroutput>Ui::Dialog* Dialog::ui<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>ui ui 界面变量 </para>
+</para>
+<para>
+在文件 <link linkend="_dialog_8h_source">dialog.h</link> 第 <link linkend="_dialog_8h_source_1l00058">58</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_dialog_1a9166511437be90265112180332a999f5"/><section>
+    <title>vectorOfNumbersAndSigns</title>
+<indexterm><primary>vectorOfNumbersAndSigns</primary><secondary>Dialog</secondary></indexterm>
+<indexterm><primary>Dialog</primary><secondary>vectorOfNumbersAndSigns</secondary></indexterm>
+<para><computeroutput>QVector&lt;QVariant&gt; Dialog::vectorOfNumbersAndSigns<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>vectorOfNumbersAndSigns 储存左数右数和符号，进行运算。 </para>
+</para>
+<para>
+在文件 <link linkend="_dialog_8h_source">dialog.h</link> 第 <link linkend="_dialog_8h_source_1l00063">63</link> 行定义.</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+Calculator/<link linkend="_dialog_8h">dialog.h</link>Calculator/<link linkend="_dialog_8cpp">dialog.cpp</link></section>
+</section>

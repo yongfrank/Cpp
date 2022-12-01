@@ -1,0 +1,3 @@
+/Users/yongfrank/Developer/cpp/cmakeTutorials/build/CMakeFiles/Example.dir
+/Users/yongfrank/Developer/cpp/cmakeTutorials/build/CMakeFiles/edit_cache.dir
+/Users/yongfrank/Developer/cpp/cmakeTutorials/build/CMakeFiles/rebuild_cache.dir

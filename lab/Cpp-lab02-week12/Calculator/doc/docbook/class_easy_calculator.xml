@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_easy_calculator" xml:lang="zh">
+<title>EasyCalculator类 参考</title>
+<indexterm><primary>EasyCalculator</primary></indexterm>
+<para>
+
+<para>The <link linkend="_class_easy_calculator">EasyCalculator</link> class 简单计算器类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;EasyCalculator.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 类型    </title>
+        <itemizedlist>
+            <listitem><para>enum class <link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487">Operation</link> { <link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f">Addition</link>
+, <link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0">Subtraction</link>
+, <link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd">Multiplication</link>
+, <link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833">Division</link>
+ }</para>
+
+<para>The Operation enum </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_easy_calculator_1adc6e113bfe2c7e5cf72bb76dc74f1d5f">EasyCalculator</link> (QWidget *parent=nullptr)</para>
+
+<para><link linkend="_class_easy_calculator">EasyCalculator</link> constructor </para>
+</listitem>
+            <listitem><para><link linkend="_class_easy_calculator_1a47abbe681046f7b4338d4102b86f3810">~EasyCalculator</link> ()</para>
+
+<para>Destruction Function </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 槽    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_easy_calculator_1ae5828555ec64275649a8b7e82e41e375">on_btn_plus_clicked</link> ()</para>
+
+<para>on_btn_plus_clicked </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_easy_calculator_1a1f0a1cc27cb9ea3e95cc0f051c8ece78">on_btn_minus_clicked</link> ()</para>
+
+<para>on_btn_minus_clicked </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_easy_calculator_1a546e312fe95578425359dca5284a5bb3">on_btn_multiply_clicked</link> ()</para>
+
+<para>on_btn_multiply_clicked </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_easy_calculator_1a527e0bd243dadc3b9ade2e3fb04b3b46">on_btn_divide_clicked</link> ()</para>
+
+<para>on_btn_divide_clicked </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_easy_calculator_1a1383184a41ee930ef0cfa1d144c39c92">on_calculateButton_clicked</link> ()</para>
+
+<para>on_pushButton_clicked 计算按钮按下时的逻辑 </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_easy_calculator_1a8cbcd1369d7c06d8249deacd560fe752">on_clearButton_clicked</link> ()</para>
+
+<para>on_clearButton_clicked 清除按钮按下时的逻辑 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>Ui::EasyCalculator * <link linkend="_class_easy_calculator_1a8db71955342245a4802cbe9932cb0ab8">ui</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487">Operation</link> <link linkend="_class_easy_calculator_1a3cafbfe306369048abcfb273aa6f2faf">op</link> = <link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f">Operation::Addition</link></para>
+
+<para>op enum, default value is addition </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>The <link linkend="_class_easy_calculator">EasyCalculator</link> class 简单计算器类 </para>
+<para>
+在文件 <link linkend="__easy_calculator_8h_source">EasyCalculator.h</link> 第 <link linkend="__easy_calculator_8h_source_1l00013">13</link> 行定义.</para>
+</section>
+<section>
+<title>成员枚举类型说明</title>
+<anchor xml:id="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487"/><section>
+    <title>Operation</title>
+<indexterm><primary>Operation</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>Operation</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487">EasyCalculator::Operation</link><computeroutput>[strong]</computeroutput></computeroutput></para><para>
+
+<para>The Operation enum </para>
+</para>
+<informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Addition</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>Addition</secondary></indexterm>
+<anchor xml:id="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f"/>Addition</entry><entry></entry></row><row><entry><indexterm><primary>Subtraction</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>Subtraction</secondary></indexterm>
+<anchor xml:id="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0"/>Subtraction</entry><entry></entry></row><row><entry><indexterm><primary>Multiplication</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>Multiplication</secondary></indexterm>
+<anchor xml:id="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd"/>Multiplication</entry><entry></entry></row><row><entry><indexterm><primary>Division</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>Division</secondary></indexterm>
+<anchor xml:id="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833"/>Division</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="__easy_calculator_8h_source">EasyCalculator.h</link> 第 <link linkend="__easy_calculator_8h_source_1l00033">33</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_class_easy_calculator_1adc6e113bfe2c7e5cf72bb76dc74f1d5f"/><section>
+    <title>EasyCalculator()</title>
+<indexterm><primary>EasyCalculator</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>EasyCalculator</secondary></indexterm>
+<para><computeroutput>EasyCalculator::EasyCalculator (QWidget * parent = <computeroutput>nullptr</computeroutput>
+)</computeroutput></para><para>
+
+<para><link linkend="_class_easy_calculator">EasyCalculator</link> constructor </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>parent</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="__easy_calculator_8cpp_source">EasyCalculator.cpp</link> 第 <link linkend="__easy_calculator_8cpp_source_1l00004">4</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_easy_calculator_1a47abbe681046f7b4338d4102b86f3810"/><section>
+    <title>~EasyCalculator()</title>
+<indexterm><primary>~EasyCalculator</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>~EasyCalculator</secondary></indexterm>
+<para><computeroutput>EasyCalculator::~EasyCalculator ( )</computeroutput></para><para>
+
+<para>Destruction Function </para>
+</para>
+<para>
+在文件 <link linkend="__easy_calculator_8cpp_source">EasyCalculator.cpp</link> 第 <link linkend="__easy_calculator_8cpp_source_1l00011">11</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_class_easy_calculator_1a527e0bd243dadc3b9ade2e3fb04b3b46"/><section>
+    <title>on_btn_divide_clicked</title>
+<indexterm><primary>on_btn_divide_clicked</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>on_btn_divide_clicked</secondary></indexterm>
+<para><computeroutput>void EasyCalculator::on_btn_divide_clicked ( )<computeroutput>[private]</computeroutput>, <computeroutput>[slot]</computeroutput></computeroutput></para><para>
+
+<para>on_btn_divide_clicked </para>
+</para>
+<para>
+在文件 <link linkend="__easy_calculator_8cpp_source">EasyCalculator.cpp</link> 第 <link linkend="__easy_calculator_8cpp_source_1l00034">34</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_easy_calculator_1a1f0a1cc27cb9ea3e95cc0f051c8ece78"/><section>
+    <title>on_btn_minus_clicked</title>
+<indexterm><primary>on_btn_minus_clicked</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>on_btn_minus_clicked</secondary></indexterm>
+<para><computeroutput>void EasyCalculator::on_btn_minus_clicked ( )<computeroutput>[private]</computeroutput>, <computeroutput>[slot]</computeroutput></computeroutput></para><para>
+
+<para>on_btn_minus_clicked </para>
+</para>
+<para>
+在文件 <link linkend="__easy_calculator_8cpp_source">EasyCalculator.cpp</link> 第 <link linkend="__easy_calculator_8cpp_source_1l00022">22</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_easy_calculator_1a546e312fe95578425359dca5284a5bb3"/><section>
+    <title>on_btn_multiply_clicked</title>
+<indexterm><primary>on_btn_multiply_clicked</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>on_btn_multiply_clicked</secondary></indexterm>
+<para><computeroutput>void EasyCalculator::on_btn_multiply_clicked ( )<computeroutput>[private]</computeroutput>, <computeroutput>[slot]</computeroutput></computeroutput></para><para>
+
+<para>on_btn_multiply_clicked </para>
+</para>
+<para>
+在文件 <link linkend="__easy_calculator_8cpp_source">EasyCalculator.cpp</link> 第 <link linkend="__easy_calculator_8cpp_source_1l00028">28</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_easy_calculator_1ae5828555ec64275649a8b7e82e41e375"/><section>
+    <title>on_btn_plus_clicked</title>
+<indexterm><primary>on_btn_plus_clicked</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>on_btn_plus_clicked</secondary></indexterm>
+<para><computeroutput>void EasyCalculator::on_btn_plus_clicked ( )<computeroutput>[private]</computeroutput>, <computeroutput>[slot]</computeroutput></computeroutput></para><para>
+
+<para>on_btn_plus_clicked </para>
+</para>
+<para>
+在文件 <link linkend="__easy_calculator_8cpp_source">EasyCalculator.cpp</link> 第 <link linkend="__easy_calculator_8cpp_source_1l00017">17</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_easy_calculator_1a1383184a41ee930ef0cfa1d144c39c92"/><section>
+    <title>on_calculateButton_clicked</title>
+<indexterm><primary>on_calculateButton_clicked</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>on_calculateButton_clicked</secondary></indexterm>
+<para><computeroutput>void EasyCalculator::on_calculateButton_clicked ( )<computeroutput>[private]</computeroutput>, <computeroutput>[slot]</computeroutput></computeroutput></para><para>
+
+<para>on_pushButton_clicked 计算按钮按下时的逻辑 </para>
+</para>
+
+<para><note><title>注解</title>
+
+<para>LineEdit 的使用 在本例中，我们使用三个 LineEdit 小部件供用户输入两个运算数， 并将计算结果显示在 第三个只读的 Line Edit widget 中。 Line Edit 是单行文本框，其中文本的数据类型是 QString。 使用以下语句读取 LineEdit 中的 QString 对象并将其转化为浮点数。 <literallayout><computeroutput>lhs&#32;=&#32;this-&gt;<link linkend="_class_easy_calculator_1a8db71955342245a4802cbe9932cb0ab8">ui</link>-&gt;lhsLineEdit-&gt;text().toFloat();
+rhs&#32;=&#32;this-&gt;<link linkend="_class_easy_calculator_1a8db71955342245a4802cbe9932cb0ab8">ui</link>-&gt;rhsLineEdit-&gt;text().toFloat();
+this-&gt;<link linkend="_class_easy_calculator_1a8db71955342245a4802cbe9932cb0ab8">ui</link>-&gt;resultLineEdit-&gt;setText(QString::asprintf(<emphasis role="stringliteral">&quot;%f&quot;</emphasis>,&#32;result));
+</computeroutput></literallayout></para>
+</note>
+setText 方法可以将参数 QString 字串设置到行文本框内显示。 本方法可以按格式字串（与 c 语言 printf 格式串相同）将 list_of_objects 转化为 QString 对象。 例如以下函数可以将整型变量 x 转化为 QString 类型对象返回。 <literallayout><computeroutput>QString::asprintf(“format&#32;string”,list_of_objects);
+QString::asprintf(“%d”,x);
+</computeroutput></literallayout> </para>
+<para>
+在文件 <link linkend="__easy_calculator_8cpp_source">EasyCalculator.cpp</link> 第 <link linkend="__easy_calculator_8cpp_source_1l00060">60</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_easy_calculator_1a8cbcd1369d7c06d8249deacd560fe752"/><section>
+    <title>on_clearButton_clicked</title>
+<indexterm><primary>on_clearButton_clicked</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>on_clearButton_clicked</secondary></indexterm>
+<para><computeroutput>void EasyCalculator::on_clearButton_clicked ( )<computeroutput>[private]</computeroutput>, <computeroutput>[slot]</computeroutput></computeroutput></para><para>
+
+<para>on_clearButton_clicked 清除按钮按下时的逻辑 </para>
+</para>
+<para>
+在文件 <link linkend="__easy_calculator_8cpp_source">EasyCalculator.cpp</link> 第 <link linkend="__easy_calculator_8cpp_source_1l00093">93</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_class_easy_calculator_1a3cafbfe306369048abcfb273aa6f2faf"/><section>
+    <title>op</title>
+<indexterm><primary>op</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>op</secondary></indexterm>
+<para><computeroutput><link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487">Operation</link> EasyCalculator::op = <link linkend="_class_easy_calculator_1aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f">Operation::Addition</link><computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>op enum, default value is addition </para>
+</para>
+<para>
+在文件 <link linkend="__easy_calculator_8h_source">EasyCalculator.h</link> 第 <link linkend="__easy_calculator_8h_source_1l00074">74</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_easy_calculator_1a8db71955342245a4802cbe9932cb0ab8"/><section>
+    <title>ui</title>
+<indexterm><primary>ui</primary><secondary>EasyCalculator</secondary></indexterm>
+<indexterm><primary>EasyCalculator</primary><secondary>ui</secondary></indexterm>
+<para><computeroutput>Ui::EasyCalculator* EasyCalculator::ui<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__easy_calculator_8h_source">EasyCalculator.h</link> 第 <link linkend="__easy_calculator_8h_source_1l00069">69</link> 行定义.</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+EasyCalculator/<link linkend="__easy_calculator_8h">EasyCalculator.h</link>EasyCalculator/<link linkend="__easy_calculator_8cpp">EasyCalculator.cpp</link></section>
+</section>

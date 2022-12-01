@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Calculator: EasyCalculator/EasyCalculator.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="ZSTU_t_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Calculator<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Calculator Tutorials</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_easy_calculator_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">EasyCalculator.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_easy_calculator_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef EASYCALCULATOR_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define EASYCALCULATOR_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>QT_BEGIN_NAMESPACE</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> { <span class="keyword">class </span><a class="code hl_class" href="class_easy_calculator.html">EasyCalculator</a>; }</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>QT_END_NAMESPACE</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_easy_calculator.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_easy_calculator.html">EasyCalculator</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Q_OBJECT</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="class_easy_calculator.html">EasyCalculator</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="class_easy_calculator.html#a47abbe681046f7b4338d4102b86f3810">~EasyCalculator</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487">   37</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487">Operation</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_enumvalue" href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f">Addition</a>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_enumvalue" href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0">Subtraction</a>, </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_enumvalue" href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd">Multiplication</a>,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_enumvalue" href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833">Division</a></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    };</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_easy_calculator.html#ae5828555ec64275649a8b7e82e41e375">on_btn_plus_clicked</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_easy_calculator.html#a1f0a1cc27cb9ea3e95cc0f051c8ece78">on_btn_minus_clicked</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_easy_calculator.html#a546e312fe95578425359dca5284a5bb3">on_btn_multiply_clicked</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_easy_calculator.html#a527e0bd243dadc3b9ade2e3fb04b3b46">on_btn_divide_clicked</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_easy_calculator.html#a1383184a41ee930ef0cfa1d144c39c92">on_calculateButton_clicked</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_easy_calculator.html#a8cbcd1369d7c06d8249deacd560fe752">on_clearButton_clicked</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_easy_calculator.html#a8db71955342245a4802cbe9932cb0ab8">   78</a></span>    Ui::EasyCalculator *<a class="code hl_variable" href="class_easy_calculator.html#a8db71955342245a4802cbe9932cb0ab8">ui</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_easy_calculator.html#a3cafbfe306369048abcfb273aa6f2faf">   83</a></span>    <a class="code hl_enumeration" href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487">Operation</a> <a class="code hl_variable" href="class_easy_calculator.html#a3cafbfe306369048abcfb273aa6f2faf">op</a> = <a class="code hl_enumvalue" href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f">Operation::Addition</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif </span><span class="comment">// EASYCALCULATOR_H</span></div>
+<div class="ttc" id="aclass_easy_calculator_html"><div class="ttname"><a href="class_easy_calculator.html">EasyCalculator</a></div><div class="ttdoc">The EasyCalculator class 简单计算器类</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8h_source.html#l00014">EasyCalculator.h:15</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_a1383184a41ee930ef0cfa1d144c39c92"><div class="ttname"><a href="class_easy_calculator.html#a1383184a41ee930ef0cfa1d144c39c92">EasyCalculator::on_calculateButton_clicked</a></div><div class="ttdeci">void on_calculateButton_clicked()</div><div class="ttdoc">on_pushButton_clicked 计算按钮按下时的逻辑</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8cpp_source.html#l00060">EasyCalculator.cpp:60</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_a1f0a1cc27cb9ea3e95cc0f051c8ece78"><div class="ttname"><a href="class_easy_calculator.html#a1f0a1cc27cb9ea3e95cc0f051c8ece78">EasyCalculator::on_btn_minus_clicked</a></div><div class="ttdeci">void on_btn_minus_clicked()</div><div class="ttdoc">on_btn_minus_clicked 当 on_btn_minus_clicked 被点击时调用</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8cpp_source.html#l00022">EasyCalculator.cpp:22</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_a3cafbfe306369048abcfb273aa6f2faf"><div class="ttname"><a href="class_easy_calculator.html#a3cafbfe306369048abcfb273aa6f2faf">EasyCalculator::op</a></div><div class="ttdeci">Operation op</div><div class="ttdoc">op enum, default value is addition 系统界面对象指针，我们可以通过本指针访问所有放置在界面上的小部件(Widgets）</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8h_source.html#l00083">EasyCalculator.h:83</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_a47abbe681046f7b4338d4102b86f3810"><div class="ttname"><a href="class_easy_calculator.html#a47abbe681046f7b4338d4102b86f3810">EasyCalculator::~EasyCalculator</a></div><div class="ttdeci">~EasyCalculator()</div><div class="ttdoc">Destruction Function</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8cpp_source.html#l00011">EasyCalculator.cpp:11</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_a527e0bd243dadc3b9ade2e3fb04b3b46"><div class="ttname"><a href="class_easy_calculator.html#a527e0bd243dadc3b9ade2e3fb04b3b46">EasyCalculator::on_btn_divide_clicked</a></div><div class="ttdeci">void on_btn_divide_clicked()</div><div class="ttdoc">on_btn_divide_clicked</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8cpp_source.html#l00034">EasyCalculator.cpp:34</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_a546e312fe95578425359dca5284a5bb3"><div class="ttname"><a href="class_easy_calculator.html#a546e312fe95578425359dca5284a5bb3">EasyCalculator::on_btn_multiply_clicked</a></div><div class="ttdeci">void on_btn_multiply_clicked()</div><div class="ttdoc">on_btn_multiply_clicked</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8cpp_source.html#l00028">EasyCalculator.cpp:28</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_a8cbcd1369d7c06d8249deacd560fe752"><div class="ttname"><a href="class_easy_calculator.html#a8cbcd1369d7c06d8249deacd560fe752">EasyCalculator::on_clearButton_clicked</a></div><div class="ttdeci">void on_clearButton_clicked()</div><div class="ttdoc">on_clearButton_clicked 清除按钮按下时的逻辑</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8cpp_source.html#l00093">EasyCalculator.cpp:93</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_a8db71955342245a4802cbe9932cb0ab8"><div class="ttname"><a href="class_easy_calculator.html#a8db71955342245a4802cbe9932cb0ab8">EasyCalculator::ui</a></div><div class="ttdeci">Ui::EasyCalculator * ui</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8h_source.html#l00078">EasyCalculator.h:78</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_aba95ee25eedbe8c9d2f1c0af62463487"><div class="ttname"><a href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487">EasyCalculator::Operation</a></div><div class="ttdeci">Operation</div><div class="ttdoc">The Operation enum</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8h_source.html#l00037">EasyCalculator.h:37</a></div></div>
+<div class="ttc" id="aclass_easy_calculator_html_aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd"><div class="ttname"><a href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd">EasyCalculator::Operation::Multiplication</a></div><div class="ttdeci">@ Multiplication</div></div>
+<div class="ttc" id="aclass_easy_calculator_html_aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833"><div class="ttname"><a href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833">EasyCalculator::Operation::Division</a></div><div class="ttdeci">@ Division</div></div>
+<div class="ttc" id="aclass_easy_calculator_html_aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0"><div class="ttname"><a href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0">EasyCalculator::Operation::Subtraction</a></div><div class="ttdeci">@ Subtraction</div><div class="ttdoc">减法</div></div>
+<div class="ttc" id="aclass_easy_calculator_html_aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f"><div class="ttname"><a href="class_easy_calculator.html#aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f">EasyCalculator::Operation::Addition</a></div><div class="ttdeci">@ Addition</div><div class="ttdoc">加法</div></div>
+<div class="ttc" id="aclass_easy_calculator_html_ae5828555ec64275649a8b7e82e41e375"><div class="ttname"><a href="class_easy_calculator.html#ae5828555ec64275649a8b7e82e41e375">EasyCalculator::on_btn_plus_clicked</a></div><div class="ttdeci">void on_btn_plus_clicked()</div><div class="ttdoc">on_btn_plus_clicked 槽函数，用来响应以下预定义的系统信号，函数名由系统维护，不得随意更改</div><div class="ttdef"><b>Definition:</b> <a href="_easy_calculator_8cpp_source.html#l00017">EasyCalculator.cpp:17</a></div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="dialog_8h_source.html#l00020">dialog.h:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d4b5f1c76e001744dd955323ab56ec62.html">EasyCalculator</a></li><li class="navelem"><a class="el" href="_easy_calculator_8h.html">EasyCalculator.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

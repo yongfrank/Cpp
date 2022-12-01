@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dialog_8h_source" xml:lang="zh">
+<title>dialog.h</title>
+<indexterm><primary>Calculator/dialog.h</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_dialog_8h_source_1l00001"/>00001 <emphasis role="comment">/*</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00002"/>00002 <emphasis role="comment">&#32;*&#32;@Author:&#32;Frank&#32;Chu</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00003"/>00003 <emphasis role="comment">&#32;*&#32;@Date:&#32;2022-12-01&#32;13:38:03</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00004"/>00004 <emphasis role="comment">&#32;*&#32;@LastEditors:&#32;Frank&#32;Chu</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00005"/>00005 <emphasis role="comment">&#32;*&#32;@LastEditTime:&#32;2022-12-01&#32;14:27:04</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00006"/>00006 <emphasis role="comment">&#32;*&#32;@FilePath:&#32;/Cpp/lab/Cpp-lab02-week12/Calculator/dialog.h</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00007"/>00007 <emphasis role="comment">&#32;*&#32;@Description:&#32;</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00008"/>00008 <emphasis role="comment">&#32;*&#32;</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00009"/>00009 <emphasis role="comment">&#32;*&#32;Copyright&#32;(c)&#32;2022&#32;by&#32;Frank&#32;Chu,&#32;All&#32;Rights&#32;Reserved.&#32;</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00010"/>00010 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00011"/>00011 <emphasis role="preprocessor">#ifndef&#32;DIALOG_H</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00012"/>00012 <emphasis role="preprocessor">#define&#32;DIALOG_H</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00013"/>00013 
+<anchor xml:id="_dialog_8h_source_1l00014"/>00014 <emphasis role="preprocessor">#include&#32;&quot;QtWidgets/qabstractbutton.h&quot;</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00015"/>00015 <emphasis role="preprocessor">#include&#32;&lt;QDialog&gt;</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00016"/>00016 <emphasis role="preprocessor">#include&#32;&lt;QtWidgets/QWidget&gt;</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00017"/>00017 <emphasis role="preprocessor">#include&#32;&lt;QVector&gt;</emphasis>
+<anchor xml:id="_dialog_8h_source_1l00018"/>00018 
+<anchor xml:id="_dialog_8h_source_1l00019"/>00019 QT_BEGIN_NAMESPACE
+<anchor xml:id="_dialog_8h_source_1l00020"/><link linkend="_namespace_ui">00020</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_ui">Ui</link>&#32;{&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_dialog">Dialog</link>;&#32;}
+<anchor xml:id="_dialog_8h_source_1l00021"/>00021 QT_END_NAMESPACE
+<anchor xml:id="_dialog_8h_source_1l00022"/>00022 
+<anchor xml:id="_dialog_8h_source_1l00026"/><link linkend="_class_dialog">00026</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_dialog">Dialog</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;QDialog
+<anchor xml:id="_dialog_8h_source_1l00027"/>00027 {
+<anchor xml:id="_dialog_8h_source_1l00028"/>00028 &#32;&#32;&#32;&#32;Q_OBJECT
+<anchor xml:id="_dialog_8h_source_1l00029"/>00029 
+<anchor xml:id="_dialog_8h_source_1l00030"/>00030 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_dialog_8h_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<link linkend="_class_dialog">Dialog</link>(QWidget&#32;*parent&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>);
+<anchor xml:id="_dialog_8h_source_1l00036"/>00036 
+<anchor xml:id="_dialog_8h_source_1l00040"/>00040 &#32;&#32;&#32;&#32;<link linkend="_class_dialog_1a2a1fe6ef28513eed13bfcd3a4da83ccb">~Dialog</link>();
+<anchor xml:id="_dialog_8h_source_1l00041"/>00041 
+<anchor xml:id="_dialog_8h_source_1l00045"/>00045 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_dialog_1a35613503633a5bf59f5061f0e44ee31c">iniUI</link>();
+<anchor xml:id="_dialog_8h_source_1l00046"/>00046 <emphasis role="keyword">public</emphasis>&#32;slots:
+<anchor xml:id="_dialog_8h_source_1l00047"/>00047 
+<anchor xml:id="_dialog_8h_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_dialog_1abc1b66b06bb3519e2c0ae6bdc329daea">onButtonGroupClicked</link>(QAbstractButton&#32;*btn);
+<anchor xml:id="_dialog_8h_source_1l00053"/>00053 
+<anchor xml:id="_dialog_8h_source_1l00054"/>00054 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_dialog_8h_source_1l00058"/><link linkend="_class_dialog_1aaa4b5bfb9a0f64900d524f14bc32e6df">00058</link> &#32;&#32;&#32;&#32;Ui::Dialog&#32;*<link linkend="_class_dialog_1aaa4b5bfb9a0f64900d524f14bc32e6df">ui</link>;
+<anchor xml:id="_dialog_8h_source_1l00059"/>00059 
+<anchor xml:id="_dialog_8h_source_1l00063"/><link linkend="_class_dialog_1a9166511437be90265112180332a999f5">00063</link> &#32;&#32;&#32;&#32;QVector&lt;QVariant&gt;&#32;<link linkend="_class_dialog_1a9166511437be90265112180332a999f5">vectorOfNumbersAndSigns</link>;
+<anchor xml:id="_dialog_8h_source_1l00064"/>00064 
+<anchor xml:id="_dialog_8h_source_1l00068"/><link linkend="_class_dialog_1a94390966fe57492a959fc5227d7b9eb8">00068</link> &#32;&#32;&#32;&#32;QString&#32;<link linkend="_class_dialog_1a94390966fe57492a959fc5227d7b9eb8">prevBtn</link>;
+<anchor xml:id="_dialog_8h_source_1l00069"/>00069 };
+<anchor xml:id="_dialog_8h_source_1l00070"/>00070 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;DIALOG_H</emphasis>
+</programlisting></section>
