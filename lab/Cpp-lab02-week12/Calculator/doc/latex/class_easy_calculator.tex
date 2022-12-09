@@ -95,6 +95,16 @@ Division&除法 \\
 在文件 \mbox{\hyperlink{_easy_calculator_8h_source}{Easy\+Calculator.\+h}} 第 \mbox{\hyperlink{_easy_calculator_8h_source_l00037}{37}} 行定义.
 
 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037                          \{}
+\DoxyCodeLine{00038         \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f}{Addition}},}
+\DoxyCodeLine{00039         \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0}{Subtraction}}, }
+\DoxyCodeLine{00041         \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd}{Multiplication}},}
+\DoxyCodeLine{00043         \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833}{Division}}}
+\DoxyCodeLine{00044     \};}
+
+\end{DoxyCode}
+
 
 \doxysubsection{构造及析构函数说明}
 \mbox{\Hypertarget{class_easy_calculator_adc6e113bfe2c7e5cf72bb76dc74f1d5f}\label{class_easy_calculator_adc6e113bfe2c7e5cf72bb76dc74f1d5f}} 
@@ -116,6 +126,15 @@ Division&除法 \\
 
 在文件 \mbox{\hyperlink{_easy_calculator_8cpp_source}{Easy\+Calculator.\+cpp}} 第 \mbox{\hyperlink{_easy_calculator_8cpp_source_l00004}{4}} 行定义.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005     : QDialog(parent)}
+\DoxyCodeLine{00006     , \mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}(\textcolor{keyword}{new} Ui::EasyCalculator)}
+\DoxyCodeLine{00007 \{}
+\DoxyCodeLine{00008     \mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>setupUi(\textcolor{keyword}{this});}
+\DoxyCodeLine{00009 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_easy_calculator_a47abbe681046f7b4338d4102b86f3810}\label{class_easy_calculator_a47abbe681046f7b4338d4102b86f3810}} 
 \index{EasyCalculator@{EasyCalculator}!````~EasyCalculator@{$\sim$EasyCalculator}}
 \index{````~EasyCalculator@{$\sim$EasyCalculator}!EasyCalculator@{EasyCalculator}}
@@ -130,6 +149,13 @@ Destruction Function
 
 在文件 \mbox{\hyperlink{_easy_calculator_8cpp_source}{Easy\+Calculator.\+cpp}} 第 \mbox{\hyperlink{_easy_calculator_8cpp_source_l00011}{11}} 行定义.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012 \{}
+\DoxyCodeLine{00013     \textcolor{keyword}{delete} \mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}};}
+\DoxyCodeLine{00014 \}}
+
+\end{DoxyCode}
 
 
 \doxysubsection{成员函数说明}
@@ -147,6 +173,13 @@ on\+\_\+btn\+\_\+divide\+\_\+clicked
 
 在文件 \mbox{\hyperlink{_easy_calculator_8cpp_source}{Easy\+Calculator.\+cpp}} 第 \mbox{\hyperlink{_easy_calculator_8cpp_source_l00034}{34}} 行定义.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035 \{}
+\DoxyCodeLine{00036     this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}} = \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833}{Operation::Division}};}
+\DoxyCodeLine{00037 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_easy_calculator_a1f0a1cc27cb9ea3e95cc0f051c8ece78}\label{class_easy_calculator_a1f0a1cc27cb9ea3e95cc0f051c8ece78}} 
 \index{EasyCalculator@{EasyCalculator}!on\_btn\_minus\_clicked@{on\_btn\_minus\_clicked}}
 \index{on\_btn\_minus\_clicked@{on\_btn\_minus\_clicked}!EasyCalculator@{EasyCalculator}}
@@ -161,6 +194,13 @@ on\+\_\+btn\+\_\+minus\+\_\+clicked 当 on\+\_\+btn\+\_\+minus\+\_\+clicked 被�
 
 在文件 \mbox{\hyperlink{_easy_calculator_8cpp_source}{Easy\+Calculator.\+cpp}} 第 \mbox{\hyperlink{_easy_calculator_8cpp_source_l00022}{22}} 行定义.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023 \{}
+\DoxyCodeLine{00024     this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}} = \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0}{Operation::Subtraction}};}
+\DoxyCodeLine{00025 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_easy_calculator_a546e312fe95578425359dca5284a5bb3}\label{class_easy_calculator_a546e312fe95578425359dca5284a5bb3}} 
 \index{EasyCalculator@{EasyCalculator}!on\_btn\_multiply\_clicked@{on\_btn\_multiply\_clicked}}
 \index{on\_btn\_multiply\_clicked@{on\_btn\_multiply\_clicked}!EasyCalculator@{EasyCalculator}}
@@ -175,6 +215,13 @@ on\+\_\+btn\+\_\+multiply\+\_\+clicked
 
 在文件 \mbox{\hyperlink{_easy_calculator_8cpp_source}{Easy\+Calculator.\+cpp}} 第 \mbox{\hyperlink{_easy_calculator_8cpp_source_l00028}{28}} 行定义.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029 \{}
+\DoxyCodeLine{00030     this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}} = \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd}{Operation::Multiplication}};}
+\DoxyCodeLine{00031 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_easy_calculator_ae5828555ec64275649a8b7e82e41e375}\label{class_easy_calculator_ae5828555ec64275649a8b7e82e41e375}} 
 \index{EasyCalculator@{EasyCalculator}!on\_btn\_plus\_clicked@{on\_btn\_plus\_clicked}}
 \index{on\_btn\_plus\_clicked@{on\_btn\_plus\_clicked}!EasyCalculator@{EasyCalculator}}
@@ -189,6 +236,13 @@ on\+\_\+btn\+\_\+plus\+\_\+clicked 槽函数，用来响应以下预定义的系
 
 在文件 \mbox{\hyperlink{_easy_calculator_8cpp_source}{Easy\+Calculator.\+cpp}} 第 \mbox{\hyperlink{_easy_calculator_8cpp_source_l00017}{17}} 行定义.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018 \{}
+\DoxyCodeLine{00019     this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}} = \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f}{Operation::Addition}};}
+\DoxyCodeLine{00020 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_easy_calculator_a1383184a41ee930ef0cfa1d144c39c92}\label{class_easy_calculator_a1383184a41ee930ef0cfa1d144c39c92}} 
 \index{EasyCalculator@{EasyCalculator}!on\_calculateButton\_clicked@{on\_calculateButton\_clicked}}
 \index{on\_calculateButton\_clicked@{on\_calculateButton\_clicked}!EasyCalculator@{EasyCalculator}}
@@ -219,6 +273,40 @@ set\+Text 方法可以将参数 QString 字串设置到行文本框内显示。 
 
 在文件 \mbox{\hyperlink{_easy_calculator_8cpp_source}{Easy\+Calculator.\+cpp}} 第 \mbox{\hyperlink{_easy_calculator_8cpp_source_l00060}{60}} 行定义.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00061 \{}
+\DoxyCodeLine{00062     \textcolor{keywordtype}{float} lhs, rhs, result;}
+\DoxyCodeLine{00063     lhs = this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>lhsLineEdit-\/>text().toFloat();}
+\DoxyCodeLine{00064     rhs = this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>rhsLineEdit-\/>text().toFloat();}
+\DoxyCodeLine{00065 \textcolor{comment}{//    if(this-\/>op == Operation::Addition) \{}}
+\DoxyCodeLine{00066 \textcolor{comment}{//        result = lhs + rhs;}}
+\DoxyCodeLine{00067 \textcolor{comment}{//        this-\/>ui-\/>resultLineEdit-\/>setText(QString::asprintf("{}\%f"{}, result));}}
+\DoxyCodeLine{00068 \textcolor{comment}{//    \}}}
+\DoxyCodeLine{00069 \textcolor{comment}{//    else if(this-\/>op == Operation::Subtraction) \{}}
+\DoxyCodeLine{00070 \textcolor{comment}{//        result = lhs -\/ rhs;}}
+\DoxyCodeLine{00071 \textcolor{comment}{//    \}}}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073     \textcolor{keywordflow}{switch} (this-\/>\mbox{\hyperlink{class_easy_calculator_a3cafbfe306369048abcfb273aa6f2faf}{op}}) \{}
+\DoxyCodeLine{00074     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a7c5531bbefed0945814f874baf9e0e0f}{Operation::Addition}}:}
+\DoxyCodeLine{00075         result = lhs + rhs;}
+\DoxyCodeLine{00076         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00077     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a6eb8b8b560161603402c0238b3a7d8b0}{Operation::Subtraction}}:}
+\DoxyCodeLine{00078         result = lhs -\/ rhs;}
+\DoxyCodeLine{00079         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00080     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a27d1a1f7b7c2180e5b20ce9e3d00e2dd}{Operation::Multiplication}}:}
+\DoxyCodeLine{00081         result = lhs * rhs;}
+\DoxyCodeLine{00082         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00083     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_easy_calculator_aba95ee25eedbe8c9d2f1c0af62463487a3025cdaab2deb0bb2cd642449e570833}{Operation::Division}}:}
+\DoxyCodeLine{00084         result = lhs / rhs;}
+\DoxyCodeLine{00085         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00086     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00087         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00088     \}}
+\DoxyCodeLine{00089     this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>resultLineEdit-\/>setText(QString::asprintf(\textcolor{stringliteral}{"{}\%f"{}}, result));}
+\DoxyCodeLine{00090 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_easy_calculator_a8cbcd1369d7c06d8249deacd560fe752}\label{class_easy_calculator_a8cbcd1369d7c06d8249deacd560fe752}} 
 \index{EasyCalculator@{EasyCalculator}!on\_clearButton\_clicked@{on\_clearButton\_clicked}}
 \index{on\_clearButton\_clicked@{on\_clearButton\_clicked}!EasyCalculator@{EasyCalculator}}
@@ -233,6 +321,15 @@ on\+\_\+clear\+Button\+\_\+clicked 清除按钮按下时的逻辑
 
 在文件 \mbox{\hyperlink{_easy_calculator_8cpp_source}{Easy\+Calculator.\+cpp}} 第 \mbox{\hyperlink{_easy_calculator_8cpp_source_l00093}{93}} 行定义.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00094 \{}
+\DoxyCodeLine{00095     this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>lhsLineEdit-\/>clear();}
+\DoxyCodeLine{00096     this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>rhsLineEdit-\/>clear();}
+\DoxyCodeLine{00097     this-\/>\mbox{\hyperlink{class_easy_calculator_a8db71955342245a4802cbe9932cb0ab8}{ui}}-\/>resultLineEdit-\/>clear();}
+\DoxyCodeLine{00098 \}}
+
+\end{DoxyCode}
 
 
 \doxysubsection{类成员变量说明}

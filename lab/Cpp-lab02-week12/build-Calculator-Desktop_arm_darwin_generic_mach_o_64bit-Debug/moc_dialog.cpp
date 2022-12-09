@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../Calculator/dialog.h"
+#include "../Calculator/Calculator/dialog.h"
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'dialog.h' doesn't include <QObject>."

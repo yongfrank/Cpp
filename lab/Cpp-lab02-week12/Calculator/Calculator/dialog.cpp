@@ -98,7 +98,9 @@ void Dialog::onButtonGroupClicked(QAbstractButton* btn) {
         else if(this->vectorOfNumbersAndSigns[1] == "/") {
             this->vectorOfNumbersAndSigns[4] = this->vectorOfNumbersAndSigns[0].toFloat() / this->vectorOfNumbersAndSigns[2].toFloat();
         }
-        this->ui->lineEdit->setText(this->vectorOfNumbersAndSigns[4].toString());
+
+//        this->ui->lineEdit->setText(this->vectorOfNumbersAndSigns[4].toString());
+        this->ui->lineEdit->setText(QString::asprintf("%.2f", this->vectorOfNumbersAndSigns[4].toFloat()));
         this->vectorOfNumbersAndSigns.clear();
     }
     else if (name == "C") {
@@ -123,6 +125,26 @@ void Dialog::onButtonGroupClicked(QAbstractButton* btn) {
 
     this->prevBtn = name;
 }
+
+/**
+ * @brief Dialog::isNumeric
+ * @param stringToBeTest
+ * @return
+ */
+bool Dialog::isNumeric(QString stringToBeTest) {
+    QString pattern = "[\\-]?[0][\\.][0-9]*|0|[\\-]?[1-9][0-9]*[\\.][0-9]*";
+    QRegularExpression reg(pattern);
+    QRegularExpressionValidator validator(reg);
+    int positionStarted = 0;
+    return validator.validate(stringToBeTest, positionStarted) == QValidator::Acceptable;
+}
+
+
+
+
+
+
+
 
 
 

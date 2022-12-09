@@ -99,36 +99,53 @@
 \DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00098}00098         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[1] == \textcolor{stringliteral}{"{}/"{}}) \{}
 \DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00099}00099             this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[4] = this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[0].toFloat() / this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[2].toFloat();}
 \DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00100}00100         \}}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00101}00101         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>setText(this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[4].toString());}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00102}00102         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.clear();}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00103}00103     \}}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00104}00104     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}C"{}}) \{}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00105}00105         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>clear();}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00106}00106         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>expLineEdit-\/>clear();}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00107}00107         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.clear();}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00108}00108     \}}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00109}00109     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}CE"{}}) \{}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00110}00110         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>clear();}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00111}00111         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.pop\_back();}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00112}00112     \}}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00113}00113     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}DEL"{}}) \{}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00114}00114         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>setCursorPosition(\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>cursorPosition() -\/ 1);}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00115}00115         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>del();}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00116}00116     \}}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00117}00117 }
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00118}00118     \textcolor{comment}{// Display Sign and Number}}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00119}00119     \mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>expLineEdit-\/>clear();}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00120}00120     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} var: this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}) \{}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00121}00121         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>expLineEdit-\/>insert(var.toString());}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00122}00122     \}}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00123}00123 }
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00124}00124     this-\/>\mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prevBtn}} = name;}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00125}00125 \}}
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00126}00126 }
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00102}00102 \textcolor{comment}{//        this-\/>ui-\/>lineEdit-\/>setText(this-\/>vectorOfNumbersAndSigns[4].toString());}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00103}00103         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>setText(QString::asprintf(\textcolor{stringliteral}{"{}\%.2f"{}}, this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}[4].toFloat()));}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00104}00104         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00105}00105     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00106}00106     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}C"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00107}00107         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00108}00108         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>expLineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00109}00109         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00110}00110     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00111}00111     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}CE"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00112}00112         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00113}00113         this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}.pop\_back();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00114}00114     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00115}00115     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}DEL"{}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00116}00116         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>setCursorPosition(\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>cursorPosition() -\/ 1);}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00117}00117         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>lineEdit-\/>del();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00118}00118     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00120}00120     \textcolor{comment}{// Display Sign and Number}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00121}00121     \mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>expLineEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00122}00122     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} var: this-\/>\mbox{\hyperlink{class_dialog_a9166511437be90265112180332a999f5}{vectorOfNumbersAndSigns}}) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00123}00123         this-\/>\mbox{\hyperlink{class_dialog_aaa4b5bfb9a0f64900d524f14bc32e6df}{ui}}-\/>expLineEdit-\/>insert(var.toString());}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00124}00124     \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00126}00126     this-\/>\mbox{\hyperlink{class_dialog_a94390966fe57492a959fc5227d7b9eb8}{prevBtn}} = name;}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00127}00127 \}}
 \DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00128}00128 }
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00129}00129 }
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00130}00130 }
-\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00134}\mbox{\hyperlink{class_dialog_a93f76147d237393458e0530981f729a5}{00134}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_dialog_a93f76147d237393458e0530981f729a5}{Dialog::isNumeric}}(QString stringToBeTest) \{}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00135}00135     QString pattern = \textcolor{stringliteral}{"{}[\(\backslash\)\(\backslash\)-\/]?[0][\(\backslash\)\(\backslash\).][0-\/9]*|0|[\(\backslash\)\(\backslash\)-\/]?[1-\/9][0-\/9]*[\(\backslash\)\(\backslash\).][0-\/9]*"{}};}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00136}00136     QRegularExpression reg(pattern);}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00137}00137     QRegularExpressionValidator validator(reg);}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00138}00138     \textcolor{keywordtype}{int} positionStarted = 0;}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00139}00139     \textcolor{keywordflow}{return} validator.validate(stringToBeTest, positionStarted) == QValidator::Acceptable;}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00140}00140 \}}
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00142}00142 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00145}00145 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00150}00150 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{dialog_8cpp_source_l00153}00153 }
 
 \end{DoxyCode}

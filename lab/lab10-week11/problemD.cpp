@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-11-14 09:32:15
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-14 14:06:56
+ * @LastEditTime: 2022-12-08 19:07:15
  * @FilePath: /Cpp/lab/lab10-week11/problemD.cpp
  * @Description: 问题 D: 指针：自定义函数sumDiff()，调用它来求两个数的和、差
  * 自定义一个计算两个数和、差的函数sumDiff(int op1, int op2, int *pSum, int *pDiff),功能是求两个数op1、op2的和、差，其中*psum和*pdiff是计算得出的和与差。

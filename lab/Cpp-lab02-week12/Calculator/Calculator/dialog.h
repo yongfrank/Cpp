@@ -15,6 +15,8 @@
 #include <QDialog>
 #include <QtWidgets/QWidget>
 #include <QVector>
+#include <QRegularExpression>
+#include <QRegularExpressionValidator>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Dialog; }
@@ -43,6 +45,13 @@ public:
      * @brief iniUI UI 初始化函数，1. 将数字按钮组成组 2. 关联按钮组的点击信号
      */
     void iniUI();
+
+    /**
+     * @brief isNumeric 判断字符串是否是正确的数字
+     * @param stringToBeTest 字符变量
+     * @return if string Matches Number Correctly, then return True, else return false.
+     */
+    bool isNumeric(QString stringToBeTest);
 public slots:
 
     /**
