@@ -1,0 +1,196 @@
+\hypertarget{class_widget}{}\doxysection{Widget类 参考}
+\label{class_widget}\index{Widget@{Widget}}
+
+
+{\ttfamily \#include $<$widget.\+h$>$}
+
+类 Widget 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_widget}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_widget_ace1aa23652eb4425355a81760b39fd37}{Widget}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_widget_ace1aa23652eb4425355a81760b39fd37}{Widget\+::\+Widget}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}{$\sim$\+Widget}} ()
+\item 
+void \mbox{\hyperlink{class_widget_ae68e769c6d14456ee001010c6e028c91}{Bind}} ()
+\begin{DoxyCompactList}\small\item\em Bind bind signal and slots \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_a334872a6885672271b42a7ac7da92030}{fill\+Combo\+Box\+And\+Table\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em fill\+Combo\+Box\+And\+Table\+Widget fill with \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_a00be10109bcc22cbb7c5642cf98819c1}{key\+Press\+Event}} (QKey\+Event $\ast$key)
+\begin{DoxyCompactList}\small\item\em key\+Press\+Event shortcut for load(ctrl+o) save(ctrl+s) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{widget_8h_source}{widget.\+h}} 第 \mbox{\hyperlink{widget_8h_source_l00017}{17}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_widget_ace1aa23652eb4425355a81760b39fd37}\label{class_widget_ace1aa23652eb4425355a81760b39fd37}} 
+\index{Widget@{Widget}!Widget@{Widget}}
+\index{Widget@{Widget}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{Widget()}{Widget()}}
+{\footnotesize\ttfamily Widget\+::\+Widget (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_widget_ace1aa23652eb4425355a81760b39fd37}{Widget\+::\+Widget}} 
+
+
+\begin{DoxyParams}{参数}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+In this code, \mbox{\hyperlink{class_widget}{Widget}} is a class that is derived from the QWidget class. The \mbox{\hyperlink{class_widget}{Widget}} class has a constructor that takes a QWidget pointer as an argument and assigns it to the parent of the new \mbox{\hyperlink{class_widget}{Widget}} object. The constructor also initializes a new Ui\+::\+Widget object and assigns it to the ui member variable of the \mbox{\hyperlink{class_widget}{Widget}} object. 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00013}{13}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013                               : QWidget(parent) ,}
+\DoxyCodeLine{00014     ui(\textcolor{keyword}{new} Ui::Widget)}
+\DoxyCodeLine{00015 \{}
+\DoxyCodeLine{00016     this-\/>ui-\/>setupUi(\textcolor{keyword}{this});}
+\DoxyCodeLine{00017     this-\/>\mbox{\hyperlink{class_widget_ae68e769c6d14456ee001010c6e028c91}{Bind}}();}
+\DoxyCodeLine{00018     this-\/>\mbox{\hyperlink{class_widget_a334872a6885672271b42a7ac7da92030}{fillComboBoxAndTableWidget}}();}
+\DoxyCodeLine{00019 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}\label{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}} 
+\index{Widget@{Widget}!````~Widget@{$\sim$Widget}}
+\index{````~Widget@{$\sim$Widget}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{$\sim$Widget()}{~Widget()}}
+{\footnotesize\ttfamily Widget\+::$\sim$\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00021}{21}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022 \{}
+\DoxyCodeLine{00023     \textcolor{keyword}{delete} this-\/>ui;}
+\DoxyCodeLine{00024 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_widget_ae68e769c6d14456ee001010c6e028c91}\label{class_widget_ae68e769c6d14456ee001010c6e028c91}} 
+\index{Widget@{Widget}!Bind@{Bind}}
+\index{Bind@{Bind}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily void Widget\+::\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bind bind signal and slots 
+
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00026}{26}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026                   \{}
+\DoxyCodeLine{00027     QObject::connect(ui-\/>nameLineEdit, SIGNAL(returnPressed()), \textcolor{keyword}{this}, SLOT(ExitWidget()));}
+\DoxyCodeLine{00028     QObject::connect(ui-\/>exitButton, SIGNAL(clicked(\textcolor{keywordtype}{bool})), \textcolor{keyword}{this}, SLOT(ExitWidget()));}
+\DoxyCodeLine{00029 \textcolor{comment}{//    QObject::connect(ui-\/>exitButton, \&QPushButton::clicked, this, \&Widget::ExitWidget);}}
+\DoxyCodeLine{00030 \textcolor{comment}{//    QObject::connect(ui-\/>exitButton, SLGNAL(clicked()), this, SLOT(ExitWidget()));}}
+\DoxyCodeLine{00031     connect(ui-\/>loadButton, \&QPushButton::clicked, [\textcolor{keyword}{this}]()\{}
+\DoxyCodeLine{00032         QMessageBox::information(this, \textcolor{stringliteral}{"{}Info"{}}, \textcolor{stringliteral}{"{}Click to explore"{}});}
+\DoxyCodeLine{00033     \});}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035     QObject::connect(ui-\/>loadButton, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(LoadFile()));}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     QObject::connect(ui-\/>newButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&Widget::newButtonSlot);}
+\DoxyCodeLine{00038     QObject::connect(this-\/>ui-\/>loadButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&Widget::LoadFile);}
+\DoxyCodeLine{00039     QObject::connect(this-\/>ui-\/>saveButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&Widget::saveButtonSlot);}
+\DoxyCodeLine{00040 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_a334872a6885672271b42a7ac7da92030}\label{class_widget_a334872a6885672271b42a7ac7da92030}} 
+\index{Widget@{Widget}!fillComboBoxAndTableWidget@{fillComboBoxAndTableWidget}}
+\index{fillComboBoxAndTableWidget@{fillComboBoxAndTableWidget}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{fillComboBoxAndTableWidget()}{fillComboBoxAndTableWidget()}}
+{\footnotesize\ttfamily void Widget\+::fill\+Combo\+Box\+And\+Table\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+fill\+Combo\+Box\+And\+Table\+Widget fill with 
+
+\begin{DoxyNote}{注解}
+一个 Combo\+Box 相当于一个 Line\+Edit 和一个 List 组件的结合。用于在一列数据中选择其中某一项。一个 Combo\+Box 的数据可以来源于一个 QString\+List 对象。
+\begin{DoxyEnumerate}
+\item 填充列表数据；
+\item 设定当前选项数据；
+\item 获取当前选项数据； 
+\end{DoxyEnumerate}
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00049}{49}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050 \{}
+\DoxyCodeLine{00051     QStringList groupItems;}
+\DoxyCodeLine{00052     groupItems.append(categories.\mbox{\hyperlink{struct_category_af9fdcd1010c800294e2d34d4e9818407}{friends}});}
+\DoxyCodeLine{00053     groupItems.append(categories.\mbox{\hyperlink{struct_category_a1c1f6c0731bc49659623c7766bc34785}{colleague}});}
+\DoxyCodeLine{00054     groupItems.append(categories.\mbox{\hyperlink{struct_category_a2b6ecf265f11d483c47c3a4e4b11523e}{family}});}
+\DoxyCodeLine{00055     groupItems.append(categories.\mbox{\hyperlink{struct_category_a5cdbca1806b1b48b8b1ef0b6d37ef40e}{relative}});}
+\DoxyCodeLine{00056     groupItems.append(categories.\mbox{\hyperlink{struct_category_a0d46aea189d6c582b87851ff281a12d2}{student}});}
+\DoxyCodeLine{00057     this-\/>ui-\/>groupComboBox-\/>addItems(groupItems);}
+\DoxyCodeLine{00058     this-\/>ui-\/>groupComboBox-\/>setCurrentText(categories.\mbox{\hyperlink{struct_category_a0d46aea189d6c582b87851ff281a12d2}{student}});}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060 \textcolor{comment}{//    qDebug() << this-\/>ui-\/>groupComboBox-\/>currentText();}}
+\DoxyCodeLine{00061 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_a00be10109bcc22cbb7c5642cf98819c1}\label{class_widget_a00be10109bcc22cbb7c5642cf98819c1}} 
+\index{Widget@{Widget}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily void Widget\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event $\ast$}]{key }\end{DoxyParamCaption})}
+
+
+
+key\+Press\+Event shortcut for load(ctrl+o) save(ctrl+s) 
+
+
+\begin{DoxyParams}{参数}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00127}{127}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00127                                          \{}
+\DoxyCodeLine{00128     \textcolor{keywordflow}{if}(key-\/>modifiers() == Qt::ControlModifier \&\& key-\/>key() == Qt::Key\_S) \{}
+\DoxyCodeLine{00129         this-\/>saveButtonSlot();}
+\DoxyCodeLine{00130     \}}
+\DoxyCodeLine{00131     \textcolor{keywordflow}{if}(key-\/>modifiers() == Qt::ControlModifier \&\& key-\/>key() == Qt::Key\_O) \{}
+\DoxyCodeLine{00132         this-\/>LoadFile();}
+\DoxyCodeLine{00133     \}}
+\DoxyCodeLine{00134 \}}
+
+\end{DoxyCode}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{widget_8h}{widget.\+h}}\item 
+\mbox{\hyperlink{widget_8cpp}{widget.\+cpp}}\end{DoxyCompactItemize}

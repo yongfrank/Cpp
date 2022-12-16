@@ -1,0 +1,116 @@
+\hypertarget{widget_8cpp_source}{}\doxysection{widget.\+cpp}
+\mbox{\hyperlink{widget_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{widget_8h}{widget.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}ui\_widget.h"{}}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00013}\mbox{\hyperlink{class_widget_ace1aa23652eb4425355a81760b39fd37}{00013}} \mbox{\hyperlink{class_widget_ace1aa23652eb4425355a81760b39fd37}{Widget::Widget}}(QWidget *parent) : QWidget(parent) ,}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00014}00014     ui(new \mbox{\hyperlink{namespace_ui}{Ui}}::\mbox{\hyperlink{class_widget}{Widget}})}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00015}00015 \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00016}00016     this-\/>ui-\/>setupUi(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00017}00017     this-\/>\mbox{\hyperlink{class_widget_ae68e769c6d14456ee001010c6e028c91}{Bind}}();}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00018}00018     this-\/>\mbox{\hyperlink{class_widget_a334872a6885672271b42a7ac7da92030}{fillComboBoxAndTableWidget}}();}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00021}\mbox{\hyperlink{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}{00021}} \mbox{\hyperlink{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}{Widget::\string~Widget}}()}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00022}00022 \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00023}00023     \textcolor{keyword}{delete} this-\/>ui;}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00024}00024 \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00026}\mbox{\hyperlink{class_widget_ae68e769c6d14456ee001010c6e028c91}{00026}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_widget_ae68e769c6d14456ee001010c6e028c91}{Widget::Bind}}() \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00027}00027     QObject::connect(ui-\/>nameLineEdit, SIGNAL(returnPressed()), \textcolor{keyword}{this}, SLOT(ExitWidget()));}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00028}00028     QObject::connect(ui-\/>exitButton, SIGNAL(clicked(\textcolor{keywordtype}{bool})), \textcolor{keyword}{this}, SLOT(ExitWidget()));}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00029}00029 \textcolor{comment}{//    QObject::connect(ui-\/>exitButton, \&QPushButton::clicked, this, \&Widget::ExitWidget);}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00030}00030 \textcolor{comment}{//    QObject::connect(ui-\/>exitButton, SLGNAL(clicked()), this, SLOT(ExitWidget()));}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00031}00031     connect(ui-\/>loadButton, \&QPushButton::clicked, [\textcolor{keyword}{this}]()\{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00032}00032         QMessageBox::information(this, \textcolor{stringliteral}{"{}Info"{}}, \textcolor{stringliteral}{"{}Click to explore"{}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00033}00033     \});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00035}00035     QObject::connect(ui-\/>loadButton, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(LoadFile()));}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00037}00037     QObject::connect(ui-\/>newButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&Widget::newButtonSlot);}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00038}00038     QObject::connect(this-\/>ui-\/>loadButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&Widget::LoadFile);}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00039}00039     QObject::connect(this-\/>ui-\/>saveButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&Widget::saveButtonSlot);}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00040}00040 \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00049}\mbox{\hyperlink{class_widget_a334872a6885672271b42a7ac7da92030}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_widget_a334872a6885672271b42a7ac7da92030}{Widget::fillComboBoxAndTableWidget}}()}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00050}00050 \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00051}00051     QStringList groupItems;}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00052}00052     groupItems.append(categories.\mbox{\hyperlink{struct_category_af9fdcd1010c800294e2d34d4e9818407}{friends}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00053}00053     groupItems.append(categories.\mbox{\hyperlink{struct_category_a1c1f6c0731bc49659623c7766bc34785}{colleague}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00054}00054     groupItems.append(categories.\mbox{\hyperlink{struct_category_a2b6ecf265f11d483c47c3a4e4b11523e}{family}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00055}00055     groupItems.append(categories.\mbox{\hyperlink{struct_category_a5cdbca1806b1b48b8b1ef0b6d37ef40e}{relative}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00056}00056     groupItems.append(categories.\mbox{\hyperlink{struct_category_a0d46aea189d6c582b87851ff281a12d2}{student}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00057}00057     this-\/>ui-\/>groupComboBox-\/>addItems(groupItems);}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00058}00058     this-\/>ui-\/>groupComboBox-\/>setCurrentText(categories.\mbox{\hyperlink{struct_category_a0d46aea189d6c582b87851ff281a12d2}{student}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00060}00060 \textcolor{comment}{//    qDebug() << this-\/>ui-\/>groupComboBox-\/>currentText();}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00061}00061 \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00063}00063 \textcolor{keywordtype}{void} Widget::newButtonSlot() \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00064}00064     this-\/>ui-\/>textEdit-\/>clear();}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00065}00065     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}New Address Book"{}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00067}00067 \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00069}00069 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00070}00070 \textcolor{comment}{ * @brief Widget::LoadFile}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00071}00071 \textcolor{comment}{ * @note "{}/home"{}, "{}*.txt, *.cpp"{}}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00072}00072 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00073}00073 \textcolor{keywordtype}{void} Widget::LoadFile() \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00074}00074     QString fileName = QFileDialog::getOpenFileName(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Choose a file"{}}, \textcolor{stringliteral}{"{}/"{}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00075}00075 \textcolor{comment}{//    QString fileName = QFileDialog::getOpenFileName(this, "{}Choose a File"{},}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00076}00076 \textcolor{comment}{//                                             QCoreApplication::applicationFilePath());}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00077}00077 \textcolor{comment}{//    QFileDialog::getOpenFileName(this, "{}Choose a File"{}, QCoreApplication::applicationDirPath());}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00078}00078     \textcolor{keywordflow}{if} (fileName.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00079}00079         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Warning"{}}, \textcolor{stringliteral}{"{}Choose a File, please"{}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00080}00080     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00081}00081         qDebug() << fileName;}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00083}00083         \textcolor{comment}{// Create a QFile Object}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00084}00084         \textcolor{comment}{// https://doc.qt.io/qt-\/6/qfile.html}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00085}00085         QFile file(fileName);}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00086}00086         file.open(QIODevice::ReadOnly);}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00087}00087         QByteArray byteArray = file.readAll();}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00088}00088         ui-\/>textEdit-\/>setText(QString(byteArray));}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00089}00089         file.close();}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00090}00090     \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00091}00091 \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00097}00097 \textcolor{keywordtype}{void} Widget::saveButtonSlot() \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00099}00099     \textcolor{comment}{// Save new comment}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00100}00100     QString fileName = QFileDialog::getSaveFileName(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Chose a file"{}}, QCoreApplication::applicationFilePath());}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00101}00101     \textcolor{keywordflow}{if} (fileName.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00102}00102         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Warning"{}}, \textcolor{stringliteral}{"{}Choose a file"{}});}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00103}00103     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00104}00104         QFile file(fileName);}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00105}00105         file.open(QIODevice::WriteOnly);}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00106}00106         QByteArray ba;}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00107}00107         ba.append(this-\/>ui-\/>textEdit-\/>toPlainText().toUtf8());}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00108}00108         file.write(ba);}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00109}00109         file.close();}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00110}00110     \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00111}00111 \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00117}00117 \textcolor{keywordtype}{void} Widget::ExitWidget()}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00118}00118 \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00119}00119 \textcolor{comment}{//    QString program = "{}/System/Applications/Utilities/Terminal.app"{};}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00120}00120 \textcolor{comment}{//    program = "{}/Applications/"{} + this-\/>ui-\/>nameLineEdit-\/>text() + "{}.app"{};}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00121}00121 \textcolor{comment}{//    this-\/>ui-\/>nameLineEdit-\/>setText(program);}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00122}00122 \textcolor{comment}{//    QProcess *myProcess = new QProcess(this);}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00123}00123 \textcolor{comment}{//    myProcess-\/>start(program);}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00124}00124     this-\/>close();}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00125}00125 \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00127}\mbox{\hyperlink{class_widget_a00be10109bcc22cbb7c5642cf98819c1}{00127}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_widget_a00be10109bcc22cbb7c5642cf98819c1}{Widget::keyPressEvent}}(QKeyEvent *key) \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00128}00128     \textcolor{keywordflow}{if}(key-\/>modifiers() == Qt::ControlModifier \&\& key-\/>key() == Qt::Key\_S) \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00129}00129         this-\/>saveButtonSlot();}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00130}00130     \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00131}00131     \textcolor{keywordflow}{if}(key-\/>modifiers() == Qt::ControlModifier \&\& key-\/>key() == Qt::Key\_O) \{}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00132}00132         this-\/>LoadFile();}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00133}00133     \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00134}00134 \}}
+\DoxyCodeLine{\Hypertarget{widget_8cpp_source_l00135}00135 }
+
+\end{DoxyCode}

@@ -11,6 +11,7 @@
 
 #ifndef CCONTACT_H
 #define CCONTACT_H
+
 #include <iostream>
 #include <string>
 #include <regex>

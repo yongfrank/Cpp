@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2022-11-16 16:04:46
  * @LastEditors: Frank Chu
- * @LastEditTime: 2022-11-22 00:50:52
+ * @LastEditTime: 2022-12-15 16:29:43
  * @FilePath: /Cpp/lab/Cpp-lab01-week11/source/AddressBook.h
  * @Description:
  *
@@ -14,7 +14,7 @@
 #include <algorithm>
 #include <iostream>
 
-#include "CContact.h"
+#include "./CContact.h"
 
 #ifndef ADDRESSBOOK_H
 #define ADDRESSBOOK_H
