@@ -12,6 +12,8 @@
 #ifndef CCONTACT_H
 #define CCONTACT_H
 
+#include <QUuid>
+
 #include <iostream>
 #include <string>
 #include <regex>
@@ -28,6 +30,7 @@ private:
     std::string Name;   ///< 姓名
     std::string Number; ///< 电话号码
     std::string Group;  ///< 群组
+    QUuid id;
 public:
     /**
      * @brief Construct a new CContact object 默认构造函数，构造一个空联系人类

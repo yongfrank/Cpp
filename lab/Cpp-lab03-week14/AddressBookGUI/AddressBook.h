@@ -14,6 +14,7 @@
 
 #include "CContact.h"
 #include <QSqlQueryModel>
+
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -32,6 +33,7 @@ private:
      * @brief 以CContact类实例化类模板vector形成CContact向量作为存储结构。Book是CContact向量类的一个实例
      */
     std::vector<CContact> Book;
+    int id;
 
 public:
 
@@ -44,6 +46,19 @@ public:
      * @brief 地址簿析构函数，其中必须清空联系人向量 Book Destroy the Address Book:: Address Book object
      */
     ~AddressBook();
+
+    /**
+     * @brief setId
+     * @param id
+     * @note In C++, the const keyword is used to specify that a function or object is intended to be a constant value and cannot be modified.
+     */
+    void setId(int id) { this->id = id; }
+
+    /**
+     * @brief getId
+     * @return
+     */
+    int getId() const { return this->id; }
 
     /**
      * @brief  Add a contact in the vector<CContact> Book

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]]
+  ['delete_0',['Delete',['../class_address_book.html#af5cafb076360577186d987d501989273',1,'AddressBook']]],
+  ['deletearow_1',['deleteARow',['../class_widget.html#a28d0a5825bee117de1769df1c2c2f387',1,'Widget']]]
 ];

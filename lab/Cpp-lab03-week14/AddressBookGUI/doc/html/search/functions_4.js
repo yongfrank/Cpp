@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['widget_0',['Widget',['../class_widget.html#ace1aa23652eb4425355a81760b39fd37',1,'Widget']]]
+  ['exitwidget_0',['ExitWidget',['../class_widget.html#a6a7272d4da63b8312c3de6a8cad3e517',1,'Widget']]]
 ];

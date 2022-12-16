@@ -93,18 +93,15 @@ $(document).ready(function(){initNavTree('class_widget.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-slots">Private 槽</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="class_widget-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Widget类 参考</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="widget_8h_source.html">widget.h</a>&gt;</code></p>
-<div class="dynheader">
-类 Widget 继承关系图:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_widget.png" alt=""/>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
@@ -117,15 +114,65 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:ae68e769c6d14456ee001010c6e028c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind bind signal and slots  <a href="class_widget.html#ae68e769c6d14456ee001010c6e028c91">更多...</a><br /></td></tr>
 <tr class="separator:ae68e769c6d14456ee001010c6e028c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a334872a6885672271b42a7ac7da92030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a334872a6885672271b42a7ac7da92030">fillComboBoxAndTableWidget</a> ()</td></tr>
-<tr class="memdesc:a334872a6885672271b42a7ac7da92030"><td class="mdescLeft">&#160;</td><td class="mdescRight">fillComboBoxAndTableWidget fill with  <a href="class_widget.html#a334872a6885672271b42a7ac7da92030">更多...</a><br /></td></tr>
+<tr class="memdesc:a334872a6885672271b42a7ac7da92030"><td class="mdescLeft">&#160;</td><td class="mdescRight">fillComboBoxAndTableWidget fill with 1) 设定列标题及样式；  <a href="class_widget.html#a334872a6885672271b42a7ac7da92030">更多...</a><br /></td></tr>
 <tr class="separator:a334872a6885672271b42a7ac7da92030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00be10109bcc22cbb7c5642cf98819c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a00be10109bcc22cbb7c5642cf98819c1">keyPressEvent</a> (QKeyEvent *key)</td></tr>
 <tr class="memdesc:a00be10109bcc22cbb7c5642cf98819c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">keyPressEvent shortcut for load(ctrl+o) save(ctrl+s)  <a href="class_widget.html#a00be10109bcc22cbb7c5642cf98819c1">更多...</a><br /></td></tr>
 <tr class="separator:a00be10109bcc22cbb7c5642cf98819c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a61edf8303ac72772f40405ba3f028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a91a61edf8303ac72772f40405ba3f028">addTemplateData</a> ()</td></tr>
+<tr class="separator:a91a61edf8303ac72772f40405ba3f028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a747737a833b1ddc43051afdadc9120"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a0a747737a833b1ddc43051afdadc9120">clearLineEdit</a> ()</td></tr>
+<tr class="memdesc:a0a747737a833b1ddc43051afdadc9120"><td class="mdescLeft">&#160;</td><td class="mdescRight">clearLineEdit  <a href="class_widget.html#a0a747737a833b1ddc43051afdadc9120">更多...</a><br /></td></tr>
+<tr class="separator:a0a747737a833b1ddc43051afdadc9120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af931bae706d8b281d5a29322e107373c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#af931bae706d8b281d5a29322e107373c">initModelFromStringList</a> (QStringList &amp;fileContentStringList)</td></tr>
+<tr class="memdesc:af931bae706d8b281d5a29322e107373c"><td class="mdescLeft">&#160;</td><td class="mdescRight">initModelFromStringList 调用自定义函数 <a class="el" href="class_widget.html#af931bae706d8b281d5a29322e107373c" title="initModelFromStringList 调用自定义函数 initModelFromStringList()，用 fileContentStringList 的内容初始化数据模型">initModelFromStringList()</a>，用 fileContentStringList 的内容初始化数据模型  <a href="class_widget.html#af931bae706d8b281d5a29322e107373c">更多...</a><br /></td></tr>
+<tr class="separator:af931bae706d8b281d5a29322e107373c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff0695f27c4062f58cadb27b3a87e8a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#aff0695f27c4062f58cadb27b3a87e8a3">customizedTableStyle</a> ()</td></tr>
+<tr class="memdesc:aff0695f27c4062f58cadb27b3a87e8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">customizedTableStyle 设定自定义表的样式  <a href="class_widget.html#aff0695f27c4062f58cadb27b3a87e8a3">更多...</a><br /></td></tr>
+<tr class="separator:aff0695f27c4062f58cadb27b3a87e8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:af654f5d36a61c3cbad6d8b2949864a21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_address_book.html">AddressBook</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#af654f5d36a61c3cbad6d8b2949864a21">addressBook</a></td></tr>
+<tr class="separator:af654f5d36a61c3cbad6d8b2949864a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Private 槽</h2></td></tr>
+<tr class="memitem:a6a7272d4da63b8312c3de6a8cad3e517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a6a7272d4da63b8312c3de6a8cad3e517">ExitWidget</a> ()</td></tr>
+<tr class="separator:a6a7272d4da63b8312c3de6a8cad3e517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4650cb78f548346b64776032fd1b152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#aa4650cb78f548346b64776032fd1b152">LoadFile</a> ()</td></tr>
+<tr class="memdesc:aa4650cb78f548346b64776032fd1b152"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoadFile 8、 文件读取操作流程框架 “打开文件”按钮的槽函数代码  <a href="class_widget.html#aa4650cb78f548346b64776032fd1b152">更多...</a><br /></td></tr>
+<tr class="separator:aa4650cb78f548346b64776032fd1b152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ddb00d01b7807af8c2f4b1ba176c1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#ae3ddb00d01b7807af8c2f4b1ba176c1e">saveButtonSlot</a> ()</td></tr>
+<tr class="memdesc:ae3ddb00d01b7807af8c2f4b1ba176c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">saveButtonSlot 9、 文件保存流程框架  <a href="class_widget.html#ae3ddb00d01b7807af8c2f4b1ba176c1e">更多...</a><br /></td></tr>
+<tr class="separator:ae3ddb00d01b7807af8c2f4b1ba176c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff08b3214656384b44e055927b540e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a2ff08b3214656384b44e055927b540e8">newButtonSlot</a> ()</td></tr>
+<tr class="memdesc:a2ff08b3214656384b44e055927b540e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">newButtonSlot 2) 加入一行数据；  <a href="class_widget.html#a2ff08b3214656384b44e055927b540e8">更多...</a><br /></td></tr>
+<tr class="separator:a2ff08b3214656384b44e055927b540e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7ec3f505c39f11649b963e2433dcbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a3a7ec3f505c39f11649b963e2433dcbe">clickedTableView</a> ()</td></tr>
+<tr class="memdesc:a3a7ec3f505c39f11649b963e2433dcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">clickedTableView 3) 选中一行数据（槽函数）；  <a href="class_widget.html#a3a7ec3f505c39f11649b963e2433dcbe">更多...</a><br /></td></tr>
+<tr class="separator:a3a7ec3f505c39f11649b963e2433dcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d0a5825bee117de1769df1c2c2f387"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a28d0a5825bee117de1769df1c2c2f387">deleteARow</a> ()</td></tr>
+<tr class="memdesc:a28d0a5825bee117de1769df1c2c2f387"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleteARow 4) 删除一行数据；  <a href="class_widget.html#a28d0a5825bee117de1769df1c2c2f387">更多...</a><br /></td></tr>
+<tr class="separator:a28d0a5825bee117de1769df1c2c2f387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e14af85648a72001f9af5472346894a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a0e14af85648a72001f9af5472346894a">alterALine</a> ()</td></tr>
+<tr class="memdesc:a0e14af85648a72001f9af5472346894a"><td class="mdescLeft">&#160;</td><td class="mdescRight">alterALine 5) 修改某一行；  <a href="class_widget.html#a0e14af85648a72001f9af5472346894a">更多...</a><br /></td></tr>
+<tr class="separator:a0e14af85648a72001f9af5472346894a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a709fae194411d0d56881d9ef63410a0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_category.html">Category</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a></td></tr>
+<tr class="memdesc:a709fae194411d0d56881d9ef63410a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">categories category for comboBox  <a href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">更多...</a><br /></td></tr>
+<tr class="separator:a709fae194411d0d56881d9ef63410a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c48cc897c43aa2e995fce9f7fb2418"><td class="memItemLeft" align="right" valign="top">Ui::Widget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a></td></tr>
+<tr class="separator:a19c48cc897c43aa2e995fce9f7fb2418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a69d6402e3c67623d1d081fcea2db20"><td class="memItemLeft" align="right" valign="top">QStandardItemModel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a></td></tr>
+<tr class="memdesc:a4a69d6402e3c67623d1d081fcea2db20"><td class="mdescLeft">&#160;</td><td class="mdescRight">model  <a href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">更多...</a><br /></td></tr>
+<tr class="separator:a4a69d6402e3c67623d1d081fcea2db20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock">
-<p class="definition">在文件 <a class="el" href="widget_8h_source.html">widget.h</a> 第 <a class="el" href="widget_8h_source.html#l00017">17</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="widget_8h_source.html">widget.h</a> 第 <a class="el" href="widget_8h_source.html#l00020">20</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="ace1aa23652eb4425355a81760b39fd37" name="ace1aa23652eb4425355a81760b39fd37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace1aa23652eb4425355a81760b39fd37">&#9670;&#160;</a></span>Widget()</h2>
@@ -151,17 +198,20 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>注解</dt><dd>In this code, <a class="el" href="class_widget.html">Widget</a> is a class that is derived from the QWidget class. The <a class="el" href="class_widget.html">Widget</a> class has a constructor that takes a QWidget pointer as an argument and assigns it to the parent of the new <a class="el" href="class_widget.html">Widget</a> object. The constructor also initializes a new Ui::Widget object and assigns it to the ui member variable of the <a class="el" href="class_widget.html">Widget</a> object. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">待办事项:</a></b></dt><dd>delete add Template data </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00013">13</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>                              : QWidget(parent) ,</div>
-<div class="line"><span class="lineno">   14</span>    ui(<span class="keyword">new</span> Ui::Widget)</div>
-<div class="line"><span class="lineno">   15</span>{</div>
-<div class="line"><span class="lineno">   16</span>    this-&gt;ui-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   17</span>    this-&gt;<a class="code hl_function" href="class_widget.html#ae68e769c6d14456ee001010c6e028c91">Bind</a>();</div>
-<div class="line"><span class="lineno">   18</span>    this-&gt;<a class="code hl_function" href="class_widget.html#a334872a6885672271b42a7ac7da92030">fillComboBoxAndTableWidget</a>();</div>
-<div class="line"><span class="lineno">   19</span>}</div>
-<div class="ttc" id="aclass_widget_html_a334872a6885672271b42a7ac7da92030"><div class="ttname"><a href="class_widget.html#a334872a6885672271b42a7ac7da92030">Widget::fillComboBoxAndTableWidget</a></div><div class="ttdeci">void fillComboBoxAndTableWidget()</div><div class="ttdoc">fillComboBoxAndTableWidget fill with</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00049">widget.cpp:49</a></div></div>
-<div class="ttc" id="aclass_widget_html_ae68e769c6d14456ee001010c6e028c91"><div class="ttname"><a href="class_widget.html#ae68e769c6d14456ee001010c6e028c91">Widget::Bind</a></div><div class="ttdeci">void Bind()</div><div class="ttdoc">Bind bind signal and slots</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00026">widget.cpp:26</a></div></div>
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00014">14</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>                              : QWidget(parent) ,</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>(<span class="keyword">new</span> Ui::Widget)</div>
+<div class="line"><span class="lineno">   16</span>{</div>
+<div class="line"><span class="lineno">   17</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   18</span>    this-&gt;<a class="code hl_function" href="class_widget.html#ae68e769c6d14456ee001010c6e028c91">Bind</a>();</div>
+<div class="line"><span class="lineno">   19</span>    this-&gt;<a class="code hl_function" href="class_widget.html#a334872a6885672271b42a7ac7da92030">fillComboBoxAndTableWidget</a>();</div>
+<div class="line"><span class="lineno">   20</span><span class="comment">//    this-&gt;addTemplateData();</span></div>
+<div class="line"><span class="lineno">   21</span>}</div>
+<div class="ttc" id="aclass_widget_html_a19c48cc897c43aa2e995fce9f7fb2418"><div class="ttname"><a href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">Widget::ui</a></div><div class="ttdeci">Ui::Widget * ui</div><div class="ttdef"><b>Definition:</b> <a href="widget_8h_source.html#l00103">widget.h:103</a></div></div>
+<div class="ttc" id="aclass_widget_html_a334872a6885672271b42a7ac7da92030"><div class="ttname"><a href="class_widget.html#a334872a6885672271b42a7ac7da92030">Widget::fillComboBoxAndTableWidget</a></div><div class="ttdeci">void fillComboBoxAndTableWidget()</div><div class="ttdoc">fillComboBoxAndTableWidget fill with 1) 设定列标题及样式；</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00064">widget.cpp:64</a></div></div>
+<div class="ttc" id="aclass_widget_html_ae68e769c6d14456ee001010c6e028c91"><div class="ttname"><a href="class_widget.html#ae68e769c6d14456ee001010c6e028c91">Widget::Bind</a></div><div class="ttdeci">void Bind()</div><div class="ttdoc">Bind bind signal and slots</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00028">widget.cpp:28</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -180,14 +230,87 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00021">21</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keyword">delete</span> this-&gt;ui;</div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00023">23</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keyword">delete</span> this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>;</div>
+<div class="line"><span class="lineno">   26</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
+<a id="a91a61edf8303ac72772f40405ba3f028" name="a91a61edf8303ac72772f40405ba3f028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a61edf8303ac72772f40405ba3f028">&#9670;&#160;</a></span>addTemplateData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::addTemplateData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00279">279</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  280</span>{</div>
+<div class="line"><span class="lineno">  281</span>    QStandardItem* name = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;apple&quot;</span>));</div>
+<div class="line"><span class="lineno">  282</span>    QStandardItem* phone = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;400-666-8800&quot;</span>));</div>
+<div class="line"><span class="lineno">  283</span>    QStandardItem* group = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Colleague&quot;</span>));</div>
+<div class="line"><span class="lineno">  284</span> </div>
+<div class="line"><span class="lineno">  285</span>    QList&lt;QStandardItem*&gt; itemList;</div>
+<div class="line"><span class="lineno">  286</span>    itemList &lt;&lt; name &lt;&lt; phone &lt;&lt; group;</div>
+<div class="line"><span class="lineno">  287</span>    <a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;appendRow(itemList);</div>
+<div class="line"><span class="lineno">  288</span> </div>
+<div class="line"><span class="lineno">  289</span>    name = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;google&quot;</span>));</div>
+<div class="line"><span class="lineno">  290</span>    phone = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;901-3283-2233&quot;</span>));</div>
+<div class="line"><span class="lineno">  291</span>    group = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Colleague&quot;</span>));</div>
+<div class="line"><span class="lineno">  292</span>    itemList.clear();</div>
+<div class="line"><span class="lineno">  293</span>    itemList &lt;&lt; name &lt;&lt; phone &lt;&lt; group;</div>
+<div class="line"><span class="lineno">  294</span>    <a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;appendRow(itemList);</div>
+<div class="line"><span class="lineno">  295</span>}</div>
+<div class="ttc" id="aclass_widget_html_a4a69d6402e3c67623d1d081fcea2db20"><div class="ttname"><a href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">Widget::model</a></div><div class="ttdeci">QStandardItemModel * model</div><div class="ttdoc">model</div><div class="ttdef"><b>Definition:</b> <a href="widget_8h_source.html#l00110">widget.h:110</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0e14af85648a72001f9af5472346894a" name="a0e14af85648a72001f9af5472346894a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e14af85648a72001f9af5472346894a">&#9670;&#160;</a></span>alterALine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::alterALine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>alterALine 5) 修改某一行； </p>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00441">441</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  442</span>{</div>
+<div class="line"><span class="lineno">  443</span>    <span class="comment">// 将数据先保存到地址簿当下位置</span></div>
+<div class="line"><span class="lineno">  444</span>    <span class="comment">// 获取当前联系人行</span></div>
+<div class="line"><span class="lineno">  445</span>    this-&gt;<a class="code hl_slot" href="class_widget.html#a2ff08b3214656384b44e055927b540e8">newButtonSlot</a>();</div>
+<div class="line"><span class="lineno">  446</span>    this-&gt;<a class="code hl_slot" href="class_widget.html#a28d0a5825bee117de1769df1c2c2f387">deleteARow</a>();</div>
+<div class="line"><span class="lineno">  447</span>}</div>
+<div class="ttc" id="aclass_widget_html_a28d0a5825bee117de1769df1c2c2f387"><div class="ttname"><a href="class_widget.html#a28d0a5825bee117de1769df1c2c2f387">Widget::deleteARow</a></div><div class="ttdeci">void deleteARow()</div><div class="ttdoc">deleteARow 4) 删除一行数据；</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00427">widget.cpp:427</a></div></div>
+<div class="ttc" id="aclass_widget_html_a2ff08b3214656384b44e055927b540e8"><div class="ttname"><a href="class_widget.html#a2ff08b3214656384b44e055927b540e8">Widget::newButtonSlot</a></div><div class="ttdeci">void newButtonSlot()</div><div class="ttdoc">newButtonSlot 2) 加入一行数据；</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00102">widget.cpp:102</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ae68e769c6d14456ee001010c6e028c91" name="ae68e769c6d14456ee001010c6e028c91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae68e769c6d14456ee001010c6e028c91">&#9670;&#160;</a></span>Bind()</h2>
 
@@ -205,22 +328,224 @@ Public 成员函数</h2></td></tr>
 
 <p>Bind bind signal and slots </p>
 
-<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00026">26</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                  {</div>
-<div class="line"><span class="lineno">   27</span>    QObject::connect(ui-&gt;nameLineEdit, SIGNAL(returnPressed()), <span class="keyword">this</span>, SLOT(ExitWidget()));</div>
-<div class="line"><span class="lineno">   28</span>    QObject::connect(ui-&gt;exitButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(ExitWidget()));</div>
-<div class="line"><span class="lineno">   29</span><span class="comment">//    QObject::connect(ui-&gt;exitButton, &amp;QPushButton::clicked, this, &amp;Widget::ExitWidget);</span></div>
-<div class="line"><span class="lineno">   30</span><span class="comment">//    QObject::connect(ui-&gt;exitButton, SLGNAL(clicked()), this, SLOT(ExitWidget()));</span></div>
-<div class="line"><span class="lineno">   31</span>    connect(ui-&gt;loadButton, &amp;QPushButton::clicked, [<span class="keyword">this</span>](){</div>
-<div class="line"><span class="lineno">   32</span>        QMessageBox::information(this, <span class="stringliteral">&quot;Info&quot;</span>, <span class="stringliteral">&quot;Click to explore&quot;</span>);</div>
-<div class="line"><span class="lineno">   33</span>    });</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    QObject::connect(ui-&gt;loadButton, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(LoadFile()));</div>
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00028">28</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>                  {</div>
+<div class="line"><span class="lineno">   29</span>    QObject::connect(<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;nameLineEdit, SIGNAL(returnPressed()), <span class="keyword">this</span>, SLOT(<a class="code hl_slot" href="class_widget.html#a6a7272d4da63b8312c3de6a8cad3e517">ExitWidget</a>()));</div>
+<div class="line"><span class="lineno">   30</span>    QObject::connect(<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;exitButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code hl_slot" href="class_widget.html#a6a7272d4da63b8312c3de6a8cad3e517">ExitWidget</a>()));</div>
+<div class="line"><span class="lineno">   31</span><span class="comment">//    QObject::connect(ui-&gt;exitButton, &amp;QPushButton::clicked, this, &amp;Widget::ExitWidget);</span></div>
+<div class="line"><span class="lineno">   32</span><span class="comment">//    QObject::connect(ui-&gt;exitButton, SLGNAL(clicked()), this, SLOT(ExitWidget()));</span></div>
+<div class="line"><span class="lineno">   33</span><span class="comment">//    connect(ui-&gt;loadButton, &amp;QPushButton::clicked, [this](){</span></div>
+<div class="line"><span class="lineno">   34</span><span class="comment">//        QMessageBox::information(this, &quot;Info&quot;, &quot;Click to explore&quot;);</span></div>
+<div class="line"><span class="lineno">   35</span><span class="comment">//    });</span></div>
 <div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    QObject::connect(ui-&gt;newButton, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;Widget::newButtonSlot);</div>
-<div class="line"><span class="lineno">   38</span>    QObject::connect(this-&gt;ui-&gt;loadButton, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;Widget::LoadFile);</div>
-<div class="line"><span class="lineno">   39</span>    QObject::connect(this-&gt;ui-&gt;saveButton, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;Widget::saveButtonSlot);</div>
-<div class="line"><span class="lineno">   40</span>}</div>
+<div class="line"><span class="lineno">   37</span><span class="comment">//    QObject::connect(ui-&gt;loadButton, SIGNAL(clicked()), this, SLOT(LoadFile()));</span></div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    QObject::connect(this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;newButton, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_widget.html#a2ff08b3214656384b44e055927b540e8">Widget::newButtonSlot</a>);</div>
+<div class="line"><span class="lineno">   40</span>    QObject::connect(this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;loadButton, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_widget.html#aa4650cb78f548346b64776032fd1b152">Widget::LoadFile</a>);</div>
+<div class="line"><span class="lineno">   41</span>    QObject::connect(this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;saveButton, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_widget.html#ae3ddb00d01b7807af8c2f4b1ba176c1e">Widget::saveButtonSlot</a>);</div>
+<div class="line"><span class="lineno">   42</span>    QObject::connect(this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView, &amp;QTableView::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_widget.html#a3a7ec3f505c39f11649b963e2433dcbe">Widget::clickedTableView</a>);</div>
+<div class="line"><span class="lineno">   43</span>    QObject::connect(this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;deleteButton, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_widget.html#a28d0a5825bee117de1769df1c2c2f387">Widget::deleteARow</a>);</div>
+<div class="line"><span class="lineno">   44</span>    QObject::connect(this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;updateButton, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_widget.html#a0e14af85648a72001f9af5472346894a">Widget::alterALine</a>);</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>}</div>
+<div class="ttc" id="aclass_widget_html_a0e14af85648a72001f9af5472346894a"><div class="ttname"><a href="class_widget.html#a0e14af85648a72001f9af5472346894a">Widget::alterALine</a></div><div class="ttdeci">void alterALine()</div><div class="ttdoc">alterALine 5) 修改某一行；</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00441">widget.cpp:441</a></div></div>
+<div class="ttc" id="aclass_widget_html_a3a7ec3f505c39f11649b963e2433dcbe"><div class="ttname"><a href="class_widget.html#a3a7ec3f505c39f11649b963e2433dcbe">Widget::clickedTableView</a></div><div class="ttdeci">void clickedTableView()</div><div class="ttdoc">clickedTableView 3) 选中一行数据（槽函数）；</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00408">widget.cpp:408</a></div></div>
+<div class="ttc" id="aclass_widget_html_a6a7272d4da63b8312c3de6a8cad3e517"><div class="ttname"><a href="class_widget.html#a6a7272d4da63b8312c3de6a8cad3e517">Widget::ExitWidget</a></div><div class="ttdeci">void ExitWidget()</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00260">widget.cpp:260</a></div></div>
+<div class="ttc" id="aclass_widget_html_aa4650cb78f548346b64776032fd1b152"><div class="ttname"><a href="class_widget.html#aa4650cb78f548346b64776032fd1b152">Widget::LoadFile</a></div><div class="ttdeci">void LoadFile()</div><div class="ttdoc">LoadFile 8、 文件读取操作流程框架 “打开文件”按钮的槽函数代码</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00134">widget.cpp:134</a></div></div>
+<div class="ttc" id="aclass_widget_html_ae3ddb00d01b7807af8c2f4b1ba176c1e"><div class="ttname"><a href="class_widget.html#ae3ddb00d01b7807af8c2f4b1ba176c1e">Widget::saveButtonSlot</a></div><div class="ttdeci">void saveButtonSlot()</div><div class="ttdoc">saveButtonSlot 9、 文件保存流程框架</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00195">widget.cpp:195</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0a747737a833b1ddc43051afdadc9120" name="a0a747737a833b1ddc43051afdadc9120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a747737a833b1ddc43051afdadc9120">&#9670;&#160;</a></span>clearLineEdit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::clearLineEdit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clearLineEdit </p>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00297">297</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  298</span>{</div>
+<div class="line"><span class="lineno">  299</span>    <span class="comment">// clear Text</span></div>
+<div class="line"><span class="lineno">  300</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;nameLineEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  301</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;phoneLineEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  302</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3a7ec3f505c39f11649b963e2433dcbe" name="a3a7ec3f505c39f11649b963e2433dcbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7ec3f505c39f11649b963e2433dcbe">&#9670;&#160;</a></span>clickedTableView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::clickedTableView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>clickedTableView 3) 选中一行数据（槽函数）； </p>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00408">408</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  409</span>{</div>
+<div class="line"><span class="lineno">  410</span>    QAbstractItemModel* modelSelected = this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView-&gt;model();</div>
+<div class="line"><span class="lineno">  411</span>    <span class="keywordtype">int</span> row = this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView-&gt;currentIndex().row();</div>
+<div class="line"><span class="lineno">  412</span><span class="comment">//    qDebug() &lt;&lt; row;</span></div>
+<div class="line"><span class="lineno">  413</span> </div>
+<div class="line"><span class="lineno">  414</span>    <span class="comment">//根据行号在地址簿中读取并显示相应的联系人至编辑界面</span></div>
+<div class="line"><span class="lineno">  415</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;nameLineEdit-&gt;setText(modelSelected-&gt;index(row, 0).data().toString());</div>
+<div class="line"><span class="lineno">  416</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;phoneLineEdit-&gt;setText(modelSelected-&gt;index(row, 1).data().toString());</div>
+<div class="line"><span class="lineno">  417</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;groupComboBox-&gt;setCurrentText(modelSelected-&gt;index(row, 2).data().toString());</div>
+<div class="line"><span class="lineno">  418</span> </div>
+<div class="line"><span class="lineno">  419</span>    <span class="comment">//选中一行后启用按钮</span></div>
+<div class="line"><span class="lineno">  420</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;deleteButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  421</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;updateButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  422</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aff0695f27c4062f58cadb27b3a87e8a3" name="aff0695f27c4062f58cadb27b3a87e8a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff0695f27c4062f58cadb27b3a87e8a3">&#9670;&#160;</a></span>customizedTableStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::customizedTableStyle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>customizedTableStyle 设定自定义表的样式 </p>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00382">382</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  383</span>{</div>
+<div class="line"><span class="lineno">  384</span>    <span class="comment">// Style sheet</span></div>
+<div class="line"><span class="lineno">  385</span>    <span class="comment">//设定列延展特性</span></div>
+<div class="line"><span class="lineno">  386</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableWidget-&gt;horizontalHeader()-&gt;setStretchLastSection(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  387</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView-&gt;horizontalHeader()-&gt;setStretchLastSection(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  388</span> </div>
+<div class="line"><span class="lineno">  389</span>    <span class="comment">// QTableView column width</span></div>
+<div class="line"><span class="lineno">  390</span>    <span class="comment">// https://stackoverflow.com/questions/26681578/qtableview-column-width</span></div>
+<div class="line"><span class="lineno">  391</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView-&gt;setColumnWidth(1, 200);</div>
+<div class="line"><span class="lineno">  392</span> </div>
+<div class="line"><span class="lineno">  393</span>    <span class="comment">//设定标题样式</span></div>
+<div class="line"><span class="lineno">  394</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableWidget-&gt;horizontalHeader()-&gt;setStyleSheet(<span class="stringliteral">&quot;border:none; border-bottom:1px solid grey&quot;</span>);</div>
+<div class="line"><span class="lineno">  395</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView-&gt;horizontalHeader()-&gt;setStyleSheet(<span class="stringliteral">&quot;border:none; border-bottom:1px solid grey&quot;</span>);</div>
+<div class="line"><span class="lineno">  396</span> </div>
+<div class="line"><span class="lineno">  397</span>    <span class="comment">//设定表格行选定行为</span></div>
+<div class="line"><span class="lineno">  398</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableWidget-&gt;setSelectionMode(QAbstractItemView::SingleSelection);</div>
+<div class="line"><span class="lineno">  399</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableWidget-&gt;setSelectionBehavior(QAbstractItemView::SelectRows);</div>
+<div class="line"><span class="lineno">  400</span> </div>
+<div class="line"><span class="lineno">  401</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView-&gt;setSelectionBehavior(QAbstractItemView::SelectRows);</div>
+<div class="line"><span class="lineno">  402</span> </div>
+<div class="line"><span class="lineno">  403</span>    <span class="comment">//显示网格线</span></div>
+<div class="line"><span class="lineno">  404</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableWidget-&gt;showGrid();</div>
+<div class="line"><span class="lineno">  405</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView-&gt;showGrid();</div>
+<div class="line"><span class="lineno">  406</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a28d0a5825bee117de1769df1c2c2f387" name="a28d0a5825bee117de1769df1c2c2f387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d0a5825bee117de1769df1c2c2f387">&#9670;&#160;</a></span>deleteARow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::deleteARow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleteARow 4) 删除一行数据； </p>
+<dl class="section see"><dt>参见</dt><dd>Qt Delete selected row in QTableView <a href="https://stackoverflow.com/questions/19012450/qt-delete-selected-row-in-qtableview">https://stackoverflow.com/questions/19012450/qt-delete-selected-row-in-qtableview</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00427">427</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  428</span>{</div>
+<div class="line"><span class="lineno">  429</span>    <span class="comment">// 获取当前联系人行</span></div>
+<div class="line"><span class="lineno">  430</span>    <span class="keyword">auto</span> currentRow = this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView-&gt;currentIndex().row();</div>
+<div class="line"><span class="lineno">  431</span> </div>
+<div class="line"><span class="lineno">  432</span>    <span class="comment">// 将联系人从数据模型中删除</span></div>
+<div class="line"><span class="lineno">  433</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;removeRow(currentRow);</div>
+<div class="line"><span class="lineno">  434</span> </div>
+<div class="line"><span class="lineno">  435</span>    <span class="comment">// 调整相关按钮 LineEdit 状态</span></div>
+<div class="line"><span class="lineno">  436</span>    this-&gt;<a class="code hl_function" href="class_widget.html#a0a747737a833b1ddc43051afdadc9120">clearLineEdit</a>();</div>
+<div class="line"><span class="lineno">  437</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;deleteButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  438</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;updateButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  439</span>}</div>
+<div class="ttc" id="aclass_widget_html_a0a747737a833b1ddc43051afdadc9120"><div class="ttname"><a href="class_widget.html#a0a747737a833b1ddc43051afdadc9120">Widget::clearLineEdit</a></div><div class="ttdeci">void clearLineEdit()</div><div class="ttdoc">clearLineEdit</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00297">widget.cpp:297</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6a7272d4da63b8312c3de6a8cad3e517" name="a6a7272d4da63b8312c3de6a8cad3e517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7272d4da63b8312c3de6a8cad3e517">&#9670;&#160;</a></span>ExitWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::ExitWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd>【QT快速入门 | 最简单最简洁的QT入门教程 | 嵌入式UI-哔哩哔哩】 <a href="https://b23.tv/ADss8yy">https://b23.tv/ADss8yy</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00260">260</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  261</span>{</div>
+<div class="line"><span class="lineno">  262</span><span class="comment">//    QString program = &quot;/System/Applications/Utilities/Terminal.app&quot;;</span></div>
+<div class="line"><span class="lineno">  263</span><span class="comment">//    program = &quot;/Applications/&quot; + this-&gt;ui-&gt;nameLineEdit-&gt;text() + &quot;.app&quot;;</span></div>
+<div class="line"><span class="lineno">  264</span><span class="comment">//    this-&gt;ui-&gt;nameLineEdit-&gt;setText(program);</span></div>
+<div class="line"><span class="lineno">  265</span><span class="comment">//    QProcess *myProcess = new QProcess(this);</span></div>
+<div class="line"><span class="lineno">  266</span><span class="comment">//    myProcess-&gt;start(program);</span></div>
+<div class="line"><span class="lineno">  267</span>    this-&gt;close();</div>
+<div class="line"><span class="lineno">  268</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,32 +564,145 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>fillComboBoxAndTableWidget fill with </p>
+<p>fillComboBoxAndTableWidget fill with 1) 设定列标题及样式； </p>
 <dl class="section note"><dt>注解</dt><dd>一个 ComboBox 相当于一个 LineEdit 和一个 List 组件的结合。用于在一列数据中选择其中某一项。一个 ComboBox 的数据可以来源于一个 QStringList 对象。<ol type="1">
 <li>填充列表数据；</li>
 <li>设定当前选项数据；</li>
-<li>获取当前选项数据； </li>
+<li>获取当前选项数据；</li>
 </ol>
 </dd></dl>
+<p>QTableWidget 小部件的使用 Qt 为我们提供了两类表格小部件（QTableView 和 QTableWidget）供用户显示二维表。 QTableView 基于 View/Model/Delegate 的灵活架构，可以非常灵活地以多种方式显示后台数据（model）； 而 QTableWidget 也是基于 View/Model 架构，但它提供了默认的数据结构， 用户不需要涉及过多的架构细节就可以迅速地用它来显示二维数据表格。 QTableWidget 使用行号（row）和列号（column）去定位一个单元格（cell）并显示数据。 </p><dl class="section see"><dt>参见</dt><dd>C++ Qt 47 - Intro to <a class="el" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20" title="model">model</a> view programming <a href="https://www.youtube.com/watch?v=uDC9L4T59bM">https://www.youtube.com/watch?v=uDC9L4T59bM</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00049">49</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>{</div>
-<div class="line"><span class="lineno">   51</span>    QStringList groupItems;</div>
-<div class="line"><span class="lineno">   52</span>    groupItems.append(categories.<a class="code hl_variable" href="struct_category.html#af9fdcd1010c800294e2d34d4e9818407">friends</a>);</div>
-<div class="line"><span class="lineno">   53</span>    groupItems.append(categories.<a class="code hl_variable" href="struct_category.html#a1c1f6c0731bc49659623c7766bc34785">colleague</a>);</div>
-<div class="line"><span class="lineno">   54</span>    groupItems.append(categories.<a class="code hl_variable" href="struct_category.html#a2b6ecf265f11d483c47c3a4e4b11523e">family</a>);</div>
-<div class="line"><span class="lineno">   55</span>    groupItems.append(categories.<a class="code hl_variable" href="struct_category.html#a5cdbca1806b1b48b8b1ef0b6d37ef40e">relative</a>);</div>
-<div class="line"><span class="lineno">   56</span>    groupItems.append(categories.<a class="code hl_variable" href="struct_category.html#a0d46aea189d6c582b87851ff281a12d2">student</a>);</div>
-<div class="line"><span class="lineno">   57</span>    this-&gt;ui-&gt;groupComboBox-&gt;addItems(groupItems);</div>
-<div class="line"><span class="lineno">   58</span>    this-&gt;ui-&gt;groupComboBox-&gt;setCurrentText(categories.<a class="code hl_variable" href="struct_category.html#a0d46aea189d6c582b87851ff281a12d2">student</a>);</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span><span class="comment">//    qDebug() &lt;&lt; this-&gt;ui-&gt;groupComboBox-&gt;currentText();</span></div>
-<div class="line"><span class="lineno">   61</span>}</div>
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00064">64</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span><span class="comment">//    this-&gt;ui-&gt;groupComboBox-&gt;setModel();</span></div>
+<div class="line"><span class="lineno">   68</span><span class="comment">//    this-&gt;ui-&gt;groupComboBox-&gt;setModel();</span></div>
+<div class="line"><span class="lineno">   69</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#af654f5d36a61c3cbad6d8b2949864a21">addressBook</a>.<a class="code hl_function" href="class_address_book.html#af887e33aab651f2076399e88648d320a">setId</a>(0);</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="comment">// ComboBox</span></div>
+<div class="line"><span class="lineno">   72</span>    QStringList groupItems;</div>
+<div class="line"><span class="lineno">   73</span>    groupItems.append(<a class="code hl_variable" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a>.<a class="code hl_variable" href="struct_category.html#af9fdcd1010c800294e2d34d4e9818407">friends</a>);</div>
+<div class="line"><span class="lineno">   74</span>    groupItems.append(<a class="code hl_variable" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a>.<a class="code hl_variable" href="struct_category.html#a1c1f6c0731bc49659623c7766bc34785">colleague</a>);</div>
+<div class="line"><span class="lineno">   75</span>    groupItems.append(<a class="code hl_variable" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a>.<a class="code hl_variable" href="struct_category.html#a2b6ecf265f11d483c47c3a4e4b11523e">family</a>);</div>
+<div class="line"><span class="lineno">   76</span>    groupItems.append(<a class="code hl_variable" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a>.<a class="code hl_variable" href="struct_category.html#a5cdbca1806b1b48b8b1ef0b6d37ef40e">relative</a>);</div>
+<div class="line"><span class="lineno">   77</span>    groupItems.append(<a class="code hl_variable" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a>.<a class="code hl_variable" href="struct_category.html#a0d46aea189d6c582b87851ff281a12d2">student</a>);</div>
+<div class="line"><span class="lineno">   78</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;groupComboBox-&gt;addItems(groupItems);</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;groupComboBox-&gt;setCurrentText(<a class="code hl_variable" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a>.<a class="code hl_variable" href="struct_category.html#a0d46aea189d6c582b87851ff281a12d2">student</a>);</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span><span class="comment">//    qDebug() &lt;&lt; this-&gt;ui-&gt;groupComboBox-&gt;currentText();</span></div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>    <span class="comment">// QTableWidget 小部件的使用</span></div>
+<div class="line"><span class="lineno">   85</span>    QStringList header;</div>
+<div class="line"><span class="lineno">   86</span>    header &lt;&lt; <a class="code hl_variable" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a>.<a class="code hl_variable" href="struct_category.html#aedc5de7acb7d29b0121cfd1fb1affa6f">name</a> &lt;&lt; <a class="code hl_variable" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a>.<a class="code hl_variable" href="struct_category.html#a5ef7a1b2d9f0c9f368544b5457a733dc">phoneNumber</a> &lt;&lt; <a class="code hl_variable" href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">categories</a>.<a class="code hl_variable" href="struct_category.html#a68c5de7793c3ccaf52a25bc057abccff">group</a>;</div>
+<div class="line"><span class="lineno">   87</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableWidget-&gt;setColumnCount(3); <span class="comment">//设定列总数为 3</span></div>
+<div class="line"><span class="lineno">   88</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableWidget-&gt;setHorizontalHeaderLabels(header); <span class="comment">//设定列标题</span></div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>    <span class="comment">// Table View(Model Based) Title</span></div>
+<div class="line"><span class="lineno">   91</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a> = <span class="keyword">new</span> QStandardItemModel;</div>
+<div class="line"><span class="lineno">   92</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;setHorizontalHeaderLabels(header);</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="comment">// Table View(Model Based) model for view</span></div>
+<div class="line"><span class="lineno">   95</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableView-&gt;setModel(<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>);</div>
+<div class="line"><span class="lineno">   96</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;tableWidget-&gt;hide();</div>
+<div class="line"><span class="lineno">   97</span><span class="comment">//    this-&gt;ui-&gt;tableView-&gt;hide();</span></div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>    this-&gt;<a class="code hl_function" href="class_widget.html#aff0695f27c4062f58cadb27b3a87e8a3">customizedTableStyle</a>();</div>
+<div class="line"><span class="lineno">  100</span>}</div>
+<div class="ttc" id="aclass_address_book_html_af887e33aab651f2076399e88648d320a"><div class="ttname"><a href="class_address_book.html#af887e33aab651f2076399e88648d320a">AddressBook::setId</a></div><div class="ttdeci">void setId(int id)</div><div class="ttdoc">setId</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8h_source.html#l00055">AddressBook.h:55</a></div></div>
+<div class="ttc" id="aclass_widget_html_a709fae194411d0d56881d9ef63410a0c"><div class="ttname"><a href="class_widget.html#a709fae194411d0d56881d9ef63410a0c">Widget::categories</a></div><div class="ttdeci">Category categories</div><div class="ttdoc">categories category for comboBox</div><div class="ttdef"><b>Definition:</b> <a href="widget_8h_source.html#l00101">widget.h:101</a></div></div>
+<div class="ttc" id="aclass_widget_html_af654f5d36a61c3cbad6d8b2949864a21"><div class="ttname"><a href="class_widget.html#af654f5d36a61c3cbad6d8b2949864a21">Widget::addressBook</a></div><div class="ttdeci">AddressBook addressBook</div><div class="ttdef"><b>Definition:</b> <a href="widget_8h_source.html#l00028">widget.h:28</a></div></div>
+<div class="ttc" id="aclass_widget_html_aff0695f27c4062f58cadb27b3a87e8a3"><div class="ttname"><a href="class_widget.html#aff0695f27c4062f58cadb27b3a87e8a3">Widget::customizedTableStyle</a></div><div class="ttdeci">void customizedTableStyle()</div><div class="ttdoc">customizedTableStyle 设定自定义表的样式</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00382">widget.cpp:382</a></div></div>
 <div class="ttc" id="astruct_category_html_a0d46aea189d6c582b87851ff281a12d2"><div class="ttname"><a href="struct_category.html#a0d46aea189d6c582b87851ff281a12d2">Category::student</a></div><div class="ttdeci">QString student</div><div class="ttdef"><b>Definition:</b> <a href="_category_of_address_book_8cpp_source.html#l00008">CategoryOfAddressBook.cpp:8</a></div></div>
 <div class="ttc" id="astruct_category_html_a1c1f6c0731bc49659623c7766bc34785"><div class="ttname"><a href="struct_category.html#a1c1f6c0731bc49659623c7766bc34785">Category::colleague</a></div><div class="ttdeci">QString colleague</div><div class="ttdef"><b>Definition:</b> <a href="_category_of_address_book_8cpp_source.html#l00005">CategoryOfAddressBook.cpp:5</a></div></div>
 <div class="ttc" id="astruct_category_html_a2b6ecf265f11d483c47c3a4e4b11523e"><div class="ttname"><a href="struct_category.html#a2b6ecf265f11d483c47c3a4e4b11523e">Category::family</a></div><div class="ttdeci">QString family</div><div class="ttdef"><b>Definition:</b> <a href="_category_of_address_book_8cpp_source.html#l00006">CategoryOfAddressBook.cpp:6</a></div></div>
 <div class="ttc" id="astruct_category_html_a5cdbca1806b1b48b8b1ef0b6d37ef40e"><div class="ttname"><a href="struct_category.html#a5cdbca1806b1b48b8b1ef0b6d37ef40e">Category::relative</a></div><div class="ttdeci">QString relative</div><div class="ttdef"><b>Definition:</b> <a href="_category_of_address_book_8cpp_source.html#l00007">CategoryOfAddressBook.cpp:7</a></div></div>
+<div class="ttc" id="astruct_category_html_a5ef7a1b2d9f0c9f368544b5457a733dc"><div class="ttname"><a href="struct_category.html#a5ef7a1b2d9f0c9f368544b5457a733dc">Category::phoneNumber</a></div><div class="ttdeci">QString phoneNumber</div><div class="ttdef"><b>Definition:</b> <a href="_category_of_address_book_8cpp_source.html#l00011">CategoryOfAddressBook.cpp:11</a></div></div>
+<div class="ttc" id="astruct_category_html_a68c5de7793c3ccaf52a25bc057abccff"><div class="ttname"><a href="struct_category.html#a68c5de7793c3ccaf52a25bc057abccff">Category::group</a></div><div class="ttdeci">QString group</div><div class="ttdef"><b>Definition:</b> <a href="_category_of_address_book_8cpp_source.html#l00012">CategoryOfAddressBook.cpp:12</a></div></div>
+<div class="ttc" id="astruct_category_html_aedc5de7acb7d29b0121cfd1fb1affa6f"><div class="ttname"><a href="struct_category.html#aedc5de7acb7d29b0121cfd1fb1affa6f">Category::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition:</b> <a href="_category_of_address_book_8cpp_source.html#l00010">CategoryOfAddressBook.cpp:10</a></div></div>
 <div class="ttc" id="astruct_category_html_af9fdcd1010c800294e2d34d4e9818407"><div class="ttname"><a href="struct_category.html#af9fdcd1010c800294e2d34d4e9818407">Category::friends</a></div><div class="ttdeci">QString friends</div><div class="ttdef"><b>Definition:</b> <a href="_category_of_address_book_8cpp_source.html#l00004">CategoryOfAddressBook.cpp:4</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af931bae706d8b281d5a29322e107373c" name="af931bae706d8b281d5a29322e107373c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af931bae706d8b281d5a29322e107373c">&#9670;&#160;</a></span>initModelFromStringList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::initModelFromStringList </td>
+          <td>(</td>
+          <td class="paramtype">QStringList &amp;&#160;</td>
+          <td class="paramname"><em>fileContentStringList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initModelFromStringList 调用自定义函数 <a class="el" href="class_widget.html#af931bae706d8b281d5a29322e107373c" title="initModelFromStringList 调用自定义函数 initModelFromStringList()，用 fileContentStringList 的内容初始化数据模型">initModelFromStringList()</a>，用 fileContentStringList 的内容初始化数据模型 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileContentStringList</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>传递来的参数 fileContentStringList 是文本文件所有行构成的 StringList，文件的每一行是 aFileContent 的一行字符串，第 1 行是表头文字，数据从第 2 行开始。 程序首先获取字符串列表的行数，然后设置数据模型的行数，因为数据模型的列数在初始化时己经设置了。 然后获取字符串列表的第 1 行，即表头文字，用 QString::split() 函数分割成一个 QStringList，设置为数据模型的表头标题。 QString::split() 函数根据某个特定的符号将字符串进行分割。例如，header 是数据列的标题，每个标题之间通过一个或多个 TAB 键分隔，其内容是： <div class="fragment"><div class="line">Name        Phone Number        Group</div>
+</div><!-- fragment --> 那么通过上面的 split() 函数操作，得到一个字符串列表 headerList，其内容是： <div class="fragment"><div class="line">Name</div>
+<div class="line">Phone Number</div>
+<div class="line">Group</div>
+</div><!-- fragment --> 也就是分解为一个 3 行的 StringList。然后使用此字符串列表作为数据模型，设置表头标题的函数 setHorizontalHeaderLabels() 的参数，就可以为数据模型设置表头了。 同样，在逐行获取字符串后，也采用 split() 函数进行分解，为每个数据创建一个 QStandardltem 类型的项数据 altem，并赋给数据模型作为某行某列的项数据。 QStandardItemModel 以二维表格的形式保存项数据，每个项数据对应着 QTableView 的一个单元格。项数据不仅可以存储显示的文字，还可以存储其他角色的数据。 </dd></dl>
+<p >multiTab </p><dl class="section note"><dt>注解</dt><dd>Description: Don't create temporary QRegularExpression objects. a Use a static QRegularExpression object instead [clazy-use-static-qregularexpression] Location: /Users/yongfrank/Developer/Cpp/lab/Cpp-labo3-week14/AddressBookGU/widget.cpp:360:43 Documentation: <a href="https://github.com/KDE/clazy/blob/1.11/docs/checks/READ">https://github.com/KDE/clazy/blob/1.11/docs/checks/READ</a> ME-use-statio-qregularexpression.md</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00322">322</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  323</span>{</div>
+<div class="line"><span class="lineno">  324</span>    <span class="comment">// 将内存中的 model 数据模型清除</span></div>
+<div class="line"><span class="lineno">  325</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;clear();</div>
+<div class="line"><span class="lineno">  326</span> </div>
+<div class="line"><span class="lineno">  327</span>    <span class="comment">// 从一个StringList 获取数据，初始化数据Model</span></div>
+<div class="line"><span class="lineno">  328</span>    <span class="comment">// 文本行数，第1行是标题</span></div>
+<div class="line"><span class="lineno">  329</span>    <span class="keywordtype">int</span> rowCount = fileContentStringList.count();</div>
+<div class="line"><span class="lineno">  330</span> </div>
+<div class="line"><span class="lineno">  331</span>    <span class="comment">// 实际数据行数</span></div>
+<div class="line"><span class="lineno">  332</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;setRowCount(rowCount - 1);</div>
+<div class="line"><span class="lineno">  333</span> </div>
+<div class="line"><span class="lineno">  334</span>    <span class="comment">// 设置表头</span></div>
+<div class="line"><span class="lineno">  335</span>    <span class="comment">// 第1行是表头</span></div>
+<div class="line"><span class="lineno">  336</span>    QString header = fileContentStringList.at(0);</div>
+<div class="line"><span class="lineno">  337</span> </div>
+<div class="line"><span class="lineno">  349</span>    <span class="keyword">static</span> <span class="keyword">auto</span> multiTab = QRegularExpression(<span class="stringliteral">&quot;\\t+&quot;</span>);</div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>    <span class="comment">// 一个或多个空格、TAB(&quot;\s+&quot;) 多个 TAB 分隔(&quot;\t+&quot;)等分隔符隔开的字符串， 分解为一个StringList</span></div>
+<div class="line"><span class="lineno">  352</span>    QStringList headerList = header.split(multiTab);</div>
+<div class="line"><span class="lineno">  353</span>    headerList.removeLast();</div>
+<div class="line"><span class="lineno">  354</span>    <span class="comment">//设置表头文字</span></div>
+<div class="line"><span class="lineno">  355</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;setHorizontalHeaderLabels(headerList);</div>
+<div class="line"><span class="lineno">  356</span> </div>
+<div class="line"><span class="lineno">  357</span>    <span class="comment">//设置表格数据</span></div>
+<div class="line"><span class="lineno">  358</span><span class="comment">//    QString lineText;</span></div>
+<div class="line"><span class="lineno">  359</span><span class="comment">//    QStringList lineTempList;</span></div>
+<div class="line"><span class="lineno">  360</span>    QStandardItem *itemStandard;</div>
+<div class="line"><span class="lineno">  361</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; rowCount; i++) {</div>
+<div class="line"><span class="lineno">  362</span> </div>
+<div class="line"><span class="lineno">  363</span>        <span class="comment">//获取数据区的一行</span></div>
+<div class="line"><span class="lineno">  364</span>        QString lineText = fileContentStringList.at(i);</div>
+<div class="line"><span class="lineno">  365</span> </div>
+<div class="line"><span class="lineno">  366</span>        <span class="comment">//一个或多个空格、TAB等分隔符隔开的字符串， 分解为一个StringList</span></div>
+<div class="line"><span class="lineno">  367</span>        QStringList lineTempList = lineText.split(multiTab);</div>
+<div class="line"><span class="lineno">  368</span> </div>
+<div class="line"><span class="lineno">  369</span>        <span class="comment">//lineTempList 的行数等于 headerList.count, 固定的</span></div>
+<div class="line"><span class="lineno">  370</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; headerList.count(); j++) {</div>
+<div class="line"><span class="lineno">  371</span> </div>
+<div class="line"><span class="lineno">  372</span>            <span class="comment">//创建item</span></div>
+<div class="line"><span class="lineno">  373</span>            itemStandard = <span class="keyword">new</span> QStandardItem(lineTempList.at(j));</div>
+<div class="line"><span class="lineno">  374</span> </div>
+<div class="line"><span class="lineno">  375</span>            <span class="comment">//为模型的某个行列位置设置Item</span></div>
+<div class="line"><span class="lineno">  376</span>            this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;setItem(i - 1, j, itemStandard);</div>
+<div class="line"><span class="lineno">  377</span>        }</div>
+<div class="line"><span class="lineno">  378</span>    }</div>
+<div class="line"><span class="lineno">  379</span>    this-&gt;<a class="code hl_function" href="class_widget.html#aff0695f27c4062f58cadb27b3a87e8a3">customizedTableStyle</a>();</div>
+<div class="line"><span class="lineno">  380</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -292,16 +730,346 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00127">127</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>                                         {</div>
-<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">if</span>(key-&gt;modifiers() == Qt::ControlModifier &amp;&amp; key-&gt;key() == Qt::Key_S) {</div>
-<div class="line"><span class="lineno">  129</span>        this-&gt;saveButtonSlot();</div>
-<div class="line"><span class="lineno">  130</span>    }</div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">if</span>(key-&gt;modifiers() == Qt::ControlModifier &amp;&amp; key-&gt;key() == Qt::Key_O) {</div>
-<div class="line"><span class="lineno">  132</span>        this-&gt;LoadFile();</div>
-<div class="line"><span class="lineno">  133</span>    }</div>
-<div class="line"><span class="lineno">  134</span>}</div>
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00270">270</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  270</span>                                         {</div>
+<div class="line"><span class="lineno">  271</span>    <span class="keywordflow">if</span>(key-&gt;modifiers() == Qt::ControlModifier &amp;&amp; key-&gt;key() == Qt::Key_S) {</div>
+<div class="line"><span class="lineno">  272</span>        this-&gt;<a class="code hl_slot" href="class_widget.html#ae3ddb00d01b7807af8c2f4b1ba176c1e">saveButtonSlot</a>();</div>
+<div class="line"><span class="lineno">  273</span>    }</div>
+<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">if</span>(key-&gt;modifiers() == Qt::ControlModifier &amp;&amp; key-&gt;key() == Qt::Key_O) {</div>
+<div class="line"><span class="lineno">  275</span>        this-&gt;<a class="code hl_slot" href="class_widget.html#aa4650cb78f548346b64776032fd1b152">LoadFile</a>();</div>
+<div class="line"><span class="lineno">  276</span>    }</div>
+<div class="line"><span class="lineno">  277</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="aa4650cb78f548346b64776032fd1b152" name="aa4650cb78f548346b64776032fd1b152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4650cb78f548346b64776032fd1b152">&#9670;&#160;</a></span>LoadFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::LoadFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>LoadFile 8、 文件读取操作流程框架 “打开文件”按钮的槽函数代码 </p>
+<dl class="section note"><dt>注解</dt><dd>"/home", "*.txt, *.cpp" 这段代码让用户选择所需要打开的数据文本文件，然后用只读和文本格式打开文件，逐行读取其内容，将每行字符串显示到界面上的 TextEdit 里，并且添加到一个临时的 QStringList 类型的变量 FileContent 里。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>Qt QStandardItemModel用法（超级详细） <a href="http://c.biancheng.net/view/1869.html">http://c.biancheng.net/view/1869.html</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00134">134</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>                      {</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    <span class="comment">// 获取应用程序的路径</span></div>
+<div class="line"><span class="lineno">  137</span>    <span class="comment">// 调用打开文件对话框打开一个文件</span></div>
+<div class="line"><span class="lineno">  138</span>    QString fileName = QFileDialog::getOpenFileName(<span class="keyword">this</span>, <span class="stringliteral">&quot;Choose a file&quot;</span>, QApplication::applicationDirPath(),</div>
+<div class="line"><span class="lineno">  139</span>                                                    <span class="stringliteral">&quot;Text File(*.txt);;All File(*.*)&quot;</span>);</div>
+<div class="line"><span class="lineno">  140</span><span class="comment">//    QString fileName = QFileDialog::getOpenFileName(this, &quot;Choose a File&quot;,</span></div>
+<div class="line"><span class="lineno">  141</span><span class="comment">//                                             QCoreApplication::applicationFilePath());</span></div>
+<div class="line"><span class="lineno">  142</span><span class="comment">//    QFileDialog::getOpenFileName(this, &quot;Choose a File&quot;, QCoreApplication::applicationDirPath());</span></div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>    <span class="comment">// 如果未选择文件，退出</span></div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">if</span> (fileName.isEmpty()) {</div>
+<div class="line"><span class="lineno">  146</span>        QMessageBox::warning(<span class="keyword">this</span>, <span class="stringliteral">&quot;Warning&quot;</span>, <span class="stringliteral">&quot;Choose a File, please&quot;</span>);</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  148</span>    }</div>
+<div class="line"><span class="lineno">  149</span><span class="comment">//    qDebug() &lt;&lt; fileName;</span></div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    <span class="comment">// 文件内容字符串列表</span></div>
+<div class="line"><span class="lineno">  152</span>    QStringList fileContentStringList;</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>    <span class="comment">// Create a QFile Object</span></div>
+<div class="line"><span class="lineno">  155</span>    <span class="comment">// https://doc.qt.io/qt-6/qfile.html</span></div>
+<div class="line"><span class="lineno">  156</span>    <span class="comment">// 以文件方式读出</span></div>
+<div class="line"><span class="lineno">  157</span>    QFile file(fileName);</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="comment">// 以只读文本方式打开文件</span></div>
+<div class="line"><span class="lineno">  160</span>    file.open(QIODevice::ReadOnly);</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    <span class="comment">// 用文本流读取文件</span></div>
+<div class="line"><span class="lineno">  163</span>    QTextStream fileStream(&amp;file);</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>    <span class="comment">// 清空</span></div>
+<div class="line"><span class="lineno">  166</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;textEdit-&gt;clear();</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">while</span>(!fileStream.atEnd()) {</div>
+<div class="line"><span class="lineno">  169</span>        <span class="comment">// 读取文件的一行</span></div>
+<div class="line"><span class="lineno">  170</span>        QString stringToBeDisplayed = fileStream.readLine();</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>        <span class="comment">// 添加到文本框显示</span></div>
+<div class="line"><span class="lineno">  173</span>        this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;textEdit-&gt;append(stringToBeDisplayed);</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>        <span class="comment">// 添加到 fileContentStringList</span></div>
+<div class="line"><span class="lineno">  176</span>        fileContentStringList.append(stringToBeDisplayed);</div>
+<div class="line"><span class="lineno">  177</span>    }</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>    <span class="comment">// 关闭文件</span></div>
+<div class="line"><span class="lineno">  180</span>    <span class="comment">//    QByteArray byteArray = file.readAll();</span></div>
+<div class="line"><span class="lineno">  181</span>    <span class="comment">//    ui-&gt;textEdit-&gt;setText(QString(byteArray));</span></div>
+<div class="line"><span class="lineno">  182</span>    file.close();</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>    <span class="comment">// 窗口标题显示</span></div>
+<div class="line"><span class="lineno">  185</span>    this-&gt;setWindowTitle(fileName);</div>
+<div class="line"><span class="lineno">  186</span> </div>
+<div class="line"><span class="lineno">  187</span>    <span class="comment">// 从StringList的内容初始化数据模型</span></div>
+<div class="line"><span class="lineno">  188</span>    this-&gt;<a class="code hl_function" href="class_widget.html#af931bae706d8b281d5a29322e107373c">initModelFromStringList</a>(fileContentStringList);</div>
+<div class="line"><span class="lineno">  189</span>}</div>
+<div class="ttc" id="aclass_widget_html_af931bae706d8b281d5a29322e107373c"><div class="ttname"><a href="class_widget.html#af931bae706d8b281d5a29322e107373c">Widget::initModelFromStringList</a></div><div class="ttdeci">void initModelFromStringList(QStringList &amp;fileContentStringList)</div><div class="ttdoc">initModelFromStringList 调用自定义函数 initModelFromStringList()，用 fileContentStringList 的内容初始化数据模型</div><div class="ttdef"><b>Definition:</b> <a href="widget_8cpp_source.html#l00322">widget.cpp:322</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2ff08b3214656384b44e055927b540e8" name="a2ff08b3214656384b44e055927b540e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff08b3214656384b44e055927b540e8">&#9670;&#160;</a></span>newButtonSlot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::newButtonSlot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>newButtonSlot 2) 加入一行数据； </p>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00102">102</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>                           {</div>
+<div class="line"><span class="lineno">  103</span><span class="comment">//    this-&gt;ui-&gt;textEdit-&gt;clear();</span></div>
+<div class="line"><span class="lineno">  104</span><span class="comment">//    this-&gt;setWindowTitle(&quot;New Address Book&quot;);</span></div>
+<div class="line"><span class="lineno">  105</span><span class="comment">//    QUuid id = QUuid();</span></div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>    <span class="comment">// 获得行计数</span></div>
+<div class="line"><span class="lineno">  108</span><span class="comment">//    int lastRow = this-&gt;model-&gt;rowCount();</span></div>
+<div class="line"><span class="lineno">  109</span><span class="comment">//    qDebug() &lt;&lt; lastRow;</span></div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    std::string name = this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;nameLineEdit-&gt;text().toStdString();</div>
+<div class="line"><span class="lineno">  112</span>    std::string phone = this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;phoneLineEdit-&gt;text().toStdString();</div>
+<div class="line"><span class="lineno">  113</span>    std::string group = this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;groupComboBox-&gt;currentText().toStdString();</div>
+<div class="line"><span class="lineno">  114</span><span class="comment">//    qDebug() &lt;&lt; id &lt;&lt; QString::fromStdString(name) &lt;&lt; this-&gt;ui-&gt;groupComboBox-&gt;currentText();</span></div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#af654f5d36a61c3cbad6d8b2949864a21">addressBook</a>.<a class="code hl_function" href="class_address_book.html#ab2ab4565bc7ec1563fd4fb6f5db4ac6d">AddContact</a>(name, phone, group);</div>
+<div class="line"><span class="lineno">  117</span>    QStandardItem* nameItem = <span class="keyword">new</span> QStandardItem(QString::fromStdString(name));</div>
+<div class="line"><span class="lineno">  118</span>    QStandardItem* phoneItem = <span class="keyword">new</span> QStandardItem(QString::fromStdString(phone));</div>
+<div class="line"><span class="lineno">  119</span>    QStandardItem* groupItem = <span class="keyword">new</span> QStandardItem(QString::fromStdString(group));</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>    QList&lt;QStandardItem*&gt; itemList;</div>
+<div class="line"><span class="lineno">  122</span>    itemList &lt;&lt; nameItem &lt;&lt; phoneItem &lt;&lt; groupItem;</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="comment">// 在表格后添加一行</span></div>
+<div class="line"><span class="lineno">  125</span>    <a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;appendRow(itemList);</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>    this-&gt;<a class="code hl_function" href="class_widget.html#a0a747737a833b1ddc43051afdadc9120">clearLineEdit</a>();</div>
+<div class="line"><span class="lineno">  128</span>}</div>
+<div class="ttc" id="aclass_address_book_html_ab2ab4565bc7ec1563fd4fb6f5db4ac6d"><div class="ttname"><a href="class_address_book.html#ab2ab4565bc7ec1563fd4fb6f5db4ac6d">AddressBook::AddContact</a></div><div class="ttdeci">void AddContact(std::string &amp;, std::string &amp;, std::string &amp;)</div><div class="ttdoc">Add a contact in the vector&lt;CContact&gt; Book</div><div class="ttdef"><b>Definition:</b> <a href="_address_book_8cpp_source.html#l00022">AddressBook.cpp:22</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae3ddb00d01b7807af8c2f4b1ba176c1e" name="ae3ddb00d01b7807af8c2f4b1ba176c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3ddb00d01b7807af8c2f4b1ba176c1e">&#9670;&#160;</a></span>saveButtonSlot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::saveButtonSlot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>saveButtonSlot 9、 文件保存流程框架 </p>
+<dl class="section see"><dt>参见</dt><dd><a href="https://doc.qt.io/qt-6/qbytearray.html">https://doc.qt.io/qt-6/qbytearray.html</a> Qt QStandardItemModel用法（超级详细） <a href="http://c.biancheng.net/view/1869.html">http://c.biancheng.net/view/1869.html</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="widget_8cpp_source.html">widget.cpp</a> 第 <a class="el" href="widget_8cpp_source.html#l00195">195</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">  195</span>                            {</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>    <span class="comment">// 获取应用程序的路径</span></div>
+<div class="line"><span class="lineno">  198</span><span class="comment">//    QString curPath = QCoreApplication::applicationDirPath();</span></div>
+<div class="line"><span class="lineno">  199</span><span class="comment">//    qDebug() &lt;&lt; curPath;</span></div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>    <span class="comment">// Save New Dialog</span></div>
+<div class="line"><span class="lineno">  202</span>    <span class="comment">// 调用打开文件对话框选择一个文件</span></div>
+<div class="line"><span class="lineno">  203</span>    QString fileName = QFileDialog::getSaveFileName(<span class="keyword">this</span>, <span class="stringliteral">&quot;Chose a file&quot;</span>, QCoreApplication::applicationFilePath(),</div>
+<div class="line"><span class="lineno">  204</span>                                                    <span class="stringliteral">&quot;Text File(*.txt);;All File(*.*)&quot;</span>);</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>    <span class="comment">// 未选择文件，退出</span></div>
+<div class="line"><span class="lineno">  208</span>    <span class="keywordflow">if</span> (fileName.isEmpty()) {</div>
+<div class="line"><span class="lineno">  209</span>        QMessageBox::warning(<span class="keyword">this</span>, <span class="stringliteral">&quot;Warning&quot;</span>, <span class="stringliteral">&quot;Choose a file&quot;</span>);</div>
+<div class="line"><span class="lineno">  210</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  211</span>    }</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>    QFile file(fileName);</div>
+<div class="line"><span class="lineno">  214</span>    file.open(QIODevice::WriteOnly);</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span><span class="comment">//    QByteArray ba;</span></div>
+<div class="line"><span class="lineno">  217</span><span class="comment">//    ba.append(this-&gt;ui-&gt;textEdit-&gt;toPlainText().toUtf8());</span></div>
+<div class="line"><span class="lineno">  218</span><span class="comment">//    file.write(ba);</span></div>
+<div class="line"><span class="lineno">  219</span><span class="comment">//    file.close();</span></div>
+<div class="line"><span class="lineno">  220</span> </div>
+<div class="line"><span class="lineno">  221</span>    QString stringToBeStored;</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>    <span class="comment">// 用文本流读取文件</span></div>
+<div class="line"><span class="lineno">  224</span>    QTextStream fileStream(&amp;file);</div>
+<div class="line"><span class="lineno">  225</span>    QStandardItem* item;</div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>    <span class="comment">// 获取表头文字</span></div>
+<div class="line"><span class="lineno">  228</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;columnCount(); i++) {</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>        <span class="comment">// 获取表头的项数据</span></div>
+<div class="line"><span class="lineno">  231</span>        item = this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;horizontalHeaderItem(i);</div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>        <span class="comment">// 以 TAB 间隔开</span></div>
+<div class="line"><span class="lineno">  234</span>        stringToBeStored += item-&gt;text() + <span class="stringliteral">&quot;\t\t&quot;</span>;</div>
+<div class="line"><span class="lineno">  235</span>    }</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>    <span class="comment">// 文件里需要加入换行符 \n</span></div>
+<div class="line"><span class="lineno">  238</span>    fileStream &lt;&lt; stringToBeStored &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  239</span> </div>
+<div class="line"><span class="lineno">  240</span>    this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;textEdit-&gt;append(stringToBeStored);</div>
+<div class="line"><span class="lineno">  241</span> </div>
+<div class="line"><span class="lineno">  242</span>    <span class="comment">// 获取数据区文字</span></div>
+<div class="line"><span class="lineno">  243</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;rowCount(); i++) {</div>
+<div class="line"><span class="lineno">  244</span>        stringToBeStored = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  245</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;columnCount(); j++) {</div>
+<div class="line"><span class="lineno">  246</span>            item = this-&gt;<a class="code hl_variable" href="class_widget.html#a4a69d6402e3c67623d1d081fcea2db20">model</a>-&gt;item(i, j);</div>
+<div class="line"><span class="lineno">  247</span>            stringToBeStored += item-&gt;text() + <span class="stringliteral">&quot;\t\t&quot;</span>;</div>
+<div class="line"><span class="lineno">  248</span>        }</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>        this-&gt;<a class="code hl_variable" href="class_widget.html#a19c48cc897c43aa2e995fce9f7fb2418">ui</a>-&gt;textEdit-&gt;append(stringToBeStored);</div>
+<div class="line"><span class="lineno">  251</span>        fileStream &lt;&lt; stringToBeStored &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  252</span>    }</div>
+<div class="line"><span class="lineno">  253</span> </div>
+<div class="line"><span class="lineno">  254</span>    file.close();</div>
+<div class="line"><span class="lineno">  255</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="af654f5d36a61c3cbad6d8b2949864a21" name="af654f5d36a61c3cbad6d8b2949864a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af654f5d36a61c3cbad6d8b2949864a21">&#9670;&#160;</a></span>addressBook</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_address_book.html">AddressBook</a> Widget::addressBook</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="widget_8h_source.html">widget.h</a> 第 <a class="el" href="widget_8h_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a709fae194411d0d56881d9ef63410a0c" name="a709fae194411d0d56881d9ef63410a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709fae194411d0d56881d9ef63410a0c">&#9670;&#160;</a></span>categories</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_category.html">Category</a> Widget::categories</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>categories category for comboBox </p>
+
+<p class="definition">在文件 <a class="el" href="widget_8h_source.html">widget.h</a> 第 <a class="el" href="widget_8h_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4a69d6402e3c67623d1d081fcea2db20" name="a4a69d6402e3c67623d1d081fcea2db20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a69d6402e3c67623d1d081fcea2db20">&#9670;&#160;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStandardItemModel* Widget::model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>model </p>
+<dl class="section see"><dt>参见</dt><dd>Qt模型/视图框架（一） - 小豆君编程分享的文章 - 知乎 <a href="https://zhuanlan.zhihu.com/p/47402006">https://zhuanlan.zhihu.com/p/47402006</a> Address Book Example <a href="https://doc.qt.io/qt-6/qtwidgets-itemviews-addressbook-example.html">https://doc.qt.io/qt-6/qtwidgets-itemviews-addressbook-example.html</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="widget_8h_source.html">widget.h</a> 第 <a class="el" href="widget_8h_source.html#l00110">110</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a19c48cc897c43aa2e995fce9f7fb2418" name="a19c48cc897c43aa2e995fce9f7fb2418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c48cc897c43aa2e995fce9f7fb2418">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::Widget* Widget::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="widget_8h_source.html">widget.h</a> 第 <a class="el" href="widget_8h_source.html#l00103">103</a> 行定义.</p>
+
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>

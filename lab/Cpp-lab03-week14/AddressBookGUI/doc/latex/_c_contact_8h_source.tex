@@ -1,0 +1,70 @@
+\hypertarget{_c_contact_8h_source}{}\doxysection{CContact.\+h}
+\mbox{\hyperlink{_c_contact_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00002}00002 \textcolor{comment}{ * @Author: Frank Chu}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00003}00003 \textcolor{comment}{ * @Date: 2022-\/11-\/16 13:11:56}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00004}00004 \textcolor{comment}{ * @LastEditors: Frank Chu}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00005}00005 \textcolor{comment}{ * @LastEditTime: 2022-\/11-\/22 00:50:06}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00006}00006 \textcolor{comment}{ * @FilePath: /Cpp/lab/Cpp-\/lab01-\/week11/source/CContact.h}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00007}00007 \textcolor{comment}{ * @Description:}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00008}00008 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00009}00009 \textcolor{comment}{ * Copyright (c) 2022 by Frank Chu, All Rights Reserved.}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00010}00010 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00012}00012 \textcolor{preprocessor}{\#ifndef CCONTACT\_H}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00013}00013 \textcolor{preprocessor}{\#define CCONTACT\_H}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00015}00015 \textcolor{preprocessor}{\#include <QUuid>}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00017}00017 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00018}00018 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00019}00019 \textcolor{preprocessor}{\#include <regex>}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00027}\mbox{\hyperlink{class_c_contact}{00027}} \textcolor{keyword}{class }\mbox{\hyperlink{class_c_contact}{CContact}}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00028}00028 \{}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00029}00029 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00030}\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{00030}}     std::string \mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}};   }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00031}\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{00031}}     std::string \mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}}; }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00032}\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{00032}}     std::string \mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};  }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00033}\mbox{\hyperlink{class_c_contact_a6c23e4642a9f35e6c966b4f91126bd43}{00033}}     QUuid \mbox{\hyperlink{class_c_contact_a6c23e4642a9f35e6c966b4f91126bd43}{id}};}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00034}00034 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00038}00038     \mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}();}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00044}00044     \mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}(std::string \&, std::string \&, std::string \&);}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00048}00048     \mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}} \&);}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00051}00051     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_contact_a497e5ec26879482deb732f36924da8af}{\string~CContact}}();}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00057}00057     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_contact_aaa73f78c844126a49e81bf6e65d98990}{getContact}}(std::string \&, std::string \&, std::string \&);}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00063}00063     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}{setContact}}(std::string \&, std::string \&, std::string \&);}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00071}00071     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_contact_a2f0c2ff2f3045d49d043250fbd0b9e5e}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}} \&) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00075}00075     \mbox{\hyperlink{class_c_contact}{CContact}}\& \mbox{\hyperlink{class_c_contact_a6fa656e4a38c4d14b5505d36e5c0f365}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}} \&);}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00081}00081     \textcolor{keyword}{friend} std::ostream \&\mbox{\hyperlink{class_c_contact_a56a86dea0bb828cd4990a61a508eb9ba}{operator<<}}(std::ostream \&, \mbox{\hyperlink{class_c_contact}{CContact}});}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00087}00087     \textcolor{keyword}{friend} std::istream \&\mbox{\hyperlink{class_c_contact_a5f6eeb90164491c2ace958f8078b0d75}{operator>>}}(std::istream \&, \mbox{\hyperlink{class_c_contact}{CContact}} \&);}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00106}00106     \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_contact_a808cea55ceaa2f5f4416ccd2e636330b}{pr}} (\textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}}\& lhsContact, \textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}}\& rhsContact);}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00108}\mbox{\hyperlink{class_c_contact_a2f761fa9a64279c7f7d4a5efacb7f0e8}{00108}}     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_contact_a2f761fa9a64279c7f7d4a5efacb7f0e8}{prSortByGroup}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}}\& lhsContact, \textcolor{keyword}{const} \mbox{\hyperlink{class_c_contact}{CContact}}\& rhsContact) \{}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00109}00109         \textcolor{keywordflow}{return} lhsContact.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} < rhsContact.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00110}00110     \}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00122}00122     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_contact_a3a911d776b532f44d332a8ab846230ba}{PatternMatch}}(std::string\& name, std::string\& number, std::string\& group);}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00124}00124 \};}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00135}00135 \textcolor{keywordtype}{bool} \mbox{\hyperlink{_c_contact_8h_a0a82ec9e83c845e0a97385f328e6237c}{match}}(std::string \&pattern, std::string \&source);}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00137}00137 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CCONTACT\_H}}
+\DoxyCodeLine{\Hypertarget{_c_contact_8h_source_l00138}00138 }
+
+\end{DoxyCode}

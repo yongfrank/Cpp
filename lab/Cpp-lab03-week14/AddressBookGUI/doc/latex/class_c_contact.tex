@@ -1,0 +1,581 @@
+\hypertarget{class_c_contact}{}\doxysection{CContact类 参考}
+\label{class_c_contact}\index{CContact@{CContact}}
+
+
+\mbox{\hyperlink{class_c_contact}{CContact}} 是联系人类  
+
+
+
+
+{\ttfamily \#include $<$CContact.\+h$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_c_contact}{CContact}} object 默认构造函数，构造一个空联系人类 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_contact_a620bfd856ebb9e8cd2f508c689041cb7}{CContact}} (std\+::string \&, std\+::string \&, std\+::string \&)
+\begin{DoxyCompactList}\small\item\em 使用\+Name,Number,Group创建联系人对象 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_contact_a16d57e3cda6eed0016bb38b63e74b99f}{CContact}} (const \mbox{\hyperlink{class_c_contact}{CContact}} \&)
+\begin{DoxyCompactList}\small\item\em 拷贝构造函数 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_contact_a497e5ec26879482deb732f36924da8af}{$\sim$\+CContact}} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_contact_aaa73f78c844126a49e81bf6e65d98990}{get\+Contact}} (std\+::string \&, std\+::string \&, std\+::string \&)
+\begin{DoxyCompactList}\small\item\em 获取对象的三个成员 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}{set\+Contact}} (std\+::string \&, std\+::string \&, std\+::string \&)
+\begin{DoxyCompactList}\small\item\em 设定对象的三个成员 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_contact_a2f0c2ff2f3045d49d043250fbd0b9e5e}{operator$<$}} (const \mbox{\hyperlink{class_c_contact}{CContact}} \&) const
+\begin{DoxyCompactList}\small\item\em 重载 \texorpdfstring{$<$}{<} 运算符，供算法 Sort 使用,按姓名排序 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_contact}{CContact}} \& \mbox{\hyperlink{class_c_contact_a6fa656e4a38c4d14b5505d36e5c0f365}{operator=}} (const \mbox{\hyperlink{class_c_contact}{CContact}} \&)
+\begin{DoxyCompactList}\small\item\em 重载赋值 = 运算符，重载赋值运算符 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_contact_a3a911d776b532f44d332a8ab846230ba}{Pattern\+Match}} (std\+::string \&name, std\+::string \&number, std\+::string \&group)
+\begin{DoxyCompactList}\small\item\em 判定本对象是否匹配搜索条件 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_c_contact_a2f761fa9a64279c7f7d4a5efacb7f0e8}{pr\+Sort\+By\+Group}} (const \mbox{\hyperlink{class_c_contact}{CContact}} \&lhs\+Contact, const \mbox{\hyperlink{class_c_contact}{CContact}} \&rhs\+Contact)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}}
+\begin{DoxyCompactList}\small\item\em 姓名 \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}}
+\begin{DoxyCompactList}\small\item\em 电话号码 \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}}
+\begin{DoxyCompactList}\small\item\em 群组 \end{DoxyCompactList}\item 
+QUuid \mbox{\hyperlink{class_c_contact_a6c23e4642a9f35e6c966b4f91126bd43}{id}}
+\end{DoxyCompactItemize}
+\doxysubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_c_contact_a56a86dea0bb828cd4990a61a508eb9ba}{operator$<$$<$}} (std\+::ostream \&, \mbox{\hyperlink{class_c_contact}{CContact}})
+\begin{DoxyCompactList}\small\item\em 利用友元函数重载运算符 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{class_c_contact_a5f6eeb90164491c2ace958f8078b0d75}{operator$>$$>$}} (std\+::istream \&, \mbox{\hyperlink{class_c_contact}{CContact}} \&)
+\begin{DoxyCompactList}\small\item\em 利用友元函数重载运算符 \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_contact_a808cea55ceaa2f5f4416ccd2e636330b}{pr}} (const \mbox{\hyperlink{class_c_contact}{CContact}} \&lhs\+Contact, const \mbox{\hyperlink{class_c_contact}{CContact}} \&rhs\+Contact)
+\begin{DoxyCompactList}\small\item\em 定义组排序函数，供算法sort使用, \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{class_c_contact}{CContact}} 是联系人类 
+
+\begin{DoxyAuthor}{作者}
+Frank Chu 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{版本}
+v1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{日期}
+16-\/Nov-\/2022 
+\end{DoxyDate}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8h_source}{CContact.\+h}} 第 \mbox{\hyperlink{_c_contact_8h_source_l00027}{27}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_c_contact_afdd13f12c6249225b8812443690b708c}\label{class_c_contact_afdd13f12c6249225b8812443690b708c}} 
+\index{CContact@{CContact}!CContact@{CContact}}
+\index{CContact@{CContact}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{CContact()}{CContact()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily CContact\+::\+CContact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_c_contact}{CContact}} object 默认构造函数，构造一个空联系人类 
+
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00014}{14}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a620bfd856ebb9e8cd2f508c689041cb7}\label{class_c_contact_a620bfd856ebb9e8cd2f508c689041cb7}} 
+\index{CContact@{CContact}!CContact@{CContact}}
+\index{CContact@{CContact}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{CContact()}{CContact()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily CContact\+::\+CContact (\begin{DoxyParamCaption}\item[{std\+::string \&}]{Name,  }\item[{std\+::string \&}]{Number,  }\item[{std\+::string \&}]{Group }\end{DoxyParamCaption})}
+
+
+
+使用\+Name,Number,Group创建联系人对象 
+
+
+\begin{DoxyParams}{参数}
+{\em Name} & Contact Name \\
+\hline
+{\em Number} & Phone Number \\
+\hline
+{\em Group} & Contact Group\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+Visual Studio Code C++ Extension July 2020 Update\+: Doxygen comments and Log points \href{https://devblogs.microsoft.com/cppblog/visual-studio-code-c-extension-july-2020-update-doxygen-comments-and-logpoints/}{\texttt{ https\+://devblogs.\+microsoft.\+com/cppblog/visual-\/studio-\/code-\/c-\/extension-\/july-\/2020-\/update-\/doxygen-\/comments-\/and-\/logpoints/}} 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00017}{17}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017                                                                        \{}
+\DoxyCodeLine{00018     this-\/>\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}} = \mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}};}
+\DoxyCodeLine{00019     this-\/>\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}} = \mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}};}
+\DoxyCodeLine{00020     this-\/>\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} = \mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};}
+\DoxyCodeLine{00021 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a16d57e3cda6eed0016bb38b63e74b99f}\label{class_c_contact_a16d57e3cda6eed0016bb38b63e74b99f}} 
+\index{CContact@{CContact}!CContact@{CContact}}
+\index{CContact@{CContact}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{CContact()}{CContact()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily CContact\+::\+CContact (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_contact}{CContact}} \&}]{Contact\+Info }\end{DoxyParamCaption})}
+
+
+
+拷贝构造函数 
+
+
+\begin{DoxyParams}{参数}
+{\em Contact\+Info} & Initialized Contact \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00023}{23}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023                                               \{}
+\DoxyCodeLine{00024     this-\/>\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}} = ContactInfo.\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}};}
+\DoxyCodeLine{00025     this-\/>\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}} = ContactInfo.\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}};}
+\DoxyCodeLine{00026     this-\/>\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} = ContactInfo.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};}
+\DoxyCodeLine{00027 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a497e5ec26879482deb732f36924da8af}\label{class_c_contact_a497e5ec26879482deb732f36924da8af}} 
+\index{CContact@{CContact}!````~CContact@{$\sim$CContact}}
+\index{````~CContact@{$\sim$CContact}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{$\sim$CContact()}{~CContact()}}
+{\footnotesize\ttfamily CContact\+::$\sim$\+CContact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+析构函数 
+
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00029}{29}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029 \{ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_c_contact_aaa73f78c844126a49e81bf6e65d98990}\label{class_c_contact_aaa73f78c844126a49e81bf6e65d98990}} 
+\index{CContact@{CContact}!getContact@{getContact}}
+\index{getContact@{getContact}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{getContact()}{getContact()}}
+{\footnotesize\ttfamily void CContact\+::get\+Contact (\begin{DoxyParamCaption}\item[{std\+::string \&}]{Name,  }\item[{std\+::string \&}]{Number,  }\item[{std\+::string \&}]{Group }\end{DoxyParamCaption})}
+
+
+
+获取对象的三个成员 
+
+
+\begin{DoxyParams}{参数}
+{\em Name} & return Name as reference \\
+\hline
+{\em Number} & return Number as reference \\
+\hline
+{\em Group} & return Group as reference \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00085}{85}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085                                                                               \{}
+\DoxyCodeLine{00086     \mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}} = this-\/>\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}};}
+\DoxyCodeLine{00087     \mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}} = this-\/>\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}};}
+\DoxyCodeLine{00088     \mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} = this-\/>\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};}
+\DoxyCodeLine{00089 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a2f0c2ff2f3045d49d043250fbd0b9e5e}\label{class_c_contact_a2f0c2ff2f3045d49d043250fbd0b9e5e}} 
+\index{CContact@{CContact}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool CContact\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_contact}{CContact}} \&}]{contact\+To\+Be\+Compared }\end{DoxyParamCaption}) const}
+
+
+
+重载 \texorpdfstring{$<$}{<} 运算符，供算法 Sort 使用,按姓名排序 
+
+
+\begin{DoxyParams}{参数}
+{\em contact\+To\+Be\+Compared} & contact info to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true this\+CContact \texorpdfstring{$<$}{<} contact\+To\+Be\+Compared 
+
+false this\+CContact \texorpdfstring{$>$}{>} contact\+To\+Be\+Compared
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{测试}
+\item[\mbox{\hyperlink{test__test000005}{测试}}]name = \char`\"{}\+Frank\char`\"{}, number = \char`\"{}1596\char`\"{}, Group = \char`\"{}\+Student\char`\"{} \end{DoxyRefDesc}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::string name = \textcolor{stringliteral}{"{}Frank Chu"{}}, number = \textcolor{stringliteral}{"{}1596"{}}, group = \textcolor{stringliteral}{"{}Student"{}};}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_contact}{CContact}} frank = \mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}(name, number, group);}
+\DoxyCodeLine{name = \textcolor{stringliteral}{"{}Panda"{}}, number = \textcolor{stringliteral}{"{}22"{}}, group = \textcolor{stringliteral}{"{}32"{}};}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_contact}{CContact}} panda = \mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}(name, number, group);}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(frank < panda) \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}<"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}>"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxyNote}{注解}
+C++ 重载运算符和重载函数
+\begin{DoxyItemize}
+\item C++ 中的运算符重载 {\ttfamily Box operator+(const Box\&);} \href{https://www.runoob.com/cplusplus/cpp-overloading.html}{\texttt{ https\+://www.\+runoob.\+com/cplusplus/cpp-\/overloading.\+html}}
+\item C++使用greater报错‘this‘ argument has type ‘const xxx‘, but method is not marked const的解决方案 \href{https://blog.csdn.net/HermitSun/article/details/107101944}{\texttt{ https\+://blog.\+csdn.\+net/\+Hermit\+Sun/article/details/107101944}} 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00050}{50}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050                                                                   \{}
+\DoxyCodeLine{00051     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}} < contactToBeCompared.\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}};}
+\DoxyCodeLine{00052     \textcolor{comment}{// return (this-\/>Name < contactToBeCompared.Name) ? true : false;}}
+\DoxyCodeLine{00053     \textcolor{comment}{// if (Name < contactToBeCompared.Name) \{}}
+\DoxyCodeLine{00054     \textcolor{comment}{//     return true;}}
+\DoxyCodeLine{00055     \textcolor{comment}{// \} else \{}}
+\DoxyCodeLine{00056     \textcolor{comment}{//     return false;}}
+\DoxyCodeLine{00057     \textcolor{comment}{// \}}}
+\DoxyCodeLine{00058 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a6fa656e4a38c4d14b5505d36e5c0f365}\label{class_c_contact_a6fa656e4a38c4d14b5505d36e5c0f365}} 
+\index{CContact@{CContact}!operator=@{operator=}}
+\index{operator=@{operator=}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_contact}{CContact}} \& CContact\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_contact}{CContact}} \&}]{old\+Contact }\end{DoxyParamCaption})}
+
+
+
+重载赋值 = 运算符，重载赋值运算符 
+
+
+\begin{DoxyParams}{参数}
+{\em old\+Contact} & local variable, new\+Contact = old\+Contact, set new is equal to old.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+C++ 赋值运算符 = 重载 \href{https://www.runoob.com/cplusplus/assignment-operators-overloading.html}{\texttt{ https\+://www.\+runoob.\+com/cplusplus/assignment-\/operators-\/overloading.\+html}} 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00061}{61}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00061                                                         \{}
+\DoxyCodeLine{00062     this-\/>\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}} = oldContact.\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}};}
+\DoxyCodeLine{00063     this-\/>\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}} = oldContact.\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}};}
+\DoxyCodeLine{00064     this-\/>\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} = oldContact.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};}
+\DoxyCodeLine{00065     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{00066 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a3a911d776b532f44d332a8ab846230ba}\label{class_c_contact_a3a911d776b532f44d332a8ab846230ba}} 
+\index{CContact@{CContact}!PatternMatch@{PatternMatch}}
+\index{PatternMatch@{PatternMatch}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{PatternMatch()}{PatternMatch()}}
+{\footnotesize\ttfamily bool CContact\+::\+Pattern\+Match (\begin{DoxyParamCaption}\item[{std\+::string \&}]{Name\+Pattern,  }\item[{std\+::string \&}]{Number\+Pattern,  }\item[{std\+::string \&}]{Group\+Pattern }\end{DoxyParamCaption})}
+
+
+
+判定本对象是否匹配搜索条件 
+
+
+\begin{DoxyParams}{参数}
+{\em name} & name pattern \\
+\hline
+{\em number} & number pattern \\
+\hline
+{\em group} & group pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true 符合 
+
+false 不符合
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+C++ 函数默认参数 \href{https://www.w3cschool.cn/cpp/cpp-function-default-parameters.html}{\texttt{ https\+://www.\+w3cschool.\+cn/cpp/cpp-\/function-\/default-\/parameters.\+html}} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00101}{101}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00101                                                                                                      \{}
+\DoxyCodeLine{00102     \textcolor{keywordflow}{return} (}
+\DoxyCodeLine{00103         \mbox{\hyperlink{_c_contact_8h_a0a82ec9e83c845e0a97385f328e6237c}{match}}(NamePattern, this-\/>\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}}) \&\& \mbox{\hyperlink{_c_contact_8h_a0a82ec9e83c845e0a97385f328e6237c}{match}}(NumberPattern, this-\/>\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}}) \&\& \mbox{\hyperlink{_c_contact_8h_a0a82ec9e83c845e0a97385f328e6237c}{match}}(GroupPattern, this-\/>\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}})}
+\DoxyCodeLine{00104     ) ? true : \textcolor{keyword}{false};}
+\DoxyCodeLine{00105 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a2f761fa9a64279c7f7d4a5efacb7f0e8}\label{class_c_contact_a2f761fa9a64279c7f7d4a5efacb7f0e8}} 
+\index{CContact@{CContact}!prSortByGroup@{prSortByGroup}}
+\index{prSortByGroup@{prSortByGroup}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{prSortByGroup()}{prSortByGroup()}}
+{\footnotesize\ttfamily static bool CContact\+::pr\+Sort\+By\+Group (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_contact}{CContact}} \&}]{lhs\+Contact,  }\item[{const \mbox{\hyperlink{class_c_contact}{CContact}} \&}]{rhs\+Contact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{_c_contact_8h_source}{CContact.\+h}} 第 \mbox{\hyperlink{_c_contact_8h_source_l00108}{108}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00108                                                                                       \{}
+\DoxyCodeLine{00109         \textcolor{keywordflow}{return} lhsContact.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} < rhsContact.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};}
+\DoxyCodeLine{00110     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}\label{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}} 
+\index{CContact@{CContact}!setContact@{setContact}}
+\index{setContact@{setContact}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{setContact()}{setContact()}}
+{\footnotesize\ttfamily void CContact\+::set\+Contact (\begin{DoxyParamCaption}\item[{std\+::string \&}]{Name,  }\item[{std\+::string \&}]{Number,  }\item[{std\+::string \&}]{Group }\end{DoxyParamCaption})}
+
+
+
+设定对象的三个成员 
+
+
+\begin{DoxyParams}{参数}
+{\em Name} & Contact Name \\
+\hline
+{\em Number} & Phone Number \\
+\hline
+{\em Group} & Contact Group \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00091}{91}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00091                                                                               \{}
+\DoxyCodeLine{00092     this-\/>\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}} = \mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}};}
+\DoxyCodeLine{00093     this-\/>\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}} = \mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}};}
+\DoxyCodeLine{00094     this-\/>\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} = \mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};}
+\DoxyCodeLine{00095 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{友元及相关函数文档}
+\mbox{\Hypertarget{class_c_contact_a56a86dea0bb828cd4990a61a508eb9ba}\label{class_c_contact_a56a86dea0bb828cd4990a61a508eb9ba}} 
+\index{CContact@{CContact}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{class_c_contact}{CContact}}}]{contact\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+利用友元函数重载运算符 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 
+
+
+\begin{DoxyParams}{参数}
+{\em std\+::ostream} & file stream \\
+\hline
+{\em \mbox{\hyperlink{class_c_contact}{CContact}}} & output contact class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+ostream
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+【懒猫老师-\/最简版\+C++-\/(18)类的友元】 \href{https://www.bilibili.com/video/BV127411Q7eu/}{\texttt{ https\+://www.\+bilibili.\+com/video/\+BV127411\+Q7eu/}} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{注解}
+Overloading the \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} Operator for Your Own Classes \href{https://learn.microsoft.com/en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classes?view=msvc-170}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/cpp/standard-\/library/overloading-\/the-\/output-\/operator-\/for-\/your-\/own-\/classes?view=msvc-\/170}} 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00070}{70}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070                                                              \{}
+\DoxyCodeLine{00071     \textcolor{comment}{// Overloading the >> Operator for Your Own Classes}}
+\DoxyCodeLine{00072     os << contactInfo.\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}} << \textcolor{stringliteral}{"{}, "{}} << contactInfo.\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}} << \textcolor{stringliteral}{"{}, "{}} << contactInfo.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00073     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{00074 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a5f6eeb90164491c2ace958f8078b0d75}\label{class_c_contact_a5f6eeb90164491c2ace958f8078b0d75}} 
+\index{CContact@{CContact}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{class_c_contact}{CContact}} \&}]{contact\+To\+Be\+Revised }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+利用友元函数重载运算符 \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+
+
+\begin{DoxyParams}{参数}
+{\em std\+::istream\&} & is \\
+\hline
+{\em \mbox{\hyperlink{class_c_contact}{CContact}}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+istream
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+Overloading the \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} Operator for Your Own Classes \href{https://learn.microsoft.com/en-us/cpp/standard-library/overloading-the-input-operator-for-your-own-classes?view=msvc-170}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/cpp/standard-\/library/overloading-\/the-\/input-\/operator-\/for-\/your-\/own-\/classes?view=msvc-\/170}} 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00077}{77}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00077                                                                      \{}
+\DoxyCodeLine{00078     std::string name, number, group;}
+\DoxyCodeLine{00079     is >> name >> number >> group;}
+\DoxyCodeLine{00080     contactToBeRevised.\mbox{\hyperlink{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}{setContact}}(name, number, group);}
+\DoxyCodeLine{00081     \textcolor{comment}{// std::cout << name << number << group;}}
+\DoxyCodeLine{00082     \textcolor{keywordflow}{return} is;}
+\DoxyCodeLine{00083 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_contact_a808cea55ceaa2f5f4416ccd2e636330b}\label{class_c_contact_a808cea55ceaa2f5f4416ccd2e636330b}} 
+\index{CContact@{CContact}!pr@{pr}}
+\index{pr@{pr}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{pr}{pr}}
+{\footnotesize\ttfamily bool pr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_contact}{CContact}} \&}]{lhs\+Contact,  }\item[{const \mbox{\hyperlink{class_c_contact}{CContact}} \&}]{rhs\+Contact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+定义组排序函数，供算法sort使用, 
+
+
+\begin{DoxyParams}{参数}
+{\em lhs\+Contact} & left hand side of Contact to be compared \\
+\hline
+{\em rhs\+Contact} & right hand side of Contact to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true lhs\+Contact.\+Group \texorpdfstring{$<$}{<} rhs\+Contact.\+Group; 
+
+false lhs\+Contact.\+Group \texorpdfstring{$>$}{>} rhs\+Contact.\+Group; 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{测试}
+\item[\mbox{\hyperlink{test__test000007}{测试}}]\end{DoxyRefDesc}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::string name = \textcolor{stringliteral}{"{}Frank Chu"{}}, number = \textcolor{stringliteral}{"{}1596"{}}, group = \textcolor{stringliteral}{"{}Student"{}};}
+\DoxyCodeLine{std::string rhsName = \textcolor{stringliteral}{"{}Panda"{}}, rhsNumber = \textcolor{stringliteral}{"{}22"{}}, rhsGroup = \textcolor{stringliteral}{"{}Teacher"{}};}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(\mbox{\hyperlink{class_c_contact_a808cea55ceaa2f5f4416ccd2e636330b}{pr}}(\mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}(name, number, group), \mbox{\hyperlink{class_c_contact_afdd13f12c6249225b8812443690b708c}{CContact}}(rhsName, rhsNumber, rhsGroup))) \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}< change postion"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}> do not change"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00160}{160}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00160                                                                  \{}
+\DoxyCodeLine{00161     \textcolor{keywordflow}{return} lhsContact.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} < rhsContact.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};}
+\DoxyCodeLine{00162 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}\label{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}} 
+\index{CContact@{CContact}!Group@{Group}}
+\index{Group@{Group}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{Group}{Group}}
+{\footnotesize\ttfamily std\+::string CContact\+::\+Group\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+群组 
+
+
+
+在文件 \mbox{\hyperlink{_c_contact_8h_source}{CContact.\+h}} 第 \mbox{\hyperlink{_c_contact_8h_source_l00032}{32}} 行定义.
+
+\mbox{\Hypertarget{class_c_contact_a6c23e4642a9f35e6c966b4f91126bd43}\label{class_c_contact_a6c23e4642a9f35e6c966b4f91126bd43}} 
+\index{CContact@{CContact}!id@{id}}
+\index{id@{id}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily QUuid CContact\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{_c_contact_8h_source}{CContact.\+h}} 第 \mbox{\hyperlink{_c_contact_8h_source_l00033}{33}} 行定义.
+
+\mbox{\Hypertarget{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}\label{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}} 
+\index{CContact@{CContact}!Name@{Name}}
+\index{Name@{Name}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily std\+::string CContact\+::\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+姓名 
+
+
+
+在文件 \mbox{\hyperlink{_c_contact_8h_source}{CContact.\+h}} 第 \mbox{\hyperlink{_c_contact_8h_source_l00030}{30}} 行定义.
+
+\mbox{\Hypertarget{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}\label{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}} 
+\index{CContact@{CContact}!Number@{Number}}
+\index{Number@{Number}!CContact@{CContact}}
+\doxysubsubsection{\texorpdfstring{Number}{Number}}
+{\footnotesize\ttfamily std\+::string CContact\+::\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+电话号码 
+
+
+
+在文件 \mbox{\hyperlink{_c_contact_8h_source}{CContact.\+h}} 第 \mbox{\hyperlink{_c_contact_8h_source_l00031}{31}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_contact_8h}{CContact.\+h}}\item 
+\mbox{\hyperlink{_c_contact_8cpp}{CContact.\+cpp}}\end{DoxyCompactItemize}

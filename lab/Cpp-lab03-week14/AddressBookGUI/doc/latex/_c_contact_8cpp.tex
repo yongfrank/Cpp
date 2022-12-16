@@ -1,0 +1,180 @@
+\hypertarget{_c_contact_8cpp}{}\doxysection{CContact.\+cpp 文件参考}
+\label{_c_contact_8cpp}\index{CContact.cpp@{CContact.cpp}}
+{\ttfamily \#include \char`\"{}CContact.\+h\char`\"{}}\newline
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_c_contact_8cpp_af6aee18c92373d236d728946813284f6}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{class_c_contact}{CContact}} contact\+Info)
+\item 
+std\+::istream \& \mbox{\hyperlink{_c_contact_8cpp_ad9a7b9b5f986cc4924230f57f1411882}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{class_c_contact}{CContact}} \&contact\+To\+Be\+Revised)
+\item 
+bool \mbox{\hyperlink{_c_contact_8cpp_a0a82ec9e83c845e0a97385f328e6237c}{match}} (std\+::string \&pattern, std\+::string \&source)
+\begin{DoxyCompactList}\small\item\em 字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_c_contact_8cpp_a808cea55ceaa2f5f4416ccd2e636330b}{pr}} (const \mbox{\hyperlink{class_c_contact}{CContact}} \&lhs\+Contact, const \mbox{\hyperlink{class_c_contact}{CContact}} \&rhs\+Contact)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{_c_contact_8cpp_a0a82ec9e83c845e0a97385f328e6237c}\label{_c_contact_8cpp_a0a82ec9e83c845e0a97385f328e6237c}} 
+\index{CContact.cpp@{CContact.cpp}!match@{match}}
+\index{match@{match}!CContact.cpp@{CContact.cpp}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily bool match (\begin{DoxyParamCaption}\item[{std\+::string \&}]{pattern,  }\item[{std\+::string \&}]{source }\end{DoxyParamCaption})}
+
+
+
+字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员 
+
+{\ttfamily string\+::npos} 静态成员常量
+
+是对类型为 {\ttfamily size\+\_\+t} 的元素具有最大可能的值。 当这个值在字符串成员函数中的长度或者子长度被使用时，该值表示“直到字符串结尾”。 作为返回值他通常被用作表明没有匹配。 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (s1.find(s2) != std::string::npos) \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}found!"{}} << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxyRefDesc}{测试}
+\item[\mbox{\hyperlink{test__test000006}{测试}}]\end{DoxyRefDesc}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::string matchTestCase1Pattern = \textcolor{stringliteral}{"{}Franek"{}}, matchTestCase1Source = \textcolor{stringliteral}{"{}Frank Chu"{}};}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(\mbox{\hyperlink{_c_contact_8cpp_a0a82ec9e83c845e0a97385f328e6237c}{match}}(matchTestCase1Pattern, matchTestCase1Source)) \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}Yes"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}No"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{参见}
+
+\begin{DoxyItemize}
+\item Check if a string contains a string in C++ \href{https://stackoverflow.com/questions/2340281/check-if-a-string-contains-a-string-in-c}{\texttt{ https\+://stackoverflow.\+com/questions/2340281/check-\/if-\/a-\/string-\/contains-\/a-\/string-\/in-\/c}}
+\item C++ 中 {\ttfamily string\+::find()} 函数和 {\ttfamily string\+::npos} 函数的使用 \href{https://www.cnblogs.com/lixuejian/p/10844905.html}{\texttt{ https\+://www.\+cnblogs.\+com/lixuejian/p/10844905.\+html}}
+\item std\+::string\+::find 空字符串 返回结果不是 string\+::npos \href{https://blog.csdn.net/yasi_xi/article/details/7305443}{\texttt{ https\+://blog.\+csdn.\+net/yasi\+\_\+xi/article/details/7305443}}
+\item 查找字符串，支持通配符查找，通配符包含 .和? \href{https://blog.csdn.net/wang_anna/article/details/117019969}{\texttt{ https\+://blog.\+csdn.\+net/wang\+\_\+anna/article/details/117019969}}
+\item 通配符（？，$\ast$）与正则表达式 \href{https://blog.csdn.net/yh13572438258/article/details/121545229}{\texttt{ https\+://blog.\+csdn.\+net/yh13572438258/article/details/121545229}}
+\item str\+::string和wchar\+\_\+t$\ast$相互转化 \href{https://blog.csdn.net/zddblog/article/details/38670349}{\texttt{ https\+://blog.\+csdn.\+net/zddblog/article/details/38670349}}
+\item C++：wchar\+\_\+t$\ast$ \& string相互转换 \href{https://codeantenna.com/a/uDA7bfXIkF}{\texttt{ https\+://codeantenna.\+com/a/u\+DA7bf\+XIkF}}
+\item C++11之正则表达式（regex\+\_\+match、regex\+\_\+search、regex\+\_\+replace） \href{https://blog.csdn.net/qq_45254369/article/details/125491031}{\texttt{ https\+://blog.\+csdn.\+net/qq\+\_\+45254369/article/details/125491031}}
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+不区分大小写，需包含头文件 From\+: 查找字符串，支持通配符查找，通配符包含 .和? \href{https://blog.csdn.net/wang_anna/article/details/117019969}{\texttt{ https\+://blog.\+csdn.\+net/wang\+\_\+anna/article/details/117019969}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include<regex>}}
+\DoxyCodeLine{\textcolor{keyword}{using namespace }regex\_constants;}
+\DoxyCodeLine{ECMAScript | icase \textcolor{comment}{// Case insensitive}}
+
+\end{DoxyCode}
+ 
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00146}{146}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00146                                                   \{}
+\DoxyCodeLine{00147     \textcolor{keyword}{auto} positionOfQuestionMark = pattern.find(\textcolor{stringliteral}{"{}?"{}});}
+\DoxyCodeLine{00148     \textcolor{keyword}{auto} positionOfAsteriskMark = pattern.find(\textcolor{stringliteral}{"{}*"{}});}
+\DoxyCodeLine{00149     \textcolor{keywordflow}{if}(positionOfQuestionMark != std::string::npos) \{}
+\DoxyCodeLine{00150         pattern.replace(positionOfQuestionMark, 1, \textcolor{stringliteral}{"{}."{}});}
+\DoxyCodeLine{00151     \}}
+\DoxyCodeLine{00152     \textcolor{keywordflow}{if}(positionOfAsteriskMark != std::string::npos) \{}
+\DoxyCodeLine{00153         pattern.replace(positionOfAsteriskMark, 1, \textcolor{stringliteral}{"{}.*"{}});}
+\DoxyCodeLine{00154     \}}
+\DoxyCodeLine{00155 }
+\DoxyCodeLine{00156     \textcolor{keywordflow}{return} std::regex\_match(source, std::regex(pattern));}
+\DoxyCodeLine{00157     \textcolor{comment}{// return (source.find(pattern) != std::string::npos) ? true : false;}}
+\DoxyCodeLine{00158 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_c_contact_8cpp_af6aee18c92373d236d728946813284f6}\label{_c_contact_8cpp_af6aee18c92373d236d728946813284f6}} 
+\index{CContact.cpp@{CContact.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!CContact.cpp@{CContact.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{class_c_contact}{CContact}}}]{contact\+Info }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{参见}
+【懒猫老师-\/最简版\+C++-\/(18)类的友元】 \href{https://www.bilibili.com/video/BV127411Q7eu/}{\texttt{ https\+://www.\+bilibili.\+com/video/\+BV127411\+Q7eu/}} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{注解}
+Overloading the \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} Operator for Your Own Classes \href{https://learn.microsoft.com/en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classes?view=msvc-170}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/cpp/standard-\/library/overloading-\/the-\/output-\/operator-\/for-\/your-\/own-\/classes?view=msvc-\/170}} 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00070}{70}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070                                                              \{}
+\DoxyCodeLine{00071     \textcolor{comment}{// Overloading the >> Operator for Your Own Classes}}
+\DoxyCodeLine{00072     os << contactInfo.\mbox{\hyperlink{class_c_contact_ac1d81347d9adec45b3b238c6c8adaca5}{Name}} << \textcolor{stringliteral}{"{}, "{}} << contactInfo.\mbox{\hyperlink{class_c_contact_ad1255662e4e8ebd8e20017a2e22e530c}{Number}} << \textcolor{stringliteral}{"{}, "{}} << contactInfo.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00073     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{00074 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_c_contact_8cpp_ad9a7b9b5f986cc4924230f57f1411882}\label{_c_contact_8cpp_ad9a7b9b5f986cc4924230f57f1411882}} 
+\index{CContact.cpp@{CContact.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!CContact.cpp@{CContact.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{class_c_contact}{CContact}} \&}]{contact\+To\+Be\+Revised }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{注解}
+Overloading the \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} Operator for Your Own Classes \href{https://learn.microsoft.com/en-us/cpp/standard-library/overloading-the-input-operator-for-your-own-classes?view=msvc-170}{\texttt{ https\+://learn.\+microsoft.\+com/en-\/us/cpp/standard-\/library/overloading-\/the-\/input-\/operator-\/for-\/your-\/own-\/classes?view=msvc-\/170}} 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00077}{77}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00077                                                                      \{}
+\DoxyCodeLine{00078     std::string name, number, group;}
+\DoxyCodeLine{00079     is >> name >> number >> group;}
+\DoxyCodeLine{00080     contactToBeRevised.\mbox{\hyperlink{class_c_contact_a161ea4a13e9a0f4fea96693ef70904c3}{setContact}}(name, number, group);}
+\DoxyCodeLine{00081     \textcolor{comment}{// std::cout << name << number << group;}}
+\DoxyCodeLine{00082     \textcolor{keywordflow}{return} is;}
+\DoxyCodeLine{00083 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_c_contact_8cpp_a808cea55ceaa2f5f4416ccd2e636330b}\label{_c_contact_8cpp_a808cea55ceaa2f5f4416ccd2e636330b}} 
+\index{CContact.cpp@{CContact.cpp}!pr@{pr}}
+\index{pr@{pr}!CContact.cpp@{CContact.cpp}}
+\doxysubsubsection{\texorpdfstring{pr()}{pr()}}
+{\footnotesize\ttfamily bool pr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_contact}{CContact}} \&}]{lhs\+Contact,  }\item[{const \mbox{\hyperlink{class_c_contact}{CContact}} \&}]{rhs\+Contact }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em lhs\+Contact} & left hand side of Contact to be compared \\
+\hline
+{\em rhs\+Contact} & right hand side of Contact to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true lhs\+Contact.\+Group \texorpdfstring{$<$}{<} rhs\+Contact.\+Group; 
+
+false lhs\+Contact.\+Group \texorpdfstring{$>$}{>} rhs\+Contact.\+Group; 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{测试}
+\item[\mbox{\hyperlink{test__test000007}{测试}}]\end{DoxyRefDesc}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::string name = \textcolor{stringliteral}{"{}Frank Chu"{}}, number = \textcolor{stringliteral}{"{}1596"{}}, group = \textcolor{stringliteral}{"{}Student"{}};}
+\DoxyCodeLine{std::string rhsName = \textcolor{stringliteral}{"{}Panda"{}}, rhsNumber = \textcolor{stringliteral}{"{}22"{}}, rhsGroup = \textcolor{stringliteral}{"{}Teacher"{}};}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(\mbox{\hyperlink{_c_contact_8cpp_a808cea55ceaa2f5f4416ccd2e636330b}{pr}}(\mbox{\hyperlink{class_c_contact}{CContact}}(name, number, group), \mbox{\hyperlink{class_c_contact}{CContact}}(rhsName, rhsNumber, rhsGroup))) \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}< change postion"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}> do not change"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00160}{160}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00160                                                                  \{}
+\DoxyCodeLine{00161     \textcolor{keywordflow}{return} lhsContact.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}} < rhsContact.\mbox{\hyperlink{class_c_contact_a3ae1c156ddeee44c27195ea29a255f94}{Group}};}
+\DoxyCodeLine{00162 \}}
+
+\end{DoxyCode}

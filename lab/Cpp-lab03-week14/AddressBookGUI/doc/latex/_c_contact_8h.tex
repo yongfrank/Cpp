@@ -1,0 +1,103 @@
+\hypertarget{_c_contact_8h}{}\doxysection{CContact.\+h 文件参考}
+\label{_c_contact_8h}\index{CContact.h@{CContact.h}}
+{\ttfamily \#include $<$QUuid$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$regex$>$}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_contact}{CContact}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_contact}{CContact}} 是联系人类 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_c_contact_8h_a0a82ec9e83c845e0a97385f328e6237c}{match}} (std\+::string \&pattern, std\+::string \&source)
+\begin{DoxyCompactList}\small\item\em 字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{_c_contact_8h_a0a82ec9e83c845e0a97385f328e6237c}\label{_c_contact_8h_a0a82ec9e83c845e0a97385f328e6237c}} 
+\index{CContact.h@{CContact.h}!match@{match}}
+\index{match@{match}!CContact.h@{CContact.h}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily bool match (\begin{DoxyParamCaption}\item[{std\+::string \&}]{pattern,  }\item[{std\+::string \&}]{source }\end{DoxyParamCaption})}
+
+
+
+字符串匹配，判断字符串source是否匹配pattern，或者说字符串source是pattern所表达的集合中的某个成员 
+
+
+\begin{DoxyParams}{参数}
+{\em pattern} & Pattern string including \textquotesingle{}$\ast$\textquotesingle{} \\
+\hline
+{\em source} & Source string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true can find pattern in the source 
+
+false cannot find pattern in the source
+\end{DoxyReturn}
+{\ttfamily string\+::npos} 静态成员常量
+
+是对类型为 {\ttfamily size\+\_\+t} 的元素具有最大可能的值。 当这个值在字符串成员函数中的长度或者子长度被使用时，该值表示“直到字符串结尾”。 作为返回值他通常被用作表明没有匹配。 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (s1.find(s2) != std::string::npos) \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}found!"{}} << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxyRefDesc}{测试}
+\item[\mbox{\hyperlink{test__test000006}{测试}}]\end{DoxyRefDesc}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::string matchTestCase1Pattern = \textcolor{stringliteral}{"{}Franek"{}}, matchTestCase1Source = \textcolor{stringliteral}{"{}Frank Chu"{}};}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(\mbox{\hyperlink{_c_contact_8cpp_a0a82ec9e83c845e0a97385f328e6237c}{match}}(matchTestCase1Pattern, matchTestCase1Source)) \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}Yes"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}No"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{参见}
+
+\begin{DoxyItemize}
+\item Check if a string contains a string in C++ \href{https://stackoverflow.com/questions/2340281/check-if-a-string-contains-a-string-in-c}{\texttt{ https\+://stackoverflow.\+com/questions/2340281/check-\/if-\/a-\/string-\/contains-\/a-\/string-\/in-\/c}}
+\item C++ 中 {\ttfamily string\+::find()} 函数和 {\ttfamily string\+::npos} 函数的使用 \href{https://www.cnblogs.com/lixuejian/p/10844905.html}{\texttt{ https\+://www.\+cnblogs.\+com/lixuejian/p/10844905.\+html}}
+\item std\+::string\+::find 空字符串 返回结果不是 string\+::npos \href{https://blog.csdn.net/yasi_xi/article/details/7305443}{\texttt{ https\+://blog.\+csdn.\+net/yasi\+\_\+xi/article/details/7305443}}
+\item 查找字符串，支持通配符查找，通配符包含 .和? \href{https://blog.csdn.net/wang_anna/article/details/117019969}{\texttt{ https\+://blog.\+csdn.\+net/wang\+\_\+anna/article/details/117019969}}
+\item 通配符（？，$\ast$）与正则表达式 \href{https://blog.csdn.net/yh13572438258/article/details/121545229}{\texttt{ https\+://blog.\+csdn.\+net/yh13572438258/article/details/121545229}}
+\item str\+::string和wchar\+\_\+t$\ast$相互转化 \href{https://blog.csdn.net/zddblog/article/details/38670349}{\texttt{ https\+://blog.\+csdn.\+net/zddblog/article/details/38670349}}
+\item C++：wchar\+\_\+t$\ast$ \& string相互转换 \href{https://codeantenna.com/a/uDA7bfXIkF}{\texttt{ https\+://codeantenna.\+com/a/u\+DA7bf\+XIkF}}
+\item C++11之正则表达式（regex\+\_\+match、regex\+\_\+search、regex\+\_\+replace） \href{https://blog.csdn.net/qq_45254369/article/details/125491031}{\texttt{ https\+://blog.\+csdn.\+net/qq\+\_\+45254369/article/details/125491031}}
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+不区分大小写，需包含头文件 From\+: 查找字符串，支持通配符查找，通配符包含 .和? \href{https://blog.csdn.net/wang_anna/article/details/117019969}{\texttt{ https\+://blog.\+csdn.\+net/wang\+\_\+anna/article/details/117019969}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include<regex>}}
+\DoxyCodeLine{\textcolor{keyword}{using namespace }regex\_constants;}
+\DoxyCodeLine{ECMAScript | icase \textcolor{comment}{// Case insensitive}}
+
+\end{DoxyCode}
+ 
+
+在文件 \mbox{\hyperlink{_c_contact_8cpp_source}{CContact.\+cpp}} 第 \mbox{\hyperlink{_c_contact_8cpp_source_l00146}{146}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00146                                                   \{}
+\DoxyCodeLine{00147     \textcolor{keyword}{auto} positionOfQuestionMark = pattern.find(\textcolor{stringliteral}{"{}?"{}});}
+\DoxyCodeLine{00148     \textcolor{keyword}{auto} positionOfAsteriskMark = pattern.find(\textcolor{stringliteral}{"{}*"{}});}
+\DoxyCodeLine{00149     \textcolor{keywordflow}{if}(positionOfQuestionMark != std::string::npos) \{}
+\DoxyCodeLine{00150         pattern.replace(positionOfQuestionMark, 1, \textcolor{stringliteral}{"{}."{}});}
+\DoxyCodeLine{00151     \}}
+\DoxyCodeLine{00152     \textcolor{keywordflow}{if}(positionOfAsteriskMark != std::string::npos) \{}
+\DoxyCodeLine{00153         pattern.replace(positionOfAsteriskMark, 1, \textcolor{stringliteral}{"{}.*"{}});}
+\DoxyCodeLine{00154     \}}
+\DoxyCodeLine{00155 }
+\DoxyCodeLine{00156     \textcolor{keywordflow}{return} std::regex\_match(source, std::regex(pattern));}
+\DoxyCodeLine{00157     \textcolor{comment}{// return (source.find(pattern) != std::string::npos) ? true : false;}}
+\DoxyCodeLine{00158 \}}
+
+\end{DoxyCode}

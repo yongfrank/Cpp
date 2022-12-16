@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['student_0',['student',['../struct_category.html#a0d46aea189d6c582b87851ff281a12d2',1,'Category']]]
+  ['family_0',['family',['../struct_category.html#a2b6ecf265f11d483c47c3a4e4b11523e',1,'Category']]],
+  ['friends_1',['friends',['../struct_category.html#af9fdcd1010c800294e2d34d4e9818407',1,'Category']]]
 ];

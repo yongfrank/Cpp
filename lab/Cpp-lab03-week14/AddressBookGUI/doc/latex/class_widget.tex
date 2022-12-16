@@ -4,12 +4,6 @@
 
 {\ttfamily \#include $<$widget.\+h$>$}
 
-类 Widget 继承关系图\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{class_widget}
-\end{center}
-\end{figure}
 \doxysubsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,15 +14,54 @@
 void \mbox{\hyperlink{class_widget_ae68e769c6d14456ee001010c6e028c91}{Bind}} ()
 \begin{DoxyCompactList}\small\item\em Bind bind signal and slots \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_widget_a334872a6885672271b42a7ac7da92030}{fill\+Combo\+Box\+And\+Table\+Widget}} ()
-\begin{DoxyCompactList}\small\item\em fill\+Combo\+Box\+And\+Table\+Widget fill with \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em fill\+Combo\+Box\+And\+Table\+Widget fill with 1) 设定列标题及样式； \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_widget_a00be10109bcc22cbb7c5642cf98819c1}{key\+Press\+Event}} (QKey\+Event $\ast$key)
-\begin{DoxyCompactList}\small\item\em key\+Press\+Event shortcut for load(ctrl+o) save(ctrl+s) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em key\+Press\+Event shortcut for load(ctrl+o) save(ctrl+s) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_a91a61edf8303ac72772f40405ba3f028}{add\+Template\+Data}} ()
+\item 
+void \mbox{\hyperlink{class_widget_a0a747737a833b1ddc43051afdadc9120}{clear\+Line\+Edit}} ()
+\begin{DoxyCompactList}\small\item\em clear\+Line\+Edit \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_af931bae706d8b281d5a29322e107373c}{init\+Model\+From\+String\+List}} (QString\+List \&file\+Content\+String\+List)
+\begin{DoxyCompactList}\small\item\em init\+Model\+From\+String\+List 调用自定义函数 \mbox{\hyperlink{class_widget_af931bae706d8b281d5a29322e107373c}{init\+Model\+From\+String\+List()}}，用 file\+Content\+String\+List 的内容初始化数据模型 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_aff0695f27c4062f58cadb27b3a87e8a3}{customized\+Table\+Style}} ()
+\begin{DoxyCompactList}\small\item\em customized\+Table\+Style 设定自定义表的样式 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_address_book}{Address\+Book}} \mbox{\hyperlink{class_widget_af654f5d36a61c3cbad6d8b2949864a21}{address\+Book}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 槽}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_widget_a6a7272d4da63b8312c3de6a8cad3e517}{Exit\+Widget}} ()
+\item 
+void \mbox{\hyperlink{class_widget_aa4650cb78f548346b64776032fd1b152}{Load\+File}} ()
+\begin{DoxyCompactList}\small\item\em Load\+File 8、 文件读取操作流程框架 “打开文件”按钮的槽函数代码 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_ae3ddb00d01b7807af8c2f4b1ba176c1e}{save\+Button\+Slot}} ()
+\begin{DoxyCompactList}\small\item\em save\+Button\+Slot 9、 文件保存流程框架 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_a2ff08b3214656384b44e055927b540e8}{new\+Button\+Slot}} ()
+\begin{DoxyCompactList}\small\item\em new\+Button\+Slot 2) 加入一行数据； \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_a3a7ec3f505c39f11649b963e2433dcbe}{clicked\+Table\+View}} ()
+\begin{DoxyCompactList}\small\item\em clicked\+Table\+View 3) 选中一行数据（槽函数）； \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_a28d0a5825bee117de1769df1c2c2f387}{delete\+ARow}} ()
+\begin{DoxyCompactList}\small\item\em delete\+ARow 4) 删除一行数据； \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_widget_a0e14af85648a72001f9af5472346894a}{alter\+ALine}} ()
+\begin{DoxyCompactList}\small\item\em alter\+ALine 5) 修改某一行； \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_category}{Category}} \mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}
+\begin{DoxyCompactList}\small\item\em categories category for combo\+Box \end{DoxyCompactList}\item 
+Ui\+::\+Widget $\ast$ \mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}
+\item 
+QStandard\+Item\+Model $\ast$ \mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}
+\begin{DoxyCompactList}\small\item\em model \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{详细描述}
 
 
-在文件 \mbox{\hyperlink{widget_8h_source}{widget.\+h}} 第 \mbox{\hyperlink{widget_8h_source_l00017}{17}} 行定义.
+在文件 \mbox{\hyperlink{widget_8h_source}{widget.\+h}} 第 \mbox{\hyperlink{widget_8h_source_l00020}{20}} 行定义.
 
 
 
@@ -51,19 +84,22 @@ void \mbox{\hyperlink{class_widget_a00be10109bcc22cbb7c5642cf98819c1}{key\+Press
 \begin{DoxyNote}{注解}
 In this code, \mbox{\hyperlink{class_widget}{Widget}} is a class that is derived from the QWidget class. The \mbox{\hyperlink{class_widget}{Widget}} class has a constructor that takes a QWidget pointer as an argument and assigns it to the parent of the new \mbox{\hyperlink{class_widget}{Widget}} object. The constructor also initializes a new Ui\+::\+Widget object and assigns it to the ui member variable of the \mbox{\hyperlink{class_widget}{Widget}} object. 
 \end{DoxyNote}
+\begin{DoxyRefDesc}{待办事项}
+\item[\mbox{\hyperlink{todo__todo000001}{待办事项}}]delete add Template data \end{DoxyRefDesc}
 
 
-在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00013}{13}} 行定义.
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00014}{14}} 行定义.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00013                               : QWidget(parent) ,}
-\DoxyCodeLine{00014     ui(\textcolor{keyword}{new} Ui::Widget)}
-\DoxyCodeLine{00015 \{}
-\DoxyCodeLine{00016     this-\/>ui-\/>setupUi(\textcolor{keyword}{this});}
-\DoxyCodeLine{00017     this-\/>\mbox{\hyperlink{class_widget_ae68e769c6d14456ee001010c6e028c91}{Bind}}();}
-\DoxyCodeLine{00018     this-\/>\mbox{\hyperlink{class_widget_a334872a6885672271b42a7ac7da92030}{fillComboBoxAndTableWidget}}();}
-\DoxyCodeLine{00019 \}}
+\DoxyCodeLine{00014                               : QWidget(parent) ,}
+\DoxyCodeLine{00015     \mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}(\textcolor{keyword}{new} Ui::Widget)}
+\DoxyCodeLine{00016 \{}
+\DoxyCodeLine{00017     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>setupUi(\textcolor{keyword}{this});}
+\DoxyCodeLine{00018     this-\/>\mbox{\hyperlink{class_widget_ae68e769c6d14456ee001010c6e028c91}{Bind}}();}
+\DoxyCodeLine{00019     this-\/>\mbox{\hyperlink{class_widget_a334872a6885672271b42a7ac7da92030}{fillComboBoxAndTableWidget}}();}
+\DoxyCodeLine{00020 \textcolor{comment}{//    this-\/>addTemplateData();}}
+\DoxyCodeLine{00021 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}\label{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}} 
@@ -74,18 +110,72 @@ In this code, \mbox{\hyperlink{class_widget}{Widget}} is a class that is derived
 
 
 
-在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00021}{21}} 行定义.
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00023}{23}} 行定义.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00022 \{}
-\DoxyCodeLine{00023     \textcolor{keyword}{delete} this-\/>ui;}
-\DoxyCodeLine{00024 \}}
+\DoxyCodeLine{00024 \{}
+\DoxyCodeLine{00025     \textcolor{keyword}{delete} this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}};}
+\DoxyCodeLine{00026 \}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_widget_a91a61edf8303ac72772f40405ba3f028}\label{class_widget_a91a61edf8303ac72772f40405ba3f028}} 
+\index{Widget@{Widget}!addTemplateData@{addTemplateData}}
+\index{addTemplateData@{addTemplateData}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{addTemplateData()}{addTemplateData()}}
+{\footnotesize\ttfamily void Widget\+::add\+Template\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00279}{279}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00280 \{}
+\DoxyCodeLine{00281     QStandardItem* name = \textcolor{keyword}{new} QStandardItem(QString(\textcolor{stringliteral}{"{}apple"{}}));}
+\DoxyCodeLine{00282     QStandardItem* phone = \textcolor{keyword}{new} QStandardItem(QString(\textcolor{stringliteral}{"{}400-\/666-\/8800"{}}));}
+\DoxyCodeLine{00283     QStandardItem* group = \textcolor{keyword}{new} QStandardItem(QString(\textcolor{stringliteral}{"{}Colleague"{}}));}
+\DoxyCodeLine{00284 }
+\DoxyCodeLine{00285     QList<QStandardItem*> itemList;}
+\DoxyCodeLine{00286     itemList << name << phone << group;}
+\DoxyCodeLine{00287     \mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>appendRow(itemList);}
+\DoxyCodeLine{00288 }
+\DoxyCodeLine{00289     name = \textcolor{keyword}{new} QStandardItem(QString(\textcolor{stringliteral}{"{}google"{}}));}
+\DoxyCodeLine{00290     phone = \textcolor{keyword}{new} QStandardItem(QString(\textcolor{stringliteral}{"{}901-\/3283-\/2233"{}}));}
+\DoxyCodeLine{00291     group = \textcolor{keyword}{new} QStandardItem(QString(\textcolor{stringliteral}{"{}Colleague"{}}));}
+\DoxyCodeLine{00292     itemList.clear();}
+\DoxyCodeLine{00293     itemList << name << phone << group;}
+\DoxyCodeLine{00294     \mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>appendRow(itemList);}
+\DoxyCodeLine{00295 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_a0e14af85648a72001f9af5472346894a}\label{class_widget_a0e14af85648a72001f9af5472346894a}} 
+\index{Widget@{Widget}!alterALine@{alterALine}}
+\index{alterALine@{alterALine}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{alterALine}{alterALine}}
+{\footnotesize\ttfamily void Widget\+::alter\+ALine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+alter\+ALine 5) 修改某一行； 
+
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00441}{441}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00442 \{}
+\DoxyCodeLine{00443     \textcolor{comment}{// 将数据先保存到地址簿当下位置}}
+\DoxyCodeLine{00444     \textcolor{comment}{// 获取当前联系人行}}
+\DoxyCodeLine{00445     this-\/>\mbox{\hyperlink{class_widget_a2ff08b3214656384b44e055927b540e8}{newButtonSlot}}();}
+\DoxyCodeLine{00446     this-\/>\mbox{\hyperlink{class_widget_a28d0a5825bee117de1769df1c2c2f387}{deleteARow}}();}
+\DoxyCodeLine{00447 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_widget_ae68e769c6d14456ee001010c6e028c91}\label{class_widget_ae68e769c6d14456ee001010c6e028c91}} 
 \index{Widget@{Widget}!Bind@{Bind}}
 \index{Bind@{Bind}!Widget@{Widget}}
@@ -98,25 +188,184 @@ Bind bind signal and slots
 
 
 
-在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00026}{26}} 行定义.
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00028}{28}} 行定义.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00026                   \{}
-\DoxyCodeLine{00027     QObject::connect(ui-\/>nameLineEdit, SIGNAL(returnPressed()), \textcolor{keyword}{this}, SLOT(ExitWidget()));}
-\DoxyCodeLine{00028     QObject::connect(ui-\/>exitButton, SIGNAL(clicked(\textcolor{keywordtype}{bool})), \textcolor{keyword}{this}, SLOT(ExitWidget()));}
-\DoxyCodeLine{00029 \textcolor{comment}{//    QObject::connect(ui-\/>exitButton, \&QPushButton::clicked, this, \&Widget::ExitWidget);}}
-\DoxyCodeLine{00030 \textcolor{comment}{//    QObject::connect(ui-\/>exitButton, SLGNAL(clicked()), this, SLOT(ExitWidget()));}}
-\DoxyCodeLine{00031     connect(ui-\/>loadButton, \&QPushButton::clicked, [\textcolor{keyword}{this}]()\{}
-\DoxyCodeLine{00032         QMessageBox::information(this, \textcolor{stringliteral}{"{}Info"{}}, \textcolor{stringliteral}{"{}Click to explore"{}});}
-\DoxyCodeLine{00033     \});}
-\DoxyCodeLine{00034 }
-\DoxyCodeLine{00035     QObject::connect(ui-\/>loadButton, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(LoadFile()));}
+\DoxyCodeLine{00028                   \{}
+\DoxyCodeLine{00029     QObject::connect(\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>nameLineEdit, SIGNAL(returnPressed()), \textcolor{keyword}{this}, SLOT(\mbox{\hyperlink{class_widget_a6a7272d4da63b8312c3de6a8cad3e517}{ExitWidget}}()));}
+\DoxyCodeLine{00030     QObject::connect(\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>exitButton, SIGNAL(clicked(\textcolor{keywordtype}{bool})), \textcolor{keyword}{this}, SLOT(\mbox{\hyperlink{class_widget_a6a7272d4da63b8312c3de6a8cad3e517}{ExitWidget}}()));}
+\DoxyCodeLine{00031 \textcolor{comment}{//    QObject::connect(ui-\/>exitButton, \&QPushButton::clicked, this, \&Widget::ExitWidget);}}
+\DoxyCodeLine{00032 \textcolor{comment}{//    QObject::connect(ui-\/>exitButton, SLGNAL(clicked()), this, SLOT(ExitWidget()));}}
+\DoxyCodeLine{00033 \textcolor{comment}{//    connect(ui-\/>loadButton, \&QPushButton::clicked, [this]()\{}}
+\DoxyCodeLine{00034 \textcolor{comment}{//        QMessageBox::information(this, "{}Info"{}, "{}Click to explore"{});}}
+\DoxyCodeLine{00035 \textcolor{comment}{//    \});}}
 \DoxyCodeLine{00036 }
-\DoxyCodeLine{00037     QObject::connect(ui-\/>newButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&Widget::newButtonSlot);}
-\DoxyCodeLine{00038     QObject::connect(this-\/>ui-\/>loadButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&Widget::LoadFile);}
-\DoxyCodeLine{00039     QObject::connect(this-\/>ui-\/>saveButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&Widget::saveButtonSlot);}
-\DoxyCodeLine{00040 \}}
+\DoxyCodeLine{00037 \textcolor{comment}{//    QObject::connect(ui-\/>loadButton, SIGNAL(clicked()), this, SLOT(LoadFile()));}}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039     QObject::connect(this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>newButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{class_widget_a2ff08b3214656384b44e055927b540e8}{Widget::newButtonSlot}});}
+\DoxyCodeLine{00040     QObject::connect(this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>loadButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{class_widget_aa4650cb78f548346b64776032fd1b152}{Widget::LoadFile}});}
+\DoxyCodeLine{00041     QObject::connect(this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>saveButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{class_widget_ae3ddb00d01b7807af8c2f4b1ba176c1e}{Widget::saveButtonSlot}});}
+\DoxyCodeLine{00042     QObject::connect(this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView, \&QTableView::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{class_widget_a3a7ec3f505c39f11649b963e2433dcbe}{Widget::clickedTableView}});}
+\DoxyCodeLine{00043     QObject::connect(this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>deleteButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{class_widget_a28d0a5825bee117de1769df1c2c2f387}{Widget::deleteARow}});}
+\DoxyCodeLine{00044     QObject::connect(this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>updateButton, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{class_widget_a0e14af85648a72001f9af5472346894a}{Widget::alterALine}});}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_a0a747737a833b1ddc43051afdadc9120}\label{class_widget_a0a747737a833b1ddc43051afdadc9120}} 
+\index{Widget@{Widget}!clearLineEdit@{clearLineEdit}}
+\index{clearLineEdit@{clearLineEdit}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{clearLineEdit()}{clearLineEdit()}}
+{\footnotesize\ttfamily void Widget\+::clear\+Line\+Edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+clear\+Line\+Edit 
+
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00297}{297}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00298 \{}
+\DoxyCodeLine{00299     \textcolor{comment}{// clear Text}}
+\DoxyCodeLine{00300     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>nameLineEdit-\/>setText(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00301     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>phoneLineEdit-\/>setText(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00302 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_a3a7ec3f505c39f11649b963e2433dcbe}\label{class_widget_a3a7ec3f505c39f11649b963e2433dcbe}} 
+\index{Widget@{Widget}!clickedTableView@{clickedTableView}}
+\index{clickedTableView@{clickedTableView}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{clickedTableView}{clickedTableView}}
+{\footnotesize\ttfamily void Widget\+::clicked\+Table\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+clicked\+Table\+View 3) 选中一行数据（槽函数）； 
+
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00408}{408}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00409 \{}
+\DoxyCodeLine{00410     QAbstractItemModel* modelSelected = this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView-\/>model();}
+\DoxyCodeLine{00411     \textcolor{keywordtype}{int} row = this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView-\/>currentIndex().row();}
+\DoxyCodeLine{00412 \textcolor{comment}{//    qDebug() << row;}}
+\DoxyCodeLine{00413 }
+\DoxyCodeLine{00414     \textcolor{comment}{//根据行号在地址簿中读取并显示相应的联系人至编辑界面}}
+\DoxyCodeLine{00415     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>nameLineEdit-\/>setText(modelSelected-\/>index(row, 0).data().toString());}
+\DoxyCodeLine{00416     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>phoneLineEdit-\/>setText(modelSelected-\/>index(row, 1).data().toString());}
+\DoxyCodeLine{00417     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>groupComboBox-\/>setCurrentText(modelSelected-\/>index(row, 2).data().toString());}
+\DoxyCodeLine{00418 }
+\DoxyCodeLine{00419     \textcolor{comment}{//选中一行后启用按钮}}
+\DoxyCodeLine{00420     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>deleteButton-\/>setEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{00421     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>updateButton-\/>setEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{00422 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_aff0695f27c4062f58cadb27b3a87e8a3}\label{class_widget_aff0695f27c4062f58cadb27b3a87e8a3}} 
+\index{Widget@{Widget}!customizedTableStyle@{customizedTableStyle}}
+\index{customizedTableStyle@{customizedTableStyle}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{customizedTableStyle()}{customizedTableStyle()}}
+{\footnotesize\ttfamily void Widget\+::customized\+Table\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+customized\+Table\+Style 设定自定义表的样式 
+
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00382}{382}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00383 \{}
+\DoxyCodeLine{00384     \textcolor{comment}{// Style sheet}}
+\DoxyCodeLine{00385     \textcolor{comment}{//设定列延展特性}}
+\DoxyCodeLine{00386     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableWidget-\/>horizontalHeader()-\/>setStretchLastSection(\textcolor{keyword}{true});}
+\DoxyCodeLine{00387     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView-\/>horizontalHeader()-\/>setStretchLastSection(\textcolor{keyword}{true});}
+\DoxyCodeLine{00388 }
+\DoxyCodeLine{00389     \textcolor{comment}{// QTableView column width}}
+\DoxyCodeLine{00390     \textcolor{comment}{// https://stackoverflow.com/questions/26681578/qtableview-\/column-\/width}}
+\DoxyCodeLine{00391     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView-\/>setColumnWidth(1, 200);}
+\DoxyCodeLine{00392 }
+\DoxyCodeLine{00393     \textcolor{comment}{//设定标题样式}}
+\DoxyCodeLine{00394     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableWidget-\/>horizontalHeader()-\/>setStyleSheet(\textcolor{stringliteral}{"{}border:none; border-\/bottom:1px solid grey"{}});}
+\DoxyCodeLine{00395     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView-\/>horizontalHeader()-\/>setStyleSheet(\textcolor{stringliteral}{"{}border:none; border-\/bottom:1px solid grey"{}});}
+\DoxyCodeLine{00396 }
+\DoxyCodeLine{00397     \textcolor{comment}{//设定表格行选定行为}}
+\DoxyCodeLine{00398     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableWidget-\/>setSelectionMode(QAbstractItemView::SingleSelection);}
+\DoxyCodeLine{00399     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableWidget-\/>setSelectionBehavior(QAbstractItemView::SelectRows);}
+\DoxyCodeLine{00400 }
+\DoxyCodeLine{00401     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView-\/>setSelectionBehavior(QAbstractItemView::SelectRows);}
+\DoxyCodeLine{00402 }
+\DoxyCodeLine{00403     \textcolor{comment}{//显示网格线}}
+\DoxyCodeLine{00404     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableWidget-\/>showGrid();}
+\DoxyCodeLine{00405     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView-\/>showGrid();}
+\DoxyCodeLine{00406 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_a28d0a5825bee117de1769df1c2c2f387}\label{class_widget_a28d0a5825bee117de1769df1c2c2f387}} 
+\index{Widget@{Widget}!deleteARow@{deleteARow}}
+\index{deleteARow@{deleteARow}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{deleteARow}{deleteARow}}
+{\footnotesize\ttfamily void Widget\+::delete\+ARow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+delete\+ARow 4) 删除一行数据； 
+
+\begin{DoxySeeAlso}{参见}
+Qt Delete selected row in QTable\+View \href{https://stackoverflow.com/questions/19012450/qt-delete-selected-row-in-qtableview}{\texttt{ https\+://stackoverflow.\+com/questions/19012450/qt-\/delete-\/selected-\/row-\/in-\/qtableview}} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00427}{427}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00428 \{}
+\DoxyCodeLine{00429     \textcolor{comment}{// 获取当前联系人行}}
+\DoxyCodeLine{00430     \textcolor{keyword}{auto} currentRow = this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView-\/>currentIndex().row();}
+\DoxyCodeLine{00431 }
+\DoxyCodeLine{00432     \textcolor{comment}{// 将联系人从数据模型中删除}}
+\DoxyCodeLine{00433     this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>removeRow(currentRow);}
+\DoxyCodeLine{00434 }
+\DoxyCodeLine{00435     \textcolor{comment}{// 调整相关按钮 LineEdit 状态}}
+\DoxyCodeLine{00436     this-\/>\mbox{\hyperlink{class_widget_a0a747737a833b1ddc43051afdadc9120}{clearLineEdit}}();}
+\DoxyCodeLine{00437     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>deleteButton-\/>setEnabled(\textcolor{keyword}{false});}
+\DoxyCodeLine{00438     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>updateButton-\/>setEnabled(\textcolor{keyword}{false});}
+\DoxyCodeLine{00439 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_a6a7272d4da63b8312c3de6a8cad3e517}\label{class_widget_a6a7272d4da63b8312c3de6a8cad3e517}} 
+\index{Widget@{Widget}!ExitWidget@{ExitWidget}}
+\index{ExitWidget@{ExitWidget}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{ExitWidget}{ExitWidget}}
+{\footnotesize\ttfamily void Widget\+::\+Exit\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\begin{DoxySeeAlso}{参见}
+【\+QT快速入门 $\vert$ 最简单最简洁的\+QT入门教程 $\vert$ 嵌入式\+UI-\/哔哩哔哩】 \href{https://b23.tv/ADss8yy}{\texttt{ https\+://b23.\+tv/\+ADss8yy}} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00260}{260}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00261 \{}
+\DoxyCodeLine{00262 \textcolor{comment}{//    QString program = "{}/System/Applications/Utilities/Terminal.app"{};}}
+\DoxyCodeLine{00263 \textcolor{comment}{//    program = "{}/Applications/"{} + this-\/>ui-\/>nameLineEdit-\/>text() + "{}.app"{};}}
+\DoxyCodeLine{00264 \textcolor{comment}{//    this-\/>ui-\/>nameLineEdit-\/>setText(program);}}
+\DoxyCodeLine{00265 \textcolor{comment}{//    QProcess *myProcess = new QProcess(this);}}
+\DoxyCodeLine{00266 \textcolor{comment}{//    myProcess-\/>start(program);}}
+\DoxyCodeLine{00267     this-\/>close();}
+\DoxyCodeLine{00268 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_widget_a334872a6885672271b42a7ac7da92030}\label{class_widget_a334872a6885672271b42a7ac7da92030}} 
@@ -127,34 +376,149 @@ Bind bind signal and slots
 
 
 
-fill\+Combo\+Box\+And\+Table\+Widget fill with 
+fill\+Combo\+Box\+And\+Table\+Widget fill with 1) 设定列标题及样式； 
 
 \begin{DoxyNote}{注解}
 一个 Combo\+Box 相当于一个 Line\+Edit 和一个 List 组件的结合。用于在一列数据中选择其中某一项。一个 Combo\+Box 的数据可以来源于一个 QString\+List 对象。
 \begin{DoxyEnumerate}
 \item 填充列表数据；
 \item 设定当前选项数据；
-\item 获取当前选项数据； 
+\item 获取当前选项数据；
 \end{DoxyEnumerate}
 \end{DoxyNote}
+QTable\+Widget 小部件的使用 Qt 为我们提供了两类表格小部件（\+QTable\+View 和 QTable\+Widget）供用户显示二维表。 QTable\+View 基于 View/\+Model/\+Delegate 的灵活架构，可以非常灵活地以多种方式显示后台数据（model）； 而 QTable\+Widget 也是基于 View/\+Model 架构，但它提供了默认的数据结构， 用户不需要涉及过多的架构细节就可以迅速地用它来显示二维数据表格。 QTable\+Widget 使用行号（row）和列号（column）去定位一个单元格（cell）并显示数据。 \begin{DoxySeeAlso}{参见}
+C++ Qt 47 -\/ Intro to \mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}} view programming \href{https://www.youtube.com/watch?v=uDC9L4T59bM}{\texttt{ https\+://www.\+youtube.\+com/watch?v=u\+DC9\+L4\+T59bM}} 
+\end{DoxySeeAlso}
 
 
-在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00049}{49}} 行定义.
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00064}{64}} 行定义.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00050 \{}
-\DoxyCodeLine{00051     QStringList groupItems;}
-\DoxyCodeLine{00052     groupItems.append(categories.\mbox{\hyperlink{struct_category_af9fdcd1010c800294e2d34d4e9818407}{friends}});}
-\DoxyCodeLine{00053     groupItems.append(categories.\mbox{\hyperlink{struct_category_a1c1f6c0731bc49659623c7766bc34785}{colleague}});}
-\DoxyCodeLine{00054     groupItems.append(categories.\mbox{\hyperlink{struct_category_a2b6ecf265f11d483c47c3a4e4b11523e}{family}});}
-\DoxyCodeLine{00055     groupItems.append(categories.\mbox{\hyperlink{struct_category_a5cdbca1806b1b48b8b1ef0b6d37ef40e}{relative}});}
-\DoxyCodeLine{00056     groupItems.append(categories.\mbox{\hyperlink{struct_category_a0d46aea189d6c582b87851ff281a12d2}{student}});}
-\DoxyCodeLine{00057     this-\/>ui-\/>groupComboBox-\/>addItems(groupItems);}
-\DoxyCodeLine{00058     this-\/>ui-\/>groupComboBox-\/>setCurrentText(categories.\mbox{\hyperlink{struct_category_a0d46aea189d6c582b87851ff281a12d2}{student}});}
-\DoxyCodeLine{00059 }
-\DoxyCodeLine{00060 \textcolor{comment}{//    qDebug() << this-\/>ui-\/>groupComboBox-\/>currentText();}}
-\DoxyCodeLine{00061 \}}
+\DoxyCodeLine{00065 \{}
+\DoxyCodeLine{00066 }
+\DoxyCodeLine{00067 \textcolor{comment}{//    this-\/>ui-\/>groupComboBox-\/>setModel();}}
+\DoxyCodeLine{00068 \textcolor{comment}{//    this-\/>ui-\/>groupComboBox-\/>setModel();}}
+\DoxyCodeLine{00069     this-\/>\mbox{\hyperlink{class_widget_af654f5d36a61c3cbad6d8b2949864a21}{addressBook}}.\mbox{\hyperlink{class_address_book_af887e33aab651f2076399e88648d320a}{setId}}(0);}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071     \textcolor{comment}{// ComboBox}}
+\DoxyCodeLine{00072     QStringList groupItems;}
+\DoxyCodeLine{00073     groupItems.append(\mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}.\mbox{\hyperlink{struct_category_af9fdcd1010c800294e2d34d4e9818407}{friends}});}
+\DoxyCodeLine{00074     groupItems.append(\mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}.\mbox{\hyperlink{struct_category_a1c1f6c0731bc49659623c7766bc34785}{colleague}});}
+\DoxyCodeLine{00075     groupItems.append(\mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}.\mbox{\hyperlink{struct_category_a2b6ecf265f11d483c47c3a4e4b11523e}{family}});}
+\DoxyCodeLine{00076     groupItems.append(\mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}.\mbox{\hyperlink{struct_category_a5cdbca1806b1b48b8b1ef0b6d37ef40e}{relative}});}
+\DoxyCodeLine{00077     groupItems.append(\mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}.\mbox{\hyperlink{struct_category_a0d46aea189d6c582b87851ff281a12d2}{student}});}
+\DoxyCodeLine{00078     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>groupComboBox-\/>addItems(groupItems);}
+\DoxyCodeLine{00079 }
+\DoxyCodeLine{00080     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>groupComboBox-\/>setCurrentText(\mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}.\mbox{\hyperlink{struct_category_a0d46aea189d6c582b87851ff281a12d2}{student}});}
+\DoxyCodeLine{00081 }
+\DoxyCodeLine{00082 \textcolor{comment}{//    qDebug() << this-\/>ui-\/>groupComboBox-\/>currentText();}}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084     \textcolor{comment}{// QTableWidget 小部件的使用}}
+\DoxyCodeLine{00085     QStringList header;}
+\DoxyCodeLine{00086     header << \mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}.\mbox{\hyperlink{struct_category_aedc5de7acb7d29b0121cfd1fb1affa6f}{name}} << \mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}.\mbox{\hyperlink{struct_category_a5ef7a1b2d9f0c9f368544b5457a733dc}{phoneNumber}} << \mbox{\hyperlink{class_widget_a709fae194411d0d56881d9ef63410a0c}{categories}}.\mbox{\hyperlink{struct_category_a68c5de7793c3ccaf52a25bc057abccff}{group}};}
+\DoxyCodeLine{00087     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableWidget-\/>setColumnCount(3); \textcolor{comment}{//设定列总数为 3}}
+\DoxyCodeLine{00088     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableWidget-\/>setHorizontalHeaderLabels(header); \textcolor{comment}{//设定列标题}}
+\DoxyCodeLine{00089 }
+\DoxyCodeLine{00090     \textcolor{comment}{// Table View(Model Based) Title}}
+\DoxyCodeLine{00091     this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}} = \textcolor{keyword}{new} QStandardItemModel;}
+\DoxyCodeLine{00092     this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>setHorizontalHeaderLabels(header);}
+\DoxyCodeLine{00093 }
+\DoxyCodeLine{00094     \textcolor{comment}{// Table View(Model Based) model for view}}
+\DoxyCodeLine{00095     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableView-\/>setModel(\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}});}
+\DoxyCodeLine{00096     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>tableWidget-\/>hide();}
+\DoxyCodeLine{00097 \textcolor{comment}{//    this-\/>ui-\/>tableView-\/>hide();}}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{00099     this-\/>\mbox{\hyperlink{class_widget_aff0695f27c4062f58cadb27b3a87e8a3}{customizedTableStyle}}();}
+\DoxyCodeLine{00100 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_af931bae706d8b281d5a29322e107373c}\label{class_widget_af931bae706d8b281d5a29322e107373c}} 
+\index{Widget@{Widget}!initModelFromStringList@{initModelFromStringList}}
+\index{initModelFromStringList@{initModelFromStringList}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{initModelFromStringList()}{initModelFromStringList()}}
+{\footnotesize\ttfamily void Widget\+::init\+Model\+From\+String\+List (\begin{DoxyParamCaption}\item[{QString\+List \&}]{file\+Content\+String\+List }\end{DoxyParamCaption})}
+
+
+
+init\+Model\+From\+String\+List 调用自定义函数 \mbox{\hyperlink{class_widget_af931bae706d8b281d5a29322e107373c}{init\+Model\+From\+String\+List()}}，用 file\+Content\+String\+List 的内容初始化数据模型 
+
+
+\begin{DoxyParams}{参数}
+{\em file\+Content\+String\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+传递来的参数 file\+Content\+String\+List 是文本文件所有行构成的 String\+List，文件的每一行是 a\+File\+Content 的一行字符串，第 1 行是表头文字，数据从第 2 行开始。 程序首先获取字符串列表的行数，然后设置数据模型的行数，因为数据模型的列数在初始化时己经设置了。 然后获取字符串列表的第 1 行，即表头文字，用 QString\+::split() 函数分割成一个 QString\+List，设置为数据模型的表头标题。 QString\+::split() 函数根据某个特定的符号将字符串进行分割。例如，header 是数据列的标题，每个标题之间通过一个或多个 TAB 键分隔，其内容是： 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Name        Phone Number        Group}
+
+\end{DoxyCode}
+ 那么通过上面的 split() 函数操作，得到一个字符串列表 header\+List，其内容是： 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Name}
+\DoxyCodeLine{Phone Number}
+\DoxyCodeLine{Group}
+
+\end{DoxyCode}
+ 也就是分解为一个 3 行的 String\+List。然后使用此字符串列表作为数据模型，设置表头标题的函数 set\+Horizontal\+Header\+Labels() 的参数，就可以为数据模型设置表头了。 同样，在逐行获取字符串后，也采用 split() 函数进行分解，为每个数据创建一个 QStandardltem 类型的项数据 altem，并赋给数据模型作为某行某列的项数据。 QStandard\+Item\+Model 以二维表格的形式保存项数据，每个项数据对应着 QTable\+View 的一个单元格。项数据不仅可以存储显示的文字，还可以存储其他角色的数据。 
+\end{DoxyNote}
+multi\+Tab \begin{DoxyNote}{注解}
+Description\+: Don\textquotesingle{}t create temporary QRegular\+Expression objects. a Use a static QRegular\+Expression object instead \mbox{[}clazy-\/use-\/static-\/qregularexpression\mbox{]} Location\+: /\+Users/yongfrank/\+Developer/\+Cpp/lab/\+Cpp-\/labo3-\/week14/\+Address\+Book\+GU/widget.cpp\+:360\+:43 Documentation\+: \href{https://github.com/KDE/clazy/blob/1.11/docs/checks/READ}{\texttt{ https\+://github.\+com/\+KDE/clazy/blob/1.\+11/docs/checks/\+READ}} ME-\/use-\/statio-\/qregularexpression.\+md
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00322}{322}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00323 \{}
+\DoxyCodeLine{00324     \textcolor{comment}{// 将内存中的 model 数据模型清除}}
+\DoxyCodeLine{00325     this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>clear();}
+\DoxyCodeLine{00326 }
+\DoxyCodeLine{00327     \textcolor{comment}{// 从一个StringList 获取数据，初始化数据Model}}
+\DoxyCodeLine{00328     \textcolor{comment}{// 文本行数，第1行是标题}}
+\DoxyCodeLine{00329     \textcolor{keywordtype}{int} rowCount = fileContentStringList.count();}
+\DoxyCodeLine{00330 }
+\DoxyCodeLine{00331     \textcolor{comment}{// 实际数据行数}}
+\DoxyCodeLine{00332     this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>setRowCount(rowCount -\/ 1);}
+\DoxyCodeLine{00333 }
+\DoxyCodeLine{00334     \textcolor{comment}{// 设置表头}}
+\DoxyCodeLine{00335     \textcolor{comment}{// 第1行是表头}}
+\DoxyCodeLine{00336     QString header = fileContentStringList.at(0);}
+\DoxyCodeLine{00337 }
+\DoxyCodeLine{00349     \textcolor{keyword}{static} \textcolor{keyword}{auto} multiTab = QRegularExpression(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)t+"{}});}
+\DoxyCodeLine{00350 }
+\DoxyCodeLine{00351     \textcolor{comment}{// 一个或多个空格、TAB("{}\(\backslash\)s+"{}) 多个 TAB 分隔("{}\(\backslash\)t+"{})等分隔符隔开的字符串， 分解为一个StringList}}
+\DoxyCodeLine{00352     QStringList headerList = header.split(multiTab);}
+\DoxyCodeLine{00353     headerList.removeLast();}
+\DoxyCodeLine{00354     \textcolor{comment}{//设置表头文字}}
+\DoxyCodeLine{00355     this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>setHorizontalHeaderLabels(headerList);}
+\DoxyCodeLine{00356 }
+\DoxyCodeLine{00357     \textcolor{comment}{//设置表格数据}}
+\DoxyCodeLine{00358 \textcolor{comment}{//    QString lineText;}}
+\DoxyCodeLine{00359 \textcolor{comment}{//    QStringList lineTempList;}}
+\DoxyCodeLine{00360     QStandardItem *itemStandard;}
+\DoxyCodeLine{00361     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < rowCount; i++) \{}
+\DoxyCodeLine{00362 }
+\DoxyCodeLine{00363         \textcolor{comment}{//获取数据区的一行}}
+\DoxyCodeLine{00364         QString lineText = fileContentStringList.at(i);}
+\DoxyCodeLine{00365 }
+\DoxyCodeLine{00366         \textcolor{comment}{//一个或多个空格、TAB等分隔符隔开的字符串， 分解为一个StringList}}
+\DoxyCodeLine{00367         QStringList lineTempList = lineText.split(multiTab);}
+\DoxyCodeLine{00368 }
+\DoxyCodeLine{00369         \textcolor{comment}{//lineTempList 的行数等于 headerList.count, 固定的}}
+\DoxyCodeLine{00370         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < headerList.count(); j++) \{}
+\DoxyCodeLine{00371 }
+\DoxyCodeLine{00372             \textcolor{comment}{//创建item}}
+\DoxyCodeLine{00373             itemStandard = \textcolor{keyword}{new} QStandardItem(lineTempList.at(j));}
+\DoxyCodeLine{00374 }
+\DoxyCodeLine{00375             \textcolor{comment}{//为模型的某个行列位置设置Item}}
+\DoxyCodeLine{00376             this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>setItem(i -\/ 1, j, itemStandard);}
+\DoxyCodeLine{00377         \}}
+\DoxyCodeLine{00378     \}}
+\DoxyCodeLine{00379     this-\/>\mbox{\hyperlink{class_widget_aff0695f27c4062f58cadb27b3a87e8a3}{customizedTableStyle}}();}
+\DoxyCodeLine{00380 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_widget_a00be10109bcc22cbb7c5642cf98819c1}\label{class_widget_a00be10109bcc22cbb7c5642cf98819c1}} 
@@ -174,20 +538,281 @@ key\+Press\+Event shortcut for load(ctrl+o) save(ctrl+s)
 \end{DoxyParams}
 
 
-在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00127}{127}} 行定义.
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00270}{270}} 行定义.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00127                                          \{}
-\DoxyCodeLine{00128     \textcolor{keywordflow}{if}(key-\/>modifiers() == Qt::ControlModifier \&\& key-\/>key() == Qt::Key\_S) \{}
-\DoxyCodeLine{00129         this-\/>saveButtonSlot();}
-\DoxyCodeLine{00130     \}}
-\DoxyCodeLine{00131     \textcolor{keywordflow}{if}(key-\/>modifiers() == Qt::ControlModifier \&\& key-\/>key() == Qt::Key\_O) \{}
-\DoxyCodeLine{00132         this-\/>LoadFile();}
-\DoxyCodeLine{00133     \}}
-\DoxyCodeLine{00134 \}}
+\DoxyCodeLine{00270                                          \{}
+\DoxyCodeLine{00271     \textcolor{keywordflow}{if}(key-\/>modifiers() == Qt::ControlModifier \&\& key-\/>key() == Qt::Key\_S) \{}
+\DoxyCodeLine{00272         this-\/>\mbox{\hyperlink{class_widget_ae3ddb00d01b7807af8c2f4b1ba176c1e}{saveButtonSlot}}();}
+\DoxyCodeLine{00273     \}}
+\DoxyCodeLine{00274     \textcolor{keywordflow}{if}(key-\/>modifiers() == Qt::ControlModifier \&\& key-\/>key() == Qt::Key\_O) \{}
+\DoxyCodeLine{00275         this-\/>\mbox{\hyperlink{class_widget_aa4650cb78f548346b64776032fd1b152}{LoadFile}}();}
+\DoxyCodeLine{00276     \}}
+\DoxyCodeLine{00277 \}}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{class_widget_aa4650cb78f548346b64776032fd1b152}\label{class_widget_aa4650cb78f548346b64776032fd1b152}} 
+\index{Widget@{Widget}!LoadFile@{LoadFile}}
+\index{LoadFile@{LoadFile}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{LoadFile}{LoadFile}}
+{\footnotesize\ttfamily void Widget\+::\+Load\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Load\+File 8、 文件读取操作流程框架 “打开文件”按钮的槽函数代码 
+
+\begin{DoxyNote}{注解}
+\char`\"{}/home\char`\"{}, \char`\"{}$\ast$.\+txt, $\ast$.\+cpp\char`\"{} 这段代码让用户选择所需要打开的数据文本文件，然后用只读和文本格式打开文件，逐行读取其内容，将每行字符串显示到界面上的 Text\+Edit 里，并且添加到一个临时的 QString\+List 类型的变量 File\+Content 里。 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+Qt QStandard\+Item\+Model用法（超级详细） \href{http://c.biancheng.net/view/1869.html}{\texttt{ http\+://c.\+biancheng.\+net/view/1869.\+html}} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00134}{134}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00134                       \{}
+\DoxyCodeLine{00135 }
+\DoxyCodeLine{00136     \textcolor{comment}{// 获取应用程序的路径}}
+\DoxyCodeLine{00137     \textcolor{comment}{// 调用打开文件对话框打开一个文件}}
+\DoxyCodeLine{00138     QString fileName = QFileDialog::getOpenFileName(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Choose a file"{}}, QApplication::applicationDirPath(),}
+\DoxyCodeLine{00139                                                     \textcolor{stringliteral}{"{}Text File(*.txt);;All File(*.*)"{}});}
+\DoxyCodeLine{00140 \textcolor{comment}{//    QString fileName = QFileDialog::getOpenFileName(this, "{}Choose a File"{},}}
+\DoxyCodeLine{00141 \textcolor{comment}{//                                             QCoreApplication::applicationFilePath());}}
+\DoxyCodeLine{00142 \textcolor{comment}{//    QFileDialog::getOpenFileName(this, "{}Choose a File"{}, QCoreApplication::applicationDirPath());}}
+\DoxyCodeLine{00143 }
+\DoxyCodeLine{00144     \textcolor{comment}{// 如果未选择文件，退出}}
+\DoxyCodeLine{00145     \textcolor{keywordflow}{if} (fileName.isEmpty()) \{}
+\DoxyCodeLine{00146         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Warning"{}}, \textcolor{stringliteral}{"{}Choose a File, please"{}});}
+\DoxyCodeLine{00147         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00148     \}}
+\DoxyCodeLine{00149 \textcolor{comment}{//    qDebug() << fileName;}}
+\DoxyCodeLine{00150 }
+\DoxyCodeLine{00151     \textcolor{comment}{// 文件内容字符串列表}}
+\DoxyCodeLine{00152     QStringList fileContentStringList;}
+\DoxyCodeLine{00153 }
+\DoxyCodeLine{00154     \textcolor{comment}{// Create a QFile Object}}
+\DoxyCodeLine{00155     \textcolor{comment}{// https://doc.qt.io/qt-\/6/qfile.html}}
+\DoxyCodeLine{00156     \textcolor{comment}{// 以文件方式读出}}
+\DoxyCodeLine{00157     QFile file(fileName);}
+\DoxyCodeLine{00158 }
+\DoxyCodeLine{00159     \textcolor{comment}{// 以只读文本方式打开文件}}
+\DoxyCodeLine{00160     file.open(QIODevice::ReadOnly);}
+\DoxyCodeLine{00161 }
+\DoxyCodeLine{00162     \textcolor{comment}{// 用文本流读取文件}}
+\DoxyCodeLine{00163     QTextStream fileStream(\&file);}
+\DoxyCodeLine{00164 }
+\DoxyCodeLine{00165     \textcolor{comment}{// 清空}}
+\DoxyCodeLine{00166     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>textEdit-\/>clear();}
+\DoxyCodeLine{00167 }
+\DoxyCodeLine{00168     \textcolor{keywordflow}{while}(!fileStream.atEnd()) \{}
+\DoxyCodeLine{00169         \textcolor{comment}{// 读取文件的一行}}
+\DoxyCodeLine{00170         QString stringToBeDisplayed = fileStream.readLine();}
+\DoxyCodeLine{00171 }
+\DoxyCodeLine{00172         \textcolor{comment}{// 添加到文本框显示}}
+\DoxyCodeLine{00173         this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>textEdit-\/>append(stringToBeDisplayed);}
+\DoxyCodeLine{00174 }
+\DoxyCodeLine{00175         \textcolor{comment}{// 添加到 fileContentStringList}}
+\DoxyCodeLine{00176         fileContentStringList.append(stringToBeDisplayed);}
+\DoxyCodeLine{00177     \}}
+\DoxyCodeLine{00178 }
+\DoxyCodeLine{00179     \textcolor{comment}{// 关闭文件}}
+\DoxyCodeLine{00180     \textcolor{comment}{//    QByteArray byteArray = file.readAll();}}
+\DoxyCodeLine{00181     \textcolor{comment}{//    ui-\/>textEdit-\/>setText(QString(byteArray));}}
+\DoxyCodeLine{00182     file.close();}
+\DoxyCodeLine{00183 }
+\DoxyCodeLine{00184     \textcolor{comment}{// 窗口标题显示}}
+\DoxyCodeLine{00185     this-\/>setWindowTitle(fileName);}
+\DoxyCodeLine{00186 }
+\DoxyCodeLine{00187     \textcolor{comment}{// 从StringList的内容初始化数据模型}}
+\DoxyCodeLine{00188     this-\/>\mbox{\hyperlink{class_widget_af931bae706d8b281d5a29322e107373c}{initModelFromStringList}}(fileContentStringList);}
+\DoxyCodeLine{00189 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_a2ff08b3214656384b44e055927b540e8}\label{class_widget_a2ff08b3214656384b44e055927b540e8}} 
+\index{Widget@{Widget}!newButtonSlot@{newButtonSlot}}
+\index{newButtonSlot@{newButtonSlot}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{newButtonSlot}{newButtonSlot}}
+{\footnotesize\ttfamily void Widget\+::new\+Button\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+new\+Button\+Slot 2) 加入一行数据； 
+
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00102}{102}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00102                            \{}
+\DoxyCodeLine{00103 \textcolor{comment}{//    this-\/>ui-\/>textEdit-\/>clear();}}
+\DoxyCodeLine{00104 \textcolor{comment}{//    this-\/>setWindowTitle("{}New Address Book"{});}}
+\DoxyCodeLine{00105 \textcolor{comment}{//    QUuid id = QUuid();}}
+\DoxyCodeLine{00106 }
+\DoxyCodeLine{00107     \textcolor{comment}{// 获得行计数}}
+\DoxyCodeLine{00108 \textcolor{comment}{//    int lastRow = this-\/>model-\/>rowCount();}}
+\DoxyCodeLine{00109 \textcolor{comment}{//    qDebug() << lastRow;}}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111     std::string name = this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>nameLineEdit-\/>text().toStdString();}
+\DoxyCodeLine{00112     std::string phone = this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>phoneLineEdit-\/>text().toStdString();}
+\DoxyCodeLine{00113     std::string group = this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>groupComboBox-\/>currentText().toStdString();}
+\DoxyCodeLine{00114 \textcolor{comment}{//    qDebug() << id << QString::fromStdString(name) << this-\/>ui-\/>groupComboBox-\/>currentText();}}
+\DoxyCodeLine{00115 }
+\DoxyCodeLine{00116     this-\/>\mbox{\hyperlink{class_widget_af654f5d36a61c3cbad6d8b2949864a21}{addressBook}}.\mbox{\hyperlink{class_address_book_ab2ab4565bc7ec1563fd4fb6f5db4ac6d}{AddContact}}(name, phone, group);}
+\DoxyCodeLine{00117     QStandardItem* nameItem = \textcolor{keyword}{new} QStandardItem(QString::fromStdString(name));}
+\DoxyCodeLine{00118     QStandardItem* phoneItem = \textcolor{keyword}{new} QStandardItem(QString::fromStdString(phone));}
+\DoxyCodeLine{00119     QStandardItem* groupItem = \textcolor{keyword}{new} QStandardItem(QString::fromStdString(group));}
+\DoxyCodeLine{00120 }
+\DoxyCodeLine{00121     QList<QStandardItem*> itemList;}
+\DoxyCodeLine{00122     itemList << nameItem << phoneItem << groupItem;}
+\DoxyCodeLine{00123 }
+\DoxyCodeLine{00124     \textcolor{comment}{// 在表格后添加一行}}
+\DoxyCodeLine{00125     \mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>appendRow(itemList);}
+\DoxyCodeLine{00126 }
+\DoxyCodeLine{00127     this-\/>\mbox{\hyperlink{class_widget_a0a747737a833b1ddc43051afdadc9120}{clearLineEdit}}();}
+\DoxyCodeLine{00128 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_widget_ae3ddb00d01b7807af8c2f4b1ba176c1e}\label{class_widget_ae3ddb00d01b7807af8c2f4b1ba176c1e}} 
+\index{Widget@{Widget}!saveButtonSlot@{saveButtonSlot}}
+\index{saveButtonSlot@{saveButtonSlot}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{saveButtonSlot}{saveButtonSlot}}
+{\footnotesize\ttfamily void Widget\+::save\+Button\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+save\+Button\+Slot 9、 文件保存流程框架 
+
+\begin{DoxySeeAlso}{参见}
+\href{https://doc.qt.io/qt-6/qbytearray.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qbytearray.\+html}} Qt QStandard\+Item\+Model用法（超级详细） \href{http://c.biancheng.net/view/1869.html}{\texttt{ http\+://c.\+biancheng.\+net/view/1869.\+html}} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{widget_8cpp_source}{widget.\+cpp}} 第 \mbox{\hyperlink{widget_8cpp_source_l00195}{195}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00195                             \{}
+\DoxyCodeLine{00196 }
+\DoxyCodeLine{00197     \textcolor{comment}{// 获取应用程序的路径}}
+\DoxyCodeLine{00198 \textcolor{comment}{//    QString curPath = QCoreApplication::applicationDirPath();}}
+\DoxyCodeLine{00199 \textcolor{comment}{//    qDebug() << curPath;}}
+\DoxyCodeLine{00200 }
+\DoxyCodeLine{00201     \textcolor{comment}{// Save New Dialog}}
+\DoxyCodeLine{00202     \textcolor{comment}{// 调用打开文件对话框选择一个文件}}
+\DoxyCodeLine{00203     QString fileName = QFileDialog::getSaveFileName(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Chose a file"{}}, QCoreApplication::applicationFilePath(),}
+\DoxyCodeLine{00204                                                     \textcolor{stringliteral}{"{}Text File(*.txt);;All File(*.*)"{}});}
+\DoxyCodeLine{00205 }
+\DoxyCodeLine{00206 }
+\DoxyCodeLine{00207     \textcolor{comment}{// 未选择文件，退出}}
+\DoxyCodeLine{00208     \textcolor{keywordflow}{if} (fileName.isEmpty()) \{}
+\DoxyCodeLine{00209         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Warning"{}}, \textcolor{stringliteral}{"{}Choose a file"{}});}
+\DoxyCodeLine{00210         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00211     \}}
+\DoxyCodeLine{00212 }
+\DoxyCodeLine{00213     QFile file(fileName);}
+\DoxyCodeLine{00214     file.open(QIODevice::WriteOnly);}
+\DoxyCodeLine{00215 }
+\DoxyCodeLine{00216 \textcolor{comment}{//    QByteArray ba;}}
+\DoxyCodeLine{00217 \textcolor{comment}{//    ba.append(this-\/>ui-\/>textEdit-\/>toPlainText().toUtf8());}}
+\DoxyCodeLine{00218 \textcolor{comment}{//    file.write(ba);}}
+\DoxyCodeLine{00219 \textcolor{comment}{//    file.close();}}
+\DoxyCodeLine{00220 }
+\DoxyCodeLine{00221     QString stringToBeStored;}
+\DoxyCodeLine{00222 }
+\DoxyCodeLine{00223     \textcolor{comment}{// 用文本流读取文件}}
+\DoxyCodeLine{00224     QTextStream fileStream(\&file);}
+\DoxyCodeLine{00225     QStandardItem* item;}
+\DoxyCodeLine{00226 }
+\DoxyCodeLine{00227     \textcolor{comment}{// 获取表头文字}}
+\DoxyCodeLine{00228     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>columnCount(); i++) \{}
+\DoxyCodeLine{00229 }
+\DoxyCodeLine{00230         \textcolor{comment}{// 获取表头的项数据}}
+\DoxyCodeLine{00231         item = this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>horizontalHeaderItem(i);}
+\DoxyCodeLine{00232 }
+\DoxyCodeLine{00233         \textcolor{comment}{// 以 TAB 间隔开}}
+\DoxyCodeLine{00234         stringToBeStored += item-\/>text() + \textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)t"{}};}
+\DoxyCodeLine{00235     \}}
+\DoxyCodeLine{00236 }
+\DoxyCodeLine{00237     \textcolor{comment}{// 文件里需要加入换行符 \(\backslash\)n}}
+\DoxyCodeLine{00238     fileStream << stringToBeStored << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00239 }
+\DoxyCodeLine{00240     this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>textEdit-\/>append(stringToBeStored);}
+\DoxyCodeLine{00241 }
+\DoxyCodeLine{00242     \textcolor{comment}{// 获取数据区文字}}
+\DoxyCodeLine{00243     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>rowCount(); i++) \{}
+\DoxyCodeLine{00244         stringToBeStored = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00245         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>columnCount(); j++) \{}
+\DoxyCodeLine{00246             item = this-\/>\mbox{\hyperlink{class_widget_a4a69d6402e3c67623d1d081fcea2db20}{model}}-\/>item(i, j);}
+\DoxyCodeLine{00247             stringToBeStored += item-\/>text() + \textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)t"{}};}
+\DoxyCodeLine{00248         \}}
+\DoxyCodeLine{00249 }
+\DoxyCodeLine{00250         this-\/>\mbox{\hyperlink{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}{ui}}-\/>textEdit-\/>append(stringToBeStored);}
+\DoxyCodeLine{00251         fileStream << stringToBeStored << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00252     \}}
+\DoxyCodeLine{00253 }
+\DoxyCodeLine{00254     file.close();}
+\DoxyCodeLine{00255 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_widget_af654f5d36a61c3cbad6d8b2949864a21}\label{class_widget_af654f5d36a61c3cbad6d8b2949864a21}} 
+\index{Widget@{Widget}!addressBook@{addressBook}}
+\index{addressBook@{addressBook}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{addressBook}{addressBook}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_address_book}{Address\+Book}} Widget\+::address\+Book}
+
+
+
+在文件 \mbox{\hyperlink{widget_8h_source}{widget.\+h}} 第 \mbox{\hyperlink{widget_8h_source_l00028}{28}} 行定义.
+
+\mbox{\Hypertarget{class_widget_a709fae194411d0d56881d9ef63410a0c}\label{class_widget_a709fae194411d0d56881d9ef63410a0c}} 
+\index{Widget@{Widget}!categories@{categories}}
+\index{categories@{categories}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{categories}{categories}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_category}{Category}} Widget\+::categories\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+categories category for combo\+Box 
+
+
+
+在文件 \mbox{\hyperlink{widget_8h_source}{widget.\+h}} 第 \mbox{\hyperlink{widget_8h_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{class_widget_a4a69d6402e3c67623d1d081fcea2db20}\label{class_widget_a4a69d6402e3c67623d1d081fcea2db20}} 
+\index{Widget@{Widget}!model@{model}}
+\index{model@{model}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily QStandard\+Item\+Model$\ast$ Widget\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+model 
+
+\begin{DoxySeeAlso}{参见}
+Qt模型/视图框架（一） -\/ 小豆君编程分享的文章 -\/ 知乎 \href{https://zhuanlan.zhihu.com/p/47402006}{\texttt{ https\+://zhuanlan.\+zhihu.\+com/p/47402006}} Address Book Example \href{https://doc.qt.io/qt-6/qtwidgets-itemviews-addressbook-example.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qtwidgets-\/itemviews-\/addressbook-\/example.\+html}} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{widget_8h_source}{widget.\+h}} 第 \mbox{\hyperlink{widget_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}\label{class_widget_a19c48cc897c43aa2e995fce9f7fb2418}} 
+\index{Widget@{Widget}!ui@{ui}}
+\index{ui@{ui}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Widget$\ast$ Widget\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{widget_8h_source}{widget.\+h}} 第 \mbox{\hyperlink{widget_8h_source_l00103}{103}} 行定义.
+
 
 
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}

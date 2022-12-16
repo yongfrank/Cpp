@@ -20,6 +20,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QTableWidget>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
@@ -52,12 +53,13 @@ public:
     QPushButton *deleteButton;
     QPushButton *exitButton;
     QTextEdit *textEdit;
+    QTableView *tableView;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName("Widget");
-        Widget->resize(815, 735);
+        Widget->resize(811, 721);
         tableWidget = new QTableWidget(Widget);
         tableWidget->setObjectName("tableWidget");
         tableWidget->setGeometry(QRect(40, 210, 581, 341));
@@ -82,6 +84,7 @@ public:
 
         phoneLineEdit = new QLineEdit(layoutWidget);
         phoneLineEdit->setObjectName("phoneLineEdit");
+        phoneLineEdit->setFocusPolicy(Qt::StrongFocus);
 
         gridLayout->addWidget(phoneLineEdit, 2, 1, 1, 1);
 
@@ -103,6 +106,7 @@ public:
         nameLineEdit = new QLineEdit(layoutWidget);
         nameLineEdit->setObjectName("nameLineEdit");
         nameLineEdit->setMinimumSize(QSize(200, 0));
+        nameLineEdit->setFocusPolicy(Qt::StrongFocus);
 
         gridLayout->addWidget(nameLineEdit, 0, 1, 1, 1);
 
@@ -139,11 +143,13 @@ public:
 
         updateButton = new QPushButton(layoutWidget1);
         updateButton->setObjectName("updateButton");
+        updateButton->setEnabled(false);
 
         verticalLayout->addWidget(updateButton);
 
         deleteButton = new QPushButton(layoutWidget1);
         deleteButton->setObjectName("deleteButton");
+        deleteButton->setEnabled(false);
 
         verticalLayout->addWidget(deleteButton);
 
@@ -155,6 +161,22 @@ public:
         textEdit = new QTextEdit(Widget);
         textEdit->setObjectName("textEdit");
         textEdit->setGeometry(QRect(40, 560, 731, 131));
+        textEdit->setFocusPolicy(Qt::StrongFocus);
+        tableView = new QTableView(Widget);
+        tableView->setObjectName("tableView");
+        tableView->setGeometry(QRect(40, 210, 581, 341));
+        tableView->setSortingEnabled(true);
+        QWidget::setTabOrder(nameLineEdit, phoneLineEdit);
+        QWidget::setTabOrder(phoneLineEdit, textEdit);
+        QWidget::setTabOrder(textEdit, groupComboBox);
+        QWidget::setTabOrder(groupComboBox, newButton);
+        QWidget::setTabOrder(newButton, updateButton);
+        QWidget::setTabOrder(updateButton, deleteButton);
+        QWidget::setTabOrder(deleteButton, exitButton);
+        QWidget::setTabOrder(exitButton, loadButton);
+        QWidget::setTabOrder(loadButton, saveButton);
+        QWidget::setTabOrder(saveButton, tableView);
+        QWidget::setTabOrder(tableView, tableWidget);
 
         retranslateUi(Widget);
 

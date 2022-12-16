@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['relative_0',['relative',['../struct_category.html#a5cdbca1806b1b48b8b1ef0b6d37ef40e',1,'Category']]]
+  ['categories_0',['categories',['../class_widget.html#a709fae194411d0d56881d9ef63410a0c',1,'Widget']]],
+  ['colleague_1',['colleague',['../struct_category.html#a1c1f6c0731bc49659623c7766bc34785',1,'Category']]]
 ];
