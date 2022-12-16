@@ -100,13 +100,12 @@ public:
         }
     ```
      */
+    friend bool pr (const CContact& lhsContact, const CContact& rhsContact);
+
     static bool prSortByGroup(const CContact& lhsContact, const CContact& rhsContact) {
         return lhsContact.Group < rhsContact.Group;
     }
 
-    friend bool pr (const CContact& lhsContact, const CContact& rhsContact) {
-        return lhsContact.Group < rhsContact.Group;
-    }
 
 
     /**

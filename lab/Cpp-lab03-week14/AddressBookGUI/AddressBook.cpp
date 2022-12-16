@@ -184,7 +184,7 @@ void AddressBook::Sort()
  */
 void AddressBook::SortGroup()
 {
-    qSort(this->Book.begin(), this->Book.end(), pr);
+    std::sort(this->Book.begin(), this->Book.end(), pr);
     std::sort(this->Book.begin(), this->Book.end(), [](const CContact& lhs, const CContact& rhs){
         return pr(lhs, rhs);
     });

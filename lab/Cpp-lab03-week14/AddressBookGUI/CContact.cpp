@@ -157,6 +157,10 @@ bool match(std::string &pattern, std::string &source) {
     // return (source.find(pattern) != std::string::npos) ? true : false;
 }
 
+bool pr (const CContact& lhsContact, const CContact& rhsContact) {
+    return lhsContact.Group < rhsContact.Group;
+}
+
 /*
 0xFFFF搬砖艺术
 荼黑 23:19:25
